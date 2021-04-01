@@ -30,7 +30,7 @@
           <code value="05454378" />
         </coding>
         <text value="SUMATRIPTAN Aurobindo 100 mg Tabletten" />
-      </code>      
+      </code>
       <form>
         <coding>
           <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM" />
@@ -45,7 +45,7 @@
         <denominator>
           <value value="1" />
         </denominator>
-      </amount>      
+      </amount>
       <batch>
         <lotNumber value="A123456789-1"/>
         <expirationDate value="2022-12-31"/>
@@ -54,7 +54,7 @@
   </contained>
   <identifier>
     <system value="https://gematik.de/fhir/NamingSystem/PrescriptionID"/>
-    <value value="160.000.764.737.300.50"/>
+    <value value="160.000.782.570.000.69"/>
   </identifier>
   <status value="completed"/>
   <medicationReference>

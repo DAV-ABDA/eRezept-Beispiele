@@ -6,7 +6,7 @@
   </meta>
   <identifier>
     <system value="https://gematik.de/fhir/NamingSystem/PrescriptionID" />
-    <value value="160.000.764.737.300.50" />
+    <value value="160.000.782.570.000.69" />
   </identifier>
   <type value="document" />
   <timestamp value="2021-03-30T09:30:00Z" />

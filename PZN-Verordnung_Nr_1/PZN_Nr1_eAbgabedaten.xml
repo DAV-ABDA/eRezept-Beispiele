@@ -8,10 +8,10 @@
   </meta>
   <identifier>
     <system value="https://gematik.de/fhir/NamingSystem/PrescriptionID"/>
-    <value value="160.000.764.737.300.50"/>
+    <value value="160.000.782.570.000.69"/>
   </identifier>
   <type value="document"/>
-  <timestamp value="2021-03-30T11:40:00Z"/>  
+  <timestamp value="2021-03-30T11:40:00Z"/>
   <entry>
     <fullUrl value="urn:uuid:ac1e9724-f5ee-448b-a594-74259fd8a926"/>
     <resource>
@@ -105,7 +105,7 @@
         <authorizingPrescription>
           <identifier>
             <system value="https://gematik.de/fhir/NamingSystem/PrescriptionID"/>
-            <value value="160.000.764.737.300.50"/>
+            <value value="160.000.782.570.000.69"/>
           </identifier>
         </authorizingPrescription>
         <type>
