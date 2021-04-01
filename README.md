@@ -1,8 +1,9 @@
-**FHIR-Beispiele zum E-Rezept - Version**  **1.0.1 vom**** 05.03.2021**
+**FHIR-Beispiele zum E-Rezept - Version**  **1.0.1 vom 01.04.2021**
 
 In diesem Projekt stellt der DAV Beispiele für die bei der Verarbeitung von E-Rezepten auftretenden Dateien in der Apotheke und dem Apothekenrechenzentrum zur Verfügung. Es wurde darauf geachtet, dass die zu einem Beispiel gehörenden Dateien fachlich und technisch zusammenpassen und soweit wie möglich realistische Informationen enthalten.
 
-Noch zu ergänzen: Nutzung der Referenzimplementierung
+Für die Erstellung wurde die Referenzimplementierung (https://github.com/gematik/ref-eRp-FD-Server) Release 0.14.0 genutzt.
+Da dieses Release noch keine Quittungssignatur liefert und das Schlüsselmaterial eigenständig erzeugt wurde, wird im Kontext des Beispiels (PZN Nr. 1), vorerst auf Signaturen verzichtet.
 
 Der folgende Workflow wird betrachtet:
 
@@ -12,7 +13,7 @@ Zu jedem Beispiel werden folgende Dateien zur Verfügung gestellt:
 
 **A) Verordnung und signierte Verordnung**
 
-Als Verordnungen wurden von der KBV im Projekt [https://simplifier.net/eRezept](https://simplifier.net/eRezept) veröffentlichte Beispiele genutzt. Für die Verwendung in den vorliegenden Beispiel-Verordnungs\_Bundles mussten die Verordnungen in einzelnen Feldern passend zum Task auf dem E-Rezept-Fachdienst geändert werden (insbesondere Rezept-ID, Ausstellungsdatum). Die Signatur erfolgte mit …
+Als Verordnungen wurden von der KBV im Projekt [https://simplifier.net/eRezept](https://simplifier.net/eRezept) veröffentlichte Beispiele genutzt. Für die Verwendung in den vorliegenden Beispiel-Verordnungs\_Bundles mussten die Verordnungen in einzelnen Feldern passend zum Task auf dem E-Rezept-Fachdienst geändert werden (insbesondere Rezept-ID, Ausstellungsdatum). 
 
 **B) Medication Dispense**
 
@@ -22,11 +23,13 @@ In den Beispielen wurde die Medication Dispense vom DAV erstellt.
 
 **C) Quittung des E-Rezept-Fachdienstes**
 
-Die Quittung wurde durch den E-Rezept-Fachdienst inkl. eingebetteter Signatur erstellt.
+Die Quittung wurde durch den E-Rezept-Fachdienst erstellt.
+- die fehlende Signatur und Profilfehler (Validator) sind bekannt und stehen im Backlog der gematik
 
 **D) Abgabedaten und signierte Abgabedaten**
 
-Die Abgabedaten wurden vom DAV erstellt und mit … signiert.
+Die Abgabedaten wurden vom DAV erstellt.
+-  und mit … signiert
 
 **E) Abrechnungsdaten und TA7-Daten**
 
