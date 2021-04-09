@@ -39,9 +39,10 @@ Die Abrechnungsdaten und TA7-Daten wurden fachlich von NOVENTI Health SE bereitg
 
 **1) PZN-Verordnung Nr. 1**
 
-Verordnung basiert auf KBV-Beispiel 281a985c-f25b-4aae-91a6-41ad744080b0 (GKV). Neben den unter A) beschriebenen technisch bedingten Anpassungen wurde die Packungsgröße auf N3 geändert.
+Die Verordnung basiert auf KBV-Beispiel 281a985c-f25b-4aae-91a6-41ad744080b0 (GKV). Neben den unter A) beschriebenen technisch bedingten Anpassungen wurde die Packungsgröße auf N3 geändert.
 
 Merkmal Abgabedaten: Erfüllung Rabattvertrag
+
 
 Weitere Beispiele folgen.
 
