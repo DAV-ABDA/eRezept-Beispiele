@@ -44,6 +44,7 @@ Die Verordnung basiert auf KBV-Beispiel 281a985c-f25b-4aae-91a6-41ad744080b0 (GK
 Merkmal Abgabedaten: Erfüllung Rabattvertrag
 
 
+
 Weitere Beispiele folgen.
 
 
