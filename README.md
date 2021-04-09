@@ -1,4 +1,4 @@
-**FHIR-Beispiele zum E-Rezept (Stand 01.04.2021)
+**FHIR-Beispiele zum E-Rezept (Stand 12.04.2021)
 
 In diesem Projekt stellt der DAV Beispiele für die bei der Verarbeitung von E-Rezepten auftretenden Dateien in der Apotheke und dem Apothekenrechenzentrum zur Verfügung. Es wurde darauf geachtet, dass die zu einem Beispiel gehörenden Dateien fachlich und technisch zusammenpassen und soweit wie möglich realistische Informationen enthalten.
 
@@ -31,18 +31,16 @@ Hinweis: die fehlende Signatur und Profilfehler (Validator) sind bekannt und ste
 
 Die Abgabedaten wurden vom DAV erstellt.
 
-
 **E) Abrechnungsdaten und TA7-Daten**
 
-Die Abrechnungsdaten und TA7-Daten wurden fachlich von Noventi bereitgestellt und technisch von der gevko in FHIR-Dateien umgesetzt.
+Die Abrechnungsdaten und TA7-Daten wurden fachlich von NOVENTI Health SE bereitgestellt und technisch von der gevko GmbH in FHIR-Dateien umgesetzt.
 
 **Ergänzende Informationen zu den einzelnen Beispielen**
 
 **1) PZN-Verordnung Nr. 1**
 
 Merkmal: Erfüllung Rabattvertrag
-
-----------> Änderungen: Packungsgröße N3
+Gegenüber dem KBV-Beispiel 281a985c-f25b-4aae-91a6-41ad744080b0 (GKV) wurde neben den oben beschriebenen technisch bedingten Anpassungen die Packungsgröße auf N3 geändert.
 
 Weitere Beispiele folgen.
 
