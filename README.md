@@ -25,7 +25,7 @@ In den Beispielen wurde die Medication Dispense vom DAV erstellt.
 
 Die Quittung wurde durch den E-Rezept-Fachdienst (Referenzimplementierung) erstellt.
 
-Hinweis: die fehlende Signatur und Profilfehler (Validator) sind bekannt und stehen im Backlog der gematik
+Hinweis: Die fehlende Signatur und Profilfehler (Validator) sind bekannt und stehen im Backlog der gematik.
 
 **D) Abgabedaten**
 
