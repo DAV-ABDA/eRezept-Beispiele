@@ -17,7 +17,7 @@
                 </meta>
                 <extension url="https://gematik.de/fhir/StructureDefinition/BeneficiaryExtension">
                     <valueIdentifier>
-                        <system value="https://gematik.de/fhir/Namingsystem/TelematikID"/>
+                        <system value="https://gematik.de/fhir/NamingSystem/TelematikID"/>
                         <value value="3-07.2.1234560000.10.789"/>
                     </valueIdentifier>
                 </extension>
