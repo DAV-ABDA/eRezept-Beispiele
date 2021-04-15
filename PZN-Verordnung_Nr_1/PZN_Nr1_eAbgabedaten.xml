@@ -1,5 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="72bd741c-7ad8-41d8-97c3-9aabbdd0f5b4"/>
+  <id value="7e26f502-33ca-46f0-96bf-d7d0e9c5aab3"/>
   <meta>
     <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenBundle|1.0.1"/>
     <tag>
@@ -11,12 +11,12 @@
     <value value="160.000.764.737.300.50"/>
   </identifier>
   <type value="document"/>
-  <timestamp value="2021-03-30T11:40:00Z"/>  
+  <timestamp value="2021-03-30T11:40:00Z"/>
   <entry>
-    <fullUrl value="urn:uuid:ac1e9724-f5ee-448b-a594-74259fd8a926"/>
+    <fullUrl value="urn:uuid:d405bf08-c5a2-41e9-aebf-44591eb83180"/>
     <resource>
       <Composition>
-        <id value="ac1e9724-f5ee-448b-a594-74259fd8a926"/>
+        <id value="d405bf08-c5a2-41e9-aebf-44591eb83180"/>
         <meta>
           <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenComposition|1.0.1"/>
         </meta>
@@ -29,29 +29,29 @@
         </type>
         <date value="2021-03-30T11:40:00Z"/>
         <author>
-          <reference value="Organization/11ba8a7b-79f6-4b7a-8a29-0524c9e0ba41"/>
+          <reference value="Organization/23592f44-266b-4d5e-80cb-9175e4ebc957"/>
         </author>
         <title value="ERezeptAbgabedaten"/>
         <section>
           <title value="Abgabeinformationen"/>
           <entry>
-            <reference value="urn:uuid:1c7be124-8925-46db-9c44-717838ec767d"/>
+            <reference value="urn:uuid:efbe8593-35d6-4b26-98e9-4ee5cfd9ecc5"/>
           </entry>
         </section>
         <section>
           <title value="Apotheke"/>
           <entry>
-            <reference value="urn:uuid:11ba8a7b-79f6-4b7a-8a29-0524c9e0ba41"/>
+            <reference value="urn:uuid:23592f44-266b-4d5e-80cb-9175e4ebc957"/>
           </entry>
         </section>
       </Composition>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:11ba8a7b-79f6-4b7a-8a29-0524c9e0ba41"/>
+    <fullUrl value="urn:uuid:23592f44-266b-4d5e-80cb-9175e4ebc957"/>
     <resource>
       <Organization>
-        <id value="11ba8a7b-79f6-4b7a-8a29-0524c9e0ba41"/>
+        <id value="23592f44-266b-4d5e-80cb-9175e4ebc957"/>
         <meta>
           <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Apotheke|1.0.1"/>
         </meta>
@@ -78,16 +78,16 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:1c7be124-8925-46db-9c44-717838ec767d"/>
+    <fullUrl value="urn:uuid:efbe8593-35d6-4b26-98e9-4ee5cfd9ecc5"/>
     <resource>
       <MedicationDispense>
-        <id value="1c7be124-8925-46db-9c44-717838ec767d"/>
+        <id value="efbe8593-35d6-4b26-98e9-4ee5cfd9ecc5"/>
         <meta>
           <profile value="http://fhir.abda.de/eRezeptAbgabadaten/StructureDefinition/DAV-PR-ERP-Abgabeinformationen|1.0.1"/>
         </meta>
         <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-Abrechnungszeilen">
           <valueReference>
-            <reference value="Invoice/4ee99e8d-6930-414e-9304-5ee3e6cd64bc"/>
+            <reference value="Invoice/4d52e840-facd-4bb5-b119-0466d98eeeb7"/>
           </valueReference>
         </extension>
         <status value="completed"/>
@@ -99,7 +99,7 @@
         </medicationCodeableConcept>
         <performer>
           <actor>
-            <reference value="Organization/11ba8a7b-79f6-4b7a-8a29-0524c9e0ba41"/>
+            <reference value="Organization/23592f44-266b-4d5e-80cb-9175e4ebc957"/>
           </actor>
         </performer>
         <authorizingPrescription>
@@ -119,10 +119,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:4ee99e8d-6930-414e-9304-5ee3e6cd64bc"/>
+    <fullUrl value="urn:uuid:4d52e840-facd-4bb5-b119-0466d98eeeb7"/>
     <resource>
       <Invoice>
-        <id value="4ee99e8d-6930-414e-9304-5ee3e6cd64bc"/>
+        <id value="4d52e840-facd-4bb5-b119-0466d98eeeb7"/>
         <meta>
           <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abrechnungszeilen|1.0.1"/>
         </meta>
