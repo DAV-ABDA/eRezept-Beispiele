@@ -4,7 +4,7 @@ In diesem Projekt stellt der DAV Beispiele für die bei der Verarbeitung von E-R
 
 Hinweise:
 - Für die Erstellung des Beispiels PZN-Verordnung Nr. 1, wurde die Referenzimplementierung (https://github.com/gematik/ref-eRp-FD-Server) Release 0.14.0 genutzt. Da dieses Release noch keine Quittungssignatur liefert und das Schlüsselmaterial eigenständig erzeugt wurde, wird im Kontext des Beispiels vorerst auf Signaturen verzichtet.
-- Die Abrechnunsgdaten zum Beispiel PZN-Verordnung Nr. 1, werden kurzfristig bereitgestellt.
+- Die Abrechnungsgdaten zum Beispiel PZN-Verordnung Nr. 1 werden kurzfristig bereitgestellt.
 
 
 Der folgende Workflow wird betrachtet:
