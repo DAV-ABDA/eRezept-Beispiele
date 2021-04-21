@@ -14,7 +14,7 @@
         <value value="ARZFHR21002" />
     </identifier>
     <type value="document" />
-    <timestamp value="2021-03-31T09:32:21Z" />
+    <timestamp value="2021-04-12T12:32:21Z" />
     <entry>
         <fullUrl value="urn:uuid:abj69724-f5ee-448b-a594-74259f94g3k7" />
         <resource>
@@ -43,7 +43,7 @@
                         <display value="Sammelrechnung" />
                     </coding>
                 </type>
-                <date value="2021-03-31T09:31:34.328+00:00" />
+                <date value="2021-03-31" />
                 <author>
                     <identifier>
                         <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
@@ -131,7 +131,7 @@
                         <value value="104212505" />
                     </identifier>
                 </recipient>
-                <date value="2021-03-31T09:31:34.328+00:00" />
+                <date value="2021-04-12" />
             </Invoice>
         </resource>
     </entry>
@@ -149,6 +149,7 @@
                     <resource>
                         <Binary>
                             <contentType value="application/pkcs7-mime" />
+                            <!-- Hier ein beispielhafter base64Binary Ausschnitt -->
                             <data value="jA0EAwMCxamDRMfOGV5gyZPnyX1BBPOQAE4BHbh7PfTDInn+94hXmnBr9D8+4x5RkNNl4E499Me3Fotq8/zvznEycz2h7vJ21SdP5akLhRPd4W1S79LoCvbZYh2x4t6xCnqev6S97ys4chOPgz0FePfKQos0I7+rrMSAc9+vXHmUCthFqp7FJJ7/D9bCfmdF1qkYNhtk/P5uvZ0N2zAUsiScDJA=" />
                         </Binary>
                     </resource>
