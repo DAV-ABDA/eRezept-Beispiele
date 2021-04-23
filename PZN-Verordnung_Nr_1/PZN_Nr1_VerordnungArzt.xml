@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="281a985c-f25b-4aae-91a6-41ad744080b0" />
   <meta>
-    <lastUpdated value="2021-02-23T17:58:21Z" />
+    <lastUpdated value="2021-03-30T09:30:00Z" />
     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.0.1" />
   </meta>
   <identifier>
