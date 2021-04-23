@@ -1,6 +1,10 @@
+## Release 1.0.2 - FHIR-Beispiele zum E-Rezept
+- rename files (MedicationDispense & TA7_Sammelrechnung_Bundle)
+- change datetime of lastUpdated (PZN_Nr1_VerordnungArzt)
+
 ## Release 1.0.1 - FHIR-Beispiele zum E-Rezept
 
-- fix Patient family name ( PZN_Nr1_VerordnungArzt)
+- fix Patient family name (PZN_Nr1_VerordnungArzt)
 - add (PZN_Nr1_eAbrechnungsdaten)
 
 ## Release 1.0.0 - FHIR-Beispiele zum E-Rezept 
