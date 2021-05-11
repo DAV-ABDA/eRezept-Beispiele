@@ -2,9 +2,6 @@
   <id value="a7e1d25f-0b0a-40f7-b529-afda48e51b46"/>
   <meta>
     <profile value="https://gematik.de/fhir/StructureDefinition/ErxMedicationDispense"/>
-    <tag>
-      <display value="Beispiel MedicationDispense"/>
-    </tag>
   </meta>
   <contained>
     <Medication>
