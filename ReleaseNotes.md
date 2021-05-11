@@ -1,3 +1,13 @@
+## Release 1.0.4 - FHIR-Beispiele zum E-Rezept
+- Fix LänderCode - Organization/address/country (eAbgabedaten)
+- Remove meta/tag/display (MedicationDispense)
+- Add Verordnungsvisualisierung (html)
+
+Hinweise:
+- Für die Erstellung des Beispiels PZN-Verordnung Nr. 1, wurde die Referenzimplementierung (https://github.com/gematik/ref-eRp-FD-Server) Release 0.14.0 genutzt. Da dieses Release noch keine Quittungssignatur liefert und das Schlüsselmaterial eigenständig erzeugt wurde, wird im Kontext des Beispiels vorerst auf Signaturen verzichtet.
+- Die fehlende Signatur und Profilfehler (Validator) der Quittung des E-Rezept-Fachdienstes sind bekannt und stehen im Backlog der gematik.
+
+
 ## Release 1.0.3 - FHIR-Beispiele zum E-Rezept
 - Fix reference [Bundle] (TA7_Sammelrechnung_Bundle -> GKVSV_PR_TA7_Sammelrechnung_List)
 
