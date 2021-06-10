@@ -79,6 +79,7 @@ KBV basiertes Beispiel (34abcf97-6693-422e-b6f0-0ba9b232843e) mit Anpassungen (E
 KBV basiertes Beispiel (14f3cff7-f921-429e-98ca-c65dcb367ba9) mit Anpassungen (Erstellungs- & Verordnungsdatum = 27.05.2021)
 
 - PZN-Verordnung_Nr_6
+    - Merkmal Verordnung: Entlassverordnung
     - Merkmal Abgabedaten: Erfüllung Rabattvertrag
 
 **7) PZN-Verordnung Nr. 7** (Viani 50µg/250µg 1 Diskus 60 ED N1)
@@ -92,7 +93,7 @@ KBV basiertes Beispiel (9ad99a8f-6bce-4ab8-ada1-bb3063566c25) mit Anpassungen (E
 
 KBV basiertes Beispiel (ee9d3b92-7667-4dfe-8331-f768b2eaca3c) mit Anpassungen (Erstellungs- & Verordnungsdatum = 27.05.2021)
 - PZN-Verordnung_Nr_8 
-  - Merkmal Verordnung: 2 Packungen
+  - Merkmal Verordnung: Ersatzverordnung
   - Merkmal Abgabedaten: Erfüllung Rabattvertrag
 
 **9) PZN-Verordnung (Unfall)** (Novaminsulfon 500 mg Lichtenstein 100 ml Tropf. N3)
