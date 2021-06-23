@@ -38,8 +38,6 @@ Die Abgabedaten des Beispiels (PZN-Verordnung_Nr_1) wurden vom DAV erstellt. All
 
 Die Abrechnungsdaten und TA7-Daten des Beispiels (PZN-Verordnung_Nr_1) wurden fachlich von NOVENTI Health SE bereitgestellt und technisch von der gevko GmbH bzw. dem DAV in FHIR-Dateien umgesetzt.
 
-Die Abrechnungsdaten und TA7-Daten der weiteren Beispiele (uAG Testdaten) werden nach Veröffentlichung des neuen Packages der eAbrechnungsdaten nachgereicht. 
-
 **Ergänzende Informationen zu den einzelnen Beispielen**
 
 **1) PZN-Verordnung Nr. 1** (Sumatriptan-1a Pharma 100 mg Tabletten TAB 12 TAB N3)
