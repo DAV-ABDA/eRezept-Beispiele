@@ -1,3 +1,7 @@
+## Release 1.0.6 - FHIR-Beispiele zum E-Rezept
+- Upgarde PZN_Nr1_TA7 example ProfileVersion -> "|1.0.3"
+- Add more "TA7 Sammelrechnung Bundle" examples
+
 ## Release 1.0.5 - FHIR-Beispiele zum E-Rezept
 - Upgarde ProfileVersion -> "|1.0.3"
 - FIX References ("type\[UUID]" -> "urn:uuid:[UUID]")
