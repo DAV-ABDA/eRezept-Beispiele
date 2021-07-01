@@ -158,7 +158,7 @@
                     <sequence value="1"/>
                     <chargeItemCodeableConcept>
                         <coding>
-                            <system value="http://fhir.de/CodeSystem/ifa/pzn"/>
+                            <system value="http://TA1.abda.de"/>
                             <code value="09999092"/>
                         </coding>
                     </chargeItemCodeableConcept>
@@ -435,7 +435,7 @@
                     <sequence value="3"/>
                     <chargeItemCodeableConcept>
                         <coding>
-                            <system value="http://fhir.de/CodeSystem/ifa/pzn"/>
+                            <system value="http://TA1.abda.de"/>
                             <code value="06460518"/>
                         </coding>
                     </chargeItemCodeableConcept>
@@ -558,7 +558,7 @@
                     <sequence value="3"/>
                     <chargeItemCodeableConcept>
                         <coding>
-                            <system value="http://fhir.de/CodeSystem/ifa/pzn"/>
+                            <system value="http://TA1.abda.de"/>
                             <code value="06460518"/>
                         </coding>
                     </chargeItemCodeableConcept>
@@ -717,7 +717,7 @@
                     <sequence value="4"/>
                     <chargeItemCodeableConcept>
                         <coding>
-                            <system value="http://fhir.de/CodeSystem/ifa/pzn"/>
+                            <system value="http://TA1.abda.de"/>
                             <code value="06460518"/>
                         </coding>
                     </chargeItemCodeableConcept>

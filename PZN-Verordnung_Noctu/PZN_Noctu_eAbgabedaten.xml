@@ -273,7 +273,7 @@
           <sequence value="2"/>
           <chargeItemCodeableConcept>
             <coding>
-              <system value="http://fhir.de/CodeSystem/ifa/pzn"/>
+              <system value="http://TA1.abda.de"/>
               <code value="02567018"/>
             </coding>
           </chargeItemCodeableConcept>
