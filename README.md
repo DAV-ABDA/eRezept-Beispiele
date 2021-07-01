@@ -1,4 +1,4 @@
-## FHIR-Beispiele zum E-Rezept (Stand 09.06.2021)
+## FHIR-Beispiele zum E-Rezept (Stand 01.07.2021)
 
 In diesem Projekt stellt der DAV Beispiele für die bei der Verarbeitung von E-Rezepten auftretenden Dateien in der Apotheke und dem Apothekenrechenzentrum zur Verfügung. Es wurde darauf geachtet, dass die zu einem Beispiel gehörenden Dateien fachlich und technisch zusammenpassen und soweit wie möglich realistische Informationen enthalten.
 
