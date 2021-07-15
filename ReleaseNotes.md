@@ -1,6 +1,7 @@
 ## Release 1.0.7 - FHIR-Beispiele zum E-Rezept
 - Update Visualisierungen eAbgabedaten
 - Update Stylesheet eAbgabedaten 
+- Update "TA7_Sammelrechnung_Bundle-modified" add IDs
 
 ## Release 1.0.6 - FHIR-Beispiele zum E-Rezept
 - Upgarde PZN_Nr1_TA7 example ProfileVersion -> "|1.0.4"
