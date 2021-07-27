@@ -14,7 +14,7 @@
          <valueString value="00001"></valueString>
       </extension>
       <system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname"></system>
-      <value value="ARZABR21001"></value>
+      <value value="ARZFHR21001"></value>
    </identifier>
    <type value="document"></type>
    <timestamp value="2021-06-10T10:00:00Z"></timestamp>
