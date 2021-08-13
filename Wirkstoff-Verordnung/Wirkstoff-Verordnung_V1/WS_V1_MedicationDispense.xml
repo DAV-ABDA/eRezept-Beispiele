@@ -1,63 +1,69 @@
 <MedicationDispense xmlns="http://hl7.org/fhir">
-  <id value="a7e1d25f-0b0a-40f7-b529-afda48e51b46"/>
+  <id value="5906fd7f-35b5-4420-963a-b562a99dcb81"/>
   <meta>
     <profile value="https://gematik.de/fhir/StructureDefinition/ErxMedicationDispense"/>
+    <tag>
+      <display value="Beispiel MedicationDispense Wirkstoff V1  -&gt; PZN Abgabe"/>
+    </tag>
+    <tag>
+      <display value="ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanz kann nicht gewährleistet werden. Wir sind jederzeit dankbar für Hinweise auf Fehler oder für Verbesserungsvorschläge."/>
+    </tag>
   </meta>
   <contained>
     <Medication>
-      <id value="8e2e5e65-4c5d-49f2-8efc-c30e40838273"/>
+      <id value="286d159b-4fb0-4af5-9ec6-30c937c92a0c"/>
       <meta>
         <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.0.1"/>
       </meta>
       <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category">
         <valueCoding>
-          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Category" />
-          <code value="00" />
+          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Category"/>
+          <code value="00"/>
         </valueCoding>
       </extension>
       <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Vaccine">
-        <valueBoolean value="false" />
+        <valueBoolean value="false"/>
       </extension>
       <extension url="http://fhir.de/StructureDefinition/normgroesse">
-        <valueCode value="N3" />
+        <valueCode value="N3"/>
       </extension>
       <code>
         <coding>
-          <system value="http://fhir.de/CodeSystem/ifa/pzn" />
-          <code value="05454378" />
+          <system value="http://fhir.de/CodeSystem/ifa/pzn"/>
+          <code value="00766759"/>
         </coding>
-        <text value="SUMATRIPTAN Aurobindo 100 mg Tabletten" />
-      </code>      
+        <text value="RAMIPRIL-1A Pharma 5 mg Tabletten (100 St)"/>
+      </code>
       <form>
         <coding>
-          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM" />
-          <code value="TAB" />
+          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
+          <code value="TAB"/>
         </coding>
       </form>
       <amount>
         <numerator>
-          <value value="12" />
-          <unit value="St" />
+          <value value="100"/>
+          <unit value="St"/>
         </numerator>
         <denominator>
-          <value value="1" />
+          <value value="1"/>
         </denominator>
-      </amount>      
+      </amount>
     </Medication>
   </contained>
   <identifier>
     <system value="https://gematik.de/fhir/NamingSystem/PrescriptionID"/>
-    <value value="160.000.764.737.300.50"/>
+    <value value="160.100.000.000.019.82"/>
   </identifier>
   <status value="completed"/>
   <medicationReference>
-    <reference value="#8e2e5e65-4c5d-49f2-8efc-c30e40838273"/>
-    <display value="SUMATRIPTAN Aurobindo 100 mg Tabletten"/>
+    <reference value="#286d159b-4fb0-4af5-9ec6-30c937c92a0c"/>
+    <display value="RAMIPRIL-1A Pharma 5 mg Tabletten (100 St)"/>
   </medicationReference>
   <subject>
     <identifier>
       <system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
-      <value value="X234567890"/>
+      <value value="K030182229"/>
     </identifier>
   </subject>
   <performer>
@@ -68,8 +74,8 @@
       </identifier>
     </actor>
   </performer>
-  <whenHandedOver value="2021-03-30"/>
+  <whenHandedOver value="2021-05-27"/>
   <dosageInstruction>
-    <text value="1-0-1-0"/>
+    <text value="1-0-0-0"/>
   </dosageInstruction>
 </MedicationDispense>

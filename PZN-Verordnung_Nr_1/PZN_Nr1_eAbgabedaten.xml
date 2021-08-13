@@ -5,6 +5,9 @@
     <tag>
       <display value="Beispiel für Abgabedaten für ein Fertigarzneimittel mit Erfüllung des Rabattvertrags"/>
     </tag>
+    <tag>
+      <display value="ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanz kann nicht gewährleistet werden. Wir sind jederzeit dankbar für Hinweise auf Fehler oder für Verbesserungsvorschläge."/>
+    </tag>
   </meta>
   <identifier>
     <system value="https://gematik.de/fhir/NamingSystem/PrescriptionID"/>
