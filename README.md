@@ -24,6 +24,7 @@ Als Verordnungen wurden von der KBV im Projekt [https://simplifier.net/eRezept](
 Die Medication Dispense wird in der Apotheke aus Daten der Verordnung bzw. der Abgabedaten erzeugt und um Telematik-ID (aus der SMC-B) und Verfalldatum (aus den securpharm-Daten) ergänzt. Beim Abruf der Quittung muss die Medication Dispense an den E-Rezept-Fachdienst übergeben werden.
 
 In dem Beispiel (PZN-Verordnung_Nr_1) wurde die Medication Dispense vom DAV erstellt.
+Alle weiteren Beispiele wurden im Rahmen der uAG Testdaten vom DAV erzeugt.
 
 **C) Quittung des E-Rezept-Fachdienstes**
 
