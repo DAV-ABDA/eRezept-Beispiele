@@ -49,6 +49,10 @@
           <value value="1"/>
         </denominator>
       </amount>
+      <batch>
+        <lotNumber value="A123456789-1"/>
+        <expirationDate value="2022-12-31"/>
+      </batch>
     </Medication>
   </contained>
   <identifier>
