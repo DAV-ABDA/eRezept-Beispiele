@@ -35,7 +35,7 @@
         <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_TA7_IK_Kostentraeger">
           <valueIdentifier>
             <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
-            <value value="109719018" />
+            <value value="109519005" />
           </valueIdentifier>
         </extension>
         <status value="final" />
@@ -131,7 +131,7 @@
         <recipient>
           <identifier>
             <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
-            <value value="109719018" />
+            <value value="109519005" />
           </identifier>
         </recipient>
         <date value="2021-06-02" />

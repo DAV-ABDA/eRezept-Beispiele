@@ -29,7 +29,7 @@
             <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_TA7_IK_Empfaenger">
                <valueIdentifier>
                   <system value="http://fhir.de/NamingSystem/arge-ik/iknr"></system>
-                  <value value="121191241"></value>
+                  <value value="107436557"></value>
                </valueIdentifier>
             </extension>
             <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_TA7_IK_Kostentraeger">

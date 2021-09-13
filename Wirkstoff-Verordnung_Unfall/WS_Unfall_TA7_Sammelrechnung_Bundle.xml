@@ -29,13 +29,13 @@
         <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_TA7_IK_Empfaenger">
           <valueIdentifier>
             <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
-            <value value="104212516" />
+            <value value="101575519" />
           </valueIdentifier>
         </extension>
         <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_TA7_IK_Kostentraeger">
           <valueIdentifier>
             <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
-            <value value="104212505" />
+            <value value="101575519" />
           </valueIdentifier>
         </extension>
         <status value="final" />
@@ -131,7 +131,7 @@
         <recipient>
           <identifier>
             <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
-            <value value="104212505" />
+            <value value="101575519" />
           </identifier>
         </recipient>
         <date value="2021-06-02" />
