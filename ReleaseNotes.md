@@ -1,7 +1,10 @@
 ## Release 1.0.8 - FHIR-Beispiele zum E-Rezept
+- Add TA7-Bsp Sammelrechnung pro Kasse (TK) und Dateisplit
+- Update TA7 Bsp -> IKs (Empfänger / Kostenträger)
+- Move example of Mehrfachverordnungen (FutureCase)
 - FIX TA7_Sammelrechnung_Bundle (Bundle.identifier:Dateiname - Dateiart -> FHR statt ABR)
 - ADD more Medication Dispense examples
-- 
+ 
 ## Release 1.0.7 - FHIR-Beispiele zum E-Rezept
 - Update Visualisierungen eAbgabedaten
 - Update Stylesheet eAbgabedaten 
