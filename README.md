@@ -45,6 +45,7 @@ Alle weiteren Beispiele sind im Rahmen der uAG Testdaten erzeugt worden.
 mit den dazugehörigen Verordnungs- und Abgabedaten sowie gültiger Signatur erweitert.
 Das Zertifikat für die Signierung ist selbst erzeugt und mathematisch gültig, kann aber nicht validiert werden.*
 
+*Im Ordner "TA7_Sammelrechnung_Bundle-proKasse" wurden mehrere Beispiele (Techniker-Krankenkasse, IK-Kostenträgerreinheit) zusammengefasst und zusätzlich als Dateisplit bereitgestellt.*
 
 **<span style="color:yellow">Visualisierung der eVorordnungs - und eAbgabedaten</span>**
 - Für die Visualisierung der Verordnung wurde der von der KBV bereitgestellte Stylesheet (https://update.kbv.de/ita-update/DigitaleMuster/ERP/Stylesheet_V1.0.1.zip) verwendet. 
