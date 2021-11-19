@@ -32,7 +32,7 @@
         <text value="3 mal 500 ml Infusionslösung (Etoposid 180 mg, NaCl 0,9 % 500 ml)"/>
       </code>
       <form>
-        <text value="IIL - Infusionslösung"/>
+        <text value="Infusionslösung"/>
       </form>
     </Medication>
   </contained>

@@ -32,7 +32,7 @@
         <text value="100 ml Lösung (Salicylsäure 5 g, 2-propanol 70 % Ad 100 g)"/>
       </code>
       <form>
-        <text value="LOE - Lösung"/>
+        <text value="Lösung"/>
       </form>
     </Medication>
   </contained>

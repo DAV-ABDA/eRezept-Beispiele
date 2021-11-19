@@ -37,7 +37,7 @@
       <amount>
         <numerator>
           <value value="12" />
-          <unit value="St" />
+          <unit value="Tabletten" />
         </numerator>
         <denominator>
           <value value="1" />

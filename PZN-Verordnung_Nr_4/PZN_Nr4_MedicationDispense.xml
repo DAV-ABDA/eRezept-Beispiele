@@ -42,8 +42,8 @@
       </form>
       <amount>
         <numerator>
-          <value value="1"/>
-          <unit value="{fl}"/>
+          <value value="100"/>
+          <unit value="ml"/>
         </numerator>
         <denominator>
           <value value="1"/>
