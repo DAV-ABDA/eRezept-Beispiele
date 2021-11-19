@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="90789b16-a924-4535-bdff-1e0f4230d378" />
   <meta>
-    <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Sammelrechnung_Bundle|1.0.4" />
+    <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Sammelrechnung_Bundle|1.0.6" />
     <tag>
       <display value="Beispiel der TA7/eAbrechnungsdaten." />
     </tag>
@@ -24,7 +24,7 @@
       <Composition>
         <id value="a5fa91e5-bdec-4710-bf8a-0bf77281605a" />
         <meta>
-          <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Sammelrechnung_Composition|1.0.4" />
+          <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Sammelrechnung_Composition|1.0.6" />
         </meta>
         <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_TA7_IK_Empfaenger">
           <valueIdentifier>
@@ -87,7 +87,7 @@
       <List>
         <id value="ce898e60-2fe6-41eb-9d39-d1f885aace58" />
         <meta>
-          <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Sammelrechnung_List|1.0.4" />
+          <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Sammelrechnung_List|1.0.6" />
         </meta>
         <status value="current" />
         <mode value="working" />
@@ -105,7 +105,7 @@
       <Invoice>
         <id value="2cab7e5b-0f66-4a7f-8bca-ae3ef54297ae" />
         <meta>
-          <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Rechnung|1.0.4" />
+          <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Rechnung|1.0.6" />
         </meta>
         <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_TA7_Abrechnungszeitraum">
           <valueDateTime value="2021-05-31" />
@@ -144,7 +144,7 @@
       <Bundle>
         <id value="7bcd654b-f581-44e7-9393-d725ed34c813" />
         <meta>
-          <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_RezeptBundle|1.0.4" />
+          <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_RezeptBundle|1.0.6" />
         </meta>
         <type value="collection" />
         <entry>
@@ -288,7 +288,7 @@
             <Invoice>
               <id value="1b2b73cf-bdd8-4aaa-bcf5-47c0d76e28f0" />
               <meta>
-                <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_ERP_eAbrechnungsdaten|1.0.4" />
+                <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_ERP_eAbrechnungsdaten|1.0.6" />
               </meta>
               <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Irrlaeufer">
                 <valueBoolean value="false" />
