@@ -93,9 +93,6 @@
                         <reference value="urn:uuid:e8b45420-3a72-49ce-9a7d-910cf8209f02"/>
                     </valueReference>
                 </extension>
-                <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-Vertragskennzeichen">
-                    <valueString value="1"/>
-                </extension>
                 <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-ZusatzdatenHerstellung">
                     <valueReference>
                         <reference value="urn:uuid:9c0dce2f-64ae-4e7a-b045-e844ece179aa"/>
