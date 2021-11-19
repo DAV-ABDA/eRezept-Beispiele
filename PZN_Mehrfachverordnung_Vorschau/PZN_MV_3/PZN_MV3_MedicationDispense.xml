@@ -1,7 +1,7 @@
 <MedicationDispense xmlns="http://hl7.org/fhir">
   <id value="b60dfbab-3463-4a69-81e8-90501674ffd3"/>
   <meta>
-    <profile value="https://gematik.de/fhir/StructureDefinition/ErxMedicationDispense"/>
+    <profile value="https://gematik.de/fhir/StructureDefinition/ErxMedicationDispense|1.1.1"/>
     <tag>
       <display value="Beispiel MedicationDispense PZN-Mehrfachverordnung 3/4"/>
     </tag>
@@ -13,7 +13,7 @@
     <Medication>
       <id value="eeba484b-996d-42cf-8152-4e6add8ff372"/>
       <meta>
-        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.0.1"/>
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.0.2"/>
       </meta>
       <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category">
         <valueCoding>

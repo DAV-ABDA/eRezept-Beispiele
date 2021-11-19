@@ -1,7 +1,7 @@
 <MedicationDispense xmlns="http://hl7.org/fhir">
   <id value="a8df5484-df7e-41fc-870d-2c4edb8a89ad"/>
   <meta>
-    <profile value="https://gematik.de/fhir/StructureDefinition/ErxMedicationDispense"/>
+    <profile value="https://gematik.de/fhir/StructureDefinition/ErxMedicationDispense|1.1.1"/>
     <tag>
       <display value="Beispiel MedicationDispense Freitext am Bsp Rezeptur 1"/>
     </tag>
@@ -13,7 +13,7 @@
     <Medication>
       <id value="30724002-2ba6-464e-92d2-463bb1117aed"/>
       <meta>
-        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_FreeText|1.0.1"/>
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_FreeText|1.0.2"/>
       </meta>
       <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category">
         <valueCoding>

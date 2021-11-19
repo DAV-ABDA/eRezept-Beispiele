@@ -1,7 +1,7 @@
 <MedicationDispense xmlns="http://hl7.org/fhir">
   <id value="37d8e326-e355-4732-be64-aca54cfdc71d"/>
   <meta>
-    <profile value="https://gematik.de/fhir/StructureDefinition/ErxMedicationDispense"/>
+    <profile value="https://gematik.de/fhir/StructureDefinition/ErxMedicationDispense|1.1.1"/>
     <tag>
       <display value="Beispiel MedicationDispense PZN Bsp Unfall"/>
     </tag>
@@ -13,7 +13,7 @@
     <Medication>
       <id value="f1620991-8025-49d4-8fe5-bf4afd43ba09"/>
       <meta>
-        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.0.1"/>
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.0.2"/>
       </meta>
       <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category">
         <valueCoding>
