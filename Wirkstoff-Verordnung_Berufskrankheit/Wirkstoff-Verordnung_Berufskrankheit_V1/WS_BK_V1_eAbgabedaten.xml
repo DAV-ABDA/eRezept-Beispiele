@@ -249,19 +249,6 @@
                 </valueCodeableConcept>
               </extension>
             </extension>
-            <extension url="ZusatzattributErsatzverordnung">
-              <extension url="Schluessel">
-                <valueBoolean value="true"/>
-              </extension>
-              <extension url="Gruppe">
-                <valueCodeableConcept>
-                  <coding>
-                    <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-ZusatzattributGruppe"/>
-                    <code value="8"/>
-                  </coding>
-                </valueCodeableConcept>
-              </extension>
-            </extension>
           </extension>
           <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-Chargenbezeichnung">
             <valueString value="A123456789-1"/>
