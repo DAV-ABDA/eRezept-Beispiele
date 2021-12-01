@@ -191,7 +191,7 @@
                   <valueCodeableConcept>
                     <coding>
                       <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-ZusatzattributFAMSchluesselAbgaberangfolge"/>
-                      <code value="0"/>
+                      <code value="3"/>
                     </coding>
                   </valueCodeableConcept>
                 </extension>
