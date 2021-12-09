@@ -274,9 +274,9 @@
               </extension>
             </extension>
             <type value="informational"/>
-            <factor value="1"/>
+            <factor value="2"/>
             <amount>
-              <value value="46.20"/>
+              <value value="92.40"/>
               <currency value="EUR"/>
             </amount>
           </priceComponent>
@@ -288,7 +288,7 @@
               <currency value="EUR"/>
             </valueMoney>
           </extension>
-          <value value="46.20"/>
+          <value value="92.40"/>
           <currency value="EUR"/>
         </totalGross>
       </Invoice>
