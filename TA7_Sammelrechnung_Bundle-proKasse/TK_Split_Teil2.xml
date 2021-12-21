@@ -219,7 +219,7 @@
           <fullUrl value="urn:uuid:21b669d4-d835-4d1c-a667-9aa0b1cbe893"/>
           <resource>
             <Binary>
-              <id value="21b669d4-d835-4d1c-a667-9aa0b1cbe893"" />
+              <id value="21b669d4-d835-4d1c-a667-9aa0b1cbe893"/>
               <meta>
                 <profile value="https://gematik.de/fhir/StructureDefinition/ErxBinary" />
               </meta>
