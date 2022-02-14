@@ -21,7 +21,7 @@
       <Composition>
         <id value="233f9a98-c1df-42eb-adda-7f7b00a2e0d1"/>
         <meta>
-          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenComposition|1.0.3"/>
+          <profile value="http://fhir.abda.de/eRezeptAbgabadaten/StructureDefinition/DAV-PR-ERP-AbgabedatenComposition|1.0.3"/>
         </meta>
         <status value="final"/>
         <type>
