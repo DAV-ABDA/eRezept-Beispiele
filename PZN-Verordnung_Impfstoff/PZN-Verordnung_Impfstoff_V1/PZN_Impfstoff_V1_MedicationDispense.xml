@@ -30,9 +30,9 @@
       <code>
         <coding>
           <system value="http://fhir.de/CodeSystem/ifa/pzn"/>
-          <code value="16938263"/>
+          <code value="10259495"/>
         </coding>
-        <text value="GONAL-f 150 I.E./0,25 ml Inj.Lsg."/>
+        <text value="FSME IMMUN 0.5ML ERW O KA, 1 St"/>
       </code>
       <form>
         <coding>
@@ -50,7 +50,7 @@
         </denominator>
       </amount>
       <batch>
-        <lotNumber value="A9876543210-78"/>
+        <lotNumber value="A9876543210123-45678"/>
         <expirationDate value="2022-12-31"/>
       </batch>
     </Medication>
@@ -62,7 +62,7 @@
   <status value="completed"/>
   <medicationReference>
     <reference value="#8490dde3-2ed0-480d-9cb3-a8937eea6b1e"/>
-    <display value="GONAL-f 150 I.E./0,25 ml Inj.Lsg."/>
+    <display value="FSME IMMUN 0.5ML ERW O KA, 1 St"/>
   </medicationReference>
   <subject>
     <identifier>
