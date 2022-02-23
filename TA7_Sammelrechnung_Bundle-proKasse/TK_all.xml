@@ -77,18 +77,6 @@
           <entry>
             <reference value="urn:uuid:6124507a-94b6-4382-8cf0-3c74c61b09df"/>
           </entry>
-          <entry>
-            <reference value="urn:uuid:2cab7e5b-0f66-4a7f-8bca-ae3ef54297ae"/>
-          </entry>
-          <entry>
-            <reference value="urn:uuid:a9423218-80b5-4e49-9b4e-89dcb3536bc2"/>
-          </entry>
-          <entry>
-            <reference value="urn:uuid:18584890-484c-421d-9363-7b857a66285c"/>
-          </entry>
-          <entry>
-            <reference value="urn:uuid:c45c30e8-52c0-419a-92b1-a6222506d95c"/>
-          </entry>
         </section>
       </Composition>
     </resource>
@@ -128,157 +116,21 @@
               <reference value="urn:uuid:87f4ae53-6e5e-4a62-ab43-aaa87512b93e"/>
             </valueReference>
           </extension>
-        </extension>
-        <identifier>
-          <system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Sammelrechnungsnummer"/>
-          <value value="104212506-01-020621"/>
-        </identifier>
-        <status value="issued"/>
-        <type>
-          <coding>
-            <system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Rechnungsart"/>
-            <code value="6"/>
-          </coding>
-        </type>
-        <recipient>
-          <identifier>
-            <system value="http://fhir.de/NamingSystem/arge-ik/iknr"/>
-            <value value="101575519"/>
-          </identifier>
-        </recipient>
-        <date value="2021-06-02"/>
-      </Invoice>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:2cab7e5b-0f66-4a7f-8bca-ae3ef54297ae"/>
-    <resource>
-      <Invoice>
-        <id value="2cab7e5b-0f66-4a7f-8bca-ae3ef54297ae"/>
-        <meta>
-          <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Rechnung|1.0.6"/>
-        </meta>
-        <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_TA7_Abrechnungszeitraum">
-          <valueDateTime value="2021-05-31"/>
-        </extension>
-        <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_RezeptBundleReferenz">
           <extension url="lineItem">
             <valueReference>
               <reference value="urn:uuid:7bcd654b-f581-44e7-9393-d725ed34c813"/>
             </valueReference>
           </extension>
-        </extension>
-        <identifier>
-          <system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Sammelrechnungsnummer"/>
-          <value value="109777509-05-100621"/>
-        </identifier>
-        <status value="issued"/>
-        <type>
-          <coding>
-            <system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Rechnungsart"/>
-            <code value="6"/>
-          </coding>
-        </type>
-        <recipient>
-          <identifier>
-            <system value="http://fhir.de/NamingSystem/arge-ik/iknr"/>
-            <value value="101575519"/>
-          </identifier>
-        </recipient>
-        <date value="2021-06-10"/>
-      </Invoice>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:a9423218-80b5-4e49-9b4e-89dcb3536bc2"/>
-    <resource>
-      <Invoice>
-        <id value="a9423218-80b5-4e49-9b4e-89dcb3536bc2"/>
-        <meta>
-          <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Rechnung|1.0.6"/>
-        </meta>
-        <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_TA7_Abrechnungszeitraum">
-          <valueDateTime value="2021-05-31"/>
-        </extension>
-        <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_RezeptBundleReferenz">
           <extension url="lineItem">
             <valueReference>
               <reference value="urn:uuid:7d9c7d31-3890-43d8-ade8-4a424597d11c"/>
             </valueReference>
           </extension>
-        </extension>
-        <identifier>
-          <system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Sammelrechnungsnummer"/>
-          <value value="101576623-01-100621"/>
-        </identifier>
-        <status value="issued"/>
-        <type>
-          <coding>
-            <system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Rechnungsart"/>
-            <code value="3"/>
-          </coding>
-        </type>
-        <recipient>
-          <identifier>
-            <system value="http://fhir.de/NamingSystem/arge-ik/iknr"/>
-            <value value="101575519"/>
-          </identifier>
-        </recipient>
-        <date value="2021-06-10"/>
-      </Invoice>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:18584890-484c-421d-9363-7b857a66285c"/>
-    <resource>
-      <Invoice>
-        <id value="18584890-484c-421d-9363-7b857a66285c"/>
-        <meta>
-          <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Rechnung|1.0.6"/>
-        </meta>
-        <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_TA7_Abrechnungszeitraum">
-          <valueDateTime value="2021-05-31"/>
-        </extension>
-        <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_RezeptBundleReferenz">
           <extension url="lineItem">
             <valueReference>
               <reference value="urn:uuid:ebf62e86-8a28-4d90-8eeb-abf2e00b8998"/>
             </valueReference>
           </extension>
-        </extension>
-        <identifier>
-          <system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Sammelrechnungsnummer"/>
-          <value value="21050022"/>
-        </identifier>
-        <status value="issued"/>
-        <type>
-          <coding>
-            <system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Rechnungsart"/>
-            <code value="6"/>
-          </coding>
-        </type>
-        <recipient>
-          <identifier>
-            <system value="http://fhir.de/NamingSystem/arge-ik/iknr"/>
-            <value value="101575519"/>
-          </identifier>
-        </recipient>
-        <date value="2021-06-02"/>
-      </Invoice>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:c45c30e8-52c0-419a-92b1-a6222506d95c"/>
-    <resource>
-      <Invoice>
-        <id value="c45c30e8-52c0-419a-92b1-a6222506d95c"/>
-        <meta>
-          <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Rechnung|1.0.6"/>
-        </meta>
-        <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_TA7_Abrechnungszeitraum">
-          <valueDateTime value="2021-05-31"/>
-        </extension>
-        <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_RezeptBundleReferenz">
           <extension url="lineItem">
             <valueReference>
               <reference value="urn:uuid:e5c55b6e-215e-4052-8e21-5bbd9ba7d5af"/>
@@ -287,7 +139,7 @@
         </extension>
         <identifier>
           <system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Sammelrechnungsnummer"/>
-          <value value="109777509-01-020621"/>
+          <value value="104212506-01-020621"/>
         </identifier>
         <status value="issued"/>
         <type>
