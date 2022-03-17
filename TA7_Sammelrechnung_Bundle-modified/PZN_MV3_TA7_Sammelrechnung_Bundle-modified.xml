@@ -17,7 +17,7 @@
       <value value="ARZFHR21003"></value>
    </identifier>
    <type value="document"></type>
-   <timestamp value="2021-10-04T10:00:00Z"></timestamp>
+   <timestamp value="2022-02-04T10:00:00Z"></timestamp>
    <entry>
       <fullUrl value="urn:uuid:da572362-6a88-4d0e-9fda-9ed76f80c446"></fullUrl>
       <resource>
@@ -46,7 +46,7 @@
                   <display value="Sammelrechnung"></display>
                </coding>
             </type>
-            <date value="2021-09-30"></date>
+            <date value="2022-01-30"></date>
             <author>
                <identifier>
                   <system value="http://fhir.de/NamingSystem/arge-ik/iknr"></system>
@@ -108,7 +108,7 @@
                <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Rechnung|1.1.0"></profile>
             </meta>
             <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_TA7_Abrechnungszeitraum">
-               <valueDateTime value="2021-09-30"></valueDateTime>
+               <valueDateTime value="2022-01-30"></valueDateTime>
             </extension>
             <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_RezeptBundleReferenz">
                <extension url="lineItem">
@@ -134,7 +134,7 @@
                   <value value="101575519"></value>
                </identifier>
             </recipient>
-            <date value="2021-10-04"></date>
+            <date value="2022-02-04"></date>
          </Invoice>
       </resource>
    </entry>
