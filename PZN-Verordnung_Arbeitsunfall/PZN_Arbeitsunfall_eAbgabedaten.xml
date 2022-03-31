@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="8ac1b012-1e9e-46f4-808d-31ee51326e00"/>
   <meta>
-    <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenBundle|1.1.0"/>
+    <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenBundle|1.2"/>
     <tag>
       <display value="Beispiel für Abgabedaten für eine PZN-Verordnung (Arbeitsunfall) (5f66314e-459a-41e9-a3d7-65c935a8be2c)"/>
     </tag>
@@ -21,7 +21,7 @@
       <Composition>
         <id value="5899b5eb-3e51-47ef-919a-9af025997292"/>
         <meta>
-          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenComposition|1.1.0"/>
+          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenComposition|1.2"/>
         </meta>
         <status value="final"/>
         <type>
@@ -56,7 +56,7 @@
       <Organization>
         <id value="303c82d8-f7ee-4f0d-a5a7-c30f36bfc7e5"/>
         <meta>
-          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Apotheke|1.1.0"/>
+          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Apotheke|1.2"/>
         </meta>
         <identifier>
           <system value="http://fhir.de/NamingSystem/arge-ik/iknr"/>
@@ -86,7 +86,7 @@
       <MedicationDispense>
         <id value="9cc2ad29-15bb-4dde-b96a-2b5353062a7e"/>
         <meta>
-          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abgabeinformationen|1.1.0"/>
+          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abgabeinformationen|1.2"/>
         </meta>
         <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-Abrechnungszeilen">
           <valueReference>
@@ -127,7 +127,7 @@
       <Invoice>
         <id value="31f4e0c8-89b9-4c4c-a4d5-89d192882c39"/>
         <meta>
-          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abrechnungszeilen|1.1.0"/>
+          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abrechnungszeilen|1.2"/>
         </meta>
         <status value="issued"/>
         <type>
@@ -205,7 +205,7 @@
                 <extension url="Schluessel">
                   <valueCodeableConcept>
                     <coding>
-                      <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-ZusatzattributFAMSchluesselAbgaberangfolge"/>
+                      <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-ZusatzattributFAMSchluesselImportFAM"/>
                       <code value="0"/>
                     </coding>
                   </valueCodeableConcept>
