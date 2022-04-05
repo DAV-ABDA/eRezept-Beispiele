@@ -11,10 +11,10 @@
   </meta>
   <identifier>
     <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_TA7_Dateinummer">
-      <valueString value="00001"/>
+      <valueString value="00002"/>
     </extension>
     <system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname"/>
-    <value value="ARZFHR21001"/>
+    <value value="ARZFHR21002"/>
   </identifier>
   <type value="document"/>
   <timestamp value="2021-06-02T10:00:00Z"/>
