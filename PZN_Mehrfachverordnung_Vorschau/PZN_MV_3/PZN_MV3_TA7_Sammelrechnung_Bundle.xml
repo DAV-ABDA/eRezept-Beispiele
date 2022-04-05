@@ -93,7 +93,7 @@
         <mode value="working"/>
         <entry>
           <item>
-            <reference value="Bundle/f2f93dac-26a6-47c1-9b90-de8ca129a771"/>
+            <reference value="urn:uuid:f2f93dac-26a6-47c1-9b90-de8ca129a771"/>
           </item>
         </entry>
       </List>
