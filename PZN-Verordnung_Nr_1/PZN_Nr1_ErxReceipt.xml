@@ -1,13 +1,13 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="9b2a3432-eb78-4712-aa89-d4f5f18b677d"/>
     <meta>
-        <profile value="https://gematik.de/fhir/StructureDefinition/ErxReceipt|1.1.1" />
+        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle|1.2" />
         <tag>
             <display value="Beispiel Quittung für erfolgreich durchlaufenen E-Rezept-Workflow = dispensiertes E-Rezept" />
         </tag>
     </meta>
     <identifier>
-        <system value="https://gematik.de/fhir/NamingSystem/PrescriptionID" />
+        <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId" />
         <value value="160.000.764.737.300.50" />
     </identifier>
     <type value="document" />
@@ -22,18 +22,18 @@
             <Composition>
                 <id value="2d63978355-8925-46db-9c44-817bc64bcd40" />
                 <meta>
-                    <profile value="https://gematik.de/fhir/StructureDefinition/ErxComposition|1.1.1" />
+                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Composition|1.2" />
                 </meta>
-                <extension url="https://gematik.de/fhir/StructureDefinition/BeneficiaryExtension">
+                <extension url="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_EX_Beneficiary">
                     <valueIdentifier>
-                        <system value="https://gematik.de/fhir/NamingSystem/TelematikID" />
+                        <system value="https://gematik.de/fhir/sid/telematik-id" />
                         <value value="606358757" />
                     </valueIdentifier>
                 </extension>
                 <status value="final" />
                 <type>
                     <coding>
-                        <system value="https://gematik.de/fhir/CodeSystem/Documenttype" />
+                        <system value="https://gematik.de/fhir/erp/CodeSystem/GEM_ERP_CS_DocumentType" />
                         <code value="3" />
                         <display value="Receipt" />
                     </coding>
@@ -51,7 +51,7 @@
                 </event>
                 <section>
                     <entry>
-                        <reference value="Binary/Prescription123" />
+                        <reference value="Binary/PrescriptionDigest-160.000.764.737.300.50" />
                         <type value="Binary"/>
                     </entry>
                 </section>
@@ -64,16 +64,16 @@
             <Device>
                 <id value="1" />
                 <meta>
-                    <profile value="https://gematik.de/fhir/StructureDefinition/ErxDevice|1.1.1" />
+                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Device|1.2" />
                 </meta>
                 <status value="active"/>
-                <serialNumber value="1.0.0"/>
+                <serialNumber value="1.4.0"/>
                 <deviceName>
                     <name value="E-Rezept Fachdienst"/>
                     <type value="user-friendly-name"/>
                 </deviceName>
                 <version>
-                    <value value="1.0.0"/>
+                    <value value="1.4.0"/>
                 </version>
                 <contact>
                     <system value="email"/>
@@ -83,10 +83,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://erp.zentral.erp.splitdns.ti-dienste.de/Binary/Prescription123" />
+        <fullUrl value="https://erp.zentral.erp.splitdns.ti-dienste.de/Binary/PrescriptionDigest-160.000.764.737.300.50" />
         <resource>
             <Binary>
-                <id value="Prescription123"/>
+                <id value="PrescriptionDigest-160.000.764.737.300.50"/>
                 <contentType value="application/octet-stream"/>
                 <data value="Y2RjMTVjNThkMzlkMjllNDdjMTk1MjIzNDlkODRjMThiNTliYTZkMGFhZmI5NGYyZjM2NDFkNGJiZTk1ODhiMQ=="/>
             </Binary>

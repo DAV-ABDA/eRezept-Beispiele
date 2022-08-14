@@ -1,10 +1,10 @@
-## FHIR-Beispiele zum E-Rezept (Stand 31.03.2022)
+## FHIR-Beispiele zum E-Rezept (Stand 12.08.2022)
 
 In diesem Projekt stellt der DAV Beispiele für die bei der Verarbeitung von E-Rezepten auftretenden Dateien in der Apotheke und dem Apothekenrechenzentrum zur Verfügung. Es wurde darauf geachtet, dass die zu einem Beispiel gehörenden Dateien fachlich und technisch zusammenpassen und soweit wie möglich realistische Informationen enthalten. <p>
 Auf Grund verschiedener Versionen der Profile, wurden die Beispiele entsprechend der Version angepasst. ACHTUNG! Die fachlichen Daten der Instanzen wurden nicht aktualisiert (z.B. Datum und Preise).  
-Der "main" Branch enthält den aktuellsten Stand. Beispiele entsprechender Profilversionen sind in den Branches "2021-07-01" und "2022-01-01" zu entnehmen.
+Der "main" Branch enthält den aktuellsten Stand. Beispiele entsprechender Profilversionen sind in den Branches des jeweiligen Inkrafttretens (z.B. "2022-01-01") zu entnehmen.
 
-<span style="color:red">ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanzen kann nicht gewährleistet werden. Wir sind jederzeit dankbar für Hinweise auf Fehler oder für Verbesserungsvorschläge.</span>
+<span style="color:red">ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanzen kann nicht gewährleistet werden. Wir sind jederzeit dankbar für Hinweise auf Fehler oder für Verbesserungsvorschläge (gern als "github issue").</span>
 
 Hinweise:
 - Für die Erstellung des Beispiels (Branch "2021-07-01") PZN-Verordnung Nr. 1, wurde die Referenzimplementierung (https://github.com/gematik/ref-eRp-FD-Server) Release 0.14.0 genutzt. Da dieses Release noch keine Quittungssignatur liefert und das Schlüsselmaterial eigenständig erzeugt wurde, wird im Kontext des Beispiels vorerst auf Signaturen verzichtet.

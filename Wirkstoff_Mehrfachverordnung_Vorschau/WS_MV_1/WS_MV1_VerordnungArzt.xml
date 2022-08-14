@@ -2,10 +2,10 @@
   <id value="cd6d3a17-8105-4f1e-86ff-48cd5cebf245" />
   <meta>
     <lastUpdated value="2021-05-27T08:30:00Z" />
-    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.0.2" />
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.1.0_cc" />
   </meta>
   <identifier>
-    <system value="https://gematik.de/fhir/NamingSystem/PrescriptionID" />
+    <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId" />
     <value value="160.100.000.000.022.73" />
   </identifier>
   <type value="document" />
@@ -16,7 +16,7 @@
       <Composition xmlns="http://hl7.org/fhir">
         <id value="dc55a629-9d26-467e-83be-55a5a21d6016" />
         <meta>
-          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Composition|1.0.2" />
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Composition|1.1.0_cc" />
         </meta>
         <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Legal_basis">
           <valueCoding>
@@ -83,11 +83,11 @@
       <MedicationRequest xmlns="http://hl7.org/fhir">
         <id value="f63578ab-c3d5-4364-ac13-e20873cb716c" />
         <meta>
-          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Prescription|1.0.2" />
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Prescription|1.1.0_cc" />
         </meta>
-        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_StatusCoPayment">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_StatusCoPayment">
           <valueCoding>
-            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_StatusCoPayment" />
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_StatusCoPayment" />
             <code value="0" />
           </valueCoding>
         </extension>
@@ -115,6 +115,12 @@
             <valuePeriod>
               <start value="2021-05-27" />
             </valuePeriod>
+          </extension>
+          <extension url="ID">
+            <valueIdentifier>
+              <system value="urn:ietf:rfc:3986"/>
+              <value value="urn:uuid:807f02b0-0431-4f36-b052-77ae77f4157b"/>
+            </valueIdentifier>
           </extension>
         </extension>
         <status value="active" />
@@ -144,9 +150,9 @@
             <code value="{Package}" />
           </quantity>
         </dispenseRequest>
-        <substitution>
+        <!--substitution>
           <allowedBoolean value="true" />
-        </substitution>
+        </substitution-->
       </MedicationRequest>
     </resource>
   </entry>
@@ -156,14 +162,8 @@
       <Medication xmlns="http://hl7.org/fhir">
         <id value="255b49de-6cd5-4ac1-b6fb-c8d0128cf1b3" />
         <meta>
-          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_Ingredient|1.0.2" />
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_Ingredient|1.1.0_cc" />
         </meta>
-        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category">
-          <valueCoding>
-            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Category" />
-            <code value="00" />
-          </valueCoding>
-        </extension>
         <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Vaccine">
           <valueBoolean value="false" />
         </extension>
@@ -206,7 +206,7 @@
       <Patient xmlns="http://hl7.org/fhir">
         <id value="93866fdc-3e50-4902-a7e9-891b54737b5e" />
         <meta>
-          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Patient|1.0.3" />
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Patient|1.1.0_cc" />
         </meta>
         <identifier>
           <type>
@@ -215,7 +215,7 @@
               <code value="GKV" />
             </coding>
           </type>
-          <system value="http://fhir.de/NamingSystem/gkv/kvid-10" />
+          <system value="http://fhir.de/sid/gkv/kvid-10" />
           <value value="K220635158" />
         </identifier>
         <name>
@@ -248,7 +248,7 @@
       <Practitioner xmlns="http://hl7.org/fhir">
         <id value="d6f3b55d-3095-4655-96dc-da3bec21271c" />
         <meta>
-          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Practitioner|1.0.3" />
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Practitioner|1.1.0_cc" />
         </meta>
         <identifier>
           <type>
@@ -291,7 +291,7 @@
       <Organization xmlns="http://hl7.org/fhir">
         <id value="2a555cd3-0543-483c-88b3-f68647620962" />
         <meta>
-          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Organization|1.0.3" />
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Organization|1.1.0_cc" />
         </meta>
         <identifier>
           <type>
@@ -340,7 +340,7 @@
       <Coverage xmlns="http://hl7.org/fhir">
         <id value="1b89236c-ab14-4e92-937e-5af0b59d0cd4" />
         <meta>
-          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Coverage|1.0.3" />
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Coverage|1.1.0_cc" />
         </meta>
         <extension url="http://fhir.de/StructureDefinition/gkv/besondere-personengruppe">
           <valueCoding>
@@ -378,7 +378,7 @@
         </beneficiary>
         <payor>
           <identifier>
-            <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
+            <system value="http://fhir.de/sid/arge-ik/iknr" />
             <value value="109719018" />
           </identifier>
           <display value="AOK Nordost - Die Gesundheitskasse" />

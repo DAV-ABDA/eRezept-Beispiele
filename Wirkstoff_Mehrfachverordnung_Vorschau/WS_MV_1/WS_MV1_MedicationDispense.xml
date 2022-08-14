@@ -1,7 +1,7 @@
 <MedicationDispense xmlns="http://hl7.org/fhir">
   <id value="ac31e7a6-400f-48e4-a836-b5f78d0fc4ac"/>
   <meta>
-    <profile value="https://gematik.de/fhir/StructureDefinition/ErxMedicationDispense|1.1.1"/>
+    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.2"/>
     <tag>
       <display value="Beispiel MedicationDispense Wirkstoff Mehrfachverordnung 1/2 -&gt; PZN Abgabe"/>
     </tag>
@@ -13,14 +13,18 @@
     <Medication>
       <id value="5ff6df43-f84c-43a5-9770-3579afb67da8"/>
       <meta>
-        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.0.2"/>
-      </meta>
-      <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category">
-        <valueCoding>
-          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Category"/>
-          <code value="00"/>
-        </valueCoding>
-      </extension>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.1.0_cc"/>
+        </meta>
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type">
+          <valueCodeableConcept>
+           <coding>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+            <code value="763158003" />
+            <display value="Medicinal product (product)" />
+           </coding>
+          </valueCodeableConcept>
+        </extension>
       <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Vaccine">
         <valueBoolean value="false"/>
       </extension>
@@ -56,7 +60,7 @@
     </Medication>
   </contained>
   <identifier>
-    <system value="https://gematik.de/fhir/NamingSystem/PrescriptionID"/>
+    <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
     <value value="160.100.000.000.022.73"/>
   </identifier>
   <status value="completed"/>
@@ -66,14 +70,14 @@
   </medicationReference>
   <subject>
     <identifier>
-      <system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
+      <system value="http://fhir.de/sid/gkv/kvid-10"/>
       <value value="K220635158"/>
     </identifier>
   </subject>
   <performer>
     <actor>
       <identifier>
-        <system value="https://gematik.de/fhir/NamingSystem/TelematikID"/>
+        <system value="https://gematik.de/fhir/sid/telematik-id"/>
         <value value="3-07.2.1234560000.10.789"/>
       </identifier>
     </actor>

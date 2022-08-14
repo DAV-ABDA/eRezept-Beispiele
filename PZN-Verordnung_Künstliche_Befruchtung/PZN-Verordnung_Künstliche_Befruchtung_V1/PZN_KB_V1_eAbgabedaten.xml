@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="4d1a2fcc-6d92-432a-b653-159ac20adeb2"/>
   <meta>
-    <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenBundle|1.2"/>
+    <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenBundle|1.3"/>
     <tag>
       <display value="Beispiel für Abgabedaten für eine PZN-Verordnung V1 (Künstliche Befruchtung) (753fff3b-5373-4f8d-aa22-852792e799d8)"/>
     </tag>
@@ -10,7 +10,7 @@
     </tag>
   </meta>
   <identifier>
-    <system value="https://gematik.de/fhir/NamingSystem/PrescriptionID"/>
+    <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
     <value value="160.100.000.000.013.03"/>
   </identifier>
   <type value="document"/>
@@ -21,7 +21,7 @@
       <Composition>
         <id value="e6ce6006-fd1c-45fa-afb7-dac9c44555ed"/>
         <meta>
-          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenComposition|1.2"/>
+          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenComposition|1.3"/>
         </meta>
         <status value="final"/>
         <type>
@@ -56,10 +56,10 @@
       <Organization>
         <id value="c1ea9e52-65da-466b-b33c-0e2108689c4e"/>
         <meta>
-          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Apotheke|1.2"/>
+          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Apotheke|1.3"/>
         </meta>
         <identifier>
-          <system value="http://fhir.de/NamingSystem/arge-ik/iknr"/>
+          <system value="http://fhir.de/sid/arge-ik/iknr"/>
           <value value="123456789"/>
         </identifier>
         <name value="Apotheke München"/>
@@ -89,7 +89,7 @@
       <MedicationDispense>
         <id value="f48b2095-c83e-4617-bd0b-67f2af73f77c"/>
         <meta>
-          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abgabeinformationen|1.2"/>
+          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abgabeinformationen|1.3"/>
         </meta>
         <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-Abrechnungszeilen">
           <valueReference>
@@ -110,7 +110,7 @@
         </performer>
         <authorizingPrescription>
           <identifier>
-            <system value="https://gematik.de/fhir/NamingSystem/PrescriptionID"/>
+            <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
             <value value="160.100.000.000.013.03"/>
           </identifier>
         </authorizingPrescription>
@@ -130,7 +130,7 @@
       <Invoice>
         <id value="9232d5fb-da46-4532-aee5-8aed146eeaef"/>
         <meta>
-          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abrechnungszeilen|1.2"/>
+          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abrechnungszeilen|1.3"/>
         </meta>
         <status value="issued"/>
         <type>
