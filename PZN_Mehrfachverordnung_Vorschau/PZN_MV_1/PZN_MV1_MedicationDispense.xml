@@ -13,9 +13,15 @@
     <Medication>
       <id value="101c1c5f-3262-4013-97ba-a00850d052ea"/>
       <meta>
-          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.1.0_cc"/>
-        </meta>
-        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type">
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.1.0"/>
+      </meta>
+      <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category">
+        <valueCoding>
+          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Category" />
+          <code value="00" />
+        </valueCoding>
+      </extension>
+      <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type">
           <valueCodeableConcept>
            <coding>
             <system value="http://snomed.info/sct"/>
@@ -24,7 +30,7 @@
             <display value="Medicinal product (product)" />
            </coding>
           </valueCodeableConcept>
-        </extension>
+      </extension>
       <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Vaccine">
         <valueBoolean value="false"/>
       </extension>

@@ -13,8 +13,14 @@
     <Medication>
       <id value="5a009cbb-dca9-4dad-b92b-8f9601ee0d31"/>
       <meta>
-          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.1.0_cc"/>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.1.0"/>
         </meta>
+      <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category">
+        <valueCoding>
+          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Category" />
+          <code value="00" />
+        </valueCoding>
+      </extension>
         <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type">
           <valueCodeableConcept>
            <coding>
