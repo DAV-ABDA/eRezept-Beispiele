@@ -1,15 +1,27 @@
-## FHIR-Beispiele zum E-Rezept (Stand 12.08.2022)
+<h2 align="center">FHIR-Beispiele zum E-Rezept</h2>
+In diesem Projekt stellt der DAV Beispiele für die bei der Verarbeitung von E-Rezepten auftretenden Dateien in der Apotheke und dem Apothekenrechenzentrum zur Verfügung. Es wurde darauf geachtet, dass die zu einem Beispiel gehörenden Dateien fachlich und technisch zusammenpassen und soweit wie möglich realistische Informationen enthalten.<p>
 
-In diesem Projekt stellt der DAV Beispiele für die bei der Verarbeitung von E-Rezepten auftretenden Dateien in der Apotheke und dem Apothekenrechenzentrum zur Verfügung. Es wurde darauf geachtet, dass die zu einem Beispiel gehörenden Dateien fachlich und technisch zusammenpassen und soweit wie möglich realistische Informationen enthalten. <p>
+### Inhaltsverzeichnis
+
+- [Beispielerstellung](#Beispielerstellung)
+- [Workflows](#Workflows)
+  - [Visualisierung](#Visualisierung)
+- [Ergänzende Informationen zu den Beispielen](#Ergänzende-Informationen-zu-den-Beispielen)
+
+### Beispielerstellung
+
 Auf Grund verschiedener Versionen der Profile, wurden die Beispiele entsprechend der Version angepasst. ACHTUNG! Die fachlichen Daten der Instanzen wurden nicht aktualisiert (z.B. Datum und Preise).  
-Der "main" Branch enthält den aktuellsten Stand. Beispiele entsprechender Profilversionen sind in den Branches des jeweiligen Inkrafttretens (z.B. "2022-01-01") zu entnehmen.
+Der "main" Branch enthält den aktuellsten Stand. Beispiele entsprechender Profilversionen sind in den Branches "2021-07-01" und "2022-01-01" zu entnehmen.
 
-<span style="color:red">ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanzen kann nicht gewährleistet werden. Wir sind jederzeit dankbar für Hinweise auf Fehler oder für Verbesserungsvorschläge (gern als "github issue").</span>
+<span style="color:red">ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanzen kann nicht gewährleistet werden. Wir sind jederzeit dankbar für Hinweise auf Fehler oder für Verbesserungsvorschläge.</span>
+
+<span style="color:yellow">Für die Ausarbeitung von Interoperabilitätsbeispielen beachten Sie bitte unseren [Leitfaden](https://github.com/DAV-ABDA/eRezept-Beispiele/blob/2023-07-01-RC/README_LEITFADEN.md).</span>
 
 Hinweise:
-- Für die Erstellung des Beispiels (Branch "2021-07-01") PZN-Verordnung Nr. 1, wurde die Referenzimplementierung (https://github.com/gematik/ref-eRp-FD-Server) Release 0.14.0 genutzt. Da dieses Release noch keine Quittungssignatur liefert und das Schlüsselmaterial eigenständig erzeugt wurde, wird im Kontext des Beispiels vorerst auf Signaturen verzichtet.
+- Für die Erstellung des Beispiels PZN-Verordnung Nr. 1, wurde die Referenzimplementierung (https://github.com/gematik/ref-eRp-FD-Server) Release 0.14.0 genutzt. Da dieses Release noch keine Quittungssignatur liefert und das Schlüsselmaterial eigenständig erzeugt wurde, wird im Kontext des Beispiels vorerst auf Signaturen verzichtet.
 - Alle weiteren Beispiele wurden auf Basis der von der KBV veröffentlichten Beispiele im Rahmen der Unterarbeitsgruppe Testdaten der technischen Kommission §300 erstellt.
 
+### Workflows
 Der folgende Workflow wird betrachtet:
 
 ![workflow.png](workflow.png)
@@ -48,11 +60,11 @@ Das Zertifikat für die Signierung ist selbst erzeugt und mathematisch gültig, 
 
 *Im Ordner "TA7_Sammelrechnung_Bundle-proKasse" wurden mehrere Beispiele (Techniker-Krankenkasse, IK-Kostenträgerreinheit) zusammengefasst und zusätzlich als Dateisplit bereitgestellt.*
 
-**<span style="color:yellow">Visualisierung der eVorordnungs - und eAbgabedaten</span>**
+**<span style="color:yellow">Visualisierung der eVorordnungs- und eAbgabedaten</span>**
 - Für die Visualisierung der Verordnung wurde der von der KBV bereitgestellte Stylesheet (https://update.kbv.de/ita-update/DigitaleMuster/ERP/Stylesheet_V1.0.2.zip) verwendet. 
 - Für die Darstellung der eAbgabedaten, im Rahmen von Test oder Fehlersuche, wurde ein Stylesheet (Ordner\Stylesheet eAbgabedaten) durch den GKV-SV erstellt. **<span style="color:red">Für die korrekte und fachlich vollständige Darstellung wird keine Gewährleistung übernommen!</span>** 
 
-**Ergänzende Informationen zu den einzelnen Beispielen**
+### ErgänzendeInformationen zu den einzelnen Beispielen
 
 **1) PZN-Verordnung Nr. 1** (Sumatriptan-1a Pharma 100 mg Tabletten TAB 12 TAB N3)
 
@@ -197,6 +209,12 @@ KBV basiertes Beispiel (9581ce65-b118-4751-9073-19c091b341e0) mit Anpassungen (E
 - Rezeptur-Verordnung_Nr_1
   - Merkmal Abgabedaten: Zusatzdaten Herstellung für Rezeptur
 
+**2?) Rezepturverordnung Nr. 2** (1x Viskose Aluminiumchlorid-Hexahydrat-Lösung 20 % 100 ml Gel Deo-Roller)
+
+KBV basiertes Beispiel (e4372012-e010-44d9-9211-6a85ca811820) mit Anpassungen (...)
+- Rezeptur-Verordnung_Nr_2 *<span style="color:Yellow">(noch nicht kontrolliert/umgesetzt)</span>*
+  - Merkmal Abgabedaten: ...
+  
 **22) Wirkstoffverordnung** (Ramipril 5 mg (ASK-Nr: 22686) Tabletten 100 Stück N3 )
 
 KBV basiertes Beispiel (9c85a2a5-92ee-4a57-83cb-ba90a0df2a21) mit Anpassungen (Erstellungs- & Verordnungsdatum = 27.05.2021)
