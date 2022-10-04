@@ -181,7 +181,9 @@
         </form>
         <amount>
           <numerator>
-            <value value="98" />
+            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_PackagingSize">
+              <valueString value="98" />
+            </extension>
             <unit value="St" />
             <system value="http://unitsofmeasure.org" />
             <code value="{tbl}" />
