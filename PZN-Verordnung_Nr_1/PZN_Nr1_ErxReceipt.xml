@@ -87,6 +87,9 @@
         <resource>
             <Binary>
                 <id value="PrescriptionDigest-160.000.764.737.300.50"/>
+                <meta>
+                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Digest|1.2" />
+                </meta>
                 <contentType value="application/octet-stream"/>
                 <data value="Y2RjMTVjNThkMzlkMjllNDdjMTk1MjIzNDlkODRjMThiNTliYTZkMGFhZmI5NGYyZjM2NDFkNGJiZTk1ODhiMQ=="/>
             </Binary>
