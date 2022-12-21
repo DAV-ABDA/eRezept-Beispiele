@@ -11,7 +11,7 @@ In diesem Projekt stellt der DAV Beispiele für die bei der Verarbeitung von E-R
 ### Beispielerstellung
 
 Auf Grund verschiedener Versionen der Profile, wurden die Beispiele entsprechend der Version angepasst. ACHTUNG! Die fachlichen Daten der Instanzen wurden nicht aktualisiert (z.B. Datum und Preise).  
-Der "main" Branch enthält den aktuellsten Stand. Beispiele entsprechender Profilversionen sind in den Branches "2021-07-01" und "2022-01-01" zu entnehmen.
+Der "main" Branch enthält den aktuellsten Stand. Beispiele entsprechender Profilversionen sind in den Branches "2021-07-01", "2022-01-01", "2022-07-01" und "2023-07-01" zu entnehmen.
 
 <span style="color:red">ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanzen kann nicht gewährleistet werden. Wir sind jederzeit dankbar für Hinweise auf Fehler oder für Verbesserungsvorschläge.</span>
 
