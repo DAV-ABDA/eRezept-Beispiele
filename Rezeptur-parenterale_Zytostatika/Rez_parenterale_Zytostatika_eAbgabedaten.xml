@@ -67,7 +67,7 @@
                     <type value="physical"/>
                     <line value="Elisabeth-Schwarzhaupt-Platz 27a">
                         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
-                            <valueString value="Taunusstraße"/>
+                            <valueString value="Elisabeth-Schwarzhaupt-Platz"/>
                         </extension>
                         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
                             <valueString value="27a"/>
