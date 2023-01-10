@@ -50,7 +50,7 @@
         </denominator>
       </amount>
       <batch>
-        <lotNumber value="A123456789-1"/>
+        <lotNumber value="A9876543210-78"/>
         <expirationDate value="2022-12-31"/>
       </batch>
     </Medication>
