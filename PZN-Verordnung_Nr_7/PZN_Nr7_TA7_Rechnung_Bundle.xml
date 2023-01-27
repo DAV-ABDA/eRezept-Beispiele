@@ -15,10 +15,10 @@
       <valueString value="00002"/>
     </extension>
     <system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname"/>
-    <value value="ARZFHR21002"/>
+    <value value="ARZFHR23002"/>
   </identifier>
   <type value="collection"/>
-  <timestamp value="2021-06-02T10:00:00Z"/>
+  <timestamp value="2023-08-02T10:00:00Z"/>
   <entry>
     <fullUrl value="urn:uuid:fb3b9e4b-e547-4729-8f46-83c426a0af59"/>
     <resource>
@@ -50,9 +50,9 @@
             <code value="6"/>
           </coding>
         </type>
-        <date value="2021-05-31">
+        <date value="2023-07-31">
           <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_TA7_Rechnungsdatum">
-            <valueDateTime value="2021-06-02"/>
+            <valueDateTime value="2023-08-02"/>
           </extension>
         </date>
         <author>
@@ -102,7 +102,7 @@
           <item>
             <identifier>
               <system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname"/>
-              <value value="ARZFHR21002"/>
+              <value value="ARZFHR23002"/>
             </identifier>
           </item>
         </entry>

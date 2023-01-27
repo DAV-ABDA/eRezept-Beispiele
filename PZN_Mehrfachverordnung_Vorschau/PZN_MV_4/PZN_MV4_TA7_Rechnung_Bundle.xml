@@ -41,7 +41,7 @@
         </extension>
         <identifier>
           <system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Rechnungsnummer"/>
-          <value value="109777509-030122"/>
+          <value value="109777509-030124"/>
         </identifier>
         <status value="final"/>
         <type>
@@ -50,9 +50,9 @@
             <code value="6"/>
           </coding>
         </type>
-        <date value="2021-12-31">
+        <date value="2023-12-31">
           <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_TA7_Rechnungsdatum">
-            <valueDateTime value="2022-01-03"/>
+            <valueDateTime value="2024-01-03"/>
           </extension>
         </date>
         <author>
