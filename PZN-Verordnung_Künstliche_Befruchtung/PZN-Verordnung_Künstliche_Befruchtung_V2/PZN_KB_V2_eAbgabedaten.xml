@@ -60,7 +60,7 @@
         </meta>
         <identifier>
           <system value="http://fhir.de/sid/arge-ik/iknr"/>
-          <value value="123456789"/>
+          <value value="308412345"/>
         </identifier>
         <name value="Apotheke München"/>
         <address>
