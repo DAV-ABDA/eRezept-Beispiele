@@ -257,7 +257,7 @@
                     </coding>
                   </type>
                   <system value="http://fhir.de/NamingSystem/arge-ik/iknr"/>
-                  <value value="123456789"/>
+                  <value value="308412345"/>
                 </identifier>
               </issuer>
               <lineItem>
@@ -410,7 +410,7 @@
                     </coding>
                   </type>
                   <system value="http://fhir.de/NamingSystem/arge-ik/iknr"/>
-                  <value value="123456789"/>
+                  <value value="308412345"/>
                 </identifier>
               </issuer>
               <lineItem>
@@ -563,7 +563,7 @@
                     </coding>
                   </type>
                   <system value="http://fhir.de/NamingSystem/arge-ik/iknr"/>
-                  <value value="123456789"/>
+                  <value value="308412345"/>
                 </identifier>
               </issuer>
               <lineItem>
@@ -869,7 +869,7 @@
                     </coding>
                   </type>
                   <system value="http://fhir.de/NamingSystem/arge-ik/iknr"/>
-                  <value value="123456789"/>
+                  <value value="308412345"/>
                 </identifier>
               </issuer>
               <lineItem>
