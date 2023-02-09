@@ -208,12 +208,6 @@ KBV basiertes Beispiel (9581ce65-b118-4751-9073-19c091b341e0) mit Anpassungen (E
 - Rezeptur-Verordnung_Nr_1
   - Merkmal Abgabedaten: Zusatzdaten Herstellung für Rezeptur
 
-**2?) Rezepturverordnung Nr. 2** (1x Viskose Aluminiumchlorid-Hexahydrat-Lösung 20 % 100 ml Gel Deo-Roller)
-
-KBV basiertes Beispiel (e4372012-e010-44d9-9211-6a85ca811820) mit Anpassungen (...)
-- Rezeptur-Verordnung_Nr_2 *<span style="color:Yellow">(noch nicht kontrolliert/umgesetzt)</span>*
-  - Merkmal Abgabedaten: ...
-  
 **22) Wirkstoffverordnung** (Ramipril 5 mg (ASK-Nr: 22686) Tabletten 100 Stück N3 )
 
 KBV basiertes Beispiel (9c85a2a5-92ee-4a57-83cb-ba90a0df2a21) mit Anpassungen (Erstellungs- & Verordnungsdatum = 27.07.2023)

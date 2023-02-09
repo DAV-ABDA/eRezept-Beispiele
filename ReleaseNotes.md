@@ -5,7 +5,6 @@
 - Update eAbgabedaten-StyleSheet (Add Zusatzattribut 15)
 
 ## Release 1.0.9 - FHIR-Beispiele zum E-Rezept
-- Update eAbrechnungsdaten to Release 1.0.6
 - Edit fix Link Verordnung Stylesheet
 - Edit MedicationDispense Einheit (amount.numerator.unit)
 - Edit delete Vertragskennzeichen (Rezeptur eAbgabedaten)
@@ -16,7 +15,7 @@
 - Move example of Mehrfachverordnungen (FutureCase)
 - FIX TA7_Sammelrechnung_Bundle (Bundle.identifier:Dateiname - Dateiart -> FHR statt ABR)
 - ADD more Medication Dispense examples
- 
+
 ## Release 1.0.7 - FHIR-Beispiele zum E-Rezept
 - Update Visualisierungen eAbgabedaten
 - Update Stylesheet eAbgabedaten 
