@@ -130,22 +130,22 @@ KBV basiertes Beispiel (5a3458b0-8364-4682-96e2-b262b2ab16eb) mit Anpassungen (E
 KBV basiertes Beispiel (c44ddc5b-21f5-4ce3-995d-ab5ca2633154) mit Anpassungen (Erstellungs- & Verordnungs- & StartzeitraumDatum = 27.07.2023)
 - PZN_Mehrfachverordnung\PZN_MV_1
   - Merkmal Verordnung: aut idem ausgeschlossen
-  - Merkmal Abgabedaten: KostenVersicherter (Mehrkosten)
+  - Merkmal Abgabedaten: KostenVersicherter (Mehrkosten), Produkt der Substitutionsausschlussliste
 
 KBV basiertes Beispiel (7031f7f3-cf51-4e77-82d7-b9bdb0a5959f) mit Anpassungen (Erstellungs- & Verordnungsdatum = 27.07.2023)
 - PZN_Mehrfachverordnung\PZN_MV_2
   - Merkmal Verordnung: aut idem ausgeschlossen
-  - Merkmal Abgabedaten: KostenVersicherter (Mehrkosten)
+  - Merkmal Abgabedaten: KostenVersicherter (Mehrkosten), Produkt der Substitutionsausschlussliste
 
 KBV basiertes Beispiel (f70585e0-82f9-4d3d-b248-94504ccf6a66) mit Anpassungen (Erstellungs- & Verordnungsdatum = 27.07.2023)
 - PZN_Mehrfachverordnung\PZN_MV_3
   - Merkmal Verordnung: aut idem ausgeschlossen
-  - Merkmal Abgabedaten: KostenVersicherter (Mehrkosten)
+  - Merkmal Abgabedaten: KostenVersicherter (Mehrkosten), Produkt der Substitutionsausschlussliste
 
 KBV basiertes Beispiel (15da065c-5b75-4acf-a2ba-1355de821d6e) mit Anpassungen (Erstellungs- & Verordnungsdatum = 27.07.2023)
 - PZN_Mehrfachverordnung\PZN_MV_4
   - Merkmal Verordnung: aut idem ausgeschlossen
-  - Merkmal Abgabedaten: KostenVersicherter (Mehrkosten)
+  - Merkmal Abgabedaten: KostenVersicherter (Mehrkosten), Produkt der Substitutionsausschlussliste
 
 **14) PZN-Verordnung (Arbeitsunfall)** (Fucidine® 20mg/g Creme 15g N1)
 

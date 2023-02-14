@@ -144,7 +144,7 @@
                   <valueCodeableConcept>
                     <coding>
                       <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-ZusatzattributFAMSchluesselMarkt"/>
-                      <code value="1"/>
+                      <code value="5"/>
                     </coding>
                   </valueCodeableConcept>
                 </extension>
@@ -206,7 +206,7 @@
                   <valueCodeableConcept>
                     <coding>
                       <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-ZusatzattributFAMSchluesselImportFAM"/>
-                      <code value="0"/>
+                      <code value="5"/>
                     </coding>
                   </valueCodeableConcept>
                 </extension>
