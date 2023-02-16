@@ -143,7 +143,7 @@
               <valueString value="Aufgrund Schnellimmunisierung kurzfristig 2 Spritzen erforderlich."/>
             </extension>
             <extension url="DatumRezeptaenderung">
-              <valueDate value="2023-07-27"/>
+              <valueDate value="2023-07-28"/>
             </extension>
           </extension>
           <wasSubstituted value="true"/>
