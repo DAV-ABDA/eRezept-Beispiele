@@ -175,7 +175,7 @@
                   </valueCodeableConcept>
                 </extension>
                 <extension url="DokumentationFreitext">
-                  <valueString value="keiner der 3 Rabattartikel ist zur Zeit lieferbar, Datum und Uhrzeit: 20220402:16:28"/>
+                  <valueString value="keiner der 3 Rabattartikel ist zur Zeit lieferbar, Datum und Uhrzeit: 20220527:16:28"/>
                 </extension>
               </extension>
               <extension url="PreisguenstigesFAM">
