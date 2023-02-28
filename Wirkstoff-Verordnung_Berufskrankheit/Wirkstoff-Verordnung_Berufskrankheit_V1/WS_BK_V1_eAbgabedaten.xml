@@ -136,9 +136,9 @@
                 </coding>
               </valueCodeableConcept>
             </extension>
-            <extension url="DatumRezeptaenderung">
-              <valueDate value="2021-05-28"/>
-            </extension>
+            <!--extension url="DatumRezeptaenderung">
+              <valueDate value="2021-07-27"/>
+            </extension-->
           </extension>
           <wasSubstituted value="true"/>
         </substitution>
