@@ -245,5 +245,3 @@ KBV basiertes Beispiel (cd6d3a17-8105-4f1e-86ff-48cd5cebf245) mit Anpassungen (E
 KBV basiertes Beispiel (d9118e05-6e13-4df6-af50-552401cf9ba2) mit Anpassungen (Mehrfachverordnung 2/2, Erstellungsdatum = 27.07.2023)
 - Wirkstoff_Mehrfachverordnung\WS_MV_2
   - Merkmal Abgabedaten: Erfüllung Rabattvertrag
-
-*... weitere Beispiele können folgen ...*

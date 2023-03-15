@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="6d240a29-144f-477b-b8e7-92d4b4bcebfd"/>
+  <id value="b60fff44-c49f-4e8c-8be6-6f87ec0603cc"/>
   <meta>
     <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-AbgabedatenBundle|1.2"/>
     <tag>
-      <display value="Beispiel RezeptAbgabedatenPKV Bundle (PZN-1)"/>
+      <display value="Beispiel RezeptAbgabedatenPKV Bundle (PZN-4 Mehrfachverordnung 3/4)"/>
     </tag>
     <tag>
       <display value="ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanz kann nicht gewährleistet werden. Wir sind jederzeit dankbar für Hinweise auf Fehler oder für Verbesserungsvorschläge."/>
@@ -12,15 +12,15 @@
   </meta>
   <identifier>
     <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
-    <value value="200.424.187.927.272.20"/>
+    <value value="200.529.639.126.950.56"/>
   </identifier>
   <type value="document"/>
-  <timestamp value="2023-07-03T11:30:00Z"/>
+  <timestamp value="2023-12-11T09:30:00Z"/>
   <entry>
-    <fullUrl value="urn:uuid:0877a6ac-9433-43b2-bcd5-46046479c306"/>
+    <fullUrl value="urn:uuid:58198c46-8cfc-4d7a-95ee-5e1f25873b6d"/>
     <resource>
       <Composition>
-        <id value="0877a6ac-9433-43b2-bcd5-46046479c306"/>
+        <id value="58198c46-8cfc-4d7a-95ee-5e1f25873b6d"/>
         <meta>
           <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-AbgabedatenComposition|1.2"/>
         </meta>
@@ -31,31 +31,31 @@
             <code value="ERezeptAbgabedaten"/>
           </coding>
         </type>
-        <date value="2023-07-03T11:30:00Z"/>
+        <date value="2023-12-11T09:30:00Z"/>
         <author>
-          <reference value="urn:uuid:b998a7cd-f582-4a23-b86a-58e22402d105"/>
+          <reference value="urn:uuid:2cf4ae9e-a5c5-4c8d-9e52-2b97de2a31bd"/>
         </author>
         <title value="ERezeptAbgabedaten"/>
         <section>
           <title value="Abgabeinformationen"/>
           <entry>
-            <reference value="urn:uuid:7b1e6c94-71fb-4bbe-9c5a-2e865efd8526"/>
+            <reference value="urn:uuid:ff48892c-300c-4405-a8b1-6c30d651a52a"/>
           </entry>
         </section>
         <section>
           <title value="Apotheke"/>
           <entry>
-            <reference value="urn:uuid:b998a7cd-f582-4a23-b86a-58e22402d105"/>
+            <reference value="urn:uuid:2cf4ae9e-a5c5-4c8d-9e52-2b97de2a31bd"/>
           </entry>
         </section>
       </Composition>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:b998a7cd-f582-4a23-b86a-58e22402d105"/>
+    <fullUrl value="urn:uuid:2cf4ae9e-a5c5-4c8d-9e52-2b97de2a31bd"/>
     <resource>
       <Organization>
-        <id value="b998a7cd-f582-4a23-b86a-58e22402d105"/>
+        <id value="2cf4ae9e-a5c5-4c8d-9e52-2b97de2a31bd"/>
         <meta>
           <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-Apotheke|1.2"/>
         </meta>
@@ -82,16 +82,16 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:7b1e6c94-71fb-4bbe-9c5a-2e865efd8526"/>
+    <fullUrl value="urn:uuid:ff48892c-300c-4405-a8b1-6c30d651a52a"/>
     <resource>
       <MedicationDispense>
-        <id value="7b1e6c94-71fb-4bbe-9c5a-2e865efd8526"/>
+        <id value="ff48892c-300c-4405-a8b1-6c30d651a52a"/>
         <meta>
           <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-Abgabeinformationen|1.2"/>
         </meta>
         <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-Abrechnungszeilen">
           <valueReference>
-            <reference value="urn:uuid:da94b6d8-f853-48b9-b101-be9280b81a71"/>
+            <reference value="urn:uuid:9a49e54a-c048-4978-85f6-99f62c01aaab"/>
           </valueReference>
         </extension>
         <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-EX-ERP-AbrechnungsTyp">
@@ -111,13 +111,13 @@
         </medicationCodeableConcept>
         <performer>
           <actor>
-            <reference value="urn:uuid:b998a7cd-f582-4a23-b86a-58e22402d105"/>
+            <reference value="urn:uuid:2cf4ae9e-a5c5-4c8d-9e52-2b97de2a31bd"/>
           </actor>
         </performer>
         <authorizingPrescription>
           <identifier>
             <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
-            <value value="200.424.187.927.272.20"/>
+            <value value="200.529.639.126.950.56"/>
           </identifier>
         </authorizingPrescription>
         <type>
@@ -126,15 +126,15 @@
             <code value="Abgabeinformationen"/>
           </coding>
         </type>
-        <whenHandedOver value="2023-07-03"/>
+        <whenHandedOver value="2023-12-11"/>
       </MedicationDispense>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:da94b6d8-f853-48b9-b101-be9280b81a71"/>
+    <fullUrl value="urn:uuid:9a49e54a-c048-4978-85f6-99f62c01aaab"/>
     <resource>
       <Invoice>
-        <id value="da94b6d8-f853-48b9-b101-be9280b81a71"/>
+        <id value="9a49e54a-c048-4978-85f6-99f62c01aaab"/>
         <meta>
           <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-Abrechnungszeilen|1.2"/>
         </meta>
@@ -150,9 +150,9 @@
           <chargeItemCodeableConcept>
             <coding>
               <system value="http://fhir.de/CodeSystem/ifa/pzn"/>
-              <code value="03879429"/>
+              <code value="02532741"/>
             </coding>
-            <text value="BELOC-ZOK mite 47,5 mg Retardtabletten 30 St"/>
+            <text value="L-thyroxin 75 Henning Tabletten 100 St"/>
           </chargeItemCodeableConcept>
           <priceComponent>
             <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-MwStSatz">
@@ -177,7 +177,7 @@
             <type value="informational"/>
             <factor value="1"/>
             <amount>
-              <value value="21.04"/>
+              <value value="15.40"/>
               <currency value="EUR"/>
             </amount>
           </priceComponent>
@@ -189,7 +189,7 @@
               <currency value="EUR"/>
             </valueMoney>
           </extension>
-          <value value="21.04"/>
+          <value value="15.40"/>
           <currency value="EUR"/>
         </totalGross>
       </Invoice>

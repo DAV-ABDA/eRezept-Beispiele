@@ -27,7 +27,7 @@
     <subject>
         <identifier>
             <system value="http://fhir.de/sid/gkv/kvid-10"/>
-            <value value="P123464113" />
+            <value value="123456789" />
             <assigner>
                 <display value="Allianz Private Krankenversicherung" />
             </assigner>
