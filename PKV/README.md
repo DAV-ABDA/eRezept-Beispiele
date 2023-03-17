@@ -2,8 +2,6 @@
 In diesem Projekt stellt der DAV Beispiele für die bei der Verarbeitung von E-Rezepten auftretenden Dateien in der Apotheke und der Abrechnung zur Verfügung. 
 Es wurde darauf geachtet, dass die zu einem Beispiel gehörenden Dateien fachlich und technisch zusammenpassen und soweit wie möglich realistische Informationen enthalten.<p>
 
-**<span style="color:green">Ein Beispiel zu parenteralen Zubereitungen folgt zeitnah.</span>**
-
 **PZN (Mehrfachverordnung) - L-Thyroxin Henning 75 100 Tbl. N3**
 - besondere Merkmale: Mehrfachfachverordnung 1 bis 4
 
@@ -45,6 +43,11 @@ Es wurde darauf geachtet, dass die zu einem Beispiel gehörenden Dateien fachlic
 - besondere Merkmale:
   - Verordnung: Salicylsäure 5 g, 2-propanol 70 % Ad 100 g
   - Abgabe: ohne Angabe von PZN/SOK und Faktor zu den Bestandteilen
+
+**Rezeptur - parenterale Zubereitung**
+- besondere Merkmale:
+  - Verordnung: 3x 500 ml Infusionslösung  Etoposid 180 mg  NaCl 0,9 % 500 ml
+  - Abgabe: Die Preise für die Bestandteile wurden vom GKV-Beispiel mit der gleichen Verordnung aus April 2021 übernommen. Die Zuschläge entsprechen der AMPreisV.
 
 **Freitext - Yellox 0,9 mg/ml Augentropfen**
 - besondere Merkmale:
