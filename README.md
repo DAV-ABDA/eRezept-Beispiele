@@ -199,6 +199,7 @@ KBV basiertes Beispiel (4863d1fb-dc26-4680-bb35-018610d1749d) mit Anpassungen (E
 
 KBV basiertes Beispiel (dae573db-54e3-4cb8-880d-0a46bea8aea1) mit Anpassungen (Erstellungs- & Verordnungsdatum = 24.07.2023)
 - Rezeptur-parenterale_Zytostatika
+  - Merkmal: FlowType Direktzuweisung (169)
   - Merkmal Verordnung: parenterale Zytostatikazubereitung für 3 Tage
   - Merkmal Abgabedaten: Zusatzdaten Herstellung für parenterale Zubereitung
 

@@ -46,6 +46,7 @@ Es wurde darauf geachtet, dass die zu einem Beispiel gehörenden Dateien fachlic
 
 **Rezeptur - parenterale Zubereitung**
 - besondere Merkmale:
+  - FlowType Direktzuweisung (209) 
   - Verordnung: 3x 500 ml Infusionslösung  Etoposid 180 mg  NaCl 0,9 % 500 ml
   - Abgabe: Die Preise für die Bestandteile wurden vom GKV-Beispiel mit der gleichen Verordnung aus April 2021 übernommen. Die Zuschläge entsprechen der AMPreisV.
 
