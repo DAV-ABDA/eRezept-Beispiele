@@ -1,3 +1,10 @@
+TODO: offene Punkte...
+    - H. Braunsdorf script durchgängige Bsp
+    - PKV/GKV Datumsangaben mit Zeit -> nicht Zero sondern DE (2015-02-07T13:28:17+02:00)
+        - Anpassung technische Anlagen ... 29 und Kardinalität?
+            + PKV Bsp 3 und 7 (Noctu oder Herstellung) 
+            + GKV Bsp ?!?
+
 ## Release 1.1.0 - FHIR-Beispiele zum E-Rezept
 - Update Profile Versions
 - Edit Changes (Binary-Quittung) Profile TA7_Sammelrechnung_Bundle
