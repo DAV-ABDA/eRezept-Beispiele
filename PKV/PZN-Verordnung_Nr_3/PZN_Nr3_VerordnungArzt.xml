@@ -174,7 +174,7 @@
                 <form>
                     <coding>
                         <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
-                        <code value="SUB"/>
+                        <code value="SUP"/>
                     </coding>
                 </form>
             </Medication>
