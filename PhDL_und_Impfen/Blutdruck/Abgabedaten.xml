@@ -138,13 +138,10 @@
                     </coding>
                 </type>
                 <lineItem>
-                    <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-Chargenbezeichnung">
-                        <valueString value="A123456789-1"/>
-                    </extension>
                     <sequence value="1"/>
                     <chargeItemCodeableConcept>
                         <coding>
-                            <system value="http://fhir.de/CodeSystem/ifa/pzn"/>
+                            <system value="http://TA1.abda.de"/>
                             <code value="17716872"/>
                         </coding>
                     </chargeItemCodeableConcept>

@@ -115,6 +115,11 @@
                 <insurance>
                     <reference value="Coverage/3eda37cb-e3f0-412b-a3a4-e95fc15f1608"/>
                 </insurance>
+                <dosageInstruction>
+                    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_DosageFlag">
+                        <valueBoolean value="false" />
+                    </extension>
+                </dosageInstruction>
                 <dispenseRequest>
                     <quantity>
                         <value value="1"/> <!-- ID 113 default 1 -->
