@@ -6,7 +6,7 @@
     </meta>
     <identifier>
         <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
-        <value value="910.156.745.817.223.64"/> <!-- ID 5 -->
+        <value value="910.156.745.817.223.68"/> <!-- ID 5 -->
     </identifier>
     <type value="document"/>
     <timestamp value="2024-02-02T08:30:00Z"/>
@@ -174,7 +174,7 @@
                 <form>
                     <coding>
                         <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
-                        <code value="---"/> <!-- ID 103 default "---" -->
+                        <code value="---"/> <!-- ID 103 default -->
                     </coding>
                 </form>
             </Medication>
