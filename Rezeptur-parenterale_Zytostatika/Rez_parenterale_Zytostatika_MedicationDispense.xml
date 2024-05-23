@@ -1,7 +1,7 @@
 <MedicationDispense xmlns="http://hl7.org/fhir">
   <id value="2e184592-a9ba-41ba-a336-4a96881e3f39"/>
   <meta>
-    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.2"/>
+    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.3"/>
     <tag>
       <display value="Beispiel MedicationDispense Freitext am Bsp Rezeptur Zytostatika"/>
     </tag>
@@ -59,7 +59,7 @@
       </identifier>
     </actor>
   </performer>
-  <whenHandedOver value="2023-07-27"/>
+  <whenHandedOver value="2024-11-27"/>
   <dosageInstruction>
     <text value="zur ärztlichen parenteralen Applikation gem. Therapieplan"/>
   </dosageInstruction>

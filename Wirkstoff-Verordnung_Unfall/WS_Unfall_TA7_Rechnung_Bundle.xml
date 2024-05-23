@@ -2,7 +2,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="9d6b1555-6780-4a00-900f-1369e37a609a"/>
   <meta>
-    <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Rechnung_Bundle|1.3"/>
+    <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Rechnung_Bundle|1.4"/>
     <tag>
       <display value="Beispiel der TA7/eAbrechnungsdaten."/>
     </tag>
@@ -15,17 +15,17 @@
       <valueString value="00002"/>
     </extension>
     <system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname"/>
-    <value value="ARZFHR23002"/>
+    <value value="B00FHR24002"/>
   </identifier>
-  <type value="collection"/>
-  <timestamp value="2023-08-02T10:00:00Z"/>
+  <type value="document"/>
+  <timestamp value="2024-12-02T10:00:00Z"/>
   <entry>
     <fullUrl value="urn:uuid:e7af4408-9a67-4ead-a419-fce90a9103ed"/>
     <resource>
       <Composition>
         <id value="e7af4408-9a67-4ead-a419-fce90a9103ed"/>
         <meta>
-          <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Rechnung_Composition|1.3"/>
+          <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Rechnung_Composition|1.4"/>
         </meta>
         <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_TA7_IK_Empfaenger">
           <valueIdentifier>
@@ -50,9 +50,9 @@
             <code value="6"/>
           </coding>
         </type>
-        <date value="2023-07-31">
+        <date value="2024-11-30">
           <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_TA7_Rechnungsdatum">
-            <valueDateTime value="2023-08-02"/>
+            <valueDateTime value="2024-12-02"/>
           </extension>
         </date>
         <author>
@@ -94,7 +94,7 @@
       <List>
         <id value="62c57c83-66d1-4a56-984f-f4c2683106c6"/>
         <meta>
-          <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Rechnung_List|1.3"/>
+          <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Rechnung_List|1.4"/>
         </meta>
         <status value="current"/>
         <mode value="working"/>
@@ -102,7 +102,7 @@
           <item>
             <identifier>
               <system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname"/>
-              <value value="ARZFHR23002"/>
+              <value value="B00FHR24002"/>
             </identifier>
           </item>
         </entry>
@@ -115,7 +115,7 @@
       <Bundle>
         <id value="87f4ae53-6e5e-4a62-ab43-aaa87512b93e"/>
         <meta>
-          <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_RezeptBundle|1.3"/>
+          <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_RezeptBundle|1.4"/>
         </meta>
         <type value="collection"/>
         <entry>
@@ -128,7 +128,7 @@
             <Binary>
               <id value="ec4445d8-7020-4977-b515-0e7afa928c1d"/>
               <meta>
-                <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_Binary|1.3"/>
+                <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_Binary|1.4"/>
               </meta>
               <contentType value="application/pkcs7-mime"/>
               <data value="VmVyb3JkbnVuZ3NkYXRlbiBCZWlzcGllbCBFcnN0ZWxsdW5nIEJlaXNwaWVsIGVBYnJlY2hudW5nc2RhdGVu"/>
@@ -145,7 +145,7 @@
             <Binary>
               <id value="6a795211-3049-40fc-9844-7c22c280a1ee"/>
               <meta>
-                <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_Binary|1.3"/>
+                <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_Binary|1.4"/>
               </meta>
               <contentType value="application/pkcs7-mime"/>
               <data value="UXVpdHR1bmdzLUJlaXNwaWVsIEVyc3RlbGx1bmcgQmVpc3BpZWwgZUFicmVjaG51bmdzZGF0ZW4="/>
@@ -162,7 +162,7 @@
             <Binary>
               <id value="19e4b1f3-e25c-481f-bb6e-5fe6c748f5c1"/>
               <meta>
-                <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_Binary|1.3"/>
+                <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_Binary|1.4"/>
               </meta>
               <contentType value="application/pkcs7-mime"/>
               <data value="ZUFiZ2FiZWRhdGVuIEJlaXNwaWVsIEVyc3RlbGx1bmcgQmVpc3BpZWwgZUFicmVjaG51bmdzZGF0ZW4="/>
@@ -179,7 +179,7 @@
             <Invoice>
               <id value="5d547f8c-50d2-4b0e-b93a-c02e2fa32c90"/>
               <meta>
-                <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_ERP_eAbrechnungsdaten|1.3"/>
+                <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_ERP_eAbrechnungsdaten|1.4"/>
               </meta>
               <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Irrlaeufer">
                 <valueBoolean value="false"/>
