@@ -105,7 +105,7 @@
         <status value="active" />
         <intent value="order" />
         <medicationReference>
-          <reference value="Medication/86fa62c7-06a0-418e-ba26-e99baa053c07" />
+          <reference value="Medication/e853fa0a-3c9a-42e1-b44c-f8a0c1eab4bd" />
         </medicationReference>
         <subject>
           <reference value="Patient/b63d33cd-4fc6-4127-ad25-0662e64ac940" />
@@ -140,7 +140,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://localhost:8080/medeye/eRezept/Medication/e853fa0a-3c9a-42e1-b44c-f8a0c1eab4bd"/>
+    <fullUrl value="http://pvs.praxis.local/fhir/Medication/e853fa0a-3c9a-42e1-b44c-f8a0c1eab4bd"/>
     <resource>
       <Medication>
         <id value="e853fa0a-3c9a-42e1-b44c-f8a0c1eab4bd"/>
