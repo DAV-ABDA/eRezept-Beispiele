@@ -1,4 +1,4 @@
-<h2 align="center">FHIR-Beispiele zum E-Rezept (Profile zum 01.07.2023)</h2>
+<h2 align="center">FHIR-Beispiele zum E-Rezept (Profile zum 01.11.2024)</h2>
 In diesem Projekt stellt der DAV Beispiele für die bei der Verarbeitung von E-Rezepten auftretenden Dateien in der Apotheke und dem Apothekenrechenzentrum zur Verfügung. Es wurde darauf geachtet, dass die zu einem Beispiel gehörenden Dateien fachlich und technisch zusammenpassen und soweit wie möglich realistische Informationen enthalten.<p>
 
 ### Inhaltsverzeichnis
@@ -245,4 +245,10 @@ KBV basiertes Beispiel (cd6d3a17-8105-4f1e-86ff-48cd5cebf245) mit Anpassungen (E
 
 KBV basiertes Beispiel (d9118e05-6e13-4df6-af50-552401cf9ba2) mit Anpassungen (Mehrfachverordnung 2/2, Erstellungsdatum = 27.07.2023)
 - Wirkstoff_Mehrfachverordnung\WS_MV_2
+  - Merkmal Abgabedaten: Erfüllung Rabattvertrag
+
+**27) Wirkstoffverordnung 2 Wirkstoffen** (AMOXICLAV BASICS 875 mg/125 mg Filmtabletten 20 St N2)
+
+- Wirkstoff-Verordnung-2W
+  - Merkmal Verordnung: 2 Wirkstoffe
   - Merkmal Abgabedaten: Erfüllung Rabattvertrag

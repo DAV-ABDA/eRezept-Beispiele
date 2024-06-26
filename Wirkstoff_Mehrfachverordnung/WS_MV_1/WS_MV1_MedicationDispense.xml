@@ -1,7 +1,7 @@
 <MedicationDispense xmlns="http://hl7.org/fhir">
   <id value="ac31e7a6-400f-48e4-a836-b5f78d0fc4ac"/>
   <meta>
-    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.2"/>
+    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.3"/>
     <tag>
       <display value="Beispiel MedicationDispense Wirkstoff Mehrfachverordnung 1/2 -&gt; PZN Abgabe"/>
     </tag>
@@ -63,7 +63,7 @@
       </amount>
       <batch>
         <lotNumber value="A123456789-1"/>
-        <expirationDate value="2024-12-31"/>
+        <expirationDate value="2025-12-31"/>
       </batch>
     </Medication>
   </contained>
@@ -90,5 +90,5 @@
       </identifier>
     </actor>
   </performer>
-  <whenHandedOver value="2023-07-27"/>
+  <whenHandedOver value="2024-11-27"/>
 </MedicationDispense>

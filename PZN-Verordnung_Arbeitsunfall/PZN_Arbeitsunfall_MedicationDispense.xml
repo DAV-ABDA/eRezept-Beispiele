@@ -1,7 +1,7 @@
 <MedicationDispense xmlns="http://hl7.org/fhir">
   <id value="8c020e02-b389-4197-a9fa-b46704501e27"/>
   <meta>
-    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.2"/>
+    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.3"/>
     <tag>
       <display value="Beispiel MedicationDispense PZN Bsp Arbeitsunfall"/>
     </tag>
@@ -63,7 +63,7 @@
       </amount>
       <batch>
         <lotNumber value="A123456789-1"/>
-        <expirationDate value="2024-12-31"/>
+        <expirationDate value="2025-12-31"/>
       </batch>
     </Medication>
   </contained>
@@ -90,7 +90,7 @@
       </identifier>
     </actor>
   </performer>
-  <whenHandedOver value="2023-07-27"/>
+  <whenHandedOver value="2024-11-27"/>
   <dosageInstruction>
     <text value="3mal täglich dünn auftragen"/>
   </dosageInstruction>
