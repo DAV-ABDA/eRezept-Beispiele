@@ -15,7 +15,7 @@
         <value value="910.156.745.817.223.68"/>
     </identifier>
     <type value="document"/>
-    <timestamp value="2024-11-02T08:30:00Z"/>
+    <timestamp value="2025-02-02T08:30:00Z"/>
     <entry>
         <fullUrl value="urn:uuid:b49a8432-d2ee-428b-b641-864765830f77"/>
         <resource>
@@ -31,7 +31,7 @@
                         <code value="ERezeptAbgabedaten"/>
                     </coding>
                 </type>
-                <date value="2024-11-02T08:30:00Z"/>
+                <date value="2025-02-02T08:30:00Z"/>
                 <author>
                     <reference value="urn:uuid:46b19d21-5c72-402d-84fa-3c9a1ec701cd"/>
                 </author>
@@ -118,7 +118,7 @@
                         <code value="Abgabeinformationen"/>
                     </coding>
                 </type>
-                <whenHandedOver value="2024-11-02"/>
+                <whenHandedOver value="2025-02-02"/>
             </MedicationDispense>
         </resource>
     </entry>
@@ -147,7 +147,7 @@
                     </chargeItemCodeableConcept>
                     <priceComponent>
                         <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-MwStSatz">
-                            <valueDecimal value="19.00"/>
+                            <valueDecimal value="0.00"/>
                         </extension>
                         <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-KostenVersicherter">
                             <extension url="Kategorie">
@@ -168,7 +168,7 @@
                         <type value="informational"/>
                         <factor value="1"/>
                         <amount>
-                            <value value="0.00"/>
+                            <value value="11.20"/>
                             <currency value="EUR"/>
                         </amount>
                     </priceComponent>
@@ -180,7 +180,7 @@
                             <currency value="EUR"/>
                         </valueMoney>
                     </extension>
-                    <value value="0.00"/>
+                    <value value="11.20"/>
                     <currency value="EUR"/>
                 </totalGross>
             </Invoice>

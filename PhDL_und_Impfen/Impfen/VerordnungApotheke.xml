@@ -115,6 +115,9 @@
                 <insurance>
                     <reference value="Coverage/14ce2e94-9a90-4dd2-b613-cf022baec9ab"/>
                 </insurance>
+                <note>
+                    <text value="ACHTUNG/Info: Hier wurde der zur Auseinzelung genutzte Impfstoff angegeben nicht der abgerechnete."/>
+                </note>
                 <dispenseRequest>
                     <quantity>
                         <value value="1"/>
@@ -161,7 +164,7 @@
                 <code>
                     <coding>
                         <system value="http://fhir.de/CodeSystem/ifa/pzn"/>
-                        <code value="17717475"/>
+                        <code value="17620971"/>
                     </coding>
                     <text value="Afluria TETRA 2023/2024 10x0,5 ml"/>
                 </code>

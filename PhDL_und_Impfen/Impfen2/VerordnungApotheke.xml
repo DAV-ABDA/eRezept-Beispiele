@@ -161,7 +161,7 @@
                 <code>
                     <coding>
                         <system value="http://fhir.de/CodeSystem/ifa/pzn"/>
-                        <code value="17717498"/>
+                        <code value="18230769"/>
                     </coding>
                     <text value="FLUAD Tetra 2023/2024 1x0,5 ml"/>
                 </code>
