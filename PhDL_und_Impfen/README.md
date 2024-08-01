@@ -9,5 +9,7 @@ Es wurde darauf geachtet, dass die zu einem Beispiel gehörenden Dateien fachlic
 - besondere Merkmale: 
   - Abgabe: Auseinzelung
 
+**3) Impfen - Grippeschutzimpfung - FLUAD Tetra 2023/2024 1x0,5 ml**
+
 Einen Austausch und weitere Beispiele sind unter folgenden Link zu finden:
 https://github.com/DAV-ABDA/eRezept-Beispiele/issues/30

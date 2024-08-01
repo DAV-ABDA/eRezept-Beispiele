@@ -8,7 +8,7 @@
        <value value="910.156.745.817.223.68"/>
    </identifier>
    <type value="document"/>
-   <timestamp value="2024-11-02T07:30:00.000+01:00"/>
+   <timestamp value="2025-02-02T07:30:00.000+01:00"/>
    <entry>
        <fullUrl value="urn:uuid:37f91bfa-d6ec-4580-bb60-e0ad7a9751f2"/>
        <resource>
@@ -30,15 +30,15 @@
                        <display value="Receipt"/>
                    </coding>
                </type>
-               <date value="2024-11-02T07:30:00.000+01:00"/> <!-- TODO: Date ?!? -->
+               <date value="2025-02-02T07:30:00.000+01:00"/>
                <author>
                    <reference value="urn:uuid:3bfc64a7-b5ff-4e9f-82a8-dd4dd622eb0e"/>
                </author>
                <title value="Quittung"/>
                <event>
                    <period>
-                       <start value="2024-11-02T07:30:00.000+01:00"/> <!-- Zeit der Quittungserstellung -->
-                       <end value="2024-11-02T07:30:00.000+01:00"/> <!-- Zeit der Quittungserstellung -->
+                       <start value="2025-02-02T07:30:00.000+01:00"/> <!-- Zeit der Quittungserstellung -->
+                       <end value="2025-02-02T07:30:00.000+01:00"/> <!-- Zeit der Quittungserstellung -->
                    </period>
                </event>
                <section>
@@ -85,7 +85,7 @@
            <system value="urn:iso-astm:E1762-95:2013"/>
            <code value="1.2.840.10065.1.12.1.1"/>
        </type>
-       <when value="2024-11-02T07:30:00.000+01:00"/>
+       <when value="2025-02-02T07:30:00.000+01:00"/>
        <who>
            <reference value="urn:uuid:3bfc64a7-b5ff-4e9f-82a8-dd4dd622eb0e"/>
        </who>
