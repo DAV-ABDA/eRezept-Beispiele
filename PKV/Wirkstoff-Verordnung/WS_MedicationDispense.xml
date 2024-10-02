@@ -89,7 +89,7 @@
         <subject>
           <identifier>
             <system value="http://fhir.de/sid/pkv/kvid-10"/>
-            <value value="P123464319"/>
+            <value value="P123464315"/>
           </identifier>
         </subject>
         <performer>
@@ -100,7 +100,7 @@
             </identifier>
           </actor>
         </performer>
-        <whenHandedOver value="2023-07-03"/>
+        <whenHandedOver value="2024-11-03"/>
       </MedicationDispense>
     </resource>
   </entry>
@@ -196,7 +196,7 @@
             </identifier>
           </actor>
         </performer>
-        <whenHandedOver value="2023-07-03"/>
+        <whenHandedOver value="2024-11-03"/>
       </MedicationDispense>
     </resource>
   </entry>

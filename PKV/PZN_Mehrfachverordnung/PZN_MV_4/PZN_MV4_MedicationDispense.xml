@@ -50,7 +50,7 @@
       </form>
       <batch>
         <lotNumber value="A123456789-1"/>
-        <expirationDate value="2025-06-28"/>
+        <expirationDate value="2026-06-28"/>
       </batch>
     </Medication>
   </contained>
@@ -77,5 +77,5 @@
       </identifier>
     </actor>
   </performer>
-  <whenHandedOver value="2024-03-04"/>
+  <whenHandedOver value="2025-09-04"/>
 </MedicationDispense>
