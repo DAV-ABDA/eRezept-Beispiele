@@ -2,7 +2,7 @@
 <MedicationDispense xmlns="http://hl7.org/fhir">
     <id value="1b0ea6be-f64b-4f69-b387-4b2d7920320a"/>
     <meta>
-        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.2"/>
+        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.3"/>
         <tag>
             <display value="Beispiel MedicationDispense PZN Bsp 28"/>
         </tag>
