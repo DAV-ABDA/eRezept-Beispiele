@@ -186,10 +186,45 @@ KBV basiertes Beispiel (690a7f01-058e-492a-b1dc-d6d8c8a30a59) mit Anpassungen (E
   - Merkmal Verordnung: Gebührfrei, noctu
   - Merkmal Abgabedaten: Notdienst-Gebühr
 
+**28) PZN-Verordnung (Lieferengpass)** (Azithromycin Heumann 500 mg 6 Filmtabletten N2)
+
+DAV Beispiel mit Anpassungen (Erstellungs- & Verordnungsdatum = 19.11.2024)
+- PZN-Verordnung_Nr_28
+  - Merkmal Abgabedaten: Abweichung von Packungsgröße und Packungsanzahl aufgrund Lieferengpass, Rezeptänderung 13
+
+**29) PZN-Verordnung (Lieferengpass)** (Benazepril AL 20mg 98 Filmtabletten N3)
+
+DAV Beispiel mit Anpassungen (Erstellungs- & Verordnungsdatum = 19.11.2024)
+- PZN-Verordnung_Nr_29
+  - Merkmal Abgabedaten: Abweichung von Wirkstärke und Packungsanzahl aufgrund  Lieferengpass, Rezeptänderung 13
+
+**30) PZN-Verordnung (Lieferengpass)** (Tamoxifen Aristo 20 mg 30 Tabletten N1)
+
+DAV Beispiel mit Anpassungen (Erstellungs- & Verordnungsdatum = 19.11.2024)
+- PZN-Verordnung_Nr_30
+  - Merkmal Abgabedaten: Teilmengenabgabe aufgrund Lieferengpass, Zusatzattribut 16
+
+**31) PZN-Verordnung (Lieferengpass)** (Doxycyclin 100 - 1 A Pharma® 50 Tbl. N3)
+
+DAV Beispiel mit Anpassungen (Erstellungs- & Verordnungsdatum = 19.11.2024)
+- PZN-Verordnung_Nr_31
+  - Merkmal Abgabedaten: Stückelung mit Teilmengenabgabe aufgrund Lieferengpass, Zusatzattribut 16
+
+**32) PZN-Verordnung (Lieferengpass)** (Cotrim K-ratiopharm® 200 mg/5 ml + 40 mg/5 ml Suspension zum Einnehmen 100 ml N1)
+
+DAV Beispiel mit Anpassungen (Erstellungs- & Verordnungsdatum = 19.11.2024)
+- PZN-Verordnung_Nr_32
+  - Merkmal Abgabedaten: Abweichung von der Darreichungsform bei Arzneimittel der Dringlichkeitsliste Kinderarzneimittel, Rezeptänderung 14
+
+**33) PZN-Verordnung (Kombipackung)** (Abirasolon-mHSPC 500 mg 56 FTB + 5 mg 28 TAB)
+
+DAV Beispiel mit Anpassungen (Erstellungs- & Verordnungsdatum = 19.11.2024)
+- PZN-Verordnung_Nr_33
+  - Merkmal MedicationDispense: Abgabe Kombipackung
+- 
 **19) Freitextverordnung** (Metformin 850mg Tabletten N3)
 
 KBV basiertes Beispiel (4863d1fb-dc26-4680-bb35-018610d1749d) mit Anpassungen (Erstellungs- & Verordnungsdatum = 27.11.2024)
-
 - Freitext-Verordnung\Freitext-Verordnung_V1
   - Merkmal Abgabedaten: Erfüllung Rabattvertrag, zusätzliche Abgabeangaben (Zusatzattribut)
 - Freitext-Verordnung\Freitext-Verordnung_V2

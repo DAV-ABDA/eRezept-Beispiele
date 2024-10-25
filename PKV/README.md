@@ -30,10 +30,30 @@ Es wurde darauf geachtet, dass die zu einem Beispiel gehörenden Dateien fachlic
   - Verordnung: Kennzeichen Noctu
   - Abgabe: Notdienst-Gebühr, Zusatzattribut 11 (Abgabe im Notdienst), Rezeptänderung mit Schlüssel 21 (Abweichung von der Packungsgröße bzw. Packungsanzahl aufgrund von Nichtverfügbarkeit und dringendem Fall bei der Dienstbereitschaft)
 
-**8) PZN - Efluelda Injektionssuspension 2022/2023**
+**8) PZN - Efluelda Tetra Injektionssuspension 2024/2025
 - besondere Merkmale:
   - Verordnung: 1 Fertigspr. ohne Kanüle N1, Kennzeichen Impfstoff
-  - Abgabe: Auseinzelung
+  - Abgabe: Auseinzelung nach Rücksprache mit dem Arzt, Zusatzattribut 16, Rezeptänderung mit Schlüssel 12
+
+**14) PZN - Azithromycin Heumann 500 mg 6 Filmtabletten N2
+- besondere Merkmale:
+  - Abgabe: Abweichung von Packungsgröße und Packungsanzahl aufgrund Lieferengpass, Rezeptänderung 13
+
+**15) PZN - Benazepril AL 20mg 98 Filmtabletten N3
+- besondere Merkmale:
+  - Abgabe: Abweichung von Wirkstärke und Packungsanzahl aufgrund  Lieferengpass, Rezeptänderung 13
+
+**16) PZN - Tamoxifen Aristo 20 mg 30 Tabletten N1
+- besondere Merkmale:
+  - Abgabe: Teilmengenabgabe aufgrund Lieferengpass. Zusatzattribut 16. Rezeptänderung 13
+
+**17) PZN - Doxycyclin 100 - 1 A Pharma® 50 Tbl. N3
+- besondere Merkmale:
+  - Abgabe: Stückelung mit Teilmengenabgabe aufgrund Lieferengpass, Zusatzattribut 16, Rezeptänderung 13
+
+**18) PZN - Cotrim K-ratiopharm® 200 mg/5 ml + 40 mg/5 ml Suspension zum Einnehmen 100 ml N1
+- besondere Merkmale:
+  - Abgabe: Abweichung von der Darreichungsform bei Arzneimittel der Dringlichkeitsliste Kinderarzneimittel, Rezeptänderung 14
 
 **1) Rezeptur - Triamcinolonacetonid 0,1 % Basiscreme DAC ad 100,0 g**
 - besondere Merkmale:
