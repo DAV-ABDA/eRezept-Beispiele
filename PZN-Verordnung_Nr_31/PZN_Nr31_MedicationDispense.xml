@@ -2,7 +2,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="80785418-076e-4318-9c29-addb6180a1f5"/>
     <meta>
-        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_CloseOperationInputBundle|1.2"/>
+        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_CloseOperationInputBundle|1.3"/>
         <tag>
             <display value="Beispiel MedicationDispense PKV PZN Bsp 31 (multiple medications)"/>
         </tag>
@@ -16,7 +16,7 @@
                 <meta>
                     <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.3"/>
                     <tag>
-                        <display value="Beispiel MedicationDispense PZN Bsp 28"/>
+                        <display value="Beispiel MedicationDispense PZN Bsp 31"/>
                     </tag>
                     <tag>
                         <display value="ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanz kann nicht gewährleistet werden. Wir sind jederzeit dankbar für Hinweise auf Fehler oder für Verbesserungsvorschläge."/>
@@ -120,7 +120,7 @@
                 <meta>
                     <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.3"/>
                     <tag>
-                        <display value="Beispiel MedicationDispense PZN Bsp 28"/>
+                        <display value="Beispiel MedicationDispense PZN Bsp 31"/>
                     </tag>
                     <tag>
                         <display value="ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanz kann nicht gewährleistet werden. Wir sind jederzeit dankbar für Hinweise auf Fehler oder für Verbesserungsvorschläge."/>
