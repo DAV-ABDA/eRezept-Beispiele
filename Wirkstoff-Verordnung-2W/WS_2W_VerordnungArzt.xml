@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="7d19efb0-5811-46cd-8b97-39614caeb835" />
   <meta>
-    <lastUpdated value="2024-11-27T08:30:00Z" />
+    <lastUpdated value="2025-01-27T08:30:00Z" />
     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.1.0" />
   </meta>
   <identifier>
@@ -9,7 +9,7 @@
     <value value="160.101.394.591.628.58" />
   </identifier>
   <type value="document" />
-  <timestamp value="2024-11-27T08:30:00Z" />
+  <timestamp value="2025-01-27T08:30:00Z" />
   <entry>
     <fullUrl value="http://pvs.praxis.local/fhir/Composition/cc81e8d1-d11f-4d8f-93fc-625639b48770" />
     <resource>
@@ -34,7 +34,7 @@
         <subject>
           <reference value="Patient/b63d33cd-4fc6-4127-ad25-0662e64ac940" />
         </subject>
-        <date value="2024-11-27T08:00:00Z" />
+        <date value="2025-01-27T08:00:00Z" />
         <author>
           <reference value="Practitioner/de245005-8863-400b-ac9a-9b6ea14ea5de" />
           <type value="Practitioner" />
@@ -110,7 +110,7 @@
         <subject>
           <reference value="Patient/b63d33cd-4fc6-4127-ad25-0662e64ac940" />
         </subject>
-        <authoredOn value="2024-11-27" /> <!-- 21.05.2024 -->
+        <authoredOn value="2025-01-27" /> <!-- 21.05.2024 -->
         <requester>
           <reference value="Practitioner/de245005-8863-400b-ac9a-9b6ea14ea5de" />
         </requester>

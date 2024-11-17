@@ -89,7 +89,6 @@
   <status value="completed"/>
   <medicationReference>
     <reference value="#96091647-180a-4222-8961-d551e2c2889a"/>
-    <display value="Parenterale Zubereitung"/>
   </medicationReference>
   <subject>
     <identifier>
@@ -110,7 +109,7 @@
     <system value="http://unitsofmeasure.org"/>
     <code value="{Package}"/>
   </quantity>
-  <whenHandedOver value="2024-11-06"/>
+  <whenHandedOver value="2025-02-06"/>
   <dosageInstruction>
     <text value="zur ärztlichen parenteralen Applikation gem. schr. Therapieplan"/>
   </dosageInstruction>

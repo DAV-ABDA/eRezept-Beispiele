@@ -73,7 +73,6 @@
             </amount>
             <batch>
               <lotNumber value="A123456789-1"/>
-              <expirationDate value="2025-12-31"/>
             </batch>
           </Medication>
         </contained>
@@ -84,7 +83,6 @@
         <status value="completed"/>
         <medicationReference>
           <reference value="#ebdb8f91-b514-4374-bd18-825f9437e2aa"/>
-          <display value="Doxycyclin 200-1a Pharma Tabletten - 20 St"/>
         </medicationReference>
         <subject>
           <identifier>
@@ -100,7 +98,7 @@
             </identifier>
           </actor>
         </performer>
-        <whenHandedOver value="2024-11-03"/>
+        <whenHandedOver value="2025-02-03"/>
       </MedicationDispense>
     </resource>
   </entry>
@@ -169,7 +167,6 @@
             </amount>
             <batch>
               <lotNumber value="A123456789-1"/>
-              <expirationDate value="2025-12-31"/>
             </batch>
           </Medication>
         </contained>
@@ -180,7 +177,6 @@
         <status value="completed"/>
         <medicationReference>
           <reference value="#a4048f3c-4803-46ad-b809-63cf53fed771"/>
-          <display value="Doxycyclin 200-1a Pharma Tabletten - 10 St"/>
         </medicationReference>
         <subject>
           <identifier>
@@ -196,7 +192,7 @@
             </identifier>
           </actor>
         </performer>
-        <whenHandedOver value="2024-11-03"/>
+        <whenHandedOver value="2025-02-03"/>
       </MedicationDispense>
     </resource>
   </entry>
