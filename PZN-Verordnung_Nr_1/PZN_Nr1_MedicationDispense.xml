@@ -3,12 +3,12 @@
     <id value="c3ff0d3c-91f7-473b-b3e8-20e899d4deb7"/>
     <meta>
         <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.4"/>
-        <tag>
+        <!--tag>
             <display value="Beispiel MedicationDispense PZN Bsp 1"/>
         </tag>
         <tag>
             <display value="ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanz kann nicht gewährleistet werden. Wir sind jederzeit dankbar für Hinweise auf Fehler oder für Verbesserungsvorschläge."/>
-        </tag>
+        </tag-->
     </meta>
     <parameter>
         <name value="rxDispensation"/>
@@ -19,12 +19,12 @@
                     <id value="a7e1d25f-0b0a-40f7-b529-afda48e51b46"/>
                     <meta>
                         <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.4"/>
-                        <tag>
+                        <!--tag>
                             <display value="Beispiel MedicationDispense PZN Bsp 1"/>
                         </tag>
                         <tag>
                             <display value="ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanz kann nicht gewährleistet werden. Wir sind jederzeit dankbar für Hinweise auf Fehler oder für Verbesserungsvorschläge."/>
-                        </tag>
+                        </tag-->
                     </meta>
                     <identifier>
                         <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
@@ -33,7 +33,6 @@
                     <status value="completed"/>
                     <medicationReference>
                         <reference value="8e2e5e65-4c5d-49f2-8efc-c30e40838273"/>
-                        <display value="SUMATRIPTAN Aurobindo 100 mg Tabletten"/>
                     </medicationReference>
                     <subject>
                         <identifier>
@@ -50,9 +49,9 @@
                         </actor>
                     </performer>
                     <whenHandedOver value="2024-11-30"/>
-                    <dosageInstruction>
+                    <!--dosageInstruction>  ====> nur angeben wenn geändert/korrigiert durch Apotheke
                         <text value="1-0-1-0"/>
-                    </dosageInstruction>
+                    </dosageInstruction-->
                 </MedicationDispense>
             </resource>
         </part>
@@ -68,9 +67,8 @@
                         <coding>
                             <system value="http://fhir.de/CodeSystem/ifa/pzn"/>
                             <code value="05454378"/>
-                            <display value="SUMATRIPTAN Aurobindo 100 mg Tabletten"/>
                         </coding>
-                        <text value="SUMATRIPTAN Aurobindo 100 mg Tabletten"/>
+                        <text value="SUMATRIPTAN Aurobindo 100 mg Tabletten"/> <!-- Handelsname der eML-->
                     </code>
                     <form>
                         <coding>
@@ -78,6 +76,7 @@
                             <code value="TAB"/>
                             <display value="Tabletten"/>
                         </coding>
+                        <!--text value="Tabletten"/--> <!-- Freitext nur angeben, wenn coding nicht genutzt -->
                     </form>
                     <amount>
                         <numerator>
@@ -92,7 +91,7 @@
                     </amount>
                     <ingredient>
                         <itemCodeableConcept>
-                            <text value="Sumatriptan"/>
+                            <text value="Sumatriptan"/> <!-- Hinweis: patientenverständlicher Wirkstoffname aus der Arzneimitteldatenbank -->
                         </itemCodeableConcept>
                         <strength>
                             <numerator>
@@ -126,7 +125,6 @@
                     </ingredient>
                     <batch>
                         <lotNumber value="A123456789-1"/>
-                        <expirationDate value="2025-12-31"/>
                     </batch>
                 </Medication>
             </resource>
