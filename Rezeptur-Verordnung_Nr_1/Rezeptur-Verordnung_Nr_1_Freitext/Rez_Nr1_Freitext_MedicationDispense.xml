@@ -58,7 +58,7 @@
             <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.4"/>
           </meta>
           <code>
-            <text value="Salicylsäure-Hautspiritus 5% 100g"/>
+            <text value="2-Propanolhaltiger Salicylsäure-Hautspiritus 5 % (NRF 11.55.) 100 ml"/>
           </code>
           <form>
             <text value="Lösung"/>

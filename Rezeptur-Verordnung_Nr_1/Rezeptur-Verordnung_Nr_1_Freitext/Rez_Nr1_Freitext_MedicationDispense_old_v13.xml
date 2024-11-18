@@ -29,7 +29,7 @@
           <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Type"/>
           <code value="freitext"/>
         </coding>
-        <text value="100 ml Lösung (Salicylsäure 5 g, 2-propanol 70 % Ad 100 g)"/>
+        <text value="2-Propanolhaltiger Salicylsäure-Hautspiritus 5 % (NRF 11.55.) 100 ml"/>
       </code>
       <form>
         <text value="Lösung"/>
