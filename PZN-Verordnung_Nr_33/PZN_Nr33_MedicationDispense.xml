@@ -43,7 +43,7 @@
                         </actor>
                     </performer>
                     <whenHandedOver value="2025-01-19"/>
-                    <!--dosageInstruction> // TODO: nur angeben wenn geändert/korrigiert durch Apotheke
+                    <!--dosageInstruction>   ====> nur angeben wenn geändert/korrigiert durch Apotheke
                         <text value=""/>
                     </dosageInstruction-->
                 </MedicationDispense>
@@ -64,7 +64,12 @@
                                 <profile value="https://gematik.de/fhir/epa-medication/StructureDefinition/epa-medication-pharmaceutical-product"/>
                             </meta>
                             <form>
-                                <text value="Filmtabletten"/>
+                                <coding>
+                                    <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
+                                    <code value="FTA"/>
+                                    <display value="Filmtabletten"/>
+                                </coding>
+                                <!--text value="Filmtabletten"/--> <!-- Freitext nur angeben, wenn coding nicht genutzt -->
                             </form>
                             <!--amount>  ==> Angabe der Stückmenge des Packungsbestandteils, wenn die Daten strukturiert vorliegen...
                                 <numerator>
@@ -79,7 +84,7 @@
                             </amount-->
                             <ingredient>
                                 <itemCodeableConcept>
-                                    <text value="Abirateron acetat"/> <!-- Hinweis: patientenverständlicher Wirkstoffname aus der Arzneimitteldatenbank -->
+                                    <text value="Abirateron acetat"/>
                                 </itemCodeableConcept>
                                 <strength>
                                     <numerator>
@@ -120,7 +125,12 @@
                                 <profile value="https://gematik.de/fhir/epa-medication/StructureDefinition/epa-medication-pharmaceutical-product"/>
                             </meta>
                             <form>
-                                <text value="Tabletten"/>
+                                <coding>
+                                    <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
+                                    <code value="TAB"/>
+                                    <display value="Tabletten"/>
+                                </coding>
+                                <!--text value="Tabletten"/--> <!-- Freitext nur angeben, wenn coding nicht genutzt -->
                             </form>
                             <!--amount>  ==> Angabe der Stückmenge des Packungsbestandteils, wenn die Daten strukturiert vorliegen...
                                 <numerator>
@@ -135,7 +145,7 @@
                             </amount-->
                             <ingredient>
                                 <itemCodeableConcept>
-                                    <text value="Prednisolon"/> <!-- Hinweis: patientenverständlicher Wirkstoffname aus der Arzneimitteldatenbank -->
+                                    <text value="Prednisolon"/>
                                 </itemCodeableConcept>
                                 <strength>
                                     <numerator>

@@ -81,7 +81,7 @@
           </amount>
           <ingredient>
             <itemCodeableConcept>
-              <text value="Salicylspiritus"/> <!-- Hinweis: patientenverständlicher Wirkstoffname aus der Arzneimitteldatenbank -->
+              <text value="Salicylspiritus"/>
             </itemCodeableConcept>
             <strength>
               <numerator>

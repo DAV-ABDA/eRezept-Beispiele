@@ -19,12 +19,6 @@
                     <id value="a7e1d25f-0b0a-40f7-b529-afda48e51b46"/>
                     <meta>
                         <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.4"/>
-                        <!--tag>
-                            <display value="Beispiel MedicationDispense PZN Bsp 1"/>
-                        </tag>
-                        <tag>
-                            <display value="ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanz kann nicht gewährleistet werden. Wir sind jederzeit dankbar für Hinweise auf Fehler oder für Verbesserungsvorschläge."/>
-                        </tag-->
                     </meta>
                     <identifier>
                         <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
@@ -91,7 +85,7 @@
                     </amount>
                     <ingredient>
                         <itemCodeableConcept>
-                            <text value="Sumatriptan"/> <!-- Hinweis: patientenverständlicher Wirkstoffname aus der Arzneimitteldatenbank -->
+                            <text value="Sumatriptan"/>
                         </itemCodeableConcept>
                         <strength>
                             <numerator>
