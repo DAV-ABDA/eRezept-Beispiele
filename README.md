@@ -221,7 +221,7 @@ DAV Beispiel mit Anpassungen (Erstellungs- & Verordnungsdatum = 27.01.2025)
 DAV Beispiel mit Anpassungen (Erstellungs- & Verordnungsdatum = 27.01.2025)
 - PZN-Verordnung_Nr_33
   - Merkmal MedicationDispense: Abgabe Kombipackung
-- 
+
 **19) Freitextverordnung** (Metformin 850mg Tabletten N3)
 
 KBV basiertes Beispiel (4863d1fb-dc26-4680-bb35-018610d1749d) mit Anpassungen (Erstellungs- & Verordnungsdatum = 27.01.2025)
@@ -241,6 +241,7 @@ KBV basiertes Beispiel (dae573db-54e3-4cb8-880d-0a46bea8aea1) mit Anpassungen (E
 **21) Rezepturverordnung Nr. 1** (1x 100 ml Lösung (Salicylsäure 5 g, 2-propanol 70 % Ad 100 g ))
 
 KBV basiertes Beispiel (9581ce65-b118-4751-9073-19c091b341e0) mit Anpassungen (Erstellungs- & Verordnungsdatum = 27.01.2025)
+- auch als Freitextverordnung (2-Propanolhaltiger Salicylsäure-Hautspiritus 5 % (NRF 11.55.) 100 ml)
 - Rezeptur-Verordnung_Nr_1
   - Merkmal Abgabedaten: Zusatzdaten Herstellung für Rezeptur
 
