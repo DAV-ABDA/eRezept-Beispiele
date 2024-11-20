@@ -89,7 +89,10 @@
     </actor>
   </performer>
   <whenHandedOver value="2025-01-27"/>
-  <dosageInstruction>
+  <!--dosageInstruction>
     <text value="3mal täglich dünn auftragen"/>
-  </dosageInstruction>
+  </dosageInstruction-->
+  <substitution>
+    <wasSubstituted value="true"/>
+  </substitution>
 </MedicationDispense>

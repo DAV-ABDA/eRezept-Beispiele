@@ -193,6 +193,9 @@
           </actor>
         </performer>
         <whenHandedOver value="2025-02-03"/>
+        <!--substitution>
+          <wasSubstituted value="false"/>
+        </substitution-->
       </MedicationDispense>
     </resource>
   </entry>

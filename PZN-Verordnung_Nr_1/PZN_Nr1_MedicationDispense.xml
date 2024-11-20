@@ -46,6 +46,9 @@
                     <!--dosageInstruction>  ====> nur angeben wenn geändert/korrigiert durch Apotheke
                         <text value="1-0-1-0"/>
                     </dosageInstruction-->
+                    <substitution>
+                      <wasSubstituted value="true"/>
+                    </substitution>
                 </MedicationDispense>
             </resource>
         </part>

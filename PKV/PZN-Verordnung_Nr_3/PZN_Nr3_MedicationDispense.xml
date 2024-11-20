@@ -76,7 +76,10 @@
     </actor>
   </performer>
   <whenHandedOver value="2025-02-03"/>
-  <dosageInstruction>
+  <!--dosageInstruction>
     <text value="1x, im Bedarfsfall nach 1h ein weiteres  (max. 3 Stk in 48 h)"/>
-  </dosageInstruction>
+  </dosageInstruction-->
+  <!--substitution>
+  <wasSubstituted value="false"/>
+</substitution-->
 </MedicationDispense>

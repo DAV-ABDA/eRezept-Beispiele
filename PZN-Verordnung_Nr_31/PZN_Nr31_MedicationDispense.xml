@@ -107,6 +107,9 @@
                     <code value="{Package}"/>
                 </quantity>
                 <whenHandedOver value="2025-01-19"/>
+                <!--substitution>
+                  <wasSubstituted value="false"/>
+                </substitution-->
             </MedicationDispense>
         </resource>
     </entry>
@@ -204,6 +207,9 @@
                     </actor>
                 </performer>
                 <whenHandedOver value="2025-01-19"/>
+                <!--substitution>
+                  <wasSubstituted value="false"/>
+                </substitution-->
             </MedicationDispense>
         </resource>
     </entry>

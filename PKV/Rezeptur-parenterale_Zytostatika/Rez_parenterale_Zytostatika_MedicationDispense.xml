@@ -110,7 +110,10 @@
     <code value="{Package}"/>
   </quantity>
   <whenHandedOver value="2025-02-06"/>
-  <dosageInstruction>
+  <!--dosageInstruction>
     <text value="zur ärztlichen parenteralen Applikation gem. schr. Therapieplan"/>
-  </dosageInstruction>
+  </dosageInstruction-->
+  <!--substitution>
+    <wasSubstituted value="false"/>
+  </substitution-->
 </MedicationDispense>

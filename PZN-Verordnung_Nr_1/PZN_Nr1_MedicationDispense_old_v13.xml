@@ -83,7 +83,10 @@
     </actor>
   </performer>
   <whenHandedOver value="2025-01-30"/>
-  <dosageInstruction>
+  <!--dosageInstruction>
     <text value="1-0-1-0"/>
-  </dosageInstruction>
+  </dosageInstruction-->
+  <substitution>
+    <wasSubstituted value="true"/>
+  </substitution>
 </MedicationDispense>

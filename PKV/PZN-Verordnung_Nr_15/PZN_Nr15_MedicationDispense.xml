@@ -92,7 +92,10 @@
     <code value="{Package}"/>
   </quantity>
   <whenHandedOver value="2025-02-03"/>
-  <dosageInstruction>
+  <!--dosageInstruction>
     <text value="1-0-0-0"/>
-  </dosageInstruction>
+  </dosageInstruction-->
+  <substitution>
+    <wasSubstituted value="true"/>
+  </substitution>
 </MedicationDispense>

@@ -59,7 +59,10 @@
     </actor>
   </performer>
   <whenHandedOver value="2025-01-27"/>
-  <dosageInstruction>
+  <!--dosageInstruction>
     <text value="1–3mal/Tag auf die erkrankten Hautstellen auftragen"/>
-  </dosageInstruction>
+  </dosageInstruction-->
+  <!--substitution>
+    <wasSubstituted value="false"/>
+  </substitution-->
 </MedicationDispense>
