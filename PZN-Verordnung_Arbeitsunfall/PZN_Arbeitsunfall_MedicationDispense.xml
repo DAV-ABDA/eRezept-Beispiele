@@ -92,4 +92,7 @@
   <dosageInstruction>
     <text value="3mal täglich dünn auftragen"/>
   </dosageInstruction>
+  <substitution>
+    <wasSubstituted value="true"/>
+  </substitution>
 </MedicationDispense>

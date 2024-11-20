@@ -88,6 +88,9 @@
     </performer>
     <whenHandedOver value="2024-11-03"/>
     <dosageInstruction>
-        <text value="morgens und abends 1 Messlöffel"/>
+        <text value="morgens und abends 1/2 Tablette"/>
     </dosageInstruction>
+    <substitution>
+        <wasSubstituted value="true"/>
+    </substitution>
 </MedicationDispense>

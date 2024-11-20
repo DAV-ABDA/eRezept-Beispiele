@@ -92,4 +92,7 @@
     <code value="{Package}"/>
   </quantity>
   <whenHandedOver value="2024-11-03"/>
+  <substitution>
+    <wasSubstituted value="true"/>
+  </substitution>
 </MedicationDispense>

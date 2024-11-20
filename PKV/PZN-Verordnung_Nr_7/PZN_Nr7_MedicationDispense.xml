@@ -99,6 +99,9 @@
         <dosageInstruction>
           <text value="1 Tablette noch in der Nacht, dann für 7 Tage jeweils 1 Tablette morgens und 1 Tablette abends einnehmen"/>
         </dosageInstruction>
+        <substitution>
+          <wasSubstituted value="true"/>
+        </substitution>
       </MedicationDispense>
     </resource>
   </entry>
@@ -193,6 +196,9 @@
         <dosageInstruction>
           <text value="1 Tablette noch in der Nacht, dann für 7 Tage jeweils 1 Tablette morgens und 1 Tablette abends einnehmen"/>
         </dosageInstruction>
+        <substitution>
+          <wasSubstituted value="true"/>
+        </substitution>
       </MedicationDispense>
     </resource>
   </entry>

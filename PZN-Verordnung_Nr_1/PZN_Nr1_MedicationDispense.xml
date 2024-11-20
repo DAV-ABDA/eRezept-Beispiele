@@ -86,4 +86,7 @@
   <dosageInstruction>
     <text value="1-0-1-0"/>
   </dosageInstruction>
+  <substitution>
+    <wasSubstituted value="true"/>
+  </substitution>
 </MedicationDispense>
