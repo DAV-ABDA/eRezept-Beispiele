@@ -60,16 +60,8 @@
           <meta>
             <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.4"/>
           </meta>
-          <code>
-            <text value="Rezeptur"/>
-          </code>
           <form>
-            <coding>
-              <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
-              <code value="LOE"/>
-              <display value="Lösung"/>
-            </coding>
-            <!--text value="Lösung"/--> <!-- Freitext nur angeben, wenn coding nicht genutzt -->
+            <text value="Lösung"/>
           </form>
           <amount>
             <numerator>
@@ -84,12 +76,12 @@
           </amount>
           <ingredient>
             <itemCodeableConcept>
-              <text value="Salicylspiritus"/>
+              <text value="2-Propanolhaltiger Salicylsäure-Hautspiritus 5 % (NRF 11.55.)"/>
             </itemCodeableConcept>
             <strength>
               <numerator>
                 <value value="100"/>
-                <unit value="g"/>
+                <unit value="ml"/>
                 <system>
                   <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
                     <valueCode value="unknown"/>
