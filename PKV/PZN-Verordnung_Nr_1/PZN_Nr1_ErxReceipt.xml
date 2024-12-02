@@ -1,79 +1,78 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="baf89507-ba99-4201-b2a0-149b02b35053"/>
     <meta>
-        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle|1.2" />
-        <tag>
+        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle|1.4" />
+        <!--tag>
             <display value="Beispiel Quittung für erfolgreich durchlaufenen E-Rezept-Workflow = dispensiertes E-Rezept" />
-        </tag>
+        </tag-->
     </meta>
     <identifier>
-        <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId" />
+        <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
         <value value="200.424.187.927.272.20" />
     </identifier>
-    <type value="document" />
-    <timestamp value="2025-02-03T11:40:00.000+00:00" />
+    <type value="document"/>
+    <timestamp value="2025-02-03T11:40:00.000+00:00"/>
     <link>
         <relation value="self" />
-        <url value="https://erp-ref.zentral.erp.splitdns.ti-dienste.de/Task/200.424.187.927.272.20/$close/" />
+        <url value="https://erp-ref.zentral.erp.splitdns.ti-dienste.de/Task/200.424.187.927.272.20/$close/"/>
     </link>
     <entry>
-        <fullUrl value="https://erp.zentral.erp.splitdns.ti-dienste.de/Composition/4cba5974-7383-48f4-9c66-81dc94dbd0a7" />
+        <fullUrl value="urn:uuid:4cba5974-7383-48f4-9c66-81dc94dbd0a7"/>
         <resource>
             <Composition>
-                <id value="4cba5974-7383-48f4-9c66-81dc94dbd0a7" />
+                <id value="4cba5974-7383-48f4-9c66-81dc94dbd0a7"/>
                 <meta>
-                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Composition|1.2" />
+                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Composition|1.4"/>
                 </meta>
                 <extension url="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_EX_Beneficiary">
                     <valueIdentifier>
-                        <system value="https://gematik.de/fhir/sid/telematik-id" />
-                        <value value="606358757" />
+                        <system value="https://gematik.de/fhir/sid/telematik-id"/>
+                        <value value="3-11.2.0000044180.360"/>
                     </valueIdentifier>
                 </extension>
-                <status value="final" />
+                <status value="final"/>
                 <type>
                     <coding>
-                        <system value="https://gematik.de/fhir/erp/CodeSystem/GEM_ERP_CS_DocumentType" />
-                        <code value="3" />
-                        <display value="Receipt" />
+                        <system value="https://gematik.de/fhir/erp/CodeSystem/GEM_ERP_CS_DocumentType"/>
+                        <code value="3"/>
+                        <display value="Receipt"/>
                     </coding>
                 </type>
-                <date value="2025-02-03T11:40:00.000+00:00" />
+                <date value="2025-02-03T11:40:00.000+00:00"/>
                 <author>
-                    <reference value="Device/1" />
+                    <reference value="urn:uuid:44eaed0d-50ef-4662-855d-bef93957c2ba"/>
                 </author>
-                <title value="Quittung" />
+                <title value="Quittung"/>
                 <event>
                     <period>
-                        <start value="2025-02-03T11:20:00.000+00:00" />
-                        <end value="2025-02-03T11:40:00.000+00:00" />
+                        <start value="2025-02-03T11:20:00.000+00:00"/>
+                        <end value="2025-02-03T11:40:00.000+00:00"/>
                     </period>
                 </event>
                 <section>
                     <entry>
-                        <reference value="Binary/PrescriptionDigest-200.424.187.927.272.20" />
-                        <type value="Binary"/>
+                        <reference value="urn:uuid:aa915f17-2b44-4167-8b5f-f977227e272f"/>
                     </entry>
                 </section>
             </Composition>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://erp.zentral.erp.splitdns.ti-dienste.de/Device/1" />
+        <fullUrl value="urn:uuid:44eaed0d-50ef-4662-855d-bef93957c2ba"/>
         <resource>
             <Device>
-                <id value="1" />
+                <id value="1"/>
                 <meta>
-                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Device|1.2" />
+                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Device|1.4"/>
                 </meta>
                 <status value="active"/>
-                <serialNumber value="1.4.0"/>
+                <serialNumber value="1.15.0"/>
                 <deviceName>
                     <name value="E-Rezept Fachdienst"/>
                     <type value="user-friendly-name"/>
                 </deviceName>
                 <version>
-                    <value value="1.4.0"/>
+                    <value value="1.15.0"/>
                 </version>
                 <contact>
                     <system value="email"/>
@@ -83,15 +82,16 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://erp.zentral.erp.splitdns.ti-dienste.de/Binary/PrescriptionDigest-200.424.187.927.272.20" />
+        <fullUrl value="urn:uuid:aa915f17-2b44-4167-8b5f-f977227e272f"/>
         <resource>
             <Binary>
-                <id value="PrescriptionDigest-200.424.187.927.272.20"/>
+                <id value="aa915f17-2b44-4167-8b5f-f977227e272f"/>
                 <meta>
-                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Digest|1.2" />
+                    <versionId value="1"/>
+                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Digest|1.4"/>
                 </meta>
                 <contentType value="application/octet-stream"/>
-                <data value="Y2RjMTVjNThkMzlkMjllNDdjMTk1MjIzNDlkODRjMThiNTliYTZkMGFhZmI5NGYyZjM2NDFkNGJiZTk1ODhiMQ=="/>
+                <data value="PM4dE+0J/Ug9MB6sKSuwzstg0UBt9L/3YHQjg1DUvVg="/>
             </Binary>
         </resource>
     </entry>
@@ -102,7 +102,7 @@
         </type>
         <when value="2025-02-03T11:40:00.000+00:00" />
         <who>
-            <reference value="https://erp-ref.zentral.erp.splitdns.ti-dienste.de/Device/1" />
+            <reference value="urn:uuid:44eaed0d-50ef-4662-855d-bef93957c2ba" />
         </who>
         <sigFormat value="application/pkcs7-mime" />
         <data value="Y2RjMTVjNThkMzlkMjllNDdjMTk1MjIzNDlkODRjMThiNTliYTZkMGFhZmI5NGYyZjM2NDFkNGJiZTk1ODhiMQ==" />
