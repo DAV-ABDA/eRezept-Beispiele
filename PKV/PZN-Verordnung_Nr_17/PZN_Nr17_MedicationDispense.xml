@@ -48,9 +48,9 @@
                         <code value="{Package}"/>
                     </quantity>
                     <whenHandedOver value="2024-11-03"/>
-                    <substitution>
+                    <!--substitution>
                         <wasSubstituted value="false"/>
-                    </substitution>
+                    </substitution-->
                 </MedicationDispense>
             </resource>
         </part>
@@ -160,9 +160,9 @@
                         </actor>
                     </performer>
                     <whenHandedOver value="2024-11-03"/>
-                    <substitution>
+                    <!--substitution>
                         <wasSubstituted value="false"/>
-                    </substitution>
+                    </substitution-->
                 </MedicationDispense>
             </resource>
         </part>

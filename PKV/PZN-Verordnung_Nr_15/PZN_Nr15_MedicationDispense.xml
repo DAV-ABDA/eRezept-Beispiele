@@ -3,12 +3,12 @@
   <id value="589bd8b5-8800-48e0-bf67-4ae1a33a0be9"/>
   <meta>
     <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.4"/>
-    <tag>
+    <!--tag>
       <display value="Beispiel MedicationDispense PKV PZN Bsp 15"/>
     </tag>
     <tag>
       <display value="ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanz kann nicht gewährleistet werden. Wir sind jederzeit dankbar für Hinweise auf Fehler oder für Verbesserungsvorschläge."/>
-    </tag>
+    </tag-->
   </meta>
   <parameter>
     <name value="rxDispensation"/>
@@ -48,9 +48,9 @@
             <code value="{Package}"/>
           </quantity>
           <whenHandedOver value="2024-11-03"/>
-          <dosageInstruction>
+          <!--dosageInstruction>  ====> nur angeben wenn geändert/korrigiert durch Apotheke
             <text value="1-0-0-0"/>
-          </dosageInstruction>
+          </dosageInstruction-->
           <substitution>
             <wasSubstituted value="true"/>
           </substitution>

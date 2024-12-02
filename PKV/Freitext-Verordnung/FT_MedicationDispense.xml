@@ -3,12 +3,12 @@
   <id value="be663d7e-eb45-4d32-814c-10383c043d72"/>
   <meta>
     <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.4"/>
-    <tag>
+    <!--tag>
       <display value="Beispiel MedicationDispense PKV Freitext"/>
     </tag>
     <tag>
       <display value="ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanz kann nicht gewährleistet werden. Wir sind jederzeit dankbar für Hinweise auf Fehler oder für Verbesserungsvorschläge."/>
-    </tag>
+    </tag-->
   </meta>
   <parameter>
     <name value="rxDispensation"/>
@@ -43,12 +43,12 @@
             </actor>
           </performer>
           <whenHandedOver value="2024-11-07"/>
-          <dosageInstruction>
+          <!--dosageInstruction>  ====> nur angeben wenn geändert/korrigiert durch Apotheke
             <text value="1-0-0-0"/>
-          </dosageInstruction>
-          <substitution>
+          </dosageInstruction-->
+          <!--substitution>
             <wasSubstituted value="false"/>
-          </substitution>
+          </substitution-->
         </MedicationDispense>
       </resource>
     </part>
