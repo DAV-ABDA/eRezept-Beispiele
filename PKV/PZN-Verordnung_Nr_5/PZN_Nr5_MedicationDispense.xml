@@ -26,7 +26,7 @@
           </identifier>
           <status value="completed"/>
           <medicationReference>
-            <reference value="c96ea92e-80f0-4933-8e0d-f82575d09011"/>
+            <reference value="urn:uuid:c96ea92e-80f0-4933-8e0d-f82575d09011"/>
           </medicationReference>
           <subject>
             <identifier>
