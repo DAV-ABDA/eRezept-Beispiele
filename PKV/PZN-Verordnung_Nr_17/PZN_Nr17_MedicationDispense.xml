@@ -47,7 +47,7 @@
                         <system value="http://unitsofmeasure.org"/>
                         <code value="{Package}"/>
                     </quantity>
-                    <whenHandedOver value="2024-11-03"/>
+                    <whenHandedOver value="2025-02-03"/>
                     <!--substitution>
                         <wasSubstituted value="false"/>
                     </substitution-->
@@ -159,7 +159,7 @@
                             </identifier>
                         </actor>
                     </performer>
-                    <whenHandedOver value="2024-11-03"/>
+                    <whenHandedOver value="2025-02-03"/>
                     <!--substitution>
                         <wasSubstituted value="false"/>
                     </substitution-->

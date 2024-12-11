@@ -42,7 +42,7 @@
               </identifier>
             </actor>
           </performer>
-          <whenHandedOver value="2024-11-03"/>
+          <whenHandedOver value="2025-02-03"/>
           <!--dosageInstruction>  ====> nur angeben wenn geändert/korrigiert durch Apotheke
             <text value="1 Tablette noch in der Nacht, dann für 7 Tage jeweils 1 Tablette morgens und 1 Tablette abends einnehmen"/>
           </dosageInstruction-->
@@ -192,7 +192,7 @@
               </identifier>
             </actor>
           </performer>
-          <whenHandedOver value="2024-11-03"/>
+          <whenHandedOver value="2025-02-03"/>
           <dosageInstruction>
             <text value="1 Tablette noch in der Nacht, dann für 7 Tage jeweils 1 Tablette morgens und 1 Tablette abends einnehmen"/>
           </dosageInstruction>
