@@ -9,7 +9,7 @@
 		<value value="160.270.038.026.944.60"/>
 	</identifier>
 	<type value="document"/>
-	<timestamp value="2024-11-19T08:30:00Z"/>
+	<timestamp value="2025-01-19T08:30:00Z"/>
 	<entry>
 		<fullUrl value="http://pvs.praxis.local/fhir/Composition/9c7746a2-0e11-46d9-8f55-7d07ccd0a5b7"/>
 		<resource>
@@ -34,7 +34,7 @@
 				<subject>
 					<reference value="Patient/9c35e42e-42c2-41fe-b6d9-34c06232c977"/>
 				</subject>
-				<date value="2024-11-19T08:00:00Z"/>
+				<date value="2025-01-19T08:00:00Z"/>
 				<author>
 					<reference value="Practitioner/be95f3b8-408a-4472-84d0-f2d33e500e27"/>
 					<type value="Practitioner"/>
@@ -108,7 +108,7 @@
 				<subject>
 					<reference value="Patient/9c35e42e-42c2-41fe-b6d9-34c06232c977"/>
 				</subject>
-				<authoredOn value="2024-11-19"/>
+				<authoredOn value="2025-01-19"/>
 				<requester>
 					<reference value="Practitioner/be95f3b8-408a-4472-84d0-f2d33e500e27"/>
 				</requester>
