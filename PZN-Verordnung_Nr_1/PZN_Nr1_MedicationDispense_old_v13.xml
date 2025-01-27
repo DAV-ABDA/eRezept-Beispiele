@@ -49,7 +49,7 @@
           <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_PackagingSize">
             <valueString value="12" />
           </extension>
-          <unit value="Stück" />
+          <unit value="St" />
         </numerator>
         <denominator>
           <value value="1" />
@@ -82,6 +82,11 @@
       </identifier>
     </actor>
   </performer>
+  <quantity> <!-- Angabe der abgegebenen Packungsanzahl -->
+    <value value="1" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="{Package}" />
+  </quantity>
   <whenHandedOver value="2025-01-30"/>
   <!--dosageInstruction>
     <text value="1-0-1-0"/>

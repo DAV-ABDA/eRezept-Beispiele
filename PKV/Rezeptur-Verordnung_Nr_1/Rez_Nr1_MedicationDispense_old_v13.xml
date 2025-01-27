@@ -96,6 +96,11 @@
       </identifier>
     </actor>
   </performer>
+  <quantity> <!-- Angabe der abgegebenen Packungsanzahl -->
+    <value value="1" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="{Package}" />
+  </quantity>
   <whenHandedOver value="2025-02-03"/>
   <!--dosageInstruction>
     <text value="1x täglich dünn auf die erkrankten Hautstellen auftragen"/>

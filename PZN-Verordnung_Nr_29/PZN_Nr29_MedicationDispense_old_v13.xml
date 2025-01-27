@@ -56,7 +56,7 @@
                     <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_PackagingSize">
                         <valueString value="98"/>
                     </extension>
-                    <unit value="Stück"/>
+                    <unit value="St"/>
                 </numerator>
                 <denominator>
                     <value value="1"/>
