@@ -75,6 +75,11 @@
       </identifier>
     </actor>
   </performer>
+  <quantity> <!-- Angabe der abgegebenen Packungsanzahl -->
+    <value value="1" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="{Package}" />
+  </quantity>
   <whenHandedOver value="2025-02-03"/>
   <!--dosageInstruction>
     <text value="1x, im Bedarfsfall nach 1h ein weiteres  (max. 3 Stk in 48 h)"/>

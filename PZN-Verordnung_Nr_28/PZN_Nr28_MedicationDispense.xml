@@ -42,13 +42,13 @@
                             </identifier>
                         </actor>
                     </performer>
-                    <quantity>
+                    <quantity> <!-- Angabe der abgegebenen Packungsanzahl -->
                         <value value="2"/>
                         <system value="http://unitsofmeasure.org"/>
                         <code value="{Package}"/>
                     </quantity>
                     <whenHandedOver value="2025-01-19"/>
-                    <substitution>
+                    <substitution> <!-- "Austausch/ersetzen des Arzneimittels bei Abgabe" z.B.: Wenn bei einer PZN Verordnung die abgegebene PZN nicht der verordneten entspricht. -->
                         <wasSubstituted value="true"/>
                     </substitution>
                 </MedicationDispense>

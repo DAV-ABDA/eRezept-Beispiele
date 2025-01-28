@@ -68,7 +68,7 @@
                                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_PackagingSize">
                                     <valueString value="20"/>
                                 </extension>
-                                <unit value="Stück"/>
+                                <unit value="St"/>
                             </numerator>
                             <denominator>
                                 <value value="1"/>
@@ -107,9 +107,9 @@
                     <code value="{Package}"/>
                 </quantity>
                 <whenHandedOver value="2025-01-19"/>
-                <!--substitution>
+                <substitution>
                   <wasSubstituted value="false"/>
-                </substitution-->
+                </substitution>
             </MedicationDispense>
         </resource>
     </entry>
@@ -173,7 +173,7 @@
                                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_PackagingSize">
                                     <valueString value="10"/>
                                 </extension>
-                                <unit value="Stück"/>
+                                <unit value="St"/>
                             </numerator>
                             <denominator>
                                 <value value="1"/>
@@ -206,10 +206,15 @@
                         </identifier>
                     </actor>
                 </performer>
+                <quantity> <!-- Angabe der abgegebenen Packungsanzahl -->
+                    <value value="1" />
+                    <system value="http://unitsofmeasure.org" />
+                    <code value="{Package}" />
+                </quantity>
                 <whenHandedOver value="2025-01-19"/>
                 <!--substitution>
                   <wasSubstituted value="false"/>
-                </substitution-->
+                </substitution>
             </MedicationDispense>
         </resource>
     </entry>

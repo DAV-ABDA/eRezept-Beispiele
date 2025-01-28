@@ -75,6 +75,11 @@
       </identifier>
     </actor>
   </performer>
+  <quantity> <!-- Angabe der abgegebenen Packungsanzahl -->
+    <value value="1" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="{Package}" />
+  </quantity>
   <whenHandedOver value="2025-07-04"/>
   <!--substitution>
     <wasSubstituted value="false"/>
