@@ -11,11 +11,7 @@ Es wurde darauf geachtet, dass die zu einem Beispiel gehörenden Dateien fachlic
 
 **3) Impfen - Grippeschutzimpfung - FLUAD Tetra 2023/2024 1x0,5 ml**
 
-**4) Impfen - Coronaschutzimpfung - FLUCELVAX Tetra 2024/2025 10x0.5 ml**
-- besondere Merkmale:
-  - Abgabe: Auseinzelung
-
-**5) Impfen - Coronaschutzimpfung - INFLUVAC Tetra 2024/2025 1x0,5 ml**
+**4) Impfen - Coronaschutzimpfung - COMIRNATY 30 JN.1 BUND 1X2.25 ML**
 
 Einen Austausch und weitere Beispiele sind unter folgenden Link zu finden:
 https://github.com/DAV-ABDA/eRezept-Beispiele/issues/30
