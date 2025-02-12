@@ -116,7 +116,7 @@
                     <reference value="Coverage/521189fe-438f-4d7f-920b-b3fbdadfe0c0"/>
                 </insurance>
                 <note>
-                    <text value="ACHTUNG/Info: Hier wurde der zur Auseinzelung genutzte Impfstoff angegeben nicht der abgerechnete."/>
+                    <text value="ACHTUNG/Info: Hier wurde der zur Auseinzelung genutzte Impfstoff angegeben."/>
                 </note>
                 <dispenseRequest>
                     <quantity>

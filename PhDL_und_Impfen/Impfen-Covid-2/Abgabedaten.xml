@@ -279,7 +279,7 @@
                         <type value="informational"/>
                         <factor value="1"/>
                         <amount>
-                            <value value="21.00"/>
+                            <value value="0.00"/>
                             <currency value="EUR"/>
                         </amount>
                     </priceComponent>
