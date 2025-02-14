@@ -393,7 +393,7 @@
                             </valueCodeableConcept>
                         </extension>
                         <type value="informational"/>
-                        <factor value="100"/>
+                        <factor value="166.666667"/>
                         <amount>
                             <value value="0.00"/>
                             <currency value="EUR"/>
