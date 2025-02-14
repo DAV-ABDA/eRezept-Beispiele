@@ -2,20 +2,24 @@
 In diesem Projekt stellt der DAV Beispiele für die Erstellung und Verarbeitung von E-Rezepten auftretenden Dateien in der Apotheke und der Abrechnung zur Verfügung. 
 Es wurde darauf geachtet, dass die zu einem Beispiel gehörenden Dateien fachlich und technisch zusammenpassen und soweit wie möglich realistische Informationen enthalten.<p>
 
-**1) PhDL - Blutdruck**
+**PhDL - Blutdruck**
 - besondere Merkmale: Ausprägungen Verordnung (GKV, PKV, SKT)
 
-**2) Impfen - Grippeschutzimpfung - Afluria TETRA 2023/2024 10x0,5 ml**
+**Impfen - Grippeschutzimpfung - Afluria TETRA 2023/2024 10x0,5 ml**
 - besondere Merkmale: 
   - Abgabe: Auseinzelung
 
-**3) Impfen - Grippeschutzimpfung - FLUAD Tetra 2023/2024 1x0,5 ml**
+**Impfen - Grippeschutzimpfung (2) - FLUAD Tetra 2023/2024 1x0,5 ml**
 
-**4) Impfen - Coronaschutzimpfung - COMIRNATY 30 JN.1 BUND 1X2.25 ML**
+**Impfen - Coronaschutzimpfung - COMIRNATY 30 JN.1 BUND 1X2.25 ML**
 - besondere Merkmale:
   - Abgabe: Auseinzelung
-  - 
-**5) Impfen - Coronaschutzimpfung - NUVAXOVID JN1 UDV BUND**
+
+**Impfen - Coronaschutzimpfung (2) - NUVAXOVID JN1 UDV BUND**
+
+**PKV-Rx-NNF**
+- besondere Merkmale: PKV-Rx-Absatz für den Nacht- und Notdienstfonds (NNF)
+
 
 Einen Austausch und weitere Beispiele sind unter folgenden Link zu finden:
 https://github.com/DAV-ABDA/eRezept-Beispiele/issues/30

@@ -1,0 +1,97 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="5800f311-5061-466e-9dff-d2c20eff2b8e"/>
+    <meta>
+        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle|1.4"/>
+    </meta>
+    <identifier>
+        <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
+        <value value="990.019.776.362.941.16"/>
+    </identifier>
+    <type value="document"/>
+    <timestamp value="2025-11-01T09:00:00.000+01:00"/>
+    <entry>
+        <fullUrl value="urn:uuid:bb573547-6428-454b-926d-d59460928ee4"/>
+        <resource>
+            <Composition xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Composition|1.4"/>
+                </meta>
+                <extension url="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_EX_Beneficiary">
+                    <valueIdentifier>
+                        <system value="https://gematik.de/fhir/sid/telematik-id"/>
+                        <value value="3-SMC-B-Testkarte-883110000116873"/> <!-- Apotheken Telematik-ID -->
+                    </valueIdentifier>
+                </extension>
+                <status value="final"/>
+                <type>
+                    <coding>
+                        <system value="https://gematik.de/fhir/erp/CodeSystem/GEM_ERP_CS_DocumentType"/>
+                        <code value="3"/>
+                        <display value="Receipt"/>
+                    </coding>
+                </type>
+                <date value="2025-11-01T09:00:00.000+01:00"/>
+                <author>
+                    <reference value="urn:uuid:d2df590f-c27e-4eba-a863-d00141e83be8"/>
+                </author>
+                <title value="Quittung"/>
+                <event>
+                    <period>
+                        <start value="2025-11-01T09:00:00.000+01:00"/> <!-- Zeit der Quittungserstellung -->
+                        <end value="2025-11-01T09:00:00.000+01:00"/> <!-- Zeit der Quittungserstellung -->
+                    </period>
+                </event>
+                <section>
+                    <entry>
+                        <reference value="urn:uuid:c5a78c4b-2ade-44f8-88f2-39da892efc13"/>
+                    </entry>
+                </section>
+            </Composition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:d2df590f-c27e-4eba-a863-d00141e83be8"/>
+        <resource>
+            <Device xmlns="http://hl7.org/fhir">
+                <id value="d2df590f-c27e-4eba-a863-d00141e83be8"/>
+                <meta>
+                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Device|1.4"/>
+                </meta>
+                <status value="active"/>
+                <serialNumber value="N/A"/> <!-- default -->
+                <deviceName>
+                    <name value="PS"/> <!-- default -->
+                    <type value="other"/> <!-- default -->
+                </deviceName>
+                <version>
+                    <value value="N/A"/> <!-- default -->
+                </version>
+            </Device>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:c5a78c4b-2ade-44f8-88f2-39da892efc13"/>
+        <resource>
+            <Binary xmlns="http://hl7.org/fhir">
+                <id value="c5a78c4b-2ade-44f8-88f2-39da892efc13"/>
+                <meta>
+                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Digest|1.4"/>
+                </meta>
+                <contentType value="application/octet-stream"/>
+                <data value="SGFzaCBkZXIgVmVyb3JudW5n"/>  <!-- Hash der Verordnung (ohne Signatur) -->
+            </Binary>
+        </resource>
+    </entry>
+    <signature>
+        <type>
+            <system value="urn:iso-astm:E1762-95:2013"/>
+            <code value="1.2.840.10065.1.12.1.1"/>
+        </type>
+        <when value="2025-11-01T09:00:00.000+01:00"/>
+        <who>
+            <reference value="urn:uuid:d2df590f-c27e-4eba-a863-d00141e83be8"/>
+        </who>
+        <sigFormat value="application/pkcs7-mime"/>
+        <data value="U2lnbmF0dXIgZGVyIFF1aXR0dW5nIChvaG5lIHNpZ25hdHVyIEJsb2NrKQ=="/> <!-- Signatur über das QuittungBundle (ohne <signature> Block) -->
+    </signature>
+</Bundle>
