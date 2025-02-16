@@ -32,11 +32,11 @@
                     </coding>
                 </type>
                 <subject>
-                    <reference value="Patient/a22b6bf5-c4fd-4286-b149-b4a590b2bbc3"/>
+                    <reference value="urn:uuid:a22b6bf5-c4fd-4286-b149-b4a590b2bbc3"/>
                 </subject>
                 <date value="2025-04-01T10:00:00Z"/>
                 <author>
-                    <reference value="Practitioner/3522cb38-7931-4323-bac8-0d41119d045d"/>
+                    <reference value="urn:uuid:3522cb38-7931-4323-bac8-0d41119d045d"/>
                     <type value="Practitioner"/>
                 </author>
                 <author>
@@ -48,7 +48,7 @@
                 </author>
                 <title value="elektronische Arzneimittelverordnung"/>
                 <custodian>
-                    <reference value="Organization/5f971615-a4eb-47df-bf08-87442d419ed2"/>
+                    <reference value="urn:uuid:5f971615-a4eb-47df-bf08-87442d419ed2"/>
                 </custodian>
                 <section>
                     <code>
@@ -58,7 +58,7 @@
                         </coding>
                     </code>
                     <entry>
-                        <reference value="MedicationRequest/e61c13f7-cc72-47d3-a472-4b9c94bdce23"/>
+                        <reference value="urn:uuid:e61c13f7-cc72-47d3-a472-4b9c94bdce23"/>
                     </entry>
                 </section>
                 <section>
@@ -69,7 +69,7 @@
                         </coding>
                     </code>
                     <entry>
-                        <reference value="Coverage/1f1a3bb3-7078-49b9-b9ce-9dc2c11fd683"/>
+                        <reference value="urn:uuid:1f1a3bb3-7078-49b9-b9ce-9dc2c11fd683"/>
                     </entry>
                 </section>
             </Composition>
@@ -103,17 +103,17 @@
                 <status value="active"/>
                 <intent value="order"/>
                 <medicationReference>
-                    <reference value="Medication/54788c8c-5449-46d2-8dfb-31d8b93755d4"/>
+                    <reference value="urn:uuid:54788c8c-5449-46d2-8dfb-31d8b93755d4"/>
                 </medicationReference>
                 <subject>
-                    <reference value="Patient/a22b6bf5-c4fd-4286-b149-b4a590b2bbc3"/>
+                    <reference value="urn:uuid:a22b6bf5-c4fd-4286-b149-b4a590b2bbc3"/>
                 </subject>
                 <authoredOn value="2025-04-01"/>
                 <requester>
-                    <reference value="Practitioner/3522cb38-7931-4323-bac8-0d41119d045d"/>
+                    <reference value="urn:uuid:3522cb38-7931-4323-bac8-0d41119d045d"/>
                 </requester>
                 <insurance>
-                    <reference value="Coverage/1f1a3bb3-7078-49b9-b9ce-9dc2c11fd683"/>
+                    <reference value="urn:uuid:1f1a3bb3-7078-49b9-b9ce-9dc2c11fd683"/>
                 </insurance>
                 <dispenseRequest>
                     <quantity>
@@ -337,7 +337,7 @@
                     </coding>
                 </type>
                 <beneficiary>
-                    <reference value="Patient/a22b6bf5-c4fd-4286-b149-b4a590b2bbc3"/>
+                    <reference value="urn:uuid:a22b6bf5-c4fd-4286-b149-b4a590b2bbc3"/>
                 </beneficiary>
                 <payor>
                     <identifier>

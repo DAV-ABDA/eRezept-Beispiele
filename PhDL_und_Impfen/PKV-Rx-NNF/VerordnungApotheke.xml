@@ -204,7 +204,8 @@
                 <birthDate value="1900-01-01"/>
                 <address>
                     <type value="both"/>
-                    <postalCode value="10557"/>
+                    <postalCode value="00000"/>
+                    <country value="D"/>
                 </address>
             </Patient>
         </resource>
