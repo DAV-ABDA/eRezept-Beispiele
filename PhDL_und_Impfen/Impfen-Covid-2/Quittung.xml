@@ -1,23 +1,16 @@
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="9b2a3432-eb78-4712-aa89-d4f5f18b677d"/>
+    <id value="4fb104e4-fd9f-430c-a7bb-17db9f292fa3"/>
     <meta>
-        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle|1.4" />
-        <!--tag>
-            <display value="Beispiel Quittung für erfolgreich durchlaufenen E-Rezept-Workflow = dispensiertes E-Rezept" />
-        </tag-->
+        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle|1.4"/>
     </meta>
     <identifier>
         <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
-        <value value="160.000.764.737.300.50"/>
+        <value value="920.033.487.939.569.16"/>
     </identifier>
     <type value="document"/>
-    <timestamp value="2025-01-30T10:40:00.000+00:00"/>
-    <link>
-        <relation value="self"/>
-        <url value="https://erp.zentral.erp.splitdns.ti-dienste.de/Task/160.000.764.737.300.50/$close/"/>
-    </link>
+    <timestamp value="2025-04-01T09:00:00.000+01:00"/>
     <entry>
-        <fullUrl value="urn:uuid:a19a1bf7-8d01-4d9e-8134-7e0cfac324ad"/>
+        <fullUrl value="urn:uuid:11ef5662-c396-4eee-88af-a1160ac6bb77"/>
         <resource>
             <Composition xmlns="http://hl7.org/fhir">
                 <meta>
@@ -26,7 +19,7 @@
                 <extension url="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_EX_Beneficiary">
                     <valueIdentifier>
                         <system value="https://gematik.de/fhir/sid/telematik-id"/>
-                        <value value="3-11.2.0000044180.360"/>
+                        <value value="3-SMC-B-Testkarte-883110000116873"/> <!-- Apotheken Telematik-ID -->
                     </valueIdentifier>
                 </extension>
                 <status value="final"/>
@@ -37,60 +30,55 @@
                         <display value="Receipt"/>
                     </coding>
                 </type>
-                <date value="2025-01-30T10:40:00.000+00:00"/>
+                <date value="2025-04-01T09:00:00.000+01:00"/>
                 <author>
-                    <reference value="urn:uuid:65174dc3-a334-4877-a12e-ad91f3b64663"/>
+                    <reference value="urn:uuid:6df91be0-9755-4347-8d47-3724383e93c1"/>
                 </author>
                 <title value="Quittung"/>
                 <event>
                     <period>
-                        <start value="2025-01-30T10:20:00.000+00:00"/>
-                        <end value="2025-01-30T10:40:00.000+00:00"/>
+                        <start value="2025-04-01T09:00:00.000+01:00"/> <!-- Zeit der Quittungserstellung -->
+                        <end value="2025-04-01T09:00:00.000+01:00"/> <!-- Zeit der Quittungserstellung -->
                     </period>
                 </event>
                 <section>
                     <entry>
-                        <reference value="urn:uuid:aa915f17-2b44-4167-8b5f-f977227e272f"/>
+                        <reference value="urn:uuid:3fe0af7d-b12e-4a07-b3a0-6d63be21f8d2"/>
                     </entry>
                 </section>
             </Composition>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:65174dc3-a334-4877-a12e-ad91f3b64663"/>
+        <fullUrl value="urn:uuid:6df91be0-9755-4347-8d47-3724383e93c1"/>
         <resource>
             <Device xmlns="http://hl7.org/fhir">
-                <id value="65174dc3-a334-4877-a12e-ad91f3b64663"/>
+                <id value="6df91be0-9755-4347-8d47-3724383e93c1"/>
                 <meta>
                     <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Device|1.4"/>
                 </meta>
                 <status value="active"/>
-                <serialNumber value="1.15.0"/>
+                <serialNumber value="N/A"/> <!-- default -->
                 <deviceName>
-                    <name value="E-Rezept Fachdienst"/>
-                    <type value="user-friendly-name"/>
+                    <name value="PS"/> <!-- default -->
+                    <type value="other"/> <!-- default -->
                 </deviceName>
                 <version>
-                    <value value="1.15.0"/>
+                    <value value="N/A"/> <!-- default -->
                 </version>
-                <contact>
-                    <system value="email"/>
-                    <value value="betrieb@gematik.de"/>
-                </contact>
             </Device>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:aa915f17-2b44-4167-8b5f-f977227e272f"/>
+        <fullUrl value="urn:uuid:3fe0af7d-b12e-4a07-b3a0-6d63be21f8d2"/>
         <resource>
             <Binary xmlns="http://hl7.org/fhir">
-                <id value="aa915f17-2b44-4167-8b5f-f977227e272f"/>
+                <id value="3fe0af7d-b12e-4a07-b3a0-6d63be21f8d2"/>
                 <meta>
-                    <versionId value="1"/>
                     <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Digest|1.4"/>
                 </meta>
                 <contentType value="application/octet-stream"/>
-                <data value="PM4dE+0J/Ug9MB6sKSuwzstg0UBt9L/3YHQjg1DUvVg="/>
+                <data value="SGFzaCBkZXIgVmVyb3JudW5n"/>  <!-- Hash der Verordnung (ohne Signatur) -->
             </Binary>
         </resource>
     </entry>
@@ -99,11 +87,11 @@
             <system value="urn:iso-astm:E1762-95:2013"/>
             <code value="1.2.840.10065.1.12.1.1"/>
         </type>
-        <when value="2025-01-30T10:40:00.000+00:00"/>
+        <when value="2025-04-01T09:00:00.000+01:00"/>
         <who>
-            <reference value="urn:uuid:65174dc3-a334-4877-a12e-ad91f3b64663" />
+            <reference value="urn:uuid:6df91be0-9755-4347-8d47-3724383e93c1"/>
         </who>
         <sigFormat value="application/pkcs7-mime"/>
-        <data value="Y2RjMTVjNThkMzlkMjllNDdjMTk1MjIzNDlkODRjMThiNTliYTZkMGFhZmI5NGYyZjM2NDFkNGJiZTk1ODhiMQ==" />
+        <data value="U2lnbmF0dXIgZGVyIFF1aXR0dW5nIChvaG5lIHNpZ25hdHVyIEJsb2NrKQ=="/> <!-- Signatur über das QuittungBundle (ohne <signature> Block) -->
     </signature>
 </Bundle>
