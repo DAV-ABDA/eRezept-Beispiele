@@ -147,7 +147,7 @@
                     </chargeItemCodeableConcept>
                     <priceComponent>
                         <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-MwStSatz">
-                            <valueDecimal value="0"/>
+                            <valueDecimal value="0.00"/>
                         </extension>
                         <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-KostenVersicherter">
                             <extension url="Kategorie">
@@ -183,7 +183,7 @@
                     </chargeItemCodeableConcept>
                     <priceComponent>
                         <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-MwStSatz">
-                            <valueDecimal value="0"/>
+                            <valueDecimal value="0.00"/>
                         </extension>
                         <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-KostenVersicherter">
                             <extension url="Kategorie">
@@ -219,7 +219,7 @@
                     </chargeItemCodeableConcept>
                     <priceComponent>
                         <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-MwStSatz">
-                            <valueDecimal value="0"/>
+                            <valueDecimal value="0.00"/>
                         </extension>
                         <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-KostenVersicherter">
                             <extension url="Kategorie">
