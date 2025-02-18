@@ -117,7 +117,8 @@
                     </extension>
                     <extension url="ID">
                         <valueIdentifier>
-                            <value value="f9bb62c2-2de0-4223-84e4-9bf36a5d9f5b"/>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:f9bb62c2-2de0-4223-84e4-9bf36a5d9f5b"/>
                         </valueIdentifier>
                     </extension>
                 </extension>
