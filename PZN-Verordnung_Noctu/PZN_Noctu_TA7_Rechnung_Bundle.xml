@@ -176,7 +176,7 @@
           </link>
           <fullUrl value="urn:uuid:dc3ac49b-8483-47f2-8eb5-dc134212a852"/>
           <resource>
-            <Invoice>
+            <Invoice xmlns="http://hl7.org/fhir">
               <id value="dc3ac49b-8483-47f2-8eb5-dc134212a852"/>
               <meta>
                 <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_ERP_eAbrechnungsdaten|1.4"/>
