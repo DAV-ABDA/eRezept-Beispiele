@@ -10,7 +10,7 @@
     </tag>
   </meta>
   <contained>
-    <Medication>
+     <Medication xmlns="http://hl7.org/fhir">
       <id value="b6d208be-e549-4efb-a87b-77fae57fc001"/>
       <meta>
           <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.1.0"/>

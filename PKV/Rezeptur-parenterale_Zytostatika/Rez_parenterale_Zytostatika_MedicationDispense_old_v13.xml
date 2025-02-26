@@ -8,7 +8,7 @@
     </tag>
   </meta>
   <contained>
-    <Medication>
+     <Medication xmlns="http://hl7.org/fhir">
       <id value="96091647-180a-4222-8961-d551e2c2889a"/>
       <meta>
         <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_Compounding|1.1.0"/>
