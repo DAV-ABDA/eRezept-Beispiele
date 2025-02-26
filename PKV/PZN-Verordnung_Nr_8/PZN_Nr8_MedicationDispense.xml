@@ -2,7 +2,7 @@
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="62f2819c-059f-4fc8-84a1-b8caccd97724"/>
   <meta>
-    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.4"/>
+    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.5"/>
     <!--tag>
       <display value="Beispiel MedicationDispense PKV PZN Bsp 8"/>
     </tag>
@@ -15,10 +15,10 @@
     <part>
       <name value="medicationDispense"/>
       <resource>
-        <MedicationDispense>
+        <MedicationDispense xmlns="http://hl7.org/fhir">
           <id value="ca8a8e17-5dec-4c1b-a556-b7815605097b"/>
           <meta>
-            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.4"/>
+            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.5"/>
           </meta>
           <identifier>
             <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
@@ -44,8 +44,7 @@
           </performer>
           <quantity> <!-- Angabe der abgegebenen Packungsanzahl -->
             <value value="1" />
-            <system value="http://unitsofmeasure.org" />
-            <code value="{Package}" />
+            <unit value="Packung"/>
           </quantity>
           <whenHandedOver value="2025-02-03"/>
           <!--dosageInstruction>  ====> nur angeben wenn geändert/korrigiert durch Apotheke
@@ -60,10 +59,10 @@
     <part>
       <name value="medication"/>
       <resource>
-        <Medication>
+        <Medication xmlns="http://hl7.org/fhir">
           <id value="44198295-e6ba-4149-b625-2b223d3457e0"/>
           <meta>
-            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.4"/>
+            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.5"/>
           </meta>
           <code>
             <coding>

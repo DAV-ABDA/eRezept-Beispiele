@@ -2,7 +2,7 @@
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="4eba994d-0cb9-4f05-ab14-8e773f7ee5c5"/>
   <meta>
-    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.4"/>
+    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.5"/>
     <!--tag>
       <display value="Beispiel MedicationDispense Wirkstoff Unfall -&gt; PZN Abgabe"/>
     </tag>
@@ -15,10 +15,10 @@
     <part>
       <name value="medicationDispense"/>
       <resource>
-        <MedicationDispense>
+        <MedicationDispense xmlns="http://hl7.org/fhir">
           <id value="f23d8d7f-5147-447f-b3d5-473a4d30268c"/>
           <meta>
-            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.4"/>
+            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.5"/>
           </meta>
           <identifier>
             <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
@@ -60,10 +60,10 @@
     <part>
       <name value="medication"/>
       <resource>
-        <Medication>
+        <Medication xmlns="http://hl7.org/fhir">
           <id value="52660ef8-6e6e-4c8d-8096-ff78e084141c"/>
           <meta>
-            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.4"/>
+            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.5"/>
           </meta>
           <code>
             <coding>

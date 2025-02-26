@@ -2,7 +2,7 @@
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="8b334bc6-4e0b-430a-b85b-494d0293d760"/>
   <meta>
-    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.4"/>
+    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.5"/>
     <!--tag>
       <display value="Beispiel MedicationDispense Bsp Rezeptur Zytostatika"/>
     </tag>
@@ -15,10 +15,10 @@
     <part>
       <name value="medicationDispense"/>
       <resource>
-        <MedicationDispense>
+        <MedicationDispense xmlns="http://hl7.org/fhir">
           <id value="2e184592-a9ba-41ba-a336-4a96881e3f39"/>
           <meta>
-            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.4"/>
+            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.5"/>
           </meta>
           <identifier>
             <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
@@ -60,10 +60,10 @@
     <part>
       <name value="medication"/>
       <resource>
-        <Medication>
+        <Medication xmlns="http://hl7.org/fhir">
           <id value="2fdfc0f1-10c1-4bd3-a587-f219657f5664"/>
           <meta>
-            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.4"/>
+            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.5"/>
           </meta>
           <form>
             <text value="Infusionslösung"/>

@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="9b2a3432-eb78-4712-aa89-d4f5f18b677d"/>
     <meta>
-        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle|1.4" />
+        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle|1.5" />
         <!--tag>
             <display value="Beispiel Quittung für erfolgreich durchlaufenen E-Rezept-Workflow = dispensiertes E-Rezept" />
         </tag-->
@@ -21,7 +21,7 @@
         <resource>
             <Composition xmlns="http://hl7.org/fhir">
                 <meta>
-                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Composition|1.4"/>
+                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Composition|1.5"/>
                 </meta>
                 <extension url="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_EX_Beneficiary">
                     <valueIdentifier>
@@ -62,7 +62,7 @@
             <Device xmlns="http://hl7.org/fhir">
                 <id value="65174dc3-a334-4877-a12e-ad91f3b64663"/>
                 <meta>
-                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Device|1.4"/>
+                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Device|1.5"/>
                 </meta>
                 <status value="active"/>
                 <serialNumber value="1.15.0"/>
@@ -87,7 +87,7 @@
                 <id value="aa915f17-2b44-4167-8b5f-f977227e272f"/>
                 <meta>
                     <versionId value="1"/>
-                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Digest|1.4"/>
+                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Digest|1.5"/>
                 </meta>
                 <contentType value="application/octet-stream"/>
                 <data value="PM4dE+0J/Ug9MB6sKSuwzstg0UBt9L/3YHQjg1DUvVg="/>

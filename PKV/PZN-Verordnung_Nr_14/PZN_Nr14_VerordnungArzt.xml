@@ -2,7 +2,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="4627b8b7-b025-445c-8bd9-365c1cb276c0"/>
     <meta>
-        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.1.0"/>
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.2"/>
     </meta>
     <identifier>
         <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
@@ -13,10 +13,10 @@
     <entry>
         <fullUrl value="http://pvs.praxis.local/fhir/Composition/104935c8-f16f-4abd-99a4-d48b7e451817"/>
         <resource>
-            <Composition>
+            <Composition xmlns="http://hl7.org/fhir">
                 <id value="104935c8-f16f-4abd-99a4-d48b7e451817"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Composition|1.1.0"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Composition|1.2"/>
                 </meta>
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Legal_basis">
                     <valueCoding>
@@ -84,15 +84,15 @@
     <entry>
         <fullUrl value="http://pvs.praxis.local/fhir/MedicationRequest/d90f2d1e-1285-4c99-8898-b2ddda0f544c"/>
         <resource>
-            <MedicationRequest>
+            <MedicationRequest xmlns="http://hl7.org/fhir">
                 <id value="d90f2d1e-1285-4c99-8898-b2ddda0f544c"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Prescription|1.1.0"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Prescription|1.2"/>
                 </meta>
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_EmergencyServicesFee">
                     <valueBoolean value="false"/>
                 </extension>
-                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_BVG">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_SER">
                     <valueBoolean value="false"/>
                 </extension>
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Multiple_Prescription">
@@ -123,8 +123,7 @@
                 <dispenseRequest>
                     <quantity>
                         <value value="1"/>
-                        <system value="http://unitsofmeasure.org"/>
-                        <code value="{Package}"/>
+                        <unit value="Packung"/>
                     </quantity>
                 </dispenseRequest>
                 <substitution>
@@ -136,16 +135,16 @@
     <entry>
         <fullUrl value="http://pvs.praxis.local/fhir/Medication/ab8d2282-2092-448d-80f2-f1620c06065d"/>
         <resource>
-            <Medication>
+            <Medication xmlns="http://hl7.org/fhir">
                 <id value="ab8d2282-2092-448d-80f2-f1620c06065d"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.1.0"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.2"/>
                 </meta>
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type">
                     <valueCodeableConcept>
                         <coding>
                             <system value="http://snomed.info/sct"/>
-                            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+                            <version value="http://snomed.info/sct/11000274103/version/20240515"/>
                             <code value="763158003"/>
                             <display value="Medicinal product (product)"/>
                         </coding>
@@ -193,16 +192,16 @@
     <entry>
         <fullUrl value="http://pvs.praxis.local/fhir/Patient/3c093d74-43d9-4ed3-b039-06b367b18958"/>
         <resource>
-            <Patient>
+            <Patient xmlns="http://hl7.org/fhir">
                 <id value="3c093d74-43d9-4ed3-b039-06b367b18958"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Patient|1.1.0"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Patient|1.2"/>
                 </meta>
                 <identifier>
                     <type>
                         <coding>
                             <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
-                            <code value="PKV"/>
+                            <code value="KVZ10"/>
                         </coding>
                     </type>
                     <system value="http://fhir.de/sid/pkv/kvid-10"/>
@@ -238,10 +237,10 @@
     <entry>
         <fullUrl value="http://pvs.praxis.local/fhir/Practitioner/a4069456-5746-479a-a892-6b9ef51e54cd"/>
         <resource>
-            <Practitioner>
+            <Practitioner xmlns="http://hl7.org/fhir">
                 <id value="a4069456-5746-479a-a892-6b9ef51e54cd"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Practitioner|1.1.0"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Practitioner|1.2"/>
                 </meta>
                 <identifier>
                     <type>
@@ -290,10 +289,10 @@
     <entry>
         <fullUrl value="http://pvs.praxis.local/fhir/Organization/8bc831c4-e697-4b66-86d3-dc920b75d6bb"/>
         <resource>
-            <Organization>
+            <Organization xmlns="http://hl7.org/fhir">
                 <id value="8bc831c4-e697-4b66-86d3-dc920b75d6bb"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Organization|1.1.0"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Organization|1.2"/>
                 </meta>
                 <identifier>
                     <type>
@@ -338,10 +337,10 @@
     <entry>
         <fullUrl value="http://pvs.praxis.local/fhir/Coverage/972853d5-1164-4d9d-992c-d6420a88f8e0"/>
         <resource>
-            <Coverage>
+            <Coverage xmlns="http://hl7.org/fhir">
                 <id value="972853d5-1164-4d9d-992c-d6420a88f8e0"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Coverage|1.1.0"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Coverage|1.2"/>
                 </meta>
                 <extension url="http://fhir.de/StructureDefinition/gkv/besondere-personengruppe">
                     <valueCoding>

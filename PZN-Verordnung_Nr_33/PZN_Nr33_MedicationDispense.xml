@@ -2,7 +2,7 @@
 <Parameters xmlns="http://hl7.org/fhir">
     <id value="e6cc3391-abce-4056-956f-129324523221"/>
     <meta>
-        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.4"/>
+        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.5"/>
         <!--tag>
             <display value="Beispiel MedicationDispense PZN Bsp 33"/>
         </tag>
@@ -15,10 +15,10 @@
         <part>
             <name value="medicationDispense"/>
             <resource>
-                <MedicationDispense>
+                <MedicationDispense xmlns="http://hl7.org/fhir">
                     <id value="d9ae18bb-f979-4799-bd36-8a918daad1e5"/>
                     <meta>
-                        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.4"/>
+                        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.5"/>
                     </meta>
                     <identifier>
                         <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
@@ -44,8 +44,7 @@
                     </performer>
                     <quantity> <!-- Angabe der abgegebenen Packungsanzahl -->
                         <value value="1" />
-                        <system value="http://unitsofmeasure.org" />
-                        <code value="{Package}" />
+                        <unit value="Packung"/>
                     </quantity>                    
                     <whenHandedOver value="2025-01-19"/>
                     <!--dosageInstruction>   ====> nur angeben wenn geändert/korrigiert durch Apotheke
@@ -60,13 +59,13 @@
         <part>
             <name value="medication"/>
             <resource>
-                <Medication>
+                <Medication xmlns="http://hl7.org/fhir">
                     <id value="26e31584-cea7-431e-a7f5-43fd63d4d897"/>
                     <meta>
-                        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.4"/>
+                        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.5"/>
                     </meta>
                     <contained>
-                        <Medication>
+                        <Medication xmlns="http://hl7.org/fhir">
                             <id value="c2a96376-2dbf-409b-8942-e92607021f79"/>
                             <meta>
                                 <profile value="https://gematik.de/fhir/epa-medication/StructureDefinition/epa-medication-pharmaceutical-product"/>
@@ -127,7 +126,7 @@
                         </Medication>
                     </contained>
                     <contained>
-                        <Medication>
+                        <Medication xmlns="http://hl7.org/fhir">
                             <id value="e6f419ad-af04-4258-ad17-f7e7a16f3fd7"/>
                             <meta>
                                 <profile value="https://gematik.de/fhir/epa-medication/StructureDefinition/epa-medication-pharmaceutical-product"/>

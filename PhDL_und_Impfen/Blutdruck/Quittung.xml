@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="5208ce92-5c21-4218-8f1d-cea57690aef7"/>
    <meta>
-       <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle|1.4"/>
+       <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle|1.5"/>
    </meta>
    <identifier>
        <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
@@ -14,7 +14,7 @@
        <resource>
            <Composition xmlns="http://hl7.org/fhir">
                <meta>
-                   <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Composition|1.4"/>
+                   <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Composition|1.5"/>
                </meta>
                <extension url="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_EX_Beneficiary">
                    <valueIdentifier>
@@ -55,7 +55,7 @@
            <Device xmlns="http://hl7.org/fhir">
                <id value="3bfc64a7-b5ff-4e9f-82a8-dd4dd622eb0e"/>
                <meta>
-                   <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Device|1.4"/>
+                   <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Device|1.5"/>
                </meta>
                <status value="active"/>
                <serialNumber value="N/A"/> <!-- default -->
@@ -75,7 +75,7 @@
            <Binary xmlns="http://hl7.org/fhir">
                <id value="fe797a17-1a6c-4539-8b95-5efba9e02ca2"/>
                <meta>
-                   <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Digest|1.4"/>
+                   <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Digest|1.5"/>
                </meta>
                <contentType value="application/octet-stream"/>
                <data value="SGFzaCBkZXIgVmVyb3JudW5n"/>  <!-- Hash der Verordnung (ohne Signatur) -->
