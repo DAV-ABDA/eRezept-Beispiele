@@ -399,10 +399,10 @@
         <meta>
           <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_PractitionerRole|1.1.0" />
         </meta>
-        <practitioner>
+        <Practitioner xmlns="http://hl7.org/fhir">
           <reference value="Practitioner/20597e0e-cb2a-45b3-95f0-dc3dbdb617c3" />
         </practitioner>
-        <organization>
+         <Organization xmlns="http://hl7.org/fhir">
           <identifier>
             <system value="http://fhir.de/NamingSystem/asv/teamnummer" />
             <value value="003456789" />
