@@ -183,6 +183,42 @@
 						<value value="1"/>
 					</denominator>
 				</amount>
+				<ingredient>
+					<itemCodeableConcept>
+						<coding>
+							<system value="http://fhir.de/CodeSystem/ask"/>
+							<code value="37290"/>
+						</coding>
+						<text value="Abirateron acetat"/>
+					</itemCodeableConcept>
+					<strength>
+						<numerator>
+							<value value="500"/>
+							<unit value="mg"/>
+						</numerator>
+						<denominator>
+							<value value="1"/>
+						</denominator>
+					</strength>
+				</ingredient>
+				<ingredient>
+					<itemCodeableConcept>
+						<coding>
+							<system value="http://fhir.de/CodeSystem/ask"/>
+							<code value="00994"/>
+						</coding>
+						<text value="Prednisolon"/>
+					</itemCodeableConcept>
+					<strength>
+						<numerator>
+							<value value="5"/>
+							<unit value="mg"/>
+						</numerator>
+						<denominator>
+							<value value="1"/>
+						</denominator>
+					</strength>
+				</ingredient>
 			</Medication>
 		</resource>
 	</entry>

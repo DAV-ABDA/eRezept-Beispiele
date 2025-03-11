@@ -167,7 +167,7 @@
                         <code value="---"/> <!-- ID 103 default -->
                     </coding>
                 </form>
-                <amount>
+                <amount> <!-- TODO Default-> Platzhalter wording!!! ===> TA1 AH5 !!!!  ?!? -->
                     <numerator>
                         <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_PackagingSize">
                             <valueString value="1" />
@@ -178,7 +178,7 @@
                         <value value="1"/>
                     </denominator>
                 </amount>
-                <ingredient>
+                <ingredient> <!-- TODO Platzhalter -->
                     <itemCodeableConcept>
                         <text value="PDL Blutdruck" />
                     </itemCodeableConcept>

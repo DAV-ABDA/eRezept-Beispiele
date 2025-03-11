@@ -88,11 +88,11 @@
           </amount>
           <ingredient>
             <itemCodeableConcept>
-              <text value="Doxycyclin hyclat"/>
+              <text value="Doxycyclin"/>
             </itemCodeableConcept>
             <strength>
               <numerator>
-                <value value="230.83"/>
+                <value value="200"/>
                 <unit value="mg"/>
                 <system>
                   <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">

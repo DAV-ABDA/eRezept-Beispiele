@@ -178,6 +178,24 @@
             <code value="FTA" />
           </coding>
         </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fhir.de/CodeSystem/ask"/>
+              <code value="32517"/>
+            </coding>
+            <text value="Sitagliptin"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="50"/>
+              <unit value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+            </denominator>
+          </strength>
+        </ingredient>
       </Medication>
     </resource>
   </entry>

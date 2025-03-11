@@ -201,6 +201,24 @@
             <code value="TAB" />
           </coding>
         </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fhir.de/CodeSystem/ask"/>
+              <code value="07511"/>
+            </coding>
+            <text value="Levothyroxin natrium"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="0.075"/>
+              <unit value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+            </denominator>
+          </strength>
+        </ingredient>
       </Medication>
     </resource>
   </entry>

@@ -88,11 +88,11 @@
           </amount>
           <ingredient>
             <itemCodeableConcept>
-              <text value="Sitagliptin phosphat-1-Wasser"/>
+              <text value="Sitagliptin"/>
             </itemCodeableConcept>
             <strength>
               <numerator>
-                <value value="64.24"/>
+                <value value="50"/>
                 <unit value="mg"/>
                 <system>
                   <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">

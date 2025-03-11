@@ -212,6 +212,24 @@
             <value value="1" />
           </denominator>
         </amount>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fhir.de/CodeSystem/ask"/>
+              <code value="00258"/>
+            </coding>
+            <text value="Metamizol natrium-1-Wasser"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="500"/>
+              <unit value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+            </denominator>
+          </strength>
+        </ingredient>
       </Medication>
     </resource>
   </entry>

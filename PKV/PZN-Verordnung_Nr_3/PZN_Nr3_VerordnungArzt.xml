@@ -176,6 +176,24 @@
                         <code value="SUP"/>
                     </coding>
                 </form>
+                <ingredient>
+                    <itemCodeableConcept>
+                        <coding>
+                            <system value="http://fhir.de/CodeSystem/ask"/>
+                            <code value="01270"/>
+                        </coding>
+                        <text value="Prednisolon acetat"/>
+                    </itemCodeableConcept>
+                    <strength>
+                        <numerator>
+                            <value value="100"/>
+                            <unit value="mg"/>
+                        </numerator>
+                        <denominator>
+                            <value value="1"/>
+                        </denominator>
+                    </strength>
+                </ingredient>
             </Medication>
         </resource>
     </entry>

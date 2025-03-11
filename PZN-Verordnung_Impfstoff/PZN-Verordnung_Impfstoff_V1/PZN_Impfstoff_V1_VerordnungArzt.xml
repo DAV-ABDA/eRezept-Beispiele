@@ -179,6 +179,24 @@
             <code value="FER" />
           </coding>
         </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fhir.de/CodeSystem/ask"/>
+              <code value="31419"/>
+            </coding>
+            <text value="FSME-Impfstoff, inaktiviert (PCEC) Stamm Neudörfl"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="2.4"/>
+              <unit value="µg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+            </denominator>
+          </strength>
+        </ingredient>
       </Medication>
     </resource>
   </entry>

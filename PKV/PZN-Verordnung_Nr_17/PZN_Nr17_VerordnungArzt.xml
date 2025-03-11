@@ -186,6 +186,24 @@
                         <value value="1"/>
                     </denominator>
                 </amount>
+                <ingredient>
+                    <itemCodeableConcept>
+                        <coding>
+                            <system value="http://fhir.de/CodeSystem/ask"/>
+                            <code value="03876"/>
+                        </coding>
+                        <text value="Doxycyclin"/>
+                    </itemCodeableConcept>
+                    <strength>
+                        <numerator>
+                            <value value="100"/>
+                            <unit value="mg"/>
+                        </numerator>
+                        <denominator>
+                            <value value="1"/>
+                        </denominator>
+                    </strength>
+                </ingredient>
             </Medication>
         </resource>
     </entry>

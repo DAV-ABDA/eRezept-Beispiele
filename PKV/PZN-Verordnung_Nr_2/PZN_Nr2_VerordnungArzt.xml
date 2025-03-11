@@ -175,6 +175,24 @@
                         <code value="TAB"/>
                     </coding>
                 </form>
+                <ingredient>
+                    <itemCodeableConcept>
+                        <coding>
+                            <system value="http://fhir.de/CodeSystem/ask"/>
+                            <code value="24421"/>
+                        </coding>
+                        <text value="Venlafaxin"/>
+                    </itemCodeableConcept>
+                    <strength>
+                        <numerator>
+                            <value value="75"/>
+                            <unit value="mg"/>
+                        </numerator>
+                        <denominator>
+                            <value value="1"/>
+                        </denominator>
+                    </strength>
+                </ingredient>
             </Medication>
         </resource>
     </entry>

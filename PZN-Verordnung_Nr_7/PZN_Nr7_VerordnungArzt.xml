@@ -200,6 +200,42 @@
             <value value="1" />
           </denominator>
         </amount>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fhir.de/CodeSystem/ask"/>
+              <code value="23167"/>
+            </coding>
+            <text value="Salmeterol"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="50"/>
+              <unit value="µg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+            </denominator>
+          </strength>
+        </ingredient>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fhir.de/CodeSystem/ask"/>
+              <code value="23857"/>
+            </coding>
+            <text value="Fluticason 17-propionat"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="250"/>
+              <unit value="µg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+            </denominator>
+          </strength>
+        </ingredient>
       </Medication>
     </resource>
   </entry>

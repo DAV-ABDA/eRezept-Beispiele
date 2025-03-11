@@ -179,6 +179,24 @@
             <code value="FLE" />
           </coding>
         </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fhir.de/CodeSystem/ask"/>
+              <code value="50912"/>
+            </coding>
+            <text value="Efeublätter-Trockenextrakt (5-7,5:1); Auszugsmittel: Ethanol 30% (m/m)"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="35"/>
+              <unit value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+            </denominator>
+          </strength>
+        </ingredient>
       </Medication>
     </resource>
   </entry>

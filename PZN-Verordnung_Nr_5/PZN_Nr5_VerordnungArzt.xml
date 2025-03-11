@@ -178,6 +178,24 @@
             <code value="TAB" />
           </coding>
         </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fhir.de/CodeSystem/ask"/>
+              <code value="21906"/>
+            </coding>
+            <text value="Aciclovir"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="800"/>
+              <unit value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+            </denominator>
+          </strength>
+        </ingredient>
       </Medication>
     </resource>
   </entry>

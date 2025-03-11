@@ -187,6 +187,24 @@
                         <value value="1"/>
                     </denominator>
                 </amount>
+                <ingredient>
+                    <itemCodeableConcept>
+                        <coding>
+                            <system value="http://fhir.de/CodeSystem/ask"/>
+                            <code value="23549"/>
+                        </coding>
+                        <text value="Bisoprolol fumarat"/>
+                    </itemCodeableConcept>
+                    <strength>
+                        <numerator>
+                            <value value="10"/>
+                            <unit value="mg"/>
+                        </numerator>
+                        <denominator>
+                            <value value="1"/>
+                        </denominator>
+                    </strength>
+                </ingredient>
             </Medication>
         </resource>
     </entry>

@@ -91,7 +91,7 @@
           </amount>
           <ingredient>
             <itemCodeableConcept>
-              <text value="Metoprolol succinat "/>
+              <text value="Metoprolol succinat"/>
             </itemCodeableConcept>
             <strength>
               <numerator>
