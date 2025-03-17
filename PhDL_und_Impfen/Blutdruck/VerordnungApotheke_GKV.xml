@@ -311,7 +311,14 @@
                 </telecom>
                 <address>
                     <type value="both"/>
-                    <line value="Apo"/>
+                    <line value="Apo Apo">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                            <valueString value="Apo"/> <!-- ID 66 default Apo -->
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                            <valueString value="Apo"/> <!-- ID 67 default Apo -->
+                        </extension>
+                    </line>
                     <city value="Apo"/> <!-- ID 65 default Apo -->
                     <country value="D"/>
                 </address>

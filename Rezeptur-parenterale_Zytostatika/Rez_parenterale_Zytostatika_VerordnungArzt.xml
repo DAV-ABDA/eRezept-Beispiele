@@ -124,8 +124,7 @@
         <dispenseRequest>
           <quantity>
             <value value="3" />
-            <system value="http://unitsofmeasure.org" />
-            <code value="{Package}" />
+            <unit value="Packung"/>
           </quantity>
         </dispenseRequest>
         <substitution>
@@ -154,7 +153,7 @@
             <system value="http://snomed.info/sct"/>
             <version value="http://snomed.info/sct/11000274103/version/20240515" />
             <code value="1208954007" />
-            <display value="Pharmaceutical / biologic product (product) : Has product characteristic (attribute) = Manual method (qualifier value)" />
+            <display value="Extemporaneous preparation (product)" />
           </coding>
         </valueCodeableConcept>
       </extension>

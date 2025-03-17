@@ -45,7 +45,7 @@
                     <quantity> <!-- Angabe der abgegebenen Packungsanzahl -->
                         <value value="1" />
                         <unit value="Packung"/>
-                    </quantity>                    
+                    </quantity>
                     <whenHandedOver value="2025-01-19"/>
                     <!--dosageInstruction>   ====> nur angeben wenn geändert/korrigiert durch Apotheke
                         <text value=""/>

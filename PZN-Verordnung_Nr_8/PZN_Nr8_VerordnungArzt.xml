@@ -184,8 +184,6 @@
               <valueString value="98" />
             </extension>
             <unit value="St" />
-            <system value="http://unitsofmeasure.org" />
-            <code value="{tbl}" />
           </numerator>
           <denominator>
             <value value="1" />

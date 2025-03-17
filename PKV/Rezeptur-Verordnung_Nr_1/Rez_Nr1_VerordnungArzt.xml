@@ -144,7 +144,7 @@
                             <system value="http://snomed.info/sct"/>
                             <version value="http://snomed.info/sct/11000274103/version/20240515"/>
                             <code value="1208954007"/>
-                            <display value="Pharmaceutical / biologic product (product) : Has product characteristic (attribute) = Manual method (qualifier value)"/>
+                            <display value="Extemporaneous preparation (product)"/>
                         </coding>
                     </valueCodeableConcept>
                 </extension>
@@ -215,7 +215,7 @@
                             <code value="KVZ10"/>
                         </coding>
                     </type>
-                    <system value="http://fhir.de/sid/pkv/kvid-10"/>
+                    <system value="http://fhir.de/sid/gkv/kvid-10"/>
                     <value value="P123464117"/>
                 </identifier>
                 <name>

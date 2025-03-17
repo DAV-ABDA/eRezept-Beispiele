@@ -193,8 +193,6 @@
               <valueString value="1" />
             </extension>
             <unit value="Diskus" />
-            <system value="http://unitsofmeasure.org" />
-            <code value="{tbl}" />
           </numerator>
           <denominator>
             <value value="1" />

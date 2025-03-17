@@ -124,8 +124,7 @@
         <dispenseRequest>
           <quantity>
             <value value="1"/>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="{Package}"/>
+            <unit value="Packung"/>
           </quantity>
         </dispenseRequest>
         <substitution>

@@ -144,8 +144,7 @@
         <dispenseRequest>
           <quantity>
             <value value="1" />
-            <system value="http://unitsofmeasure.org" />
-            <code value="{Package}" />
+            <unit value="Packung"/>
           </quantity>
         </dispenseRequest>
         <substitution>
@@ -203,8 +202,6 @@
               <valueString value="15" />
             </extension>
             <unit value="g" />
-            <system value="http://unitsofmeasure.org" />
-            <code value="{tbl}" />
           </numerator>
           <denominator>
             <value value="1" />

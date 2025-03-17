@@ -72,17 +72,6 @@
             <reference value="Coverage/1b1ffb6e-eb05-43d7-87eb-e7818fe9661a" />
           </entry>
         </section>
-        <section>
-          <code>
-            <coding>
-              <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Section_Type" />
-              <code value="FOR_PractitionerRole" />
-            </coding>
-          </code>
-          <entry>
-            <reference value="PractitionerRole/9a4090f8-8c5a-11ea-bc55-0242ac13000" />
-          </entry>
-        </section>
       </Composition>
     </resource>
   </entry>
@@ -193,8 +182,6 @@
               <valueString value="12" />
             </extension>
             <unit value="TAB" />
-            <system value="http://unitsofmeasure.org" />
-            <code value="{tbl}" />
           </numerator>
           <denominator>
             <value value="1" />
@@ -406,26 +393,6 @@
           <display value="AOK Rheinland/Hamburg" />
         </payor>
       </Coverage>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://pvs.praxis-topp-gluecklich.local/fhir/PractitionerRole/9a4090f8-8c5a-11ea-bc55-0242ac13000" />
-    <resource>
-      <PractitionerRole xmlns="http://hl7.org/fhir">
-        <id value="9a4090f8-8c5a-11ea-bc55-0242ac13000" />
-        <meta>
-          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_PractitionerRole|1.2" />
-        </meta>
-        <Practitioner xmlns="http://hl7.org/fhir">
-          <reference value="Practitioner/20597e0e-cb2a-45b3-95f0-dc3dbdb617c3" />
-        </practitioner>
-        <Organization xmlns="http://hl7.org/fhir">
-          <identifier>
-            <system value="http://fhir.de/NamingSystem/asv/teamnummer" />
-            <value value="003456789" />
-          </identifier>
-        </organization>
-      </PractitionerRole>
     </resource>
   </entry>
 </Bundle>

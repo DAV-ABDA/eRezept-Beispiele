@@ -44,8 +44,7 @@
           </performer>
           <quantity> <!-- Angabe der abgegebenen Packungsanzahl -->
             <value value="1" />
-            <system value="http://unitsofmeasure.org" />
-            <code value="{Package}" />
+            <unit value="Packung"/>
           </quantity>
           <whenHandedOver value="2025-01-27"/>
           <!--dosageInstruction> ====> nur angeben wenn geändert/korrigiert durch Apotheke
