@@ -15,7 +15,7 @@
     <part>
       <name value="medicationDispense"/>
       <resource>
-         <MedicationDispense xmlns="http://hl7.org/fhir">
+         <MedicationDispense>
           <id value="00759ea9-0328-4448-bc7a-369f5d35a8d5"/>
           <meta>
             <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.4"/>
@@ -60,7 +60,7 @@
     <part>
       <name value="medication"/>
       <resource>
-         <Medication xmlns="http://hl7.org/fhir">
+         <Medication>
           <id value="8e1a2a63-cf6d-4fc9-be44-54f64022d222"/>
           <meta>
             <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.4"/>
@@ -170,7 +170,7 @@
     <part>
       <name value="medicationDispense"/>
       <resource>
-         <MedicationDispense xmlns="http://hl7.org/fhir">
+         <MedicationDispense>
           <id value="f43ae7da-3db3-427c-aa7b-1104a14b05dc"/>
           <meta>
             <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.4"/>
@@ -215,7 +215,7 @@
     <part>
       <name value="medication"/>
       <resource>
-         <Medication xmlns="http://hl7.org/fhir">
+         <Medication>
           <id value="c9061528-a4ce-49f6-a83e-89ea67a1a192"/>
           <meta>
             <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.4"/>
