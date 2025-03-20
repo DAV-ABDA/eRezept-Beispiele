@@ -13,7 +13,7 @@
     <entry>
         <fullUrl value="http://pvs.praxis.local/fhir/Composition/fd2503b8-ffff-444a-ba90-93c287426054"/>
         <resource>
-            <Composition xmlns="http://hl7.org/fhir">
+            <Composition>
                 <id value="fd2503b8-ffff-444a-ba90-93c287426054"/>
                 <meta>
                     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Composition|1.2"/>
@@ -90,7 +90,7 @@
     <entry>
         <fullUrl value="http://pvs.praxis.local/fhir/MedicationRequest/741c4057-5f23-4dae-9b9d-d2854b138798"/>
         <resource>
-            <MedicationRequest xmlns="http://hl7.org/fhir">
+            <MedicationRequest>
                 <id value="741c4057-5f23-4dae-9b9d-d2854b138798"/>
                 <meta>
                     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Prescription|1.2"/>
@@ -144,7 +144,7 @@
     <entry>
         <fullUrl value="http://pvs.praxis.local/fhir/Medication/e93cad35-e6cd-459f-b349-5499a802bd9f"/>
         <resource>
-            <Medication xmlns="http://hl7.org/fhir">
+            <Medication>
                 <id value="e93cad35-e6cd-459f-b349-5499a802bd9f"/>
                 <meta>
                     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.2"/>
@@ -219,7 +219,7 @@
     <entry>
         <fullUrl value="http://pvs.praxis.local/fhir/Patient/9a42c3c0-2429-45bd-81e6-7ac7af1e4a8c"/>
         <resource>
-            <Patient xmlns="http://hl7.org/fhir">
+            <Patient>
                 <id value="9a42c3c0-2429-45bd-81e6-7ac7af1e4a8c"/>
                 <meta>
                     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Patient|1.2"/>
@@ -264,7 +264,7 @@
     <entry>
         <fullUrl value="http://pvs.praxis.local/fhir/Practitioner/53c7d0f0-351e-4fc1-8930-88207404dcb7"/>
         <resource>
-            <Practitioner xmlns="http://hl7.org/fhir">
+            <Practitioner>
                 <id value="53c7d0f0-351e-4fc1-8930-88207404dcb7"/>
                 <meta>
                     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Practitioner|1.2"/>

@@ -19,7 +19,7 @@
   <entry>
     <fullUrl value="urn:uuid:8265e112-d8a6-453d-b524-0d6cbbf181b5"/>
     <resource>
-      <Composition xmlns="http://hl7.org/fhir">
+      <Composition>
         <id value="8265e112-d8a6-453d-b524-0d6cbbf181b5"/>
         <meta>
           <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-AbgabedatenComposition|1.4"/>
