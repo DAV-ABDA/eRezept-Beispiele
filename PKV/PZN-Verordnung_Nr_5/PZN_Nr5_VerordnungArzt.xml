@@ -13,7 +13,7 @@
     <entry>
         <fullUrl value="http://pvs.praxis.local/fhir/Composition/fd2503b8-ffff-444a-ba90-93c287426054"/>
         <resource>
-             <Composition xmlns="http://hl7.org/fhir">
+             <Composition>
                 <id value="fd2503b8-ffff-444a-ba90-93c287426054"/>
                 <meta>
                     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Composition|1.1.0"/>
@@ -90,7 +90,7 @@
     <entry>
         <fullUrl value="http://pvs.praxis.local/fhir/MedicationRequest/741c4057-5f23-4dae-9b9d-d2854b138798"/>
         <resource>
-            <MedicationRequest xmlns="http://hl7.org/fhir">
+            <MedicationRequest>
                 <id value="741c4057-5f23-4dae-9b9d-d2854b138798"/>
                 <meta>
                     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Prescription|1.1.0"/>
