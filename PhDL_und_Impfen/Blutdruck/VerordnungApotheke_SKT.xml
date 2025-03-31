@@ -206,12 +206,12 @@
                 <identifier>
                     <type>
                         <coding>
-                            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type"/>
-                            <code value="kvk"/>
+                            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+                            <code value="KVZ10" />
                         </coding>
                     </type>
-                    <system value="http://fhir.de/sid/gkv/kvk-versichertennummer"/>
-                    <value value="1000000002"/> <!-- ID 19c (SKT) Ersatzwert „1000000002“ -->
+                    <system value="http://fhir.de/sid/gkv/kvid-10" />
+                    <value value="K220635158" />
                 </identifier>
                 <name>
                     <use value="official"/>
