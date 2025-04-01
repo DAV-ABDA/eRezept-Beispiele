@@ -132,7 +132,7 @@
             <entry>
                <link>
                   <relation value="item"/>
-                  <url value="https://gematik.de/fhir/StructureDefinition/ErxReceipt"/>
+                  <url value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle"/>
                </link>
                <fullUrl value="urn:uuid:a97d5de3-4222-40cd-9106-558bcf23a8c2"/>
                <resource>
