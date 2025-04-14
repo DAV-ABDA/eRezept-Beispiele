@@ -70,6 +70,9 @@
                             <meta>
                                 <profile value="https://gematik.de/fhir/epa-medication/StructureDefinition/epa-medication-pharmaceutical-product"/>
                             </meta>
+                            <!--code>
+                                <text value="violette Tablette"/>  ... mögliche Angabe der Bezeichnung des Packungsbestandteils
+                            </code-->
                             <form> <!-- nur angeben, wenn Daten strukturiert vorliegen -->
                                 <coding>
                                     <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
@@ -97,29 +100,9 @@
                                     <numerator>
                                         <value value="500"/>
                                         <unit value="mg"/>
-                                        <system>
-                                            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                                <valueCode value="unknown"/>
-                                            </extension>
-                                        </system>
-                                        <code>
-                                            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                                <valueCode value="unknown"/>
-                                            </extension>
-                                        </code>
                                     </numerator>
                                     <denominator>
                                         <value value="1"/>
-                                        <system>
-                                            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                                <valueCode value="unknown"/>
-                                            </extension>
-                                        </system>
-                                        <code>
-                                            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                                <valueCode value="unknown"/>
-                                            </extension>
-                                        </code>
                                     </denominator>
                                 </strength>
                             </ingredient>
@@ -131,6 +114,9 @@
                             <meta>
                                 <profile value="https://gematik.de/fhir/epa-medication/StructureDefinition/epa-medication-pharmaceutical-product"/>
                             </meta>
+                            <!--code>
+                                <text value="weiße Tablette"/>  ... mögliche Angabe der Bezeichnung des Packungsbestandteils
+                            </code-->
                             <form> <!-- nur angeben, wenn Daten strukturiert vorliegen -->
                                 <coding>
                                     <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
@@ -158,29 +144,9 @@
                                     <numerator>
                                         <value value="5"/>
                                         <unit value="mg"/>
-                                        <system>
-                                            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                                <valueCode value="unknown"/>
-                                            </extension>
-                                        </system>
-                                        <code>
-                                            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                                <valueCode value="unknown"/>
-                                            </extension>
-                                        </code>
                                     </numerator>
                                     <denominator>
                                         <value value="1"/>
-                                        <system>
-                                            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                                <valueCode value="unknown"/>
-                                            </extension>
-                                        </system>
-                                        <code>
-                                            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                                <valueCode value="unknown"/>
-                                            </extension>
-                                        </code>
                                     </denominator>
                                 </strength>
                             </ingredient>
