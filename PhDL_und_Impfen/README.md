@@ -19,6 +19,11 @@ Es wurde darauf geachtet, dass die zu einem Beispiel gehörenden Dateien fachlic
 
 **PKV-Rx-NNF**
 - besondere Merkmale: PKV-Rx-Absatz für den Nacht- und Notdienstfonds (NNF)
+  https://www.dav-notdienstfonds.de/notdienste/verfahren
+
+**PflegeHiMi**
+- besondere Merkmale: Abrechnung PG51 (+ Beihilfe) und PG54 (+ Beihilfe)
+  [Link]
 
 
 Einen Austausch und weitere Beispiele sind unter folgenden Link zu finden:
