@@ -152,7 +152,7 @@
                                 </valueCodeableConcept>
                             </extension>
                             <extension url="DokumentationFreitext">
-                                <valueString value="Tarifkennzeichen 1100P53&#xD;&#xA;Beihilfe ja"/>
+                                <valueString value="Tarifkennzeichen 1100P53; Beihilfe ja"/>
                             </extension>
                         </extension>
                         <extension url="ZusatzattributGruppeFuerGenehmigung">
