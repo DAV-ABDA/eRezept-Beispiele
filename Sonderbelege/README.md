@@ -1,4 +1,4 @@
-<h2 align="center">FHIR-Beispiele für die elektronische Abrechnung Impfen und PhDL (zum 01.02.2024)</h2>
+<h2 align="center">FHIR-Beispiele für die elektronische Abrechnung</h2>
 In diesem Projekt stellt der DAV Beispiele für die Erstellung und Verarbeitung von E-Rezepten auftretenden Dateien in der Apotheke und der Abrechnung zur Verfügung. 
 Es wurde darauf geachtet, dass die zu einem Beispiel gehörenden Dateien fachlich und technisch zusammenpassen und soweit wie möglich realistische Informationen enthalten.<p>
 
@@ -17,9 +17,11 @@ Es wurde darauf geachtet, dass die zu einem Beispiel gehörenden Dateien fachlic
 
 **Impfen - Coronaschutzimpfung (2) - NUVAXOVID JN1 UDV BUND**
 
+
 **PKV-Rx-NNF**
 - besondere Merkmale: PKV-Rx-Absatz für den Nacht- und Notdienstfonds (NNF)
+  https://www.dav-notdienstfonds.de/notdienste/verfahren
 
-
-Einen Austausch und weitere Beispiele sind unter folgenden Link zu finden:
-https://github.com/DAV-ABDA/eRezept-Beispiele/issues/30
+**Pflegehilfsmittel**
+- besondere Merkmale: Abrechnung PG51 (+ Beihilfe) und PG54 (+ Beihilfe)
+  [Link]
