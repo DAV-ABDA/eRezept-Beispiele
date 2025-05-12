@@ -341,7 +341,7 @@
                             </extension>
                             <extension url="Kostenbetrag">
                                 <valueMoney>
-                                    <value value="5.85"/>
+                                    <value value="9.52"/>
                                     <currency value="EUR"/>
                                 </valueMoney>
                             </extension>
@@ -371,13 +371,13 @@
                                 <valueCodeableConcept>
                                     <coding>
                                         <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-KostenVersicherterKategorie"/>
-                                        <code value="0"/>
+                                        <code value="1"/>
                                     </coding>
                                 </valueCodeableConcept>
                             </extension>
                             <extension url="Kostenbetrag">
                                 <valueMoney>
-                                    <value value="0.00"/>
+                                    <value value="1.55"/>
                                     <currency value="EUR"/>
                                 </valueMoney>
                             </extension>
@@ -479,13 +479,13 @@
                                 <valueCodeableConcept>
                                     <coding>
                                         <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-KostenVersicherterKategorie"/>
-                                        <code value="0"/>
+                                        <code value="1"/>
                                     </coding>
                                 </valueCodeableConcept>
                             </extension>
                             <extension url="Kostenbetrag">
                                 <valueMoney>
-                                    <value value="0.00"/>
+                                    <value value="8.33"/>
                                     <currency value="EUR"/>
                                 </valueMoney>
                             </extension>
@@ -557,7 +557,7 @@
                             </extension>
                             <extension url="Kostenbetrag">
                                 <valueMoney>
-                                    <value value="4.41"/>
+                                    <value value="7.39"/>
                                     <currency value="EUR"/>
                                 </valueMoney>
                             </extension>
@@ -573,7 +573,7 @@
                             </extension>
                             <extension url="Kostenbetrag">
                                 <valueMoney>
-                                    <value value="8.50"/>
+                                    <value value="0.77"/>
                                     <currency value="EUR"/>
                                 </valueMoney>
                             </extension>
@@ -603,13 +603,13 @@
                                 <valueCodeableConcept>
                                     <coding>
                                         <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-KostenVersicherterKategorie"/>
-                                        <code value="1"/>
+                                        <code value="2"/>
                                     </coding>
                                 </valueCodeableConcept>
                             </extension>
                             <extension url="Kostenbetrag">
                                 <valueMoney>
-                                    <value value="21.23"/>
+                                    <value value="20.23"/>
                                     <currency value="EUR"/>
                                 </valueMoney>
                             </extension>
@@ -629,7 +629,7 @@
                             <currency value="EUR"/>
                         </valueMoney>
                     </extension>
-                    <value value="42.00"/>
+                    <value value="140.67"/>
                     <currency value="EUR"/>
                 </totalGross>
             </Invoice>
