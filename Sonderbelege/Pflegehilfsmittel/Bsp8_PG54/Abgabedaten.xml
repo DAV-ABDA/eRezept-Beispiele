@@ -269,7 +269,7 @@
                             </extension>
                             <extension url="Kostenbetrag">
                                 <valueMoney>
-                                    <value value="21"/>
+                                    <value value="21.00"/>
                                     <currency value="EUR"/>
                                 </valueMoney>
                             </extension>
