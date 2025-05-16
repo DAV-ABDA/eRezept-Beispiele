@@ -168,7 +168,7 @@
                                 </valueCodeableConcept>
                             </extension>
                             <extension url="DokumentationFreitext">
-                                <valueString value="G12345678987456321"/>
+                                <valueString value="unbekannt"/>
                             </extension>
                             <extension url="Datum">
                                 <valueDate value="2025-06-10"/>
