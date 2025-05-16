@@ -191,13 +191,13 @@
                                 <valueCodeableConcept>
                                     <coding>
                                         <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-KostenVersicherterKategorie"/>
-                                        <code value="1"/>
+                                        <code value="0"/>
                                     </coding>
                                 </valueCodeableConcept>
                             </extension>
                             <extension url="Kostenbetrag">
                                 <valueMoney>
-                                    <value value="5.50"/>
+                                    <value value="0.00"/>
                                     <currency value="EUR"/>
                                 </valueMoney>
                             </extension>
@@ -227,13 +227,13 @@
                                 <valueCodeableConcept>
                                     <coding>
                                         <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-KostenVersicherterKategorie"/>
-                                        <code value="1"/>
+                                        <code value="0"/>
                                     </coding>
                                 </valueCodeableConcept>
                             </extension>
                             <extension url="Kostenbetrag">
                                 <valueMoney>
-                                    <value value="4.76"/>
+                                    <value value="0.00"/>
                                     <currency value="EUR"/>
                                 </valueMoney>
                             </extension>
@@ -263,13 +263,13 @@
                                 <valueCodeableConcept>
                                     <coding>
                                         <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-KostenVersicherterKategorie"/>
-                                        <code value="1"/>
+                                        <code value="0"/>
                                     </coding>
                                 </valueCodeableConcept>
                             </extension>
                             <extension url="Kostenbetrag">
                                 <valueMoney>
-                                    <value value="1.08"/>
+                                    <value value="0.00"/>
                                     <currency value="EUR"/>
                                 </valueMoney>
                             </extension>
@@ -299,13 +299,13 @@
                                 <valueCodeableConcept>
                                     <coding>
                                         <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-KostenVersicherterKategorie"/>
-                                        <code value="1"/>
+                                        <code value="0"/>
                                     </coding>
                                 </valueCodeableConcept>
                             </extension>
                             <extension url="Kostenbetrag">
                                 <valueMoney>
-                                    <value value="24.99"/>
+                                    <value value="0.00"/>
                                     <currency value="EUR"/>
                                 </valueMoney>
                             </extension>
@@ -341,7 +341,7 @@
                             </extension>
                             <extension url="Kostenbetrag">
                                 <valueMoney>
-                                    <value value="15.01"/>
+                                    <value value="9.34"/>
                                     <currency value="EUR"/>
                                 </valueMoney>
                             </extension>
@@ -413,7 +413,7 @@
                             </extension>
                             <extension url="Kostenbetrag">
                                 <valueMoney>
-                                    <value value="11.14"/>
+                                    <value value="38.68"/>
                                     <currency value="EUR"/>
                                 </valueMoney>
                             </extension>
@@ -443,13 +443,13 @@
                                 <valueCodeableConcept>
                                     <coding>
                                         <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-KostenVersicherterKategorie"/>
-                                        <code value="0"/>
+                                        <code value="1"/>
                                     </coding>
                                 </valueCodeableConcept>
                             </extension>
                             <extension url="Kostenbetrag">
                                 <valueMoney>
-                                    <value value="0.00"/>
+                                    <value value="14.46"/>
                                     <currency value="EUR"/>
                                 </valueMoney>
                             </extension>
@@ -465,7 +465,7 @@
                 <totalGross>
                     <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-Gesamtzuzahlung">
                         <valueMoney>
-                            <value value="0.00"/>
+                            <value value="0"/>
                             <currency value="EUR"/>
                         </valueMoney>
                     </extension>

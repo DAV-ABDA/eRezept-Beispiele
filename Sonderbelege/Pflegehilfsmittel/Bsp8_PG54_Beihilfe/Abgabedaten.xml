@@ -152,7 +152,7 @@
                                 </valueCodeableConcept>
                             </extension>
                             <extension url="DokumentationFreitext">
-                                <valueString value="Tarifkennzeichen 1100P53; Beihilfe nein"/>
+                                <valueString value="Tarifkennzeichen 1100P53; Beihilfe ja"/>
                             </extension>
                         </extension>
                         <extension url="ZusatzattributGruppeFuerGenehmigung">
@@ -197,7 +197,7 @@
                             </extension>
                             <extension url="Kostenbetrag">
                                 <valueMoney>
-                                    <value value="53.55"/>
+                                    <value value="11.55"/>
                                     <currency value="EUR"/>
                                 </valueMoney>
                             </extension>
@@ -233,7 +233,7 @@
                             </extension>
                             <extension url="Kostenbetrag">
                                 <valueMoney>
-                                    <value value="20.42"/>
+                                    <value value="37.43"/>
                                     <currency value="EUR"/>
                                 </valueMoney>
                             </extension>
@@ -263,13 +263,13 @@
                                 <valueCodeableConcept>
                                     <coding>
                                         <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-KostenVersicherterKategorie"/>
-                                        <code value="2"/>
+                                        <code value="1"/>
                                     </coding>
                                 </valueCodeableConcept>
                             </extension>
                             <extension url="Kostenbetrag">
                                 <valueMoney>
-                                    <value value="21.00"/>
+                                    <value value="24.99"/>
                                     <currency value="EUR"/>
                                 </valueMoney>
                             </extension>
