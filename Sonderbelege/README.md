@@ -23,5 +23,35 @@ Es wurde darauf geachtet, dass die zu einem Beispiel gehörenden Dateien fachlic
   https://www.dav-notdienstfonds.de/notdienste/verfahren
 
 **Pflegehilfsmittel**
-- besondere Merkmale: Abrechnung PG51 (+ Beihilfe) und PG54 (+ Beihilfe)
-  [Link]
+
+**1) PG51** 
+Merkmal Abgabedaten: keine Zuzahlungsbefreiung
+
+**2) PG51**
+Merkmal Abgabedaten: Beihilfe, keine Zuzahlungsbefreiung
+
+**3) PG54**
+Merkmal Abgabedaten:
+
+**4) PG54**
+Merkmal Abgabedaten: Beihilfe
+
+**5) PG54**
+Merkmal Abgabedaten: keine Zuzahlungsbefreiung
+
+**6) PG54**
+Merkmal Abgabedaten: Zuzahlungsbefreiung liegt vor
+
+**7) PG51**
+Merkmal Abgabedaten: Zuzahlungsbefreiung liegt vor
+
+**8) PG54**
+Merkmal Abgabedaten: Beihilfe
+
+**9) PG51**
+Merkmal Abgabedaten: Beihilfe
+
+**10) PG54**
+Merkmal Abgabedaten: 
+
+Für eine übersichtliche Darstellung und Nachvollziehbarkeit, wurde in den Beispielen die Rechenreihenfolge Positionsweise aufsteigt gewählt.
