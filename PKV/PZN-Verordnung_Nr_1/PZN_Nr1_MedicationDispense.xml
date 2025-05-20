@@ -43,10 +43,10 @@
             </actor>
           </performer>
           <quantity> <!-- Angabe der abgegebenen Packungsanzahl -->
-            <value value="1" />
+            <value value="1"/>
             <unit value="Packung"/>
           </quantity>
-          <whenHandedOver value="2025-02-03"/>
+          <whenHandedOver value="2025-11-03"/>
           <!--dosageInstruction>  ====> nur angeben wenn geändert/korrigiert durch Apotheke
             <text value="1-0-0-0"/>
           </dosageInstruction-->
@@ -100,6 +100,7 @@
               </numerator>
               <denominator>
                 <value value="1"/>
+                <unit value="Retard-Tbl."/>
               </denominator>
             </strength>
           </ingredient>

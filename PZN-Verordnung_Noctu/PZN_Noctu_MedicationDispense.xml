@@ -15,7 +15,7 @@
     <part>
       <name value="medicationDispense"/>
       <resource>
-        <MedicationDispense xmlns="http://hl7.org/fhir">
+        <MedicationDispense>
           <id value="89a81399-b8c1-46d6-8006-d74fed2a79d4"/>
           <meta>
             <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.5"/>
@@ -43,10 +43,10 @@
             </actor>
           </performer>
           <quantity> <!-- Angabe der abgegebenen Packungsanzahl -->
-            <value value="1" />
+            <value value="1"/>
             <unit value="Packung"/>
           </quantity>
-          <whenHandedOver value="2025-01-27"/>
+          <whenHandedOver value="2025-10-27"/>
           <!--dosageInstruction> ====> nur angeben wenn geändert/korrigiert durch Apotheke
             <text value="1x, im Bedarfsfall noch 1x nach 1h (max. 3 Stk in 48 h)"/>
           </dosageInstruction-->
@@ -59,7 +59,7 @@
     <part>
       <name value="medication"/>
       <resource>
-        <Medication xmlns="http://hl7.org/fhir">
+        <Medication>
           <id value="b6d208be-e549-4efb-a87b-77fae57fc001"/>
           <meta>
             <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.5"/>
@@ -100,6 +100,7 @@
               </numerator>
               <denominator>
                 <value value="1"/>
+                <unit value="Supp."/>
               </denominator>
             </strength>
           </ingredient>

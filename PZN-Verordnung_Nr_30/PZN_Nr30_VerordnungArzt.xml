@@ -2,21 +2,21 @@
 <Bundle xmlns="http://hl7.org/fhir">
 	<id value="791846f0-dcb9-4d21-b04d-3da0d2d7cf06"/>
 	<meta>
-		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.2"/>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.3"/>
 	</meta>
 	<identifier>
 		<system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
 		<value value="160.037.424.539.578.62"/>
 	</identifier>
 	<type value="document"/>
-	<timestamp value="2025-01-19T08:30:00Z"/>
+	<timestamp value="2025-10-19T08:30:00Z"/>
 	<entry>
 		<fullUrl value="http://pvs.praxis.local/fhir/Composition/39ca8513-fdbc-41ad-9bd3-b760018da1da"/>
 		<resource>
 			<Composition xmlns="http://hl7.org/fhir">
 				<id value="39ca8513-fdbc-41ad-9bd3-b760018da1da"/>
 				<meta>
-					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Composition|1.2"/>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Composition|1.3"/>
 				</meta>
 				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Legal_basis">
 					<valueCoding>
@@ -34,7 +34,7 @@
 				<subject>
 					<reference value="Patient/14c0f53a-ef8e-47dd-917d-01ba03acd925"/>
 				</subject>
-				<date value="2025-01-19T08:00:00Z"/>
+				<date value="2025-10-19T08:00:00Z"/>
 				<author>
 					<reference value="Practitioner/b87245ef-b70b-4e9b-ad96-9d38efe8f468"/>
 					<type value="Practitioner"/>
@@ -81,7 +81,7 @@
 			<MedicationRequest xmlns="http://hl7.org/fhir">
 				<id value="b21e1764-943e-439c-b9c7-fab341b11633"/>
 				<meta>
-					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Prescription|1.2"/>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Prescription|1.3"/>
 				</meta>
 				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_EmergencyServicesFee">
 					<valueBoolean value="false"/>
@@ -108,7 +108,7 @@
 				<subject>
 					<reference value="Patient/14c0f53a-ef8e-47dd-917d-01ba03acd925"/>
 				</subject>
-				<authoredOn value="2025-01-19"/>
+				<authoredOn value="2025-10-19"/>
 				<requester>
 					<reference value="Practitioner/b87245ef-b70b-4e9b-ad96-9d38efe8f468"/>
 				</requester>
@@ -138,7 +138,7 @@
 			<Medication xmlns="http://hl7.org/fhir">
 				<id value="47e54ada-0402-45e6-8652-fcda3fb09449"/>
 				<meta>
-					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.2"/>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.3"/>
 				</meta>
 				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type">
 					<valueCodeableConcept>
@@ -201,6 +201,7 @@
 						</numerator>
 						<denominator>
 							<value value="1"/>
+							<unit value="Tbl."/>
 						</denominator>
 					</strength>
 				</ingredient>

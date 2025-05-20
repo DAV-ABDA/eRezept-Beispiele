@@ -15,7 +15,7 @@
     <part>
       <name value="medicationDispense"/>
       <resource>
-        <MedicationDispense xmlns="http://hl7.org/fhir">
+        <MedicationDispense>
           <id value="c0f19cf5-f223-4bdc-8a5d-efd85315aa30"/>
           <meta>
             <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.5"/>
@@ -43,10 +43,10 @@
             </actor>
           </performer>
           <quantity> <!-- Angabe der abgegebenen Packungsanzahl -->
-            <value value="1" />
+            <value value="1"/>
             <unit value="Packung"/>
           </quantity>
-          <whenHandedOver value="2025-01-27"/>
+          <whenHandedOver value="2025-10-27"/>
           <!--dosageInstruction> ====> nur angeben wenn geändert/korrigiert durch Apotheke
             <text value="1-0-0-0"/>
           </dosageInstruction-->
@@ -59,7 +59,7 @@
     <part>
       <name value="medication"/>
       <resource>
-        <Medication xmlns="http://hl7.org/fhir">
+        <Medication>
           <id value="201f5d1d-1521-4ff4-918b-69c86b9c0654"/>
           <meta>
             <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.5"/>
@@ -100,6 +100,7 @@
               </numerator>
               <denominator>
                 <value value="1"/>
+                <unit value="Filmtbl."/>
               </denominator>
             </strength>
           </ingredient>

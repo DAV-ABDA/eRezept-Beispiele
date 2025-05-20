@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="66090f6f-a1eb-4e97-b36b-6e0b5baea680"/>
+    <id value="747a02fd-6100-4032-9279-10c8544791b9"/>
     <meta>
-        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.2"/>
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.3"/> <!-- ID 2 und 3-->
     </meta>
     <identifier>
         <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
         <value value="910.156.745.817.223.68"/> <!-- ID 5 -->
     </identifier>
     <type value="document"/>
-    <timestamp value="2025-02-02T08:30:00Z"/>
+    <timestamp value="2025-11-02T08:30:00Z"/>
     <entry>
-        <fullUrl value="urn:uuid:082b2494-2162-461c-a924-a16e14002518"/>
+        <fullUrl value="urn:uuid:9ff27be3-206c-4b06-a592-2e0d918811db"/>
         <resource>
             <Composition xmlns="http://hl7.org/fhir">
-                <id value="082b2494-2162-461c-a924-a16e14002518"/>
+                <id value="9ff27be3-206c-4b06-a592-2e0d918811db"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Composition|1.2"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Composition|1.3"/>
                 </meta>
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Legal_basis">
                     <valueCoding>
@@ -24,12 +24,6 @@
                         <code value="00"/> <!-- ID 17 default 00 -->
                     </valueCoding>
                 </extension>
-                <!--extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_PKV_Tariff">
-                    <valueCoding>
-                        <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_PKV_TARIFF"/>
-                        <code value="01"/>  ==> ID 139 default ??? muss dieser noch definiert werden?
-                    </valueCoding>
-                </extension-->
                 <status value="final"/>
                 <type>
                     <coding>
@@ -38,11 +32,11 @@
                     </coding>
                 </type>
                 <subject>
-                    <reference value="urn:uuid:44b65f64-5c61-499e-a490-6978e028993f"/>
+                    <reference value="urn:uuid:9c4dfaaf-2020-4571-a928-7740a223159d"/>
                 </subject>
-                <date value="2025-02-02T08:30:00Z"/>
+                <date value="2025-11-02T08:30:00Z"/>
                 <author>
-                    <reference value="urn:uuid:cbe731b2-c830-498c-80ea-ff9a053df00b"/>
+                    <reference value="urn:uuid:f94a85bf-aab8-4101-a599-507d9c261cc0"/>
                     <type value="Practitioner"/>
                 </author>
                 <author>
@@ -54,7 +48,7 @@
                 </author>
                 <title value="elektronische Arzneimittelverordnung"/>
                 <custodian>
-                    <reference value="urn:uuid:544e9314-101c-4381-b0b8-883ad14605ba"/>
+                    <reference value="urn:uuid:7523efac-45a2-4001-a782-9cddca97fa8d"/>
                 </custodian>
                 <section>
                     <code>
@@ -64,7 +58,7 @@
                         </coding>
                     </code>
                     <entry>
-                        <reference value="urn:uuid:a946f47b-af8c-4d05-a686-2f71b3ef240d"/>
+                        <reference value="urn:uuid:cc85b9f8-a7d5-4093-8845-89cf96591290"/>
                     </entry>
                 </section>
                 <section>
@@ -75,19 +69,19 @@
                         </coding>
                     </code>
                     <entry>
-                        <reference value="urn:uuid:61ea89ad-3c72-4b5e-8c33-80289dc1b8ab"/>
+                        <reference value="urn:uuid:3eda37cb-e3f0-412b-a3a4-e95fc15f1608"/>
                     </entry>
                 </section>
             </Composition>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:a946f47b-af8c-4d05-a686-2f71b3ef240d"/>
+        <fullUrl value="urn:uuid:cc85b9f8-a7d5-4093-8845-89cf96591290"/>
         <resource>
             <MedicationRequest xmlns="http://hl7.org/fhir">
-                <id value="a946f47b-af8c-4d05-a686-2f71b3ef240d"/>
+                <id value="cc85b9f8-a7d5-4093-8845-89cf96591290"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Prescription|1.2"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Prescription|1.3"/>
                 </meta>
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_EmergencyServicesFee">
                     <valueBoolean value="false"/> <!-- ID 82 default false -->
@@ -97,7 +91,7 @@
                 </extension>
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Multiple_Prescription">
                     <extension url="Kennzeichen">
-                        <valueBoolean value="false"/>  <!-- ID 87 default false -->
+                        <valueBoolean value="false"/> <!-- ID 87 default false -->
                     </extension>
                 </extension>
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_StatusCoPayment">
@@ -109,17 +103,17 @@
                 <status value="active"/>
                 <intent value="order"/>
                 <medicationReference>
-                    <reference value="urn:uuid:27129fbe-03d1-4d65-a30c-22f36b7d3c49"/>
+                    <reference value="urn:uuid:f3b451b6-ef92-4888-82ec-762246bb52f0"/>
                 </medicationReference>
                 <subject>
-                    <reference value="urn:uuid:44b65f64-5c61-499e-a490-6978e028993f"/>
+                    <reference value="urn:uuid:9c4dfaaf-2020-4571-a928-7740a223159d"/>
                 </subject>
-                <authoredOn value="2025-02-02"/>
+                <authoredOn value="2025-11-02"/> <!-- ID 80 -->
                 <requester>
-                    <reference value="urn:uuid:cbe731b2-c830-498c-80ea-ff9a053df00b"/>
+                    <reference value="urn:uuid:f94a85bf-aab8-4101-a599-507d9c261cc0"/>
                 </requester>
                 <insurance>
-                    <reference value="urn:uuid:61ea89ad-3c72-4b5e-8c33-80289dc1b8ab"/>
+                    <reference value="urn:uuid:3eda37cb-e3f0-412b-a3a4-e95fc15f1608"/>
                 </insurance>
                 <dispenseRequest>
                     <quantity>
@@ -134,12 +128,12 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:27129fbe-03d1-4d65-a30c-22f36b7d3c49"/>
+        <fullUrl value="urn:uuid:f3b451b6-ef92-4888-82ec-762246bb52f0"/>
         <resource>
             <Medication xmlns="http://hl7.org/fhir">
-                <id value="27129fbe-03d1-4d65-a30c-22f36b7d3c49"/>
+                <id value="f3b451b6-ef92-4888-82ec-762246bb52f0"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.2"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.3"/>
                 </meta>
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type">
                     <valueCodeableConcept>
@@ -173,10 +167,10 @@
                         <code value="---"/> <!-- ID 103 default -->
                     </coding>
                 </form>
-                <amount>
+                <amount> <!-- TODO Default-> Platzhalter wording!!! ===> TA1 AH5 !!!!  ?!? -->
                     <numerator>
                         <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_PackagingSize">
-                            <valueString value="1" />
+                            <valueString value="1"/>
                         </extension>
                         <unit value="St"/>
                     </numerator>
@@ -186,15 +180,16 @@
                 </amount>
                 <ingredient>
                     <itemCodeableConcept>
-                        <text value="PDL Blutdruck" />
+                        <text value="PDL Blutdruck"/>
                     </itemCodeableConcept>
                     <strength>
                         <numerator>
-                            <value value="1" />
-                            <unit value="St" />
+                            <value value="1"/>
+                            <unit value="St"/>
                         </numerator>
                         <denominator>
-                            <value value="1" />
+                            <value value="1"/>
+                            <unit value="St"/>
                         </denominator>
                     </strength>
                 </ingredient>
@@ -202,10 +197,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:44b65f64-5c61-499e-a490-6978e028993f"/>
+        <fullUrl value="urn:uuid:9c4dfaaf-2020-4571-a928-7740a223159d"/>
         <resource>
             <Patient xmlns="http://hl7.org/fhir">
-                <id value="44b65f64-5c61-499e-a490-6978e028993f"/>
+                <id value="9c4dfaaf-2020-4571-a928-7740a223159d"/>
                 <meta>
                     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Patient|1.2"/>
                 </meta>
@@ -217,40 +212,40 @@
                         </coding>
                     </type>
                     <system value="http://fhir.de/sid/gkv/kvid-10"/>
-                    <value value="A000000002"/> <!-- ID 19b (PKV) Ersatzwert „A000000002“ -->
+                    <value value="T555558879"/> <!-- ID 19a (GKV) -->
                 </identifier>
                 <name>
                     <use value="official"/>
                     <family value="TK-Mustermann">
                         <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
-                            <valueString value="TK-Mustermann"/>
+                            <valueString value="TK-Mustermann"/> <!-- ID 21 -->
                         </extension>
                     </family>
-                    <given value="Max"/>
+                    <given value="Max"/> <!-- ID 20 -->
                 </name>
-                <birthDate value="1995-01-01"/>
+                <birthDate value="1995-01-01"/> <!-- ID 25 -->
                 <address>
                     <type value="both"/>
                     <line value="Bramfelder Str. 140">
                         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
-                            <valueString value="140"/>
+                            <valueString value="140"/> <!-- ID 32 -->
                         </extension>
                         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
-                            <valueString value="Bramfelder Str."/>
+                            <valueString value="Bramfelder Str."/> <!-- ID 31 -->
                         </extension>
                     </line>
-                    <city value="Hamburg"/>
-                    <postalCode value="22305"/>
-                    <country value="D"/>
+                    <city value="Hamburg"/> <!-- ID 30 -->
+                    <postalCode value="22305"/> <!-- ID 29 -->
+                    <country value="D"/> <!-- ID 28 -->
                 </address>
             </Patient>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:cbe731b2-c830-498c-80ea-ff9a053df00b"/>
+        <fullUrl value="urn:uuid:f94a85bf-aab8-4101-a599-507d9c261cc0"/>
         <resource>
             <Practitioner xmlns="http://hl7.org/fhir">
-                <id value="cbe731b2-c830-498c-80ea-ff9a053df00b"/>
+                <id value="f94a85bf-aab8-4101-a599-507d9c261cc0"/>
                 <meta>
                     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Practitioner|1.2"/>
                 </meta>
@@ -294,10 +289,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:544e9314-101c-4381-b0b8-883ad14605ba"/>
+        <fullUrl value="urn:uuid:7523efac-45a2-4001-a782-9cddca97fa8d"/>
         <resource>
             <Organization xmlns="http://hl7.org/fhir">
-                <id value="544e9314-101c-4381-b0b8-883ad14605ba"/>
+                <id value="7523efac-45a2-4001-a782-9cddca97fa8d"/>
                 <meta>
                     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Organization|1.2"/>
                 </meta>
@@ -332,10 +327,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:61ea89ad-3c72-4b5e-8c33-80289dc1b8ab"/>
+        <fullUrl value="urn:uuid:3eda37cb-e3f0-412b-a3a4-e95fc15f1608"/>
         <resource>
             <Coverage xmlns="http://hl7.org/fhir">
-                <id value="61ea89ad-3c72-4b5e-8c33-80289dc1b8ab"/>
+                <id value="3eda37cb-e3f0-412b-a3a4-e95fc15f1608"/>
                 <meta>
                     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Coverage|1.2"/>
                 </meta>
@@ -348,7 +343,7 @@
                 <extension url="http://fhir.de/StructureDefinition/gkv/dmp-kennzeichen">
                     <valueCoding>
                         <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DMP"/>
-                        <code value="00"/>  <!-- ID 16 default 00 -->
+                        <code value="00"/> <!-- ID 16 default 00 -->
                     </valueCoding>
                 </extension>
                 <extension url="http://fhir.de/StructureDefinition/gkv/versichertenart">
@@ -361,18 +356,18 @@
                 <type>
                     <coding>
                         <system value="http://fhir.de/CodeSystem/versicherungsart-de-basis"/>
-                        <code value="PKV"/>  <!-- ID 7 -->
+                        <code value="GKV"/> <!-- ID 7 -->
                     </coding>
                 </type>
                 <beneficiary>
-                    <reference value="urn:uuid:44b65f64-5c61-499e-a490-6978e028993f"/>
+                    <reference value="urn:uuid:9c4dfaaf-2020-4571-a928-7740a223159d"/>
                 </beneficiary>
                 <payor>
                     <identifier>
                         <system value="http://fhir.de/sid/arge-ik/iknr"/>
-                        <value value="999999994"/> <!-- ID 9, wenn nicht anders bekannt 999999994 -->
+                        <value value="101575519"/> <!-- ID 9 -->
                     </identifier>
-                    <display value="Privat"/> <!-- ID 11 -->
+                    <display value="Techniker Krankenkasse"/> <!-- ID 11 -->
                 </payor>
             </Coverage>
         </resource>

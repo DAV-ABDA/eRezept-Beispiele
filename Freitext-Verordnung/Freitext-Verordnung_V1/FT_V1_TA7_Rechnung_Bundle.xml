@@ -14,7 +14,7 @@
       <valueString value="00001"/>
     </extension>
     <system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname"/>
-    <value value="B00FHR24001"/>
+    <value value="B00FHR25001"/>
   </identifier>
   <type value="document"/>
   <timestamp value="2024-12-10T10:00:00Z"/>
@@ -49,7 +49,7 @@
             <code value="6"/>
           </coding>
         </type>
-        <date value="2025-01-31">
+        <date value="2025-10-31">
           <extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_TA7_Rechnungsdatum">
             <valueDateTime value="2024-12-10"/>
           </extension>
@@ -101,7 +101,7 @@
           <item>
             <identifier>
               <system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname"/>
-              <value value="B00FHR24001"/>
+              <value value="B00FHR25001"/>
             </identifier>
           </item>
         </entry>

@@ -2,21 +2,21 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="b112710d-2479-404c-8a30-2855ba64de49"/>
     <meta>
-        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.2"/>
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.3"/>
     </meta>
     <identifier>
         <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
         <value value="209.100.612.180.208.16"/>
     </identifier>
     <type value="document"/>
-    <timestamp value="2025-02-03T08:30:00Z"/>
+    <timestamp value="2025-11-03T08:30:00Z"/>
     <entry>
         <fullUrl value="http://pvs.praxis.local/fhir/Composition/50e39b26-9629-4eaf-bb1b-c046f74073ff"/>
         <resource>
             <Composition xmlns="http://hl7.org/fhir">
                 <id value="50e39b26-9629-4eaf-bb1b-c046f74073ff"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Composition|1.2"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Composition|1.3"/>
                 </meta>
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Legal_basis">
                     <valueCoding>
@@ -40,7 +40,7 @@
                 <subject>
                     <reference value="Patient/48c586fd-2e9f-45e5-a69c-2523dc337b45"/>
                 </subject>
-                <date value="2025-02-03T08:00:00Z"/>
+                <date value="2025-11-03T08:00:00Z"/>
                 <author>
                     <reference value="Practitioner/84269446-a17f-4d6c-b8bb-16396aa4e656"/>
                     <type value="Practitioner"/>
@@ -87,7 +87,7 @@
             <MedicationRequest xmlns="http://hl7.org/fhir">
                 <id value="75e9ddcd-f03f-4bef-bb52-d5a3606fdcd8"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Prescription|1.2"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Prescription|1.3"/>
                 </meta>
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_EmergencyServicesFee">
                     <valueBoolean value="false"/>
@@ -108,7 +108,7 @@
                 <subject>
                     <reference value="Patient/48c586fd-2e9f-45e5-a69c-2523dc337b45"/>
                 </subject>
-                <authoredOn value="2025-02-03"/>
+                <authoredOn value="2025-11-03"/>
                 <requester>
                     <reference value="Practitioner/84269446-a17f-4d6c-b8bb-16396aa4e656"/>
                 </requester>
@@ -136,7 +136,7 @@
             <Medication xmlns="http://hl7.org/fhir">
                 <id value="4dbbe1a3-d89e-4b67-8598-e9f502d97b3e"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_Compounding|1.2"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_Compounding|1.3"/>
                 </meta>
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type">
                     <valueCodeableConcept>
@@ -197,14 +197,14 @@
                     </itemCodeableConcept>
                     <strength>
                         <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Ingredient_Amount">
-                            <valueString value="ad 500 ml" />
+                            <valueString value="ad 500 ml"/>
                         </extension>
                         <!--numerator>
-                          <value value="500" />
-                          <unit value="ml" />
+                          <value value="500"/>
+                          <unit value="ml"/>
                         </numerator-->
                         <!--denominator>
-                          <value value="1" />
+                          <value value="1"/>
                         </denominator-->
                     </strength>
                 </ingredient>
