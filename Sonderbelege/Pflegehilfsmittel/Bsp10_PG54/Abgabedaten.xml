@@ -465,7 +465,7 @@
                 <totalGross>
                     <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-Gesamtzuzahlung">
                         <valueMoney>
-                            <value value="0"/>
+                            <value value="0.00"/>
                             <currency value="EUR"/>
                         </valueMoney>
                     </extension>
