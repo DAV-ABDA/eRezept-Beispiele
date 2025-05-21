@@ -115,6 +115,7 @@
               </numerator>
               <denominator>
                 <value value="1"/>
+                <unit value="Filmtbl."/>
               </denominator>
             </strength>
           </ingredient>

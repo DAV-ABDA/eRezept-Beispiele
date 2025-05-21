@@ -13,7 +13,7 @@
     <entry>
         <fullUrl value="urn:uuid:2c1092b9-f1a3-4102-83d7-1d981e94308c"/>
         <resource>
-            <Composition xmlns="http://hl7.org/fhir">
+            <Composition>
                 <id value="2c1092b9-f1a3-4102-83d7-1d981e94308c"/>
                 <meta>
                     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Composition|1.3"/>
@@ -78,7 +78,7 @@
     <entry>
         <fullUrl value="urn:uuid:53bef5f6-8c87-4738-b105-13ec7d2ee64a"/>
         <resource>
-            <MedicationRequest xmlns="http://hl7.org/fhir">
+            <MedicationRequest>
                 <id value="53bef5f6-8c87-4738-b105-13ec7d2ee64a"/>
                 <meta>
                     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Prescription|1.3"/>
@@ -130,7 +130,7 @@
     <entry>
         <fullUrl value="urn:uuid:594bd077-f626-4afb-9977-bce0102da383"/>
         <resource>
-            <Medication xmlns="http://hl7.org/fhir">
+            <Medication>
                 <id value="594bd077-f626-4afb-9977-bce0102da383"/>
                 <meta>
                     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.3"/>
@@ -199,7 +199,7 @@
     <entry>
         <fullUrl value="urn:uuid:63cbc4b7-fde9-494f-8170-33d38d5942b3"/>
         <resource>
-            <Patient xmlns="http://hl7.org/fhir">
+            <Patient>
                 <id value="63cbc4b7-fde9-494f-8170-33d38d5942b3"/>
                 <meta>
                     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Patient|1.2"/>
@@ -244,7 +244,7 @@
     <entry>
         <fullUrl value="urn:uuid:d0264f74-14dc-40bc-ab13-bb0cbca15284"/>
         <resource>
-            <Practitioner xmlns="http://hl7.org/fhir">
+            <Practitioner>
                 <id value="d0264f74-14dc-40bc-ab13-bb0cbca15284"/>
                 <meta>
                     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Practitioner|1.2"/>
@@ -291,7 +291,7 @@
     <entry>
         <fullUrl value="urn:uuid:e7c93d10-7c2e-4754-ab22-0ddcaee2aa50"/>
         <resource>
-            <Organization xmlns="http://hl7.org/fhir">
+            <Organization>
                 <id value="e7c93d10-7c2e-4754-ab22-0ddcaee2aa50"/>
                 <meta>
                     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Organization|1.2"/>
@@ -329,7 +329,7 @@
     <entry>
         <fullUrl value="urn:uuid:1d607f61-1f2e-429b-9dfb-418e25be9cd2"/>
         <resource>
-            <Coverage xmlns="http://hl7.org/fhir">
+            <Coverage>
                 <id value="1d607f61-1f2e-429b-9dfb-418e25be9cd2"/>
                 <meta>
                     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Coverage|1.2"/>

@@ -19,7 +19,7 @@
     <entry>
         <fullUrl value="urn:uuid:a19a1bf7-8d01-4d9e-8134-7e0cfac324ad"/>
         <resource>
-            <Composition xmlns="http://hl7.org/fhir">
+            <Composition>
                 <meta>
                     <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Composition|1.5"/>
                 </meta>
@@ -59,7 +59,7 @@
     <entry>
         <fullUrl value="urn:uuid:65174dc3-a334-4877-a12e-ad91f3b64663"/>
         <resource>
-            <Device xmlns="http://hl7.org/fhir">
+            <Device>
                 <id value="65174dc3-a334-4877-a12e-ad91f3b64663"/>
                 <meta>
                     <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Device|1.5"/>
@@ -83,7 +83,7 @@
     <entry>
         <fullUrl value="urn:uuid:aa915f17-2b44-4167-8b5f-f977227e272f"/>
         <resource>
-            <Binary xmlns="http://hl7.org/fhir">
+            <Binary>
                 <id value="aa915f17-2b44-4167-8b5f-f977227e272f"/>
                 <meta>
                     <versionId value="1"/>

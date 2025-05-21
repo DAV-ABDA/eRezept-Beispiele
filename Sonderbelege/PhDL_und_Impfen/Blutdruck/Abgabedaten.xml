@@ -19,7 +19,7 @@
     <entry>
         <fullUrl value="urn:uuid:b49a8432-d2ee-428b-b641-864765830f77"/>
         <resource>
-            <Composition xmlns="http://hl7.org/fhir">
+            <Composition>
                 <id value="b49a8432-d2ee-428b-b641-864765830f77"/>
                 <meta>
                     <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenComposition|1.5"/>
@@ -54,7 +54,7 @@
     <entry>
         <fullUrl value="urn:uuid:46b19d21-5c72-402d-84fa-3c9a1ec701cd"/>
         <resource>
-            <Organization xmlns="http://hl7.org/fhir">
+            <Organization>
                 <id value="46b19d21-5c72-402d-84fa-3c9a1ec701cd"/>
                 <meta>
                     <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Apotheke|1.5"/>
@@ -84,7 +84,7 @@
     <entry>
         <fullUrl value="urn:uuid:9f304900-2dd4-48af-ad76-91ebc85b7ce9"/>
         <resource>
-            <MedicationDispense xmlns="http://hl7.org/fhir">
+            <MedicationDispense>
                 <id value="9f304900-2dd4-48af-ad76-91ebc85b7ce9"/>
                 <meta>
                     <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abgabeinformationen|1.5"/>
@@ -125,7 +125,7 @@
     <entry>
         <fullUrl value="urn:uuid:9e23245f-e295-499a-8dbf-e27c655f5450"/>
         <resource>
-            <Invoice xmlns="http://hl7.org/fhir">
+            <Invoice>
                 <id value="9e23245f-e295-499a-8dbf-e27c655f5450"/>
                 <meta>
                     <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abrechnungszeilen|1.5"/>

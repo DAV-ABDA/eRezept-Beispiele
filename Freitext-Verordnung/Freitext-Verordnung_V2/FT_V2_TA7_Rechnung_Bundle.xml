@@ -21,7 +21,7 @@
   <entry>
     <fullUrl value="urn:uuid:785754ef-18f5-4074-b0f0-29efebe9c736"/>
     <resource>
-      <Composition xmlns="http://hl7.org/fhir">
+      <Composition>
         <id value="785754ef-18f5-4074-b0f0-29efebe9c736"/>
         <meta>
           <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Rechnung_Composition|1.5"/>
@@ -90,7 +90,7 @@
   <entry>
     <fullUrl value="urn:uuid:62dbd1d5-22da-4c83-8807-48b870a61f5d"/>
     <resource>
-      <List xmlns="http://hl7.org/fhir">
+     <List>
         <id value="62dbd1d5-22da-4c83-8807-48b870a61f5d"/>
         <meta>
           <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Rechnung_List|1.5"/>
@@ -111,7 +111,7 @@
   <entry>
     <fullUrl value="urn:uuid:db1d2807-a54c-4799-a5be-ab555a77d103"/>
     <resource>
-      <Bundle xmlns="http://hl7.org/fhir">
+      <Bundle>
         <id value="db1d2807-a54c-4799-a5be-ab555a77d103"/>
         <meta>
           <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_RezeptBundle|1.5"/>
@@ -175,7 +175,7 @@
           </link>
           <fullUrl value="urn:uuid:a47f834d-3c2b-4751-a547-58d1f3a8cfa8"/>
           <resource>
-            <Invoice xmlns="http://hl7.org/fhir">
+            <Invoice>
               <id value="a47f834d-3c2b-4751-a547-58d1f3a8cfa8"/>
               <meta>
                 <profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_ERP_eAbrechnungsdaten|1.5"/>
