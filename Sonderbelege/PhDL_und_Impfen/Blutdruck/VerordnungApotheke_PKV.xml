@@ -186,7 +186,7 @@
                 </amount>
                 <ingredient>
                     <itemCodeableConcept>
-                        <text value="PDL Blutdruck"/>
+                        <text value="---"/>
                     </itemCodeableConcept>
                     <strength>
                         <numerator>

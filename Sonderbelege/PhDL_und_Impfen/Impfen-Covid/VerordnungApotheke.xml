@@ -183,7 +183,7 @@
                 </amount>
                 <ingredient>
                     <itemCodeableConcept>
-                        <text value="COMIRNATY"/>
+                        <text value="---"/>
                     </itemCodeableConcept>
                     <strength>
                         <numerator>

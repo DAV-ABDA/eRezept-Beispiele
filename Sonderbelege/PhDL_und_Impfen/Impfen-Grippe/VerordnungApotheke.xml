@@ -183,7 +183,7 @@
                 </amount>
                 <ingredient>
                     <itemCodeableConcept>
-                        <text value="Afluria TETRA"/>
+                        <text value="---"/>
                     </itemCodeableConcept>
                     <strength>
                         <numerator>
