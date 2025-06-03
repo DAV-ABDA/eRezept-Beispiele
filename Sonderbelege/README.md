@@ -54,4 +54,7 @@ Merkmal Abgabedaten: Beihilfe
 **10) PG54**
 Merkmal Abgabedaten: 
 
+**11) PG54**
+Merkmal Abgabedaten: Beihilfe mit ungeraden Betrag unter 42€
+
 Für eine übersichtliche Darstellung und Nachvollziehbarkeit, wurde in den Beispielen die Rechenreihenfolge Positionsweise aufsteigt gewählt.
