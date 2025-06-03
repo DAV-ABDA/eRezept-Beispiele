@@ -4,7 +4,7 @@
     <meta>
         <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenBundle|1.4"/>
         <tag>
-            <display value="Beispiel für Abgabedaten für eine pDL PflegeHiMi PG 51 (255cc6bc-b1ad-4c9a-849a-6fa44977285a)"/>
+            <display value="Beispiel für Abgabedaten für eine pDL PflegeHiMi PG 54 (255cc6bc-b1ad-4c9a-849a-6fa44977285a)"/>
         </tag>
         <tag>
             <display value="ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanz kann nicht gewährleistet werden. Wir sind jederzeit dankbar für Hinweise auf Fehler oder für Verbesserungsvorschläge."/>

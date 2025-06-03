@@ -83,9 +83,9 @@
                     <amount>
                         <numerator>
                             <extension url="https://gematik.de/fhir/epa-medication/StructureDefinition/medication-packaging-size-extension">
-                                <valueString value="12"/>  <!-- TODO: Packungsgröße Menge -->
+                                <valueString value="12"/>  <!-- Packungsgröße Menge -->
                             </extension>
-                            <unit value="St"/> <!-- TODO: Packungsgröße Einheit ==> TODO: Mengeneinheiten überarbeiten nach ABDATA -->
+                            <unit value="St"/>
                         </numerator>
                         <denominator>
                             <value value="1"/>
