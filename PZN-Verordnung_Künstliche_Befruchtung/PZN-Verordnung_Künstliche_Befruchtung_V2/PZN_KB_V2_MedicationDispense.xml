@@ -73,7 +73,7 @@
             <coding>
               <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
               <code value="PEN"/>
-              <display value="	Injektionslösung in einem Fertigpen"/>
+              <display value="Injektionslösung in einem Fertigpen"/>
             </coding>
           </form>
           <amount>

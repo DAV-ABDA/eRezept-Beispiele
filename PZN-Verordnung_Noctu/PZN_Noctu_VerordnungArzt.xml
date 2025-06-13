@@ -218,7 +218,7 @@
               <valueString value="1" />
             </extension>
             <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
-              <valueString value="Roritzerstraße" />
+              <valueString value="Roritzerstraße"/>
             </extension>
           </line>
           <city value="Regensburg" />
