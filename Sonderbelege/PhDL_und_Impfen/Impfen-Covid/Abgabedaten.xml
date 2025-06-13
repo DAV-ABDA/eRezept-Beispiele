@@ -12,7 +12,7 @@
     </meta>
     <identifier>
         <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
-        <value value="920.014.273.159.749.96"/>
+        <value value="920.014.273.159.749.92"/>
     </identifier>
     <type value="document"/>
     <timestamp value="2025-04-01T10:00:00Z"/>
@@ -114,7 +114,7 @@
                 <authorizingPrescription>
                     <identifier>
                         <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
-                        <value value="920.014.273.159.749.96"/>
+                        <value value="920.014.273.159.749.92"/>
                     </identifier>
                 </authorizingPrescription>
                 <type>
