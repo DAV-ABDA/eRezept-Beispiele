@@ -25,7 +25,7 @@ genutzt werden.
 
 **Abgabedatensatz PKV**         (http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-AbgabedatenBundle)
 
-    ERP_Stylesheet_DAV_PKVAbgabeDaten.xslt
+    ERP_Stylesheet_DAV_PKV_AbgabeDaten.xslt
     unterstützte Instanzeversionen: 1.1, 1.2, 1.3, 1.4
 
 
