@@ -772,6 +772,25 @@
                             </div>
                         </div>
                     </div>
+                    <xsl:if test="fhir:entry/fhir:resource/fhir:Composition/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_PKV_Tariff']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_PKV_TARIFF']/fhir:code/@value">
+                        <div class="row g-1">
+                            <div class="col-12">
+                                <div class="input-container">
+                                    <label>PKV-Tarifart</label> <!-- ID 11 -->
+                                    <div class="text-input">
+                                        <xsl:variable name="pkvtarif" select="//fhir:Composition/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_PKV_Tariff']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_PKV_TARIFF']/fhir:code/@value"/>
+                                        <xsl:choose>
+                                            <xsl:when test="$pkvtarif=01"> Individualtarif (</xsl:when>
+                                            <xsl:when test="$pkvtarif=02"> Standardtarif (</xsl:when>
+                                            <xsl:when test="$pkvtarif=03"> Basistarif (</xsl:when>
+                                            <xsl:when test="$pkvtarif=04"> Notlagentarif (</xsl:when>
+                                        </xsl:choose>
+                                        <xsl:value-of select="($pkvtarif)"/>)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </xsl:if>
                     <div class="row g-1">
                         <div class="col-12">
                             <div class="input-container">
