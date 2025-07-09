@@ -11,13 +11,17 @@ genutzt werden.
 
     unterstützte Instanzeversionen: 1.2, 1.3, 1.4, 1.5
 
-**Abgabedatensatz**         (https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_ERP_eAbrechnungsdaten)
+**Abgabedatensatz GKV**         (https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_ERP_eAbrechnungsdaten)
 
     unterstützte Instanzeversionen: 1.2, 1.3, 1.4, 1.5
 
 **Abrechnungsdatensatz**    (http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenBundle)
 
     unterstützte Instanzeversionen: 1.1.0, 1.3, 1.4, 1.5
+
+**Abgabedatensatz PKV**         (http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-AbgabedatenBundle)
+
+    unterstützte Instanzeversionen: 1.1, 1.2, 1.3, 1.4
 
 
 <span style="color:red"> Die Stylesheets für die technisch korrekte Darstellung der Instanzinhalte wurden mit viel Sorgfalt erstellt.
