@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
-				xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-				xmlns:fhir="http://hl7.org/fhir" 
-				xmlns:xhtml="http://www.w3.org/1999/xhtml" 
-				xmlns="http://www.w3.org/1999/xhtml"
-				exclude-result-prefixes="fhir xhtml">
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:fhir="http://hl7.org/fhir"
+                xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                exclude-result-prefixes="fhir xhtml">
 
-	<!-- Ersteller: (ABDA/DAV) fhir@abda.de -->
+    <!-- Ersteller: (ABDA/DAV) fhir@abda.de -->
 
     <xsl:output method="html" encoding="UTF-8" indent="yes" omit-xml-declaration="yes"/>
-	<xsl:template match="/">
-		<xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
+    <xsl:template match="/">
+        <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
         <html lang="de">
             <head>
                 <meta charset="UTF-8"/>
@@ -417,233 +417,233 @@
                 <style>
                     /* Internes Stylesheet */
                     :root{
-                        --background-color-ges: #F6C6AD; /* #c6dffd; */  /* TODO: Kostenträgerauswertung GKV/SKT/BG/UK und PKV/SEL*/
-                        --border-background-color-ges: #F2AA84; /* #d8c5ff; */
-                        --text-color-ges: #C04F15FF; /* #C04F15FF; */
-                        --text-color-inputs: #000000;
-                        --background-stripes-color: #e9e9e9;
-                        --outter-div-bg-color: #ffffff;
-                        --background-color-int: var(--border-background-color-ges);
-                        --border-background-color-int: var(--border-background-color-ges);
+                    --background-color-ges: #F6C6AD; /* #c6dffd; */  /* TODO: Kostenträgerauswertung GKV/SKT/BG/UK und PKV/SEL*/
+                    --border-background-color-ges: #F2AA84; /* #d8c5ff; */
+                    --text-color-ges: #C04F15FF; /* #C04F15FF; */
+                    --text-color-inputs: #000000;
+                    --background-stripes-color: #e9e9e9;
+                    --outter-div-bg-color: #ffffff;
+                    --background-color-int: var(--border-background-color-ges);
+                    --border-background-color-int: var(--border-background-color-ges);
                     }
 
                     body {
-                        width: 210mm;
-                        max-width: 210mm;
-                        min-width: 210mm;
-                        height: 297mm;
-                        max-height: 297mm;
-                        min-height: 297mm;
-                        left:0;
-                        top: 0;
-                        margin: 0px;
-                        padding: 5mm;
-                        font-size: 12px;
-                        font-family: Arial, sans-serif;
-                        background: repeating-linear-gradient(
-                            135deg,
-                            var(--background-stripes-color),
-                            var(--background-stripes-color) 10px,
-                            transparent 10px,
-                            transparent 20px
-                            );
+                    width: 210mm;
+                    max-width: 210mm;
+                    min-width: 210mm;
+                    height: 297mm;
+                    max-height: 297mm;
+                    min-height: 297mm;
+                    left:0;
+                    top: 0;
+                    margin: 0px;
+                    padding: 5mm;
+                    font-size: 12px;
+                    font-family: Arial, sans-serif;
+                    background: repeating-linear-gradient(
+                    135deg,
+                    var(--background-stripes-color),
+                    var(--background-stripes-color) 10px,
+                    transparent 10px,
+                    transparent 20px
+                    );
                     }
 
                     .background-container-ges{
-                        background-color: var(--background-color-ges);
-                        border: 1px solid var(--border-background-color-ges);
+                    background-color: var(--background-color-ges);
+                    border: 1px solid var(--border-background-color-ges);
                     }
 
                     h1{
-                        font-size: large;
-                        font-weight: bold;
+                    font-size: large;
+                    font-weight: bold;
                     }
 
                     h4{
-                        margin-top: 2mm;
-                        color:var(--text-color-ges);
-                        font-size: medium;
-                        font-weight: bold;
-                        padding-bottom: 0px;
-                        margin-bottom: 0px;
+                    margin-top: 2mm;
+                    color:var(--text-color-ges);
+                    font-size: medium;
+                    font-weight: bold;
+                    padding-bottom: 0px;
+                    margin-bottom: 0px;
                     }
 
                     input{
-                        border: 1px solid c3c3c3;
-                        outline: none;
+                    border: 1px solid c3c3c3;
+                    outline: none;
                     }
 
                     input:hover{
-                        border: 1px solid c3c3c3;
-                        outline: none;
+                    border: 1px solid c3c3c3;
+                    outline: none;
                     }
 
                     input:focus{
-                        border: 1px solid c3c3c3;
-                        outline: none;
+                    border: 1px solid c3c3c3;
+                    outline: none;
                     }
 
                     input:hover{
-                        outline: none;
+                    outline: none;
                     }
 
                     .input-container {
-                        position: relative;
-                        display: inline-block;
-                        width: 100%;
+                    position: relative;
+                    display: inline-block;
+                    width: 100%;
                     }
 
                     .input-container label {
-                        position: absolute;
-                        top: -0px;
-                        left: 0px;
-                        padding: 0 5px;
-                        font-size: 10px;
-                        color: var(--text-color-ges);
+                    position: absolute;
+                    top: -0px;
+                    left: 0px;
+                    padding: 0 5px;
+                    font-size: 10px;
+                    color: var(--text-color-ges);
                     }
 
                     .text-input{
-                        font-family: Consolas, sans-serif;
-                        height: 10mm;
-                        width: 100%;
-                        text-align: left;
-                        border: 1px solid var(--text-color-ges);
-                        box-shadow: none;
-                        appearance: none;
-                        outline: none;
-                        background-color: var(--background-color-ges);
-                        padding-top: 14px;
-                        padding-left: 10px;
-                        color: var(--text-color-inputs);
+                    font-family: Consolas, sans-serif;
+                    height: 10mm;
+                    width: 100%;
+                    text-align: left;
+                    border: 1px solid var(--text-color-ges);
+                    box-shadow: none;
+                    appearance: none;
+                    outline: none;
+                    background-color: var(--background-color-ges);
+                    padding-top: 14px;
+                    padding-left: 10px;
+                    color: var(--text-color-inputs);
                     }
 
                     .text-input div{
-                        margin-left: 10px;
+                    margin-left: 10px;
                     }
 
                     .intern-container{
-                        background-color: var(--background-color-int);
-                        padding:2mm;
+                    background-color: var(--background-color-int);
+                    padding:2mm;
                     }
                     .row{
-                        padding-top: 0px;
-                        padding-bottom: 3px;
+                    padding-top: 0px;
+                    padding-bottom: 3px;
                     }
                     #txt-area{
-                        overflow: hidden;
-                        resize: none;
-                        line-height: 1;
-                        padding-top: 15px;
+                    overflow: hidden;
+                    resize: none;
+                    line-height: 1;
+                    padding-top: 15px;
                     }
                     .container{
-                        width: 297mm;
-                        max-width: 297mm;
-                        min-width: 297mm;
+                    width: 297mm;
+                    max-width: 297mm;
+                    min-width: 297mm;
                     }
                     hr{
-                        margin-top: 1mm;
-                        margin-bottom: 1mm;
-                        background-color: var(--text-color-ges);
+                    margin-top: 1mm;
+                    margin-bottom: 1mm;
+                    background-color: var(--text-color-ges);
                     }
                     .container, .container-fluid {
-                        width: 100% !important;
-                        max-width: none !important;
+                    width: 100% !important;
+                    max-width: none !important;
                     }
 
                     .col, .col-*, .row {
-                        flex: none !important;
-                        width: auto !important;
+                    flex: none !important;
+                    width: auto !important;
                     }
 
                     .checkbox-container {
-                        display: flex;
-                        align-items: center;
-                        flex-direction: row-reverse; /* Position checkbox to the left and label to the right */
-                        margin-left: 0px;
-                        font-size: 10px;
-                        color: var(--text-color-ges);
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row-reverse; /* Position checkbox to the left and label to the right */
+                    margin-left: 0px;
+                    font-size: 10px;
+                    color: var(--text-color-ges);
                     }
 
                     .checkbox-container > label {
-                        margin-left: 4px; /* Adjust spacing between checkbox and label */
-                        margin-right: 0; /* Remove right margin to ensure consistency */
-                        font-size: 8px;
-                        width:100%;
+                    margin-left: 4px; /* Adjust spacing between checkbox and label */
+                    margin-right: 0; /* Remove right margin to ensure consistency */
+                    font-size: 8px;
+                    width:100%;
                     }
 
                     /* Hide the default checkbox */
                     input[type="checkbox"] {
-                        margin-left: 3px;
-                        accent-color: var(--text-color-ges);
-                        border: 1px solid var(--text-color-ges);
-                        outline: var(--text-color-ges);
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        appearance: none; /* Removes default styling */
-                        width: 15px;
-                        min-width: 15px;
-                        height: 15px;
-                        border: 1px solid var(--text-color-ges); /* Default border color */
-                        background-color: var(--background-color-ges); /* Default background color */
-                        cursor: pointer;
+                    margin-left: 3px;
+                    accent-color: var(--text-color-ges);
+                    border: 1px solid var(--text-color-ges);
+                    outline: var(--text-color-ges);
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none; /* Removes default styling */
+                    width: 15px;
+                    min-width: 15px;
+                    height: 15px;
+                    border: 1px solid var(--text-color-ges); /* Default border color */
+                    background-color: var(--background-color-ges); /* Default background color */
+                    cursor: pointer;
                     }
 
                     /* Change the background color when checked */
                     input[type="checkbox"]:checked {
-                        background-color: var(--background-color-ges); /* Green when checked */
-                        border-color: var(--text-color-ges); /* Green border when checked */
+                    background-color: var(--background-color-ges); /* Green when checked */
+                    border-color: var(--text-color-ges); /* Green border when checked */
                     }
 
                     /* Add a checkmark */
                     input[type="checkbox"]:checked::before {
-                        content: "x";
-                        display: block;
-                        text-align: center;
-                        font-size: 16px;
-                        line-height: 11px; /* Align the checkmark vertically */
-                        top: -10px;
-                        width: 15px;
-                        height: 15px;
-                        min-width: 15px;
-                        margin-left: -1px;
+                    content: "x";
+                    display: block;
+                    text-align: center;
+                    font-size: 16px;
+                    line-height: 11px; /* Align the checkmark vertically */
+                    top: -10px;
+                    width: 15px;
+                    height: 15px;
+                    min-width: 15px;
+                    margin-left: -1px;
                     }
 
                     .row .col-2 {
-                        display: flex;
-                        align-items: center;
-                        justify-content: flex-start; /* Aligns all checkboxes to the left edge */
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start; /* Aligns all checkboxes to the left edge */
                     }
 
                     .outter-div {
-                        background-color: var(--outter-div-bg-color);
-                        overflow: hidden;
-                        width: 210mm;
-                        max-width: 210mm;
-                        min-width: 210mm;
-                        height: 297mm;
-                        max-height: 297mm;
-                        min-height: 297mm;
-                        padding:5mm;
+                    background-color: var(--outter-div-bg-color);
+                    overflow: hidden;
+                    width: 210mm;
+                    max-width: 210mm;
+                    min-width: 210mm;
+                    height: 297mm;
+                    max-height: 297mm;
+                    min-height: 297mm;
+                    padding:5mm;
                     }
 
                     .col-1-5{
-                        flex: 0 0 auto;
-                        width: 12.5%;
+                    flex: 0 0 auto;
+                    width: 12.5%;
                     }
                     .col-2-5{
-                        flex: 0 0 auto;
-                        width: 20.8333333333333%;
+                    flex: 0 0 auto;
+                    width: 20.8333333333333%;
                     }
 
                     @media print {
-                        @page {
-                        size: A4;
-                        margin: 0;
+                    @page {
+                    size: A4;
+                    margin: 0;
                     }
                     body {
-                        margin: 0;
-                        padding: 0;
-                        }
+                    margin: 0;
+                    padding: 0;
+                    }
                     }
 
                     .width-100{ width: 100%; }
@@ -663,7 +663,7 @@
                 </style>
                 <title>DAV Stylesheet Verordnung</title>
             </head>
-			<body>
+            <body>
                 <xsl:choose>
                     <xsl:when test="not(fhir:Bundle)">
                         <b>Instanz ist kein Bundle</b>
@@ -685,18 +685,17 @@
                         </xsl:choose>
                     </xsl:when>
                 </xsl:choose>
-			</body>
-		</html>			
-	</xsl:template>	
-	
-	<xsl:template match="fhir:Bundle[not(ancestor::fhir:Bundle)]">
+            </body>
+        </html>
+    </xsl:template>
+
+    <xsl:template match="fhir:Bundle[not(ancestor::fhir:Bundle)]">
         <h1>Verordnung</h1>
         <div class="background-container-ges outter-div">
             <div class="row g-1 intern-container">
                 <div class="col-md-6 border-1">
                     <h4>Patient</h4> <!-- TODO: Praxisbedarf -->
                     <div class="row g-1 g-1">
-                        <!-- Zeile 1 -->
                         <div class="col-6">
                             <div class="input-container">
                                 <label>Kostenträger Typ / Vers. Art.</label> <!-- ID 7 / ID 14-->
@@ -711,71 +710,89 @@
                                     <xsl:value-of select="($versichertenart)"/>)
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
                         <div class="col-3">
                             <div class="input-container"> <!-- Kostenträger -->
-								<xsl:choose>
-									<xsl:when test="fhir:entry/fhir:resource/fhir:Coverage/fhir:payor/fhir:identifier/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Alternative_IK']/fhir:valueIdentifier[fhir:system/@value='http://fhir.de/sid/arge-ik/iknr']/fhir:value/@value">
-										<label>aKostenträger IK</label> <!-- ID 10 -->
+                                <xsl:choose>
+                                    <xsl:when test="fhir:entry/fhir:resource/fhir:Coverage/fhir:payor/fhir:identifier/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Alternative_IK']/fhir:valueIdentifier[fhir:system/@value='http://fhir.de/sid/arge-ik/iknr']/fhir:value/@value">
+                                        <label>aKostenträger IK</label> <!-- ID 10 -->
                                         <div class="text-input">
                                             <xsl:value-of select="fhir:entry/fhir:resource/fhir:Coverage/fhir:payor/fhir:identifier/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Alternative_IK']/fhir:valueIdentifier[fhir:system/@value='http://fhir.de/sid/arge-ik/iknr']/fhir:value/@value"/>
                                         </div>
-									</xsl:when>			
-									<xsl:otherwise> <!-- TODO: oder immer ausgeben ? -->
-									<!--xsl:when test="fhir:entry/fhir:resource/fhir:Coverage/fhir:payor/fhir:identifier[fhir:system/@value='http://fhir.de/sid/arge-ik/iknr']/fhir:value/@value"-->
-										<label>Kostenträger IK</label> <!-- ID 9 -->
+                                    </xsl:when>
+                                    <xsl:otherwise> <!-- TODO: oder immer ausgeben ? -->
+                                        <!--xsl:when test="fhir:entry/fhir:resource/fhir:Coverage/fhir:payor/fhir:identifier[fhir:system/@value='http://fhir.de/sid/arge-ik/iknr']/fhir:value/@value"-->
+                                        <label>Kostenträger IK</label> <!-- ID 9 -->
                                         <div class="text-input">
-                                                <xsl:value-of select="//fhir:entry/fhir:resource/fhir:Coverage/fhir:payor/fhir:identifier[fhir:system/@value='http://fhir.de/sid/arge-ik/iknr']/fhir:value/@value"/>
+                                            <xsl:value-of select="//fhir:entry/fhir:resource/fhir:Coverage/fhir:payor/fhir:identifier[fhir:system/@value='http://fhir.de/sid/arge-ik/iknr']/fhir:value/@value"/>
                                         </div>
-									<!--/xsl:when-->
-									</xsl:otherwise>
-								</xsl:choose>
+                                        <!--/xsl:when-->
+                                    </xsl:otherwise>
+                                </xsl:choose>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="input-container"> <!-- TODO: ART!?! abc? ab version 1.2 keine Unterscheidung mehr !!! -> Coverage.type.coding.code (KBV_VS_FOR_Payor_type) -->
                                 <!--label>Versicherten Nr. </label>  ID 19 a/b/c -->
-								<!--xsl:choose>
-									<xsl:when test="//fhir:entry/fhir:resource/fhir:Patient/fhir:identifier[fhir:system/@value='http://fhir.de/sid/gkv/kvid-10']/fhir:value/@value">				
-										<label>Vers.-Nr.(GKV)</label> <!- GKV-VersichertenID  (ID 19a): ->
-									</xsl:when>
-									<xsl:when test="//fhir:entry/fhir:resource/fhir:Patient/fhir:identifier[fhir:system/@value='http://fhir.de/sid/pkv/kvid-10']/fhir:value/@value">
-										<label>Vers.-Nr.(PKV)</label> <!- PKV-VersichertenID  (ID 19b): ->
-									</xsl:when>
-									<xsl:when test="//fhir:entry/fhir:resource/fhir:Patient/fhir:identifier[fhir:system/@value='http://fhir.de/sid/gkv/kvk-versichertennummerr']/fhir:value/@value">
-										<label>Vers.-Nr.(KVK)</label> <!- KVK-VersichertenID  (ID 19c): ->
-									</xsl:when>
-								</xsl:choose-->
+                                <!--xsl:choose>
+                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:Patient/fhir:identifier[fhir:system/@value='http://fhir.de/sid/gkv/kvid-10']/fhir:value/@value">
+                                        <label>Vers.-Nr.(GKV)</label> <!- GKV-VersichertenID  (ID 19a): ->
+                                    </xsl:when>
+                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:Patient/fhir:identifier[fhir:system/@value='http://fhir.de/sid/pkv/kvid-10']/fhir:value/@value">
+                                        <label>Vers.-Nr.(PKV)</label> <!- PKV-VersichertenID  (ID 19b): ->
+                                    </xsl:when>
+                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:Patient/fhir:identifier[fhir:system/@value='http://fhir.de/sid/gkv/kvk-versichertennummerr']/fhir:value/@value">
+                                        <label>Vers.-Nr.(KVK)</label> <!- KVK-VersichertenID  (ID 19c): ->
+                                    </xsl:when>
+                                </xsl:choose-->
 
-								<xsl:choose>
-									<xsl:when test="//fhir:entry/fhir:resource/fhir:Coverage/fhir:type/fhir:coding/fhir:code/@value='GKV'">
-										<label>Vers.-Nr.(GKV)</label> <!-- GKV-VersichertenID  (ID 19a): -->
-									</xsl:when>
-									<xsl:when test="//fhir:entry/fhir:resource/fhir:Coverage/fhir:type/fhir:coding/fhir:code/@value='PKV'">
-										<label>Vers.-Nr.(PKV)</label> <!-- PKV-VersichertenID  (ID 19b): -->
-									</xsl:when>
-									<xsl:when test="//fhir:entry/fhir:resource/fhir:Coverage/fhir:type/fhir:coding/fhir:code/@value='SKT'">
-										<label>Vers.-Nr.(SKT)</label> <!-- KVK-VersichertenID  (ID 19c): -->
-									</xsl:when>
-									<xsl:when test="//fhir:entry/fhir:resource/fhir:Coverage/fhir:type/fhir:coding/fhir:code/@value='UK'">
-										<label>Vers.-Nr.(UK)</label> <!-- KVK-VersichertenID  (ID 19c): -->
-									</xsl:when>
-									<xsl:when test="//fhir:entry/fhir:resource/fhir:Coverage/fhir:type/fhir:coding/fhir:code/@value='BG'">
-										<label>Vers.-Nr.(BG)</label> <!-- KVK-VersichertenID  (ID 19c): -->
-									</xsl:when>
-									<xsl:when test="//fhir:entry/fhir:resource/fhir:Coverage/fhir:type/fhir:coding/fhir:code/@value='SEL'">
-										<label>Vers.-Nr.(SEL)</label> <!-- KVK-VersichertenID  (ID 19c): -->
-									</xsl:when>
-								</xsl:choose>
+                                <xsl:choose>
+                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:Coverage/fhir:type/fhir:coding/fhir:code/@value='GKV'">
+                                        <label>Vers.-Nr.(GKV)</label> <!-- GKV-VersichertenID  (ID 19a): -->
+                                    </xsl:when>
+                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:Coverage/fhir:type/fhir:coding/fhir:code/@value='PKV'">
+                                        <label>Vers.-Nr.(PKV)</label> <!-- PKV-VersichertenID  (ID 19b): -->
+                                    </xsl:when>
+                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:Coverage/fhir:type/fhir:coding/fhir:code/@value='SKT'">
+                                        <label>Vers.-Nr.(SKT)</label> <!-- KVK-VersichertenID  (ID 19c): -->
+                                    </xsl:when>
+                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:Coverage/fhir:type/fhir:coding/fhir:code/@value='UK'">
+                                        <label>Vers.-Nr.(UK)</label> <!-- KVK-VersichertenID  (ID 19c): -->
+                                    </xsl:when>
+                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:Coverage/fhir:type/fhir:coding/fhir:code/@value='BG'">
+                                        <label>Vers.-Nr.(BG)</label> <!-- KVK-VersichertenID  (ID 19c): -->
+                                    </xsl:when>
+                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:Coverage/fhir:type/fhir:coding/fhir:code/@value='SEL'">
+                                        <label>Vers.-Nr.(SEL)</label> <!-- KVK-VersichertenID  (ID 19c): -->
+                                    </xsl:when>
+                                </xsl:choose>
                                 <div class="text-input">
                                     <xsl:value-of select="//fhir:entry/fhir:resource/fhir:Patient/fhir:identifier/fhir:value/@value"/>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <xsl:if test="fhir:entry/fhir:resource/fhir:Composition/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_PKV_Tariff']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_PKV_TARIFF']/fhir:code/@value">
+                        <div class="row g-1">
+                            <div class="col-12">
+                                <div class="input-container">
+                                    <label>PKV-Tarifart</label> <!-- ID 11 -->
+                                    <div class="text-input">
+                                        <xsl:variable name="pkvtarif" select="//fhir:Composition/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_PKV_Tariff']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_PKV_TARIFF']/fhir:code/@value"/>
+                                        <xsl:choose>
+                                            <xsl:when test="$pkvtarif=01"> Individualtarif (</xsl:when>
+                                            <xsl:when test="$pkvtarif=02"> Standardtarif (</xsl:when>
+                                            <xsl:when test="$pkvtarif=03"> Basistarif (</xsl:when>
+                                            <xsl:when test="$pkvtarif=04"> Notlagentarif (</xsl:when>
+                                        </xsl:choose>
+                                        <xsl:value-of select="($pkvtarif)"/>)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </xsl:if>
                     <div class="row g-1">
-                        <!-- Zeile 2 -->
-                        <div class="col-12">                            
+                        <div class="col-12">
                             <div class="input-container">
                                 <label>Kostenträger</label> <!-- ID 11 -->
                                 <div class="text-input">
@@ -783,16 +800,15 @@
                                 </div>
                             </div>
                         </div>
-                    </div>                    
-					<xsl:if test="fhir:entry/fhir:resource/fhir:Composition/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Legal_basis']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_STATUSKENNZEICHEN']/fhir:code/@value">
-						<div class="row g-1">
-							<!-- Zeile 2.5 -->
-							<div class="col-12">                            
-								<div class="input-container">
-									<label>Rechtsgrundlage</label> <!-- ID 17 -->
-									<xsl:variable name="_rez_ID17" select="//fhir:Composition/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Legal_basis']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_STATUSKENNZEICHEN']/fhir:code/@value"/>
-									<xsl:choose>
-										<xsl:when test="$_rez_ID17=00">
+                    </div>
+                    <xsl:if test="fhir:entry/fhir:resource/fhir:Composition/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Legal_basis']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_STATUSKENNZEICHEN']/fhir:code/@value">
+                        <div class="row g-1">
+                            <div class="col-12">
+                                <div class="input-container">
+                                    <label>Rechtsgrundlage</label> <!-- ID 17 -->
+                                    <xsl:variable name="_rez_ID17" select="//fhir:Composition/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Legal_basis']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_STATUSKENNZEICHEN']/fhir:code/@value"/>
+                                    <xsl:choose>
+                                        <xsl:when test="$_rez_ID17=00">
                                             <div class="text-input">
                                                 <xsl:choose>
                                                     <xsl:when test="$_rez_ID17=00">ohne Ersatzverordnungskennzeichen (</xsl:when>
@@ -806,9 +822,9 @@
                                                 </xsl:choose>
                                                 <xsl:value-of select="($_rez_ID17)"/>)
                                             </div>
-										</xsl:when>
-										<xsl:otherwise>
-                                            <div class="text-input_bold">
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <div class="text-input" style="font-weight: bold;">
                                                 <xsl:choose>
                                                     <xsl:when test="$_rez_ID17=00">ohne Ersatzverordnungskennzeichen (</xsl:when>
                                                     <xsl:when test="$_rez_ID17=01">ASV-Kennzeichen (</xsl:when>
@@ -821,29 +837,27 @@
                                                 </xsl:choose>
                                                 <xsl:value-of select="($_rez_ID17)"/>)
                                             </div>
-										</xsl:otherwise>
-									</xsl:choose>
-								</div>
-							</div>									
-						</div>
-					</xsl:if>				
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </div>
+                            </div>
+                        </div>
+                    </xsl:if>
                     <div class="row g-1">
-                        <!-- Zeile 3 -->
                         <div class="col-8">
                             <div class="input-container">
-                                <label>Name u. Vorname d. Versicherten</label> <!-- TODO: Titel 22, Vorname 20, Name 21 ?!? --> 
+                                <label>Name u. Vorname d. Versicherten</label> <!-- TODO: Titel 22, Vorname 20, Name 21 ?!? -->
                                 <xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input height-15mm&#34; readonly/&gt;</xsl:text>
-								<xsl:if test="//fhir:entry/fhir:resource/fhir:Patient/fhir:name/fhir:prefix/@value">
-									<xsl:value-of select="//fhir:entry/fhir:resource/fhir:Patient/fhir:name/fhir:prefix/@value"/>
-									<xsl:text> </xsl:text>
-								</xsl:if>
-								<xsl:if test="//fhir:entry/fhir:resource/fhir:Patient/fhir:name/fhir:given/@value">
-									<xsl:value-of select="//fhir:entry/fhir:resource/fhir:Patient/fhir:name/fhir:given/@value"/>
-									<xsl:text> </xsl:text>
-								</xsl:if>
-								<xsl:value-of select="//fhir:entry/fhir:resource/fhir:Patient/fhir:name/fhir:family/@value"/>
+                                <xsl:if test="//fhir:entry/fhir:resource/fhir:Patient/fhir:name/fhir:prefix/@value">
+                                    <xsl:value-of select="//fhir:entry/fhir:resource/fhir:Patient/fhir:name/fhir:prefix/@value"/>
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                                <xsl:if test="//fhir:entry/fhir:resource/fhir:Patient/fhir:name/fhir:given/@value">
+                                    <xsl:value-of select="//fhir:entry/fhir:resource/fhir:Patient/fhir:name/fhir:given/@value"/>
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                                <xsl:value-of select="//fhir:entry/fhir:resource/fhir:Patient/fhir:name/fhir:family/@value"/>
                                 <xsl:text disable-output-escaping='yes'>&lt;/textarea&gt;</xsl:text>
-                                <!--textarea id="txt-area" type="text" class="text-input height-15mm">Prof. Dr. Karl-Friedrich Graf Freiherr von Schaumberg</textarea-->
                             </div>
                         </div>
                         <div class="col-4">
@@ -857,23 +871,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row g-1 margin-top-min-6">
+                    <div class="row g-1">
                         <div class="col-10">
                             <div class="input-container"> <!-- Adresse (Strasse/Postfach) (ID 27/34) -->
                                 <xsl:if test="//fhir:entry/fhir:resource/fhir:Patient/fhir:address[fhir:type/@value='both']">
-									<label>Straßenadresse</label>
-								</xsl:if>
-								<xsl:if test="//fhir:entry/fhir:resource/fhir:Patient/fhir:address[fhir:type/@value='postal']">	
-									<label>Postfachanschrift</label>
-								</xsl:if>
-                                <div class="text-input">
-                                    <xsl:if test="//fhir:entry/fhir:resource/fhir:Patient/fhir:address[fhir:type/@value='both']">
-                                        <xsl:value-of select="//fhir:entry/fhir:resource/fhir:Patient/fhir:address[fhir:type/@value='both']/fhir:line/@value"/>
-                                    </xsl:if>
-                                    <xsl:if test="//fhir:entry/fhir:resource/fhir:Patient/fhir:address[fhir:type/@value='postal']">
-                                        <xsl:value-of select="//fhir:entry/fhir:resource/fhir:Patient/fhir:address[fhir:type/@value='postal']/fhir:line/@value"/>
-                                    </xsl:if>
-                                </div>
+                                    <label>Straßenadresse</label>
+                                </xsl:if>
+                                <xsl:if test="//fhir:entry/fhir:resource/fhir:Patient/fhir:address[fhir:type/@value='postal']">
+                                    <label>Postfachanschrift</label>
+                                </xsl:if>
+                                <xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input height-15mm&#34; readonly/&gt;</xsl:text>
+                                <xsl:if test="//fhir:entry/fhir:resource/fhir:Patient/fhir:address[fhir:type/@value='both']">
+                                    <xsl:value-of select="//fhir:entry/fhir:resource/fhir:Patient/fhir:address[fhir:type/@value='both']/fhir:line/@value"/>
+                                </xsl:if>
+                                <xsl:if test="//fhir:entry/fhir:resource/fhir:Patient/fhir:address[fhir:type/@value='postal']">
+                                    <xsl:value-of select="//fhir:entry/fhir:resource/fhir:Patient/fhir:address[fhir:type/@value='postal']/fhir:line/@value"/>
+                                </xsl:if>
+                                <xsl:text disable-output-escaping='yes'>&lt;/textarea&gt;</xsl:text>
                             </div>
                         </div>
                         <div class="col-2">
@@ -945,54 +959,54 @@
                             <div class="checkbox-container">
                                 <label>Gebühr frei</label> <!-- Zuzahlungsstatus (ID 77) = 1 -->
                                 <xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34; value=&#34;coding&#34;</xsl:text>
-								<xsl:choose>
-									<xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_StatusCoPayment']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_StatusCoPayment']/fhir:code/@value=1">
-										<xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text>
-									</xsl:when>
-									<xsl:otherwise>
-										<xsl:text disable-output-escaping='yes'>/&gt;</xsl:text>
-									</xsl:otherwise>
-								</xsl:choose>
+                                <xsl:choose>
+                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_StatusCoPayment']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_StatusCoPayment']/fhir:code/@value=1">
+                                        <xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:text disable-output-escaping='yes'>/&gt;</xsl:text>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                             </div>
                         </div> <div class="col-2-5">
-                            <div class="checkbox-container">
-                                <label>BVG</label> <!-- ID 85 -->
-                                <xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34;</xsl:text>
-								<xsl:choose>
-									<xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_BVG']/fhir:valueBoolean/@value = 'true'">
-										<xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text> <!-- Ja -->
-									</xsl:when>
-									<xsl:otherwise>
-										<xsl:text disable-output-escaping='yes'>/&gt;</xsl:text> <!-- Nein -->
-									</xsl:otherwise>
-								</xsl:choose>
-                            </div>
-                        </div> <div class="col-2-5">
-                            <div class="checkbox-container">
-                                <label>Noctu</label> <!-- (ID 82) -->
-                                <xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34;</xsl:text>
-								<xsl:choose>
-									<xsl:when test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_EmergencyServicesFee']/fhir:valueBoolean/@value = 'true'">																						
-										<xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text> <!-- Ja -->
-									</xsl:when>
-									<xsl:otherwise>
-										<xsl:text disable-output-escaping='yes'>/&gt;</xsl:text> <!-- Nein -->
-									</xsl:otherwise>
-								</xsl:choose>
-                            </div>
-                        </div> 
+                        <div class="checkbox-container">
+                            <label>BVG</label> <!-- ID 85 -->
+                            <xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34;</xsl:text>
+                            <xsl:choose>
+                                <xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_BVG']/fhir:valueBoolean/@value = 'true'">
+                                    <xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text> <!-- Ja -->
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:text disable-output-escaping='yes'>/&gt;</xsl:text> <!-- Nein -->
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </div>
+                    </div> <div class="col-2-5">
+                        <div class="checkbox-container">
+                            <label>Noctu</label> <!-- (ID 82) -->
+                            <xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34;</xsl:text>
+                            <xsl:choose>
+                                <xsl:when test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_EmergencyServicesFee']/fhir:valueBoolean/@value = 'true'">
+                                    <xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text> <!-- Ja -->
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:text disable-output-escaping='yes'>/&gt;</xsl:text> <!-- Nein -->
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </div>
+                    </div>
                         <div class="col-2-5">
                             <div class="checkbox-container">
                                 <label>Impfstoff</label> <!-- ID 84 -->
                                 <xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34;</xsl:text>
-								<xsl:choose>
-									<xsl:when test="//fhir:entry/fhir:resource/fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Vaccine']/fhir:valueBoolean/@value = 'true'">
-										<xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text> <!-- Ja -->
-									</xsl:when>
-									<xsl:otherwise>
-										<xsl:text disable-output-escaping='yes'>y/&gt;</xsl:text> <!-- Nein -->
-									</xsl:otherwise>
-								</xsl:choose>
+                                <xsl:choose>
+                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Vaccine']/fhir:valueBoolean/@value = 'true'">
+                                        <xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text> <!-- Ja -->
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:text disable-output-escaping='yes'>y/&gt;</xsl:text> <!-- Nein -->
+                                    </xsl:otherwise>
+                                </xsl:choose>
                             </div>
                         </div>
                         <!--div class="col-2">
@@ -1015,55 +1029,55 @@
                             <div class="checkbox-container">
                                 <label>Gebühr pfl.</label> <!-- Zuzahlungsstatus (ID 77) = 0 --> <!-- TODO: = 2 (kuenstliche Befruchtung (Regelung nach § 27a SGB V)) Ausgabe ?!? -->
                                 <xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34;</xsl:text>
-								<xsl:choose>
-									<xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_StatusCoPayment']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_StatusCoPayment']/fhir:code/@value=0">
-										<xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text>
-									</xsl:when>
-									<xsl:otherwise>
-										<xsl:text disable-output-escaping='yes'>/&gt;</xsl:text>
-									</xsl:otherwise>
-								</xsl:choose>
-                            </div>
-                        </div> 
-                        <div class="col-2-5">
-                            <div class="checkbox-container"> <!-- Unfallkennzeichen ID 72 -->
-                                <label>Unfall</label> <!-- TODO: Berufskrankheit ?!? -->                               
-                                <xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34;</xsl:text>
-								<xsl:choose>
-									<xsl:when test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Accident']/fhir:extension[@url='Unfallkennzeichen']/fhir:valueCoding/fhir:code/@value = '1'">
-		                                <xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text>
-									</xsl:when>
-									<xsl:otherwise>
-		                                <xsl:text disable-output-escaping='yes'>/&gt;</xsl:text>
-									</xsl:otherwise>
-								</xsl:choose>
-                            </div>      
-                        </div> <div class="col-2-5">
-                            <div class="checkbox-container">
-                                <label>Arbeitsunfall</label>
-                                <xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34;</xsl:text>
-								<xsl:choose>
-									<xsl:when test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Accident']/fhir:extension[@url='Unfallkennzeichen']/fhir:valueCoding/fhir:code/@value = '2'">
-		                                <xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text>
-									</xsl:when>
-									<xsl:otherwise>
-		                                <xsl:text disable-output-escaping='yes'>/&gt;</xsl:text>
-									</xsl:otherwise>
-								</xsl:choose>
+                                <xsl:choose>
+                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_StatusCoPayment']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_StatusCoPayment']/fhir:code/@value=0">
+                                        <xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:text disable-output-escaping='yes'>/&gt;</xsl:text>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                             </div>
                         </div>
+                        <div class="col-2-5">
+                            <div class="checkbox-container"> <!-- Unfallkennzeichen ID 72 -->
+                                <label>Unfall</label> <!-- TODO: Berufskrankheit ?!? -->
+                                <xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34;</xsl:text>
+                                <xsl:choose>
+                                    <xsl:when test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Accident']/fhir:extension[@url='Unfallkennzeichen']/fhir:valueCoding/fhir:code/@value = '1'">
+                                        <xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:text disable-output-escaping='yes'>/&gt;</xsl:text>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </div>
+                        </div> <div class="col-2-5">
+                        <div class="checkbox-container">
+                            <label>Arbeitsunfall</label>
+                            <xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34;</xsl:text>
+                            <xsl:choose>
+                                <xsl:when test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Accident']/fhir:extension[@url='Unfallkennzeichen']/fhir:valueCoding/fhir:code/@value = '2'">
+                                    <xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:text disable-output-escaping='yes'>/&gt;</xsl:text>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </div>
+                    </div>
                         <div class="col-3">
                             <div class="checkbox-container">
                                 <label>Berufskrankheit</label>
                                 <xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34;</xsl:text>
-								<xsl:choose>
-									<xsl:when test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Accident']/fhir:extension[@url='Unfallkennzeichen']/fhir:valueCoding/fhir:code/@value = '4'">
-		                                <xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text>
-									</xsl:when>
-									<xsl:otherwise>
-		                                <xsl:text disable-output-escaping='yes'>/&gt;</xsl:text>
-									</xsl:otherwise>
-								</xsl:choose>
+                                <xsl:choose>
+                                    <xsl:when test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Accident']/fhir:extension[@url='Unfallkennzeichen']/fhir:valueCoding/fhir:code/@value = '4'">
+                                        <xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:text disable-output-escaping='yes'>/&gt;</xsl:text>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                             </div>
                         </div>
                     </div>
@@ -1071,11 +1085,11 @@
                 <!-- Verordner Container --> <!-- TODO: Sprechstundenbedarf -->
                 <div class="col-md-6 border-l">
                     <h4>Verordner</h4>
-					<xsl:variable name="author_id">
-						<xsl:call-template name="getIdFromReference">
-							<xsl:with-param name="ref" select="fhir:entry/fhir:resource/fhir:Composition/fhir:author[fhir:type/@value='Practitioner']/fhir:reference/@value"/>
-						</xsl:call-template>
-					</xsl:variable>
+                    <xsl:variable name="author_id">
+                        <xsl:call-template name="getIdFromReference">
+                            <xsl:with-param name="ref" select="fhir:entry/fhir:resource/fhir:Composition/fhir:author[fhir:type/@value='Practitioner']/fhir:reference/@value"/>
+                        </xsl:call-template>
+                    </xsl:variable>
                     <div class="row g-1">
                         <!-- Zeile 1 -->
                         <div class="col-12">
@@ -1126,85 +1140,85 @@
                         <div class="col-6"> <!-- Arztnummer / LANR (ID 42a/52a) oder Zahnarztnummer / ZANR (ID 42b/52b)-->
                             <div class="input-container">
                                 <xsl:choose>
-								<xsl:when test="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:identifier[fhir:system/@value='https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR']/fhir:value/@value">
-									<label>LANR</label>
-                                    <div class="text-input">
-                                        <xsl:value-of select="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:identifier[fhir:system/@value='https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR']/fhir:value/@value"/>
-                                    </div>
-								</xsl:when>
-								<xsl:when test="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:identifier[fhir:system/@value='http://fhir.de/sid/kzbv/zahnarztnummer']/fhir:value/@value">
-									<label>ZANR</label>
-                                    <div class="text-input">
-                                        <xsl:value-of select="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:identifier[fhir:system/@value='http://fhir.de/sid/kzbv/zahnarztnummer']/fhir:value/@value"/>
-                                    </div>
-								</xsl:when>
-								<xsl:when test="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:identifier[fhir:system/@value='https://gematik.de/fhir/sid/telematik-id']/fhir:value/@value"> <!-- TODO: und Angabe ?!? -->
-									<label>Telematik-ID</label> <!-- (ID 42c/52c) -->
-                                    <div class="text-input">
-                                        <xsl:value-of select="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:identifier[fhir:system/@value='https://gematik.de/fhir/sid/telematik-id']/fhir:value/@value"/>
-                                    </div>
-								</xsl:when>
-								<xsl:otherwise>
-									<xsl:if test="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:qualification/fhir:code/fhir:coding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_Qualification_Type']/fhir:code/@value=4">
-									<!-- TODO: xsl:if test="(//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:qualification/fhir:code/fhir:coding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_Qualification_Type']/fhir:code/@value=4) and (//fhir:Composition/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Legal_basis']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_STATUSKENNZEICHEN']/fhir:code/@value in ('01','11')"/
-									<xsl:if test="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:qualification/fhir:code/fhir:coding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_Qualification_Type']/fhir:code/@value=4) and (//fhir:Composition/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Legal_basis']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_STATUSKENNZEICHEN']/fhir:code/@value in ('01','11')"/>
-                                    -->
-											<label>ASV-FachgruppenNr/-TeamNr</label>
+                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:identifier[fhir:system/@value='https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR']/fhir:value/@value">
+                                        <label>LANR</label>
+                                        <div class="text-input">
+                                            <xsl:value-of select="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:identifier[fhir:system/@value='https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR']/fhir:value/@value"/>
+                                        </div>
+                                    </xsl:when>
+                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:identifier[fhir:system/@value='http://fhir.de/sid/kzbv/zahnarztnummer']/fhir:value/@value">
+                                        <label>ZANR</label>
+                                        <div class="text-input">
+                                            <xsl:value-of select="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:identifier[fhir:system/@value='http://fhir.de/sid/kzbv/zahnarztnummer']/fhir:value/@value"/>
+                                        </div>
+                                    </xsl:when>
+                                    <xsl:when test="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:identifier[fhir:system/@value='https://gematik.de/fhir/sid/telematik-id']/fhir:value/@value"> <!-- TODO: und Angabe ?!? -->
+                                        <label>Telematik-ID</label> <!-- (ID 42c/52c) -->
+                                        <div class="text-input">
+                                            <xsl:value-of select="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:identifier[fhir:system/@value='https://gematik.de/fhir/sid/telematik-id']/fhir:value/@value"/>
+                                        </div>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:if test="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:qualification/fhir:code/fhir:coding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_Qualification_Type']/fhir:code/@value=4">
+                                            <!-- TODO: xsl:if test="(//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:qualification/fhir:code/fhir:coding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_Qualification_Type']/fhir:code/@value=4) and (//fhir:Composition/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Legal_basis']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_STATUSKENNZEICHEN']/fhir:code/@value in ('01','11')"/
+                                            <xsl:if test="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:qualification/fhir:code/fhir:coding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_Qualification_Type']/fhir:code/@value=4) and (//fhir:Composition/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Legal_basis']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_STATUSKENNZEICHEN']/fhir:code/@value in ('01','11')"/>
+                                            -->
+                                            <label>ASV-FachgruppenNr/-TeamNr</label>
                                             <div class="text-input">
                                                 <xsl:value-of select="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:qualification/fhir:code/fhir:coding[fhir:system/@value='https://fhir.kbv.de/NamingSystem/KBV_NS_FOR_Fachgruppennummer_ASV']/fhir:code/@value"/>
                                                 <xsl:text disable-output-escaping='yes'> / </xsl:text>
                                                 <!-- TODO: was wenn nicht angegeben -> v<1.2 -->
                                                 <xsl:value-of select="//fhir:PractitionerRole/fhir:organization/fhir:identifier[fhir:system/@value='http://fhir.de/NamingSystem/asv/teamnummer']/fhir:value/@value"/>
                                             </div>
-									</xsl:if>								
-									<xsl:if test="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:qualification/fhir:code/fhir:coding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_Qualification_Type']/fhir:code/@value=1">
-										<label>keine Angabe</label>
-                                        <div class="text-input">
-                                        </div>
-									</xsl:if>
-								 </xsl:otherwise>
-								</xsl:choose>
+                                        </xsl:if>
+                                        <xsl:if test="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$author_id]/fhir:qualification/fhir:code/fhir:coding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_Qualification_Type']/fhir:code/@value=1">
+                                            <label>keine Angabe</label>
+                                            <div class="text-input">
+                                            </div>
+                                        </xsl:if>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="input-container"> <!-- Identifikator der Einrichtung (ID 61) -->
-							<xsl:choose>
-								<xsl:when test="//fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR']/fhir:value/@value">
-									<label>Betriebsstättennummer</label> <!-- ID 61a -->
-                                    <div class="text-input">
-                                        <xsl:value-of select="fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR']/fhir:value/@value"/>
-                                    </div>
-								</xsl:when>
-								<xsl:when test="//fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='http://fhir.de/sid/kzbv/kzvabrechnungsnummer']/fhir:value/@value">
-									<label>KZV-Abrechnungsnummer</label><!-- (ID 61c) -->
-                                    <div class="text-input">
-                                        <xsl:value-of select="fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='http://fhir.de/sid/kzbv/kzvabrechnungsnummer']/fhir:value/@value"/>
-                                    </div>
-								</xsl:when>
-								<xsl:when test="//fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='http://fhir.de/sid/dkgev/standortnummer']/fhir:value/@value">
-									<label>Standortnummer</label> <!-- (ID 61d) -->
-                                    <div class="text-input">
-                                        <xsl:value-of select="fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='http://fhir.de/sid/dkgev/standortnummer']/fhir:value/@value"/>
-                                    </div>
-								</xsl:when>							
-								<xsl:when test="//fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='http://fhir.de/sid/arge-ik/iknr']/fhir:value/@value">
-									<label>Institutionskennzeichen</label> <!-- (ID 61b) -->
-                                    <div class="text-input">
-                                        <xsl:value-of select="fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='http://fhir.de/sid/arge-ik/iknr']/fhir:value/@value"/>
-                                    </div>
-								</xsl:when>							
-								<xsl:when test="//fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='https://gematik.de/fhir/sid/telematik-id']/fhir:value/@value">
-									<label>Telematik-ID</label> <!-- (ID 61e) -->
-                                    <div class="text-input">
-                                        <xsl:value-of select="fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='https://gematik.de/fhir/sid/telematik-id']/fhir:value/@value"/>
-                                    </div>
-								</xsl:when>
-								<xsl:otherwise>
-									<label> </label> <!-- Platzhalter?!? --> <!-- TODO: was macht das Design?!? -->
-                                    <div class="text-input">
-                                    </div>
-								</xsl:otherwise>
-							</xsl:choose>
+                                <xsl:choose>
+                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR']/fhir:value/@value">
+                                        <label>Betriebsstättennummer</label> <!-- ID 61a -->
+                                        <div class="text-input">
+                                            <xsl:value-of select="fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR']/fhir:value/@value"/>
+                                        </div>
+                                    </xsl:when>
+                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='http://fhir.de/sid/kzbv/kzvabrechnungsnummer']/fhir:value/@value">
+                                        <label>KZV-Abrechnungsnummer</label><!-- (ID 61c) -->
+                                        <div class="text-input">
+                                            <xsl:value-of select="fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='http://fhir.de/sid/kzbv/kzvabrechnungsnummer']/fhir:value/@value"/>
+                                        </div>
+                                    </xsl:when>
+                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='http://fhir.de/sid/dkgev/standortnummer']/fhir:value/@value">
+                                        <label>Standortnummer</label> <!-- (ID 61d) -->
+                                        <div class="text-input">
+                                            <xsl:value-of select="fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='http://fhir.de/sid/dkgev/standortnummer']/fhir:value/@value"/>
+                                        </div>
+                                    </xsl:when>
+                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='http://fhir.de/sid/arge-ik/iknr']/fhir:value/@value">
+                                        <label>Institutionskennzeichen</label> <!-- (ID 61b) -->
+                                        <div class="text-input">
+                                            <xsl:value-of select="fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='http://fhir.de/sid/arge-ik/iknr']/fhir:value/@value"/>
+                                        </div>
+                                    </xsl:when>
+                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='https://gematik.de/fhir/sid/telematik-id']/fhir:value/@value">
+                                        <label>Telematik-ID</label> <!-- (ID 61e) -->
+                                        <div class="text-input">
+                                            <xsl:value-of select="fhir:entry/fhir:resource/fhir:Organization/fhir:identifier[fhir:system/@value='https://gematik.de/fhir/sid/telematik-id']/fhir:value/@value"/>
+                                        </div>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <label> </label> <!-- Platzhalter?!? --> <!-- TODO: was macht das Design?!? -->
+                                        <div class="text-input">
+                                        </div>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                             </div>
                         </div>
                     </div>
@@ -1221,10 +1235,10 @@
                     <div class="row g-1">
                         <div class="col-10">
                             <div class="input-container">
-                                <label>Adresse</label> <!-- Strassenadresse der Einrichtung (ID 143) -->
-                                <div class="text-input">
-                                    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Organization/fhir:address[fhir:type/@value='both']/fhir:line/@value"/>
-                                </div>
+                                <label>Straßenadresse</label> <!-- Strassenadresse der Einrichtung (ID 143) -->
+                                <xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input height-15mm&#34; readonly/&gt;</xsl:text>
+                                <xsl:value-of select="fhir:entry/fhir:resource/fhir:Organization/fhir:address[fhir:type/@value='both']/fhir:line/@value"/>
+                                <xsl:text disable-output-escaping='yes'>&lt;/textarea&gt;</xsl:text>
                             </div>
                         </div>
                         <div class="col-2">
@@ -1283,69 +1297,69 @@
                                 </div>
                             </div>
                         </div>
-                    </div>  
-					<xsl:variable name="anzahl" select="count(fhir:entry/fhir:resource/fhir:Practitioner)"/>
-					<xsl:choose>
-					<xsl:when test="fhir:entry/fhir:resource/fhir:Composition/fhir:attester and $anzahl>'1'">
-						<h4>verantwortliche Person</h4>
-						<xsl:variable name="attester_id">
-							<xsl:call-template name="getIdFromReference">
-								<xsl:with-param name="ref" select="fhir:entry/fhir:resource/fhir:Composition/fhir:attester/fhir:party/fhir:reference/@value"/>
-							</xsl:call-template>
-						</xsl:variable>
-						<div class="row g-1">
-							 <!-- Zeile 1 -->
-							 <div class="col-12">
-								<div class="input-container">
-									<label>Name u. Vorname</label> <!-- Titel (ID 22/55), Name (ID 141/142), Vorname (ID 44/53) -->
-                                    <div class="text-input">
-									    <xsl:value-of select="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:name/fhir:prefix/@value"/>
-									    <xsl:value-of select="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:name/fhir:given/@value"/>
-									    <xsl:value-of select="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:name/fhir:family/@value"/>
+                    </div>
+                    <xsl:variable name="anzahl" select="count(fhir:entry/fhir:resource/fhir:Practitioner)"/>
+                    <xsl:choose>
+                        <xsl:when test="fhir:entry/fhir:resource/fhir:Composition/fhir:attester and $anzahl>'1'">
+                            <h4>verantwortliche Person</h4>
+                            <xsl:variable name="attester_id">
+                                <xsl:call-template name="getIdFromReference">
+                                    <xsl:with-param name="ref" select="fhir:entry/fhir:resource/fhir:Composition/fhir:attester/fhir:party/fhir:reference/@value"/>
+                                </xsl:call-template>
+                            </xsl:variable>
+                            <div class="row g-1">
+                                <!-- Zeile 1 -->
+                                <div class="col-12">
+                                    <div class="input-container">
+                                        <label>Name u. Vorname</label> <!-- Titel (ID 22/55), Name (ID 141/142), Vorname (ID 44/53) -->
+                                        <div class="text-input">
+                                            <xsl:value-of select="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:name/fhir:prefix/@value"/>
+                                            <xsl:value-of select="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:name/fhir:given/@value"/>
+                                            <xsl:value-of select="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:name/fhir:family/@value"/>
+                                        </div>
                                     </div>
-								</div>
-							 </div>
-                         </div>
-						 <div class="row g-1">
-							<div class="col-12">
-								<div class="input-container">
-									<label>Berufsbezeichnung</label> <!-- (ID 49/58) -->
-                                    <div class="text-input">
-    									<xsl:value-of select="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:qualification/fhir:code/fhir:text/@value"/>
+                                </div>
+                            </div>
+                            <div class="row g-1">
+                                <div class="col-12">
+                                    <div class="input-container">
+                                        <label>Berufsbezeichnung</label> <!-- (ID 49/58) -->
+                                        <div class="text-input">
+                                            <xsl:value-of select="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:qualification/fhir:code/fhir:text/@value"/>
+                                        </div>
                                     </div>
-								</div>
-							</div>
-						</div>
-                        <div class="row g-1">
-							<div class="col-6"> <!-- Arztnummer / LANR (ID 42a/52a) oder Zahnarztnummer / ZANR (ID 42b/52b)-->
-								<div class="input-container">                                
-									<xsl:choose>
-									<xsl:when test="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:identifier[fhir:system/@value='https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR']/fhir:value/@value">
-										<label>LANR</label>
+                                </div>
+                            </div>
+                            <div class="row g-1">
+                                <div class="col-6"> <!-- Arztnummer / LANR (ID 42a/52a) oder Zahnarztnummer / ZANR (ID 42b/52b)-->
+                                    <div class="input-container">
+                                        <xsl:choose>
+                                            <xsl:when test="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:identifier[fhir:system/@value='https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR']/fhir:value/@value">
+                                                <label>LANR</label>
+                                                <div class="text-input">
+                                                    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:identifier[fhir:system/@value='https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR']/fhir:value/@value"/>
+                                                </div>
+                                            </xsl:when>
+                                            <xsl:when test="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:identifier[fhir:system/@value='http://fhir.de/sid/kzbv/zahnarztnummer']/fhir:value/@value">
+                                                <label>ZANR</label>
+                                                <div class="text-input">
+                                                    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:identifier[fhir:system/@value='http://fhir.de/sid/kzbv/zahnarztnummer']/fhir:value/@value"/>
+                                                </div>
+                                            </xsl:when>
+                                            <xsl:when test="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:identifier[fhir:system/@value='https://gematik.de/fhir/sid/telematik-id']/fhir:value/@value">
+                                                <label>Telematik-ID</label> <!-- (ID 42c/52c) -->
+                                                <div class="text-input">
+                                                    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:identifier[fhir:system/@value='https://gematik.de/fhir/sid/telematik-id']/fhir:value/@value"/>
+                                                </div>
+                                            </xsl:when>
+                                        </xsl:choose>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-container">
+                                        <label>Qualifikation</label> <!-- (Typ (ID 41/5) -->
                                         <div class="text-input">
-										    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:identifier[fhir:system/@value='https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR']/fhir:value/@value"/>
-                                        </div>
-									</xsl:when>
-									<xsl:when test="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:identifier[fhir:system/@value='http://fhir.de/sid/kzbv/zahnarztnummer']/fhir:value/@value">
-										<label>ZANR</label>
-                                        <div class="text-input">
-										    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:identifier[fhir:system/@value='http://fhir.de/sid/kzbv/zahnarztnummer']/fhir:value/@value"/>
-                                        </div>
-									</xsl:when>
-									<xsl:when test="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:identifier[fhir:system/@value='https://gematik.de/fhir/sid/telematik-id']/fhir:value/@value">
-										<label>Telematik-ID</label> <!-- (ID 42c/52c) -->
-                                        <div class="text-input">
-    										<xsl:value-of select="fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:identifier[fhir:system/@value='https://gematik.de/fhir/sid/telematik-id']/fhir:value/@value"/>
-                                        </div>
-									</xsl:when>									
-									</xsl:choose>
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="input-container">
-									<label>Qualifikation</label> <!-- (Typ (ID 41/5) -->
-                                    <div class="text-input">
-                                        <xsl:variable name="arzttyp" select="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:qualification/fhir:code/fhir:coding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_Qualification_Type']/fhir:code/@value"/>
+                                            <xsl:variable name="arzttyp" select="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:qualification/fhir:code/fhir:coding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_Qualification_Type']/fhir:code/@value"/>
                                             <xsl:choose>
                                                 <xsl:when test="$arzttyp=00">Arzt (</xsl:when>
                                                 <xsl:when test="$arzttyp=01">Zahnarzt (</xsl:when>
@@ -1354,61 +1368,61 @@
                                                 <xsl:when test="$arzttyp=04">Arzt als Vertreter (</xsl:when>
                                             </xsl:choose>
                                             <xsl:value-of select="($arzttyp)" />
+                                        </div>
                                     </div>
-								</div>
-							</div>							
-						</div>
-					</xsl:when>
-					</xsl:choose>
+                                </div>
+                            </div>
+                        </xsl:when>
+                    </xsl:choose>
                 </div>
             </div>
-			<!-- Dritter Container (100% des Platzes) -->
-			 <div class="intern-container background-container-ges margin-left-min-2 margin-right-min-2 margin-top-min-5">
-				<div class="row g-1 width-100">
-					<xsl:if test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Accident']">
-						<div class="row g-1">
-							<xsl:choose>
-								<xsl:when test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Accident']/fhir:extension[@url='Unfalltag']/fhir:valueDate/@value">
-									<div class="col-2">
-										<div class="input-container"> <!-- ID 74 -->
-											<label>Unfalltag</label>
+            <!-- Dritter Container (100% des Platzes) -->
+            <div class="intern-container background-container-ges margin-left-min-2 margin-right-min-2 margin-top-min-5">
+                <div class="row g-1 width-100">
+                    <xsl:if test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Accident']">
+                        <div class="row g-1">
+                            <xsl:choose>
+                                <xsl:when test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Accident']/fhir:extension[@url='Unfalltag']/fhir:valueDate/@value">
+                                    <div class="col-2">
+                                        <div class="input-container"> <!-- ID 74 -->
+                                            <label>Unfalltag</label>
                                             <div class="text-input">
                                                 <xsl:call-template name="formatDate">
                                                     <xsl:with-param name="date" select="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Accident']/fhir:extension[@url='Unfalltag']/fhir:valueDate/@value"/>
                                                 </xsl:call-template>
                                             </div>
-										</div>
-									</div>
-								</xsl:when>
-							</xsl:choose>
-							<xsl:choose>
-								<xsl:when test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Accident']/fhir:extension[@url='Unfallbetrieb']/fhir:valueString/@value">
-									<div class="col-6">
-										<div class="input-container"> <!-- ID 75 -->
-											<label>Name des Unfallbetriebs</label>
+                                        </div>
+                                    </div>
+                                </xsl:when>
+                            </xsl:choose>
+                            <xsl:choose>
+                                <xsl:when test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Accident']/fhir:extension[@url='Unfallbetrieb']/fhir:valueString/@value">
+                                    <div class="col-6">
+                                        <div class="input-container"> <!-- ID 75 -->
+                                            <label>Name des Unfallbetriebs</label>
                                             <div class="text-input">
-            									<xsl:value-of select="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Accident']/fhir:extension[@url='Unfallbetrieb']/fhir:valueString/@value"/>
+                                                <xsl:value-of select="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Accident']/fhir:extension[@url='Unfallbetrieb']/fhir:valueString/@value"/>
                                             </div>
-										</div>
-									</div>																									
-								</xsl:when>							
-							</xsl:choose>
-						</div>
-					</xsl:if>
-					<xsl:choose>
-						<xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_StatusCoPayment']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_StatusCoPayment']/fhir:code/@value  = '2'">
-							<div class="row g-1">
-								<div class="col">
-									<div class="input-container"> <!-- Zuzahlungsstatus (ID 77) -->
-										<label>Zuzahlungsstatus - künstliche Befruchtung</label>
+                                        </div>
+                                    </div>
+                                </xsl:when>
+                            </xsl:choose>
+                        </div>
+                    </xsl:if>
+                    <xsl:choose>
+                        <xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_StatusCoPayment']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_StatusCoPayment']/fhir:code/@value  = '2'">
+                            <div class="row g-1">
+                                <div class="col">
+                                    <div class="input-container"> <!-- Zuzahlungsstatus (ID 77) -->
+                                        <label>Zuzahlungsstatus - künstliche Befruchtung</label>
                                         <div class="text-input">
                                             künstliche Befruchtung (Regelung nach § 27a SGB V)
                                         </div>
-									</div>
-								</div>
-							</div>
-						</xsl:when>
-					</xsl:choose>
+                                    </div>
+                                </div>
+                            </div>
+                        </xsl:when>
+                    </xsl:choose>
                     <xsl:choose>
                         <xsl:when test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Prescriber_ID']/fhir:valueIdentifier/fhir:value">
                             <div class="row g-1">
@@ -1423,37 +1437,37 @@
                             </div>
                         </xsl:when>
                     </xsl:choose>
-					<xsl:choose>
-						<xsl:when test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Multiple_Prescription']/fhir:extension[@url='Kennzeichen']/fhir:valueBoolean[@value='true']">
-                        <div class="col-12">
-							<h5>Mehrfachverordnung</h5> <!-- TODO: Zeilenabstand -->
-							<div class="row g-1">
-								<!--xsl:if test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Multiple_Prescription']/fhir:extension[@url='Nummerierung']"-->
-									<div class="col-2">
-										<div class="input-container"> <!-- Zähler (ID 88) + Nenner (ID 89) -->
-											<label>Zähler / Nenner</label>
+                    <xsl:choose>
+                        <xsl:when test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Multiple_Prescription']/fhir:extension[@url='Kennzeichen']/fhir:valueBoolean[@value='true']">
+                            <div class="col-12">
+                                <h5>Mehrfachverordnung</h5> <!-- TODO: Zeilenabstand -->
+                                <div class="row g-1">
+                                    <!--xsl:if test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Multiple_Prescription']/fhir:extension[@url='Nummerierung']"-->
+                                    <div class="col-2">
+                                        <div class="input-container"> <!-- Zähler (ID 88) + Nenner (ID 89) -->
+                                            <label>Zähler / Nenner</label>
                                             <div class="text-input">
                                                 <xsl:value-of select="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Multiple_Prescription']/fhir:extension[@url='Nummerierung']/fhir:valueRatio/fhir:numerator/fhir:value/@value"/>
                                                 <xsl:text disable-output-escaping='yes'> / </xsl:text>
                                                 <xsl:value-of select="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Multiple_Prescription']/fhir:extension[@url='Nummerierung']/fhir:valueRatio/fhir:denominator/fhir:value/@value"/>
                                             </div>
-										</div>
-									</div>
-								<!--/xsl:if-->
-								<!--xsl:if test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Multiple_Prescription']/fhir:extension[@url='Zeitraum']"-->
-									<div class="col-2">
-										<xsl:if test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Multiple_Prescription']/fhir:extension[@url='Zeitraum']/fhir:valuePeriod/fhir:start">
-											<div class="input-container"> <!-- Begin Einloesefrist (ID 90)  -->
-												<label>Begin Einloesefrist</label>
+                                        </div>
+                                    </div>
+                                    <!--/xsl:if-->
+                                    <!--xsl:if test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Multiple_Prescription']/fhir:extension[@url='Zeitraum']"-->
+                                    <div class="col-2">
+                                        <xsl:if test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Multiple_Prescription']/fhir:extension[@url='Zeitraum']/fhir:valuePeriod/fhir:start">
+                                            <div class="input-container"> <!-- Begin Einloesefrist (ID 90)  -->
+                                                <label>Begin Einloesefrist</label>
                                                 <div class="text-input">
                                                     <xsl:call-template name="formatDate">
                                                         <xsl:with-param name="date" select="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Multiple_Prescription']/fhir:extension[@url='Zeitraum']/fhir:valuePeriod/fhir:start/@value"/>
                                                     </xsl:call-template>
                                                 </div>
-											</div>
-										</xsl:if>
-									</div>
-									<div class="col-2">
+                                            </div>
+                                        </xsl:if>
+                                    </div>
+                                    <div class="col-2">
                                         <div class="input-container"> <!-- Ende Einloesefrist (ID 91) -->
                                             <label>Ende Einloesefrist</label>
                                             <div class="text-input">
@@ -1465,96 +1479,96 @@
                                                 <xsl:text disable-output-escaping='yes'> </xsl:text>
                                             </div>
                                         </div>
-									</div>
-								<!--/xsl:if-->
-								<!--xsl:if test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Multiple_Prescription']/fhir:extension[@url='ID']"-->
-									<div class="col-6">
-										<div class="input-container"> <!-- MV-ID 145 -->								
-											<label>ID</label>
+                                    </div>
+                                    <!--/xsl:if-->
+                                    <!--xsl:if test="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Multiple_Prescription']/fhir:extension[@url='ID']"-->
+                                    <div class="col-6">
+                                        <div class="input-container"> <!-- MV-ID 145 -->
+                                            <label>ID</label>
                                             <div class="text-input">
-											    <xsl:value-of select="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Multiple_Prescription']/fhir:extension[@url='ID']/fhir:valueIdentifier/fhir:value/@value"/>
+                                                <xsl:value-of select="//fhir:MedicationRequest/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Multiple_Prescription']/fhir:extension[@url='ID']/fhir:valueIdentifier/fhir:value/@value"/>
                                             </div>
-										</div>
-									</div>
-								<!--/xsl:if-->
-							</div>
-                        </div>
-						</xsl:when>
-					</xsl:choose>
-					<div class="col-12">
-						<!-- Start Medications -->
-						<xsl:choose>
-							<!-- PZN -Verordnung ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-							<xsl:when test="//fhir:Medication/fhir:code/fhir:coding/fhir:system[@value='http://fhir.de/CodeSystem/ifa/pzn']">
-								<div class="row g-1">
-									<div class="col-1">
-										<div class="checkbox-container vertical-align">
-											<label>Aut Idem</label> <!-- ID 101 -->
-											<xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34;</xsl:text>
-											<xsl:choose>
-												<xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:substitution/fhir:allowedBoolean/@value = 'false'">
-													<xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text> <!-- Nein -->
-												</xsl:when>
-												<xsl:otherwise>
-													<xsl:text disable-output-escaping='yes'>/&gt;</xsl:text> <!-- Ja -->
-												</xsl:otherwise>
-											</xsl:choose>
-										</div>
-									</div>
-									<div class="col-3">
-										<div class="input-container">
-											<label>Anzahl der verordneten Packungen</label> <!-- Anzahl der verordneten Packungen (ID 113) -->
+                                        </div>
+                                    </div>
+                                    <!--/xsl:if-->
+                                </div>
+                            </div>
+                        </xsl:when>
+                    </xsl:choose>
+                    <div class="col-12">
+                        <!-- Start Medications -->
+                        <xsl:choose>
+                            <!-- PZN -Verordnung ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                            <xsl:when test="//fhir:Medication/fhir:code/fhir:coding/fhir:system[@value='http://fhir.de/CodeSystem/ifa/pzn']">
+                                <div class="row g-1">
+                                    <div class="col-1">
+                                        <div class="checkbox-container vertical-align">
+                                            <label>Aut Idem</label> <!-- ID 101 -->
+                                            <xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34;</xsl:text>
+                                            <xsl:choose>
+                                                <xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:substitution/fhir:allowedBoolean/@value = 'false'">
+                                                    <xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text> <!-- Nein -->
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <xsl:text disable-output-escaping='yes'>/&gt;</xsl:text> <!-- Ja -->
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="input-container">
+                                            <label>Anzahl der verordneten Packungen</label> <!-- Anzahl der verordneten Packungen (ID 113) -->
                                             <div class="text-input">
-											    <xsl:value-of select="fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dispenseRequest/fhir:quantity/fhir:value/@value"/>
+                                                <xsl:value-of select="fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dispenseRequest/fhir:quantity/fhir:value/@value"/>
                                             </div>
-										</div>
-									</div>
-									<div class="col-8">
-										<div class="input-container">
-											<label>Kategorie</label> <!-- Kategorie (ID 81) -->
-											<xsl:variable name="kategorie" select="fhir:entry/fhir:resource/fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Category']/fhir:code/@value"/>
-																						
-											<xsl:choose>
-												<xsl:when test="$kategorie=00">
-													<xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input&#34; readonly/&gt;</xsl:text>
-												</xsl:when>
-												<xsl:otherwise>
-													<xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input&#34; style=&#34;font-weight: bold&#34; readonly/&gt;</xsl:text>
-												</xsl:otherwise>												
-											</xsl:choose>									
-											<xsl:choose>
-												<xsl:when test="$kategorie=00">AM oder in die AM-Versorgung nach &#167; 31 SGB V einbezogenes Produkt (</xsl:when>
-												<xsl:when test="$kategorie=01">BtM (</xsl:when>
-												<xsl:when test="$kategorie=02">T-Rezept (AMVV &#167; 3a Abs. 1 (Thalidomid o. &#228;.)) (</xsl:when>
-											</xsl:choose>
-											<xsl:value-of select="($kategorie)" />
-											<xsl:text disable-output-escaping='yes'>)&lt;/textarea&gt;</xsl:text>
-										</div>
-									</div>							
-								</div>
-								<div class="row g-1">
-									<div class="col-2">
-										<div class="input-container">
-											<label>PZN</label> <!-- ID des Produkts (PZN) (ID 115) -->
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="input-container">
+                                            <label>Kategorie</label> <!-- Kategorie (ID 81) -->
+                                            <xsl:variable name="kategorie" select="fhir:entry/fhir:resource/fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Category']/fhir:code/@value"/>
+
+                                            <xsl:choose>
+                                                <xsl:when test="$kategorie=00">
+                                                    <xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input&#34; readonly/&gt;</xsl:text>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input&#34; style=&#34;font-weight: bold&#34; readonly/&gt;</xsl:text>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                            <xsl:choose>
+                                                <xsl:when test="$kategorie=00">AM oder in die AM-Versorgung nach &#167; 31 SGB V einbezogenes Produkt (</xsl:when>
+                                                <xsl:when test="$kategorie=01">BtM (</xsl:when>
+                                                <xsl:when test="$kategorie=02">T-Rezept (AMVV &#167; 3a Abs. 1 (Thalidomid o. &#228;.)) (</xsl:when>
+                                            </xsl:choose>
+                                            <xsl:value-of select="($kategorie)" />
+                                            <xsl:text disable-output-escaping='yes'>)&lt;/textarea&gt;</xsl:text>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-2">
+                                        <div class="input-container">
+                                            <label>PZN</label> <!-- ID des Produkts (PZN) (ID 115) -->
                                             <div class="text-input" style="font-weight: bold;">
-											    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:code/fhir:coding/fhir:code/@value"/>
+                                                <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:code/fhir:coding/fhir:code/@value"/>
                                             </div>
-										</div>
-									</div>								
-									<div class="col-10">
-										<div class="input-container">
-											<label>Handelsname</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="input-container">
+                                            <label>Handelsname</label>
                                             <div class="text-input" style="font-weight: bold;">
-											    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:code/fhir:text/@value"/>
+                                                <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:code/fhir:text/@value"/>
                                             </div>
-										</div>
-									</div>
-								</div>
-								<div class="row g-1">
-									<div class="col-4"> <!-- Darreichungsform Text (ID 103)-->
-										<div class="input-container">
-											<label>Darreichungsform</label>
-											<xsl:variable name="_dform" select="fhir:entry/fhir:resource/fhir:Medication/fhir:form/fhir:coding/fhir:code/@value"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4"> <!-- Darreichungsform Text (ID 103)-->
+                                        <div class="input-container">
+                                            <label>Darreichungsform</label>
+                                            <xsl:variable name="_dform" select="fhir:entry/fhir:resource/fhir:Medication/fhir:form/fhir:coding/fhir:code/@value"/>
                                             <div class="text-input">
                                                 <xsl:choose> <!-- S_KBV_DARREICHUNGSFORM  v1.15 Stand: 01.04.2025 -->
                                                     <xsl:when test="$_dform='---'">keine Darreichungsform (</xsl:when>
@@ -1841,18 +1855,18 @@
                                                         unbekannt (
                                                     </xsl:otherwise>
                                                 </xsl:choose>
-											    <xsl:value-of select="($_dform)"/>
+                                                <xsl:value-of select="($_dform)"/>
                                                 <xsl:text disable-output-escaping='yes'>)</xsl:text>
                                             </div>
-											<!-- TODO: Anzeige Display-Value? form.coding:kbvDarreichungsform.display -->
-											<!--xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:form/fhir:coding/fhir:code/@value"/-->
-										</div>
-									</div>									
-									<!--Packungsgroesse nach N-Bezeichnung (ID 110) -> wenn angegeben -->
-									<xsl:if test="fhir:entry/fhir:resource/fhir:Medication/fhir:extension[@url='http://fhir.de/StructureDefinition/normgroesse']/fhir:valueCode['https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_NORMGROESSE']">
-										<div class="col-4">
-											<div class="input-container">
-												<label>Packungsgroesse nach N-Bezeichnung</label> <!-- Anzahl der verordneten Packungen (ID 113) -->
+                                            <!-- TODO: Anzeige Display-Value? form.coding:kbvDarreichungsform.display -->
+                                            <!--xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:form/fhir:coding/fhir:code/@value"/-->
+                                        </div>
+                                    </div>
+                                    <!--Packungsgroesse nach N-Bezeichnung (ID 110) -> wenn angegeben -->
+                                    <xsl:if test="fhir:entry/fhir:resource/fhir:Medication/fhir:extension[@url='http://fhir.de/StructureDefinition/normgroesse']/fhir:valueCode['https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_NORMGROESSE']">
+                                        <div class="col-4">
+                                            <div class="input-container">
+                                                <label>Packungsgroesse nach N-Bezeichnung</label> <!-- Anzahl der verordneten Packungen (ID 113) -->
                                                 <div class="text-input">
                                                     <xsl:variable name="npack" select="fhir:entry/fhir:resource/fhir:Medication/fhir:extension[@url='http://fhir.de/StructureDefinition/normgroesse']/fhir:valueCode['https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_NORMGROESSE']/@value"/>
                                                     <xsl:choose>
@@ -1867,151 +1881,151 @@
                                                     <xsl:value-of select="($npack)"/>
                                                     <xsl:text disable-output-escaping='yes'>)</xsl:text>
                                                 </div>
-											</div>
-										</div>
-									</xsl:if>								
-									<!--Packungsgroesse nach abgeteilter MengeDosieranweisung (ID 111) + Einheit (ID 112) -->
-									<xsl:if test="fhir:entry/fhir:resource/fhir:Medication/fhir:amount">
-										<div class="col-4">
-											<div class="input-container">
-												<label>Packungsgroesse nach abgeteilter Menge</label>
+                                            </div>
+                                        </div>
+                                    </xsl:if>
+                                    <!--Packungsgroesse nach abgeteilter MengeDosieranweisung (ID 111) + Einheit (ID 112) -->
+                                    <xsl:if test="fhir:entry/fhir:resource/fhir:Medication/fhir:amount">
+                                        <div class="col-4">
+                                            <div class="input-container">
+                                                <label>Packungsgroesse nach abgeteilter Menge</label>
                                                 <div class="text-input">
                                                     <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:amount/fhir:numerator/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_PackagingSize']/fhir:valueString/@value"/>
                                                     <xsl:text disable-output-escaping='yes'> </xsl:text>
                                                     <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:amount/fhir:numerator/fhir:unit/@value"/>
                                                 </div>
-											</div>
-										</div>
-									</xsl:if>
-								</div>
-								<xsl:for-each select="fhir:entry/fhir:resource/fhir:Medication/fhir:ingredient"> <!-- ab Version 1.3 Angabe des Wirkstoffs -->
-									<div class="row g-1">
-										<div class="col-1">
-											<div class="input-container">
-												<label>Position</label>
-                                                <div class="text-input">
-												<xsl:number format="1 " /><xsl:value-of select="." />
-                                                </div>
-											</div>
-										</div>
-										<xsl:if test="fhir:itemCodeableConcept/fhir:coding/fhir:code/@value"> <!-- Wirkstoffnummer (ID 118) -->
-											<div class="col-1">
-												<div class="input-container">
-													<label>ASK-Nr</label>
-                                                    <div class="text-input" style="font-weight: bold;">
-													    <xsl:value-of select="fhir:itemCodeableConcept/fhir:coding/fhir:code/@value"/>
-                                                    </div>
-												</div>
-											</div>
-										</xsl:if>
-										<div class="col-6">
-											<div class="input-container">
-												<label>Wirkstoffname</label> <!-- 80 Zeichen TODO: Textlänge-->
-                                                <div class="text-input" style="font-weight: bold;">
-												    <xsl:value-of select="fhir:itemCodeableConcept/fhir:text/@value"/> <!-- Wirkstoffname (ID 119) -->
-                                                </div>
-											</div>
-										</div>
-										<div class="col-4">
-											<div class="input-container">
-												<label>Wirkstärke</label>
-                                                <div class="text-input">
-												    <xsl:value-of select="fhir:strength/fhir:numerator/fhir:value/@value"/> <!-- Wirkstaerke (ID 159a) -->
-												    <xsl:text disable-output-escaping='yes'> </xsl:text>
-												    <xsl:value-of select="fhir:strength/fhir:numerator/fhir:unit/@value"/> <!-- Wirkstaerkeneinheit (ID 159b) -->
-												    <xsl:text disable-output-escaping='yes'> / </xsl:text>
-												    <xsl:value-of select="fhir:strength/fhir:denominator/fhir:value/@value"/> <!-- Wirkstaerke (ID 159c) -->
-												    <xsl:text disable-output-escaping='yes'> </xsl:text>
-												    <xsl:value-of select="fhir:strength/fhir:denominator/fhir:unit/@value"/> <!-- Wirkstaerkeneinheit (ID 159d) -->
-                                                </div>
-											</div>
-										</div>
-									</div>
-								</xsl:for-each>
-							</xsl:when>
-							<!-- Wirkstoff -Verordnung ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
-							<xsl:when test="//fhir:Medication/fhir:code/fhir:coding/fhir:system[@value='https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Type']/following-sibling::fhir:code[@value='wirkstoff']">
-								<div class="row g-1">
-									<div class="col-1">
-										<div class="checkbox-container vertical-align">
-											<label>Aut Idem</label> <!-- ID 101 -->
-											<xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34;</xsl:text>
-											<xsl:choose>
-												<xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:substitution/fhir:allowedBoolean/@value = 'false'">
-													<xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text> <!-- Nein -->
-												</xsl:when>
-												<xsl:otherwise>
-													<xsl:text disable-output-escaping='yes'>/&gt;</xsl:text> <!-- Ja -->
-												</xsl:otherwise>
-											</xsl:choose>
-										</div>
-									</div>
-									<div class="col-3">
-										<div class="input-container">
-											<label>Anzahl der verordneten Packungen</label> <!-- Anzahl der verordneten Packungen (ID 113) -->
-                                            <div class="text-input">
-											<xsl:value-of select="fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dispenseRequest/fhir:quantity/fhir:value/@value"/>
                                             </div>
-										</div>
-									</div>
-									<div class="col-8">
-										<div class="input-container">
-											<label>Kategorie</label> <!-- Kategorie (ID 81) -->
-											<xsl:variable name="kategorie" select="fhir:entry/fhir:resource/fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Category']/fhir:code/@value"/>
-																						
-											<xsl:choose>
-												<xsl:when test="$kategorie=00">
-													<xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input&#34; readonly/&gt;</xsl:text>
-												</xsl:when>
-												<xsl:otherwise>
-													<xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input&#34; style=&#34;font-weight: bold&#34; readonly/&gt;</xsl:text>
-												</xsl:otherwise>												
-											</xsl:choose>									
-											<xsl:choose>
-												<xsl:when test="$kategorie=00">AM oder in die AM-Versorgung nach &#167; 31 SGB V einbezogenes Produkt (</xsl:when>
-												<xsl:when test="$kategorie=01">BtM (</xsl:when>
-												<xsl:when test="$kategorie=02">T-Rezept (AMVV &#167; 3a Abs. 1 (Thalidomid o. &#228;.)) (</xsl:when>
-											</xsl:choose>
-											<xsl:value-of select="($kategorie)" />
-											<xsl:text disable-output-escaping='yes'>)&lt;/textarea&gt;</xsl:text>
-										</div>
-									</div>
-								</div>
-								<xsl:variable name="anzahl" select="count(fhir:entry/fhir:resource/fhir:Medication/fhir:ingredient)"/>
-								<xsl:for-each select="fhir:entry/fhir:resource/fhir:Medication/fhir:ingredient">
-									<div class="row g-1">
-										<div class="col-1">
-											<div class="input-container">
-												<label>Position</label>
+                                        </div>
+                                    </xsl:if>
+                                </div>
+                                <xsl:for-each select="fhir:entry/fhir:resource/fhir:Medication/fhir:ingredient"> <!-- ab Version 1.3 Angabe des Wirkstoffs -->
+                                    <div class="row g-1">
+                                        <div class="col-1">
+                                            <div class="input-container">
+                                                <label>Position</label>
+                                                <div class="text-input">
+                                                    <xsl:number format="1 " /><xsl:value-of select="." />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <xsl:if test="fhir:itemCodeableConcept/fhir:coding/fhir:code/@value"> <!-- Wirkstoffnummer (ID 118) -->
+                                            <div class="col-1">
+                                                <div class="input-container">
+                                                    <label>ASK-Nr</label>
+                                                    <div class="text-input" style="font-weight: bold;">
+                                                        <xsl:value-of select="fhir:itemCodeableConcept/fhir:coding/fhir:code/@value"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </xsl:if>
+                                        <div class="col-6">
+                                            <div class="input-container">
+                                                <label>Wirkstoffname</label> <!-- 80 Zeichen TODO: Textlänge-->
+                                                <div class="text-input" style="font-weight: bold;">
+                                                    <xsl:value-of select="fhir:itemCodeableConcept/fhir:text/@value"/> <!-- Wirkstoffname (ID 119) -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="input-container">
+                                                <label>Wirkstärke</label>
+                                                <div class="text-input">
+                                                    <xsl:value-of select="fhir:strength/fhir:numerator/fhir:value/@value"/> <!-- Wirkstaerke (ID 159a) -->
+                                                    <xsl:text disable-output-escaping='yes'> </xsl:text>
+                                                    <xsl:value-of select="fhir:strength/fhir:numerator/fhir:unit/@value"/> <!-- Wirkstaerkeneinheit (ID 159b) -->
+                                                    <xsl:text disable-output-escaping='yes'> / </xsl:text>
+                                                    <xsl:value-of select="fhir:strength/fhir:denominator/fhir:value/@value"/> <!-- Wirkstaerke (ID 159c) -->
+                                                    <xsl:text disable-output-escaping='yes'> </xsl:text>
+                                                    <xsl:value-of select="fhir:strength/fhir:denominator/fhir:unit/@value"/> <!-- Wirkstaerkeneinheit (ID 159d) -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </xsl:for-each>
+                            </xsl:when>
+                            <!-- Wirkstoff -Verordnung ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
+                            <xsl:when test="//fhir:Medication/fhir:code/fhir:coding/fhir:system[@value='https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Type']/following-sibling::fhir:code[@value='wirkstoff']">
+                                <div class="row g-1">
+                                    <div class="col-1">
+                                        <div class="checkbox-container vertical-align">
+                                            <label>Aut Idem</label> <!-- ID 101 -->
+                                            <xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34;</xsl:text>
+                                            <xsl:choose>
+                                                <xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:substitution/fhir:allowedBoolean/@value = 'false'">
+                                                    <xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text> <!-- Nein -->
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <xsl:text disable-output-escaping='yes'>/&gt;</xsl:text> <!-- Ja -->
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="input-container">
+                                            <label>Anzahl der verordneten Packungen</label> <!-- Anzahl der verordneten Packungen (ID 113) -->
+                                            <div class="text-input">
+                                                <xsl:value-of select="fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dispenseRequest/fhir:quantity/fhir:value/@value"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="input-container">
+                                            <label>Kategorie</label> <!-- Kategorie (ID 81) -->
+                                            <xsl:variable name="kategorie" select="fhir:entry/fhir:resource/fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Category']/fhir:code/@value"/>
+
+                                            <xsl:choose>
+                                                <xsl:when test="$kategorie=00">
+                                                    <xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input&#34; readonly/&gt;</xsl:text>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input&#34; style=&#34;font-weight: bold&#34; readonly/&gt;</xsl:text>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                            <xsl:choose>
+                                                <xsl:when test="$kategorie=00">AM oder in die AM-Versorgung nach &#167; 31 SGB V einbezogenes Produkt (</xsl:when>
+                                                <xsl:when test="$kategorie=01">BtM (</xsl:when>
+                                                <xsl:when test="$kategorie=02">T-Rezept (AMVV &#167; 3a Abs. 1 (Thalidomid o. &#228;.)) (</xsl:when>
+                                            </xsl:choose>
+                                            <xsl:value-of select="($kategorie)" />
+                                            <xsl:text disable-output-escaping='yes'>)&lt;/textarea&gt;</xsl:text>
+                                        </div>
+                                    </div>
+                                </div>
+                                <xsl:variable name="anzahl" select="count(fhir:entry/fhir:resource/fhir:Medication/fhir:ingredient)"/>
+                                <xsl:for-each select="fhir:entry/fhir:resource/fhir:Medication/fhir:ingredient">
+                                    <div class="row g-1">
+                                        <div class="col-1">
+                                            <div class="input-container">
+                                                <label>Position</label>
                                                 <div class="text-input">
                                                     <!-- /* TODO: Anzahl / Gesamt */ -->
                                                     <!--xsl:variable name="anzahl2" select="."/-->
                                                     <!--xsl:value-of select="($anzahl2) / ($anzahl)"/-->
                                                     <xsl:number format="1 " /><xsl:value-of select="." />
                                                 </div>
-											</div>
-										</div>
-										<xsl:if test="fhir:itemCodeableConcept/fhir:coding/fhir:code/@value"> <!-- Wirkstoffnummer (ID 118) -->									
-											<div class="col-1">
-												<div class="input-container">
-													<label>ASK-Nr</label>
+                                            </div>
+                                        </div>
+                                        <xsl:if test="fhir:itemCodeableConcept/fhir:coding/fhir:code/@value"> <!-- Wirkstoffnummer (ID 118) -->
+                                            <div class="col-1">
+                                                <div class="input-container">
+                                                    <label>ASK-Nr</label>
                                                     <div class="text-input" style="font-weight: bold;">
                                                         <xsl:value-of select="fhir:itemCodeableConcept/fhir:coding/fhir:code/@value"/>
                                                     </div>
-												</div>
-											</div>												
-										</xsl:if>									
-										<div class="col-6">
-											<div class="input-container">
-												<label>Wirkstoffname</label> <!-- 80 Zeichen TODO: Textlänge-->
-                                                <div class="text-input" style="font-weight: bold;">
-												    <xsl:value-of select="fhir:itemCodeableConcept/fhir:text/@value"/> <!-- Wirkstoffname (ID 119) -->
                                                 </div>
-											</div>
-										</div>
-										<div class="col-4">
-											<div class="input-container">
-												<label>Wirkstärke</label>
+                                            </div>
+                                        </xsl:if>
+                                        <div class="col-6">
+                                            <div class="input-container">
+                                                <label>Wirkstoffname</label> <!-- 80 Zeichen TODO: Textlänge-->
+                                                <div class="text-input" style="font-weight: bold;">
+                                                    <xsl:value-of select="fhir:itemCodeableConcept/fhir:text/@value"/> <!-- Wirkstoffname (ID 119) -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="input-container">
+                                                <label>Wirkstärke</label>
                                                 <div class="text-input">
                                                     <xsl:value-of select="fhir:strength/fhir:numerator/fhir:value/@value"/> <!-- Wirkstaerke (ID 120a) -->
                                                     <xsl:text disable-output-escaping='yes'> </xsl:text>
@@ -2024,24 +2038,24 @@
                                                         <xsl:value-of select="fhir:strength/fhir:denominator/fhir:unit/@value"/> <!-- Wirkstaerkeneinheit (ID 120d) -->
                                                     </xsl:if>
                                                 </div>
-											</div>
-										</div>
-									</div>
-								</xsl:for-each>
-								<div class="row g-1">
-									<div class="col-4">
-										<div class="input-container">
-											<label>Darreichungsform</label> <!-- Darreichungsform Text (ID 104)  => 30 Zeichen -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </xsl:for-each>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="input-container">
+                                            <label>Darreichungsform</label> <!-- Darreichungsform Text (ID 104)  => 30 Zeichen -->
                                             <div class="text-input">
-											    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:form/fhir:text/@value"/>
-											</div>
-										</div>
-									</div>
-									<!--Packungsgroesse nach N-Bezeichnung (ID 110) -> wenn angegeben -->
-									<xsl:if test="fhir:entry/fhir:resource/fhir:Medication/fhir:extension[@url='http://fhir.de/StructureDefinition/normgroesse']/fhir:valueCode['https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_NORMGROESSE']">
-										<div class="col-4">
-											<div class="input-container">
-												<label>Packungsgroesse nach N-Bezeichnung</label> <!-- Anzahl der verordneten Packungen (ID 113) -->
+                                                <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:form/fhir:text/@value"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Packungsgroesse nach N-Bezeichnung (ID 110) -> wenn angegeben -->
+                                    <xsl:if test="fhir:entry/fhir:resource/fhir:Medication/fhir:extension[@url='http://fhir.de/StructureDefinition/normgroesse']/fhir:valueCode['https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_NORMGROESSE']">
+                                        <div class="col-4">
+                                            <div class="input-container">
+                                                <label>Packungsgroesse nach N-Bezeichnung</label> <!-- Anzahl der verordneten Packungen (ID 113) -->
                                                 <div class="text-input">
                                                     <xsl:variable name="npack" select="fhir:entry/fhir:resource/fhir:Medication/fhir:extension[@url='http://fhir.de/StructureDefinition/normgroesse']/fhir:valueCode['https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_NORMGROESSE']/@value"/>
                                                     <xsl:choose>
@@ -2055,442 +2069,442 @@
                                                     </xsl:choose>
                                                     <xsl:value-of select="($npack)"/>)
                                                 </div>
-											</div>
-										</div>
-									</xsl:if>
-									<!--Packungsgroesse nach abgeteilter MengeDosieranweisung (ID 111) + Einheit (ID 112) -->
-									<xsl:if test="fhir:entry/fhir:resource/fhir:Medication/fhir:amount">
-										<div class="col-4">
-											<div class="input-container">
-												<label>Packungsgroesse nach abgeteilter Menge</label>
-                                                <div class="text-input">
-												    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:amount/fhir:numerator/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_PackagingSize']/fhir:valueString/@value"/>
-												    <xsl:text disable-output-escaping='yes'> </xsl:text>
-												    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:amount/fhir:numerator/fhir:unit/@value"/>
-                                                </div>
-											</div>
-										</div>
-									</xsl:if>
-								</div>
-							</xsl:when>
-							<!-- Freitext Verordnung ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-							<xsl:when test="//fhir:Medication/fhir:code/fhir:coding/fhir:system[@value='https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Type']/following-sibling::fhir:code[@value='freitext']">
-								<div class="row g-1">
-									<div class="col-1">
-										<div class="checkbox-container vertical-align">
-											<label>Aut Idem</label> <!-- ID 101 -->
-											<xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34;</xsl:text>
-											<xsl:choose>
-												<xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:substitution/fhir:allowedBoolean/@value = 'false'">
-													<xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text> <!-- Nein -->
-												</xsl:when>
-												<xsl:otherwise>
-													<xsl:text disable-output-escaping='yes'>/&gt;</xsl:text> <!-- Ja -->
-												</xsl:otherwise>
-											</xsl:choose>
-										</div>
-									</div>
-									<div class="col-3">
-										<div class="input-container">
-											<label>Anzahl der verordneten Packungen</label> <!-- Anzahl der verordneten Packungen (ID 113) -->
-                                            <div class="text-input">
-    											<xsl:value-of select="fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dispenseRequest/fhir:quantity/fhir:value/@value"/>
                                             </div>
-										</div>
-									</div>
-									<div class="col-8">
-										<div class="input-container">
-											<label>Kategorie</label> <!-- Kategorie (ID 81) -->
-											<xsl:variable name="kategorie" select="fhir:entry/fhir:resource/fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Category']/fhir:code/@value"/>
-																						
-											<xsl:choose>
-												<xsl:when test="$kategorie=00">
-													<xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input&#34; readonly/&gt;</xsl:text>
-												</xsl:when>
-												<xsl:otherwise>
-													<xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input&#34; style=&#34;font-weight: bold&#34; readonly/&gt;</xsl:text>
-												</xsl:otherwise>												
-											</xsl:choose>									
-											<xsl:choose>
-												<xsl:when test="$kategorie=00">AM oder in die AM-Versorgung nach &#167; 31 SGB V einbezogenes Produkt (</xsl:when>
-												<xsl:when test="$kategorie=01">BtM (</xsl:when>
-												<xsl:when test="$kategorie=02">T-Rezept (AMVV &#167; 3a Abs. 1 (Thalidomid o. &#228;.)) (</xsl:when>
-											</xsl:choose>
-											<xsl:value-of select="($kategorie)" />
-											<xsl:text disable-output-escaping='yes'>)&lt;/textarea&gt;</xsl:text>
-										</div>
-									</div>
-								</div>						
-								<div class="row g-1">
-									<div class="col-12">
-										<div class="input-container">
-											<label>Freitext-Verordnung</label>
-											<xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input height-15mm&#34; readonly/&gt;</xsl:text>
-    											<xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:code/fhir:text/@value"/>
-											<xsl:text disable-output-escaping='yes'>&lt;/textarea&gt;</xsl:text>
-										</div>
-									</div>
-								</div>
-								<xsl:if test="fhir:entry/fhir:resource/fhir:Medication/fhir:form">
-									<div class="row g-1">
-										<div class="col-12">
-											<div class="input-container">
-												<label>Darreichungsform</label> <!-- Darreichungsform Text (ID 104) => 30 Zeichen -->
-                                                <div class="text-input">
-												    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:form/fhir:text/@value"/>
-                                                </div>
-											</div>
-										</div>
-									</div>
-								</xsl:if>								
-							</xsl:when>
-							<!-- Rezeptur Verordnung ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-							<xsl:when test="//fhir:Medication/fhir:code/fhir:coding/fhir:system[@value='https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Type']/following-sibling::fhir:code[@value='rezeptur']">
-								<div class="row g-1">
-									<div class="col-1">
-										<div class="checkbox-container vertical-align">
-											<label>Aut Idem</label> <!-- ID 101 -->
-											<xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34;</xsl:text>
-											<xsl:choose>
-												<xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:substitution/fhir:allowedBoolean/@value = 'false'">
-													<xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text> <!-- Nein -->
-												</xsl:when>
-												<xsl:otherwise>
-													<xsl:text disable-output-escaping='yes'>/&gt;</xsl:text> <!-- Ja -->
-												</xsl:otherwise>
-											</xsl:choose>
-										</div>
-									</div>
-									<div class="col-3">
-										<div class="input-container">
-											<label>Anzahl der verordneten Packungen</label> <!-- Anzahl der verordneten Packungen (ID 113) -->
-                                            <div class="text-input">
-											    <xsl:value-of select="fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dispenseRequest/fhir:quantity/fhir:value/@value"/>
-                                            </div>
-										</div>
-									</div>
-									<div class="col-8">
-										<div class="input-container">
-											<label>Kategorie</label> <!-- Kategorie (ID 81) -->
-											<xsl:variable name="kategorie" select="fhir:entry/fhir:resource/fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Category']/fhir:code/@value"/>
-																						
-											<xsl:choose>
-												<xsl:when test="$kategorie=00">
-													<xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input&#34; readonly/&gt;</xsl:text>
-												</xsl:when>
-												<xsl:otherwise>
-													<xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input&#34; style=&#34;font-weight: bold&#34; readonly/&gt;</xsl:text>
-												</xsl:otherwise>												
-											</xsl:choose>									
-											<xsl:choose>
-												<xsl:when test="$kategorie=00">AM oder in die AM-Versorgung nach &#167; 31 SGB V einbezogenes Produkt (</xsl:when>
-												<xsl:when test="$kategorie=01">BtM (</xsl:when>
-												<xsl:when test="$kategorie=02">T-Rezept (AMVV &#167; 3a Abs. 1 (Thalidomid o. &#228;.)) (</xsl:when>
-											</xsl:choose>
-											<xsl:value-of select="($kategorie)" />
-											<xsl:text disable-output-escaping='yes'>)&lt;/textarea&gt;</xsl:text>
-										</div>
-									</div>
-								</div>						
-								<div class="row g-1">
-									<xsl:if test="fhir:entry/fhir:resource/fhir:Medication/fhir:code/fhir:text">
-										<div class="col-6">
-											<div class="input-container">
-												<label>Rezepturname</label> <!-- ID 123 -->
-                                                <div class="text-input">
-												    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:code/fhir:text/@value"/>
-                                                </div>
-											</div>
-										</div>
-									</xsl:if>
-									<div class="col-3">
-										<div class="input-container">
-											<label>Gesamtmenge der Rezeptur</label> <!-- Gesamtmenge der Rezeptur (ID 124) + Einheit der Gesamtmenge (ID 125) -->
-                                            <div class="text-input">
-											    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:amount/fhir:numerator/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_PackagingSize']/fhir:valueString/@value"/>
-											    <xsl:text disable-output-escaping='yes'> </xsl:text>
-											    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:amount/fhir:numerator/fhir:unit/@value"/>
-                                            </div>
-										</div>
-									</div>
-									<xsl:if test="fhir:entry/fhir:resource/fhir:Medication/fhir:form">
-										<div class="col-3">
-											<div class="input-container">
-												<label>Darreichungsform</label> <!-- Darreichungsform Text (ID 104) => 30 Zeichen-->
-                                                <div class="text-input">
-												    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:form/fhir:text/@value"/>
-                                                </div>
-											</div>
-										</div>	
-									</xsl:if>									
-								</div>
-								<xsl:for-each select="fhir:entry/fhir:resource/fhir:Medication/fhir:ingredient">
-									<div class="row g-1">
-										<div class="col-1">
-											<div class="input-container">
-												<label>Position</label>
-                                                <div class="text-input">
-												    <xsl:number format="1 " /><xsl:value-of select="." />
-                                                </div>
-											</div>
-										</div>
-										<div class="col-6">
-											<div class="input-container">
-												<label>Name</label> <!-- ID 130 -->
-                                                <div class="text-input">
-												    <xsl:value-of select="fhir:itemCodeableConcept/fhir:text/@value"/>
-                                                </div>
-											</div>
-										</div>
-										<xsl:if test="fhir:itemCodeableConcept/fhir:coding/fhir:code/@value">
-											<div class="col-2">
-												<div class="input-container">
-													<label>PZN</label> <!-- ID 131 -->
-                                                    <div class="text-input">
-													    <xsl:value-of select="fhir:itemCodeableConcept/fhir:coding/fhir:code/@value"/>
-                                                    </div>
-												</div>
-											</div>										
-										</xsl:if>
-										<xsl:choose>
-											<xsl:when test="//fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Packaging']/fhir:valueString/@value">
-												<div class="col-3">
-													<div class="input-container">
-														<label>Darreichungsform</label> <!-- ID 132  => 30 Zeichen-->
-                                                        <div class="text-input">
-														<xsl:value-of select="fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Ingredient_Form']/fhir:valueString/@value"/>
-                                                        </div>
-													</div>
-												</div>										
-											</xsl:when>
-										</xsl:choose>
-									</div>
-									<div class="row g-1"> <!-- TODO activate function "justify-content-end" -->
-										<div class="col-1">
-											<div class="input-container">
-												<label>.</label>
-                                                <div class="text-input">
-												    <xsl:text disable-output-escaping='yes'>.</xsl:text>
-                                                </div>
-											</div>
-										</div>								
-										<xsl:choose>
-											<xsl:when test="fhir:strength/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Ingredient_Amount']">
-												<div class="col-10">
-													<div class="input-container">
-														<label>Menge und Einheit (Freitext)</label> <!-- ID 135 -->
-                                                        <div class="text-input">
-														    <xsl:value-of select="fhir:strength/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Ingredient_Amount']/fhir:valueString/@value"/>
-                                                        </div>
-													</div>
-												</div>
-											</xsl:when>
-											<xsl:otherwise>
-												<div class="col-10">
-													<div class="input-container">
-														<label>Menge und Einheit</label> <!-- ID 133 / 134 -->
-                                                        <div class="text-input">
-														    <xsl:value-of select="fhir:strength/fhir:numerator/fhir:value/@value"/>
-														    <xsl:text disable-output-escaping='yes'> </xsl:text>
-														    <xsl:value-of select="fhir:strength/fhir:numerator/fhir:unit/@value"/>
-                                                        </div>
-													</div>
-												</div>										
-											</xsl:otherwise>
-										</xsl:choose>
-									</div>
-								</xsl:for-each>
-								<xsl:choose>
-									<xsl:when test="//fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_CompoundingInstruction']/fhir:valueString/@value">
-										<div class="col-12">
-											<div class="input-container">
-												<label>Herstellungsanweisung</label> <!-- ID 126 -->
-												<xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input height-15mm&#34; readonly/&gt;</xsl:text>
-												<xsl:value-of select="//fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_CompoundingInstruction']/fhir:valueString/@value"/>
-												<xsl:text disable-output-escaping='yes'>&lt;/textarea&gt;</xsl:text>
-											</div>
-										</div>
-									</xsl:when>
-								</xsl:choose>
-								<xsl:choose>
-									<xsl:when test="//fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Packaging']/fhir:valueString/@value">
-										<div class="col-12">
-											<div class="input-container">
-												<label>Verpackung</label> <!-- ID 127 -->
-												<xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input height-15mm&#34; readonly/&gt;</xsl:text>
-												<xsl:value-of select="//fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Packaging']/fhir:valueString/@value"/>
-												<xsl:text disable-output-escaping='yes'>&lt;/textarea&gt;</xsl:text>
-											</div>
-										</div>
-									</xsl:when>
-								</xsl:choose>							
-							</xsl:when>
-						</xsl:choose>
-						<!-- Ende Medications -->
-						<div class="row g-1">
-							<div class="col">
-								<div class="input-container">
-									<xsl:choose>
-										<xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dosageInstruction">
-										<xsl:if test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dosageInstruction/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_DosageFlag']/fhir:valueBoolean/@value">
-											<xsl:choose>
-												<xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dosageInstruction/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_DosageFlag']/fhir:valueBoolean[@value='true']">
-													<xsl:if test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dosageInstruction/fhir:text/@value">
-														<label>Dosierung</label>
-														<!-- TODO: dynamische JS Feldgrößenanpassung -->
-														<xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input&#34; style=&#34;height:20mm&#34; readonly/&gt;</xsl:text>
-														<xsl:value-of select="fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dosageInstruction/fhir:text/@value"/>
-														<xsl:text disable-output-escaping='yes'>&lt;/textarea&gt;</xsl:text>
-													</xsl:if>							
-												</xsl:when>
-												<xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dosageInstruction/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_DosageFlag']/fhir:valueBoolean[@value='false']">
-														<label>Dosierung</label>
-                                                        <div class="text-input">
-														    <xsl:text disable-output-escaping='yes'>Dosierung laut schriftlicher Dosierungsanweisung oder laut Medikationsplan</xsl:text>
-                                                        </div>
-												</xsl:when>
-											</xsl:choose>
-										</xsl:if>
-										<xsl:if test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dosageInstruction/fhir:patientInstruction/@value">
-											<label>Dosierung (Anwendungshinweise)</label> <!-- TODO  Textausgabe?-->
-                                            <div class="text-input">
-											    <xsl:value-of select="fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dosageInstruction/fhir:patientInstruction/@value"/>
-                                            </div>
-										</xsl:if>				
-										</xsl:when>
-										<xsl:otherwise>
-											<label>Dosierung</label>
-                                            <div class="text-input">
-    											<xsl:text disable-output-escaping='yes'>keine Dosierung angegeben</xsl:text>
-                                            </div>
-											<br/>
-										</xsl:otherwise>
-									</xsl:choose>										
-								</div>
-							</div>
-						</div>
-						<xsl:if test="//fhir:MedicationRequest/fhir:note/fhir:text/@value">		
-							<div class="row g-1">
-								<div class="col">
-									<div class="input-container">
-										<label>Abgabehinweise</label> <!-- (ID 105) -->
-                                        <div class="text-input">
-										    <xsl:value-of select="fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:note/fhir:text/@value"/>
                                         </div>
-									</div>
-								</div>
-							</div>
-						</xsl:if>
-					</div>
-				</div>
-			</div>
-			<p align="right">Instanzversion:
-				<b> <xsl:call-template name="getVersion">
-					<xsl:with-param name="url" select="//fhir:meta/fhir:profile/@value"/>
-				</xsl:call-template></b> PRF.NR.:<b> <xsl:value-of select="//fhir:Composition/fhir:author[fhir:type/@value='Device']/fhir:identifier/fhir:value/@value"/></b>
-				Stylesheet: <b>v1.0</b>
-			</p>
+                                    </xsl:if>
+                                    <!--Packungsgroesse nach abgeteilter MengeDosieranweisung (ID 111) + Einheit (ID 112) -->
+                                    <xsl:if test="fhir:entry/fhir:resource/fhir:Medication/fhir:amount">
+                                        <div class="col-4">
+                                            <div class="input-container">
+                                                <label>Packungsgroesse nach abgeteilter Menge</label>
+                                                <div class="text-input">
+                                                    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:amount/fhir:numerator/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_PackagingSize']/fhir:valueString/@value"/>
+                                                    <xsl:text disable-output-escaping='yes'> </xsl:text>
+                                                    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:amount/fhir:numerator/fhir:unit/@value"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </xsl:if>
+                                </div>
+                            </xsl:when>
+                            <!-- Freitext Verordnung ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                            <xsl:when test="//fhir:Medication/fhir:code/fhir:coding/fhir:system[@value='https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Type']/following-sibling::fhir:code[@value='freitext']">
+                                <div class="row g-1">
+                                    <div class="col-1">
+                                        <div class="checkbox-container vertical-align">
+                                            <label>Aut Idem</label> <!-- ID 101 -->
+                                            <xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34;</xsl:text>
+                                            <xsl:choose>
+                                                <xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:substitution/fhir:allowedBoolean/@value = 'false'">
+                                                    <xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text> <!-- Nein -->
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <xsl:text disable-output-escaping='yes'>/&gt;</xsl:text> <!-- Ja -->
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="input-container">
+                                            <label>Anzahl der verordneten Packungen</label> <!-- Anzahl der verordneten Packungen (ID 113) -->
+                                            <div class="text-input">
+                                                <xsl:value-of select="fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dispenseRequest/fhir:quantity/fhir:value/@value"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="input-container">
+                                            <label>Kategorie</label> <!-- Kategorie (ID 81) -->
+                                            <xsl:variable name="kategorie" select="fhir:entry/fhir:resource/fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Category']/fhir:code/@value"/>
+
+                                            <xsl:choose>
+                                                <xsl:when test="$kategorie=00">
+                                                    <xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input&#34; readonly/&gt;</xsl:text>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input&#34; style=&#34;font-weight: bold&#34; readonly/&gt;</xsl:text>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                            <xsl:choose>
+                                                <xsl:when test="$kategorie=00">AM oder in die AM-Versorgung nach &#167; 31 SGB V einbezogenes Produkt (</xsl:when>
+                                                <xsl:when test="$kategorie=01">BtM (</xsl:when>
+                                                <xsl:when test="$kategorie=02">T-Rezept (AMVV &#167; 3a Abs. 1 (Thalidomid o. &#228;.)) (</xsl:when>
+                                            </xsl:choose>
+                                            <xsl:value-of select="($kategorie)" />
+                                            <xsl:text disable-output-escaping='yes'>)&lt;/textarea&gt;</xsl:text>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-12">
+                                        <div class="input-container">
+                                            <label>Freitext-Verordnung</label>
+                                            <xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input height-15mm&#34; readonly/&gt;</xsl:text>
+                                            <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:code/fhir:text/@value"/>
+                                            <xsl:text disable-output-escaping='yes'>&lt;/textarea&gt;</xsl:text>
+                                        </div>
+                                    </div>
+                                </div>
+                                <xsl:if test="fhir:entry/fhir:resource/fhir:Medication/fhir:form">
+                                    <div class="row g-1">
+                                        <div class="col-12">
+                                            <div class="input-container">
+                                                <label>Darreichungsform</label> <!-- Darreichungsform Text (ID 104) => 30 Zeichen -->
+                                                <div class="text-input">
+                                                    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:form/fhir:text/@value"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </xsl:if>
+                            </xsl:when>
+                            <!-- Rezeptur Verordnung ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                            <xsl:when test="//fhir:Medication/fhir:code/fhir:coding/fhir:system[@value='https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Type']/following-sibling::fhir:code[@value='rezeptur']">
+                                <div class="row g-1">
+                                    <div class="col-1">
+                                        <div class="checkbox-container vertical-align">
+                                            <label>Aut Idem</label> <!-- ID 101 -->
+                                            <xsl:text disable-output-escaping='yes'>&lt;input type=&#34;checkbox&#34; class=&#34;chckbox&#34; disabled="disabled" name=&#34;terms&#34;</xsl:text>
+                                            <xsl:choose>
+                                                <xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:substitution/fhir:allowedBoolean/@value = 'false'">
+                                                    <xsl:text disable-output-escaping='yes'>checked/&gt;</xsl:text> <!-- Nein -->
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <xsl:text disable-output-escaping='yes'>/&gt;</xsl:text> <!-- Ja -->
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="input-container">
+                                            <label>Anzahl der verordneten Packungen</label> <!-- Anzahl der verordneten Packungen (ID 113) -->
+                                            <div class="text-input">
+                                                <xsl:value-of select="fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dispenseRequest/fhir:quantity/fhir:value/@value"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="input-container">
+                                            <label>Kategorie</label> <!-- Kategorie (ID 81) -->
+                                            <xsl:variable name="kategorie" select="fhir:entry/fhir:resource/fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category']/fhir:valueCoding[fhir:system/@value='https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Category']/fhir:code/@value"/>
+
+                                            <xsl:choose>
+                                                <xsl:when test="$kategorie=00">
+                                                    <xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input&#34; readonly/&gt;</xsl:text>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input&#34; style=&#34;font-weight: bold&#34; readonly/&gt;</xsl:text>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                            <xsl:choose>
+                                                <xsl:when test="$kategorie=00">AM oder in die AM-Versorgung nach &#167; 31 SGB V einbezogenes Produkt (</xsl:when>
+                                                <xsl:when test="$kategorie=01">BtM (</xsl:when>
+                                                <xsl:when test="$kategorie=02">T-Rezept (AMVV &#167; 3a Abs. 1 (Thalidomid o. &#228;.)) (</xsl:when>
+                                            </xsl:choose>
+                                            <xsl:value-of select="($kategorie)" />
+                                            <xsl:text disable-output-escaping='yes'>)&lt;/textarea&gt;</xsl:text>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-1">
+                                    <xsl:if test="fhir:entry/fhir:resource/fhir:Medication/fhir:code/fhir:text">
+                                        <div class="col-6">
+                                            <div class="input-container">
+                                                <label>Rezepturname</label> <!-- ID 123 -->
+                                                <div class="text-input">
+                                                    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:code/fhir:text/@value"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </xsl:if>
+                                    <div class="col-3">
+                                        <div class="input-container">
+                                            <label>Gesamtmenge der Rezeptur</label> <!-- Gesamtmenge der Rezeptur (ID 124) + Einheit der Gesamtmenge (ID 125) -->
+                                            <div class="text-input">
+                                                <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:amount/fhir:numerator/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_PackagingSize']/fhir:valueString/@value"/>
+                                                <xsl:text disable-output-escaping='yes'> </xsl:text>
+                                                <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:amount/fhir:numerator/fhir:unit/@value"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <xsl:if test="fhir:entry/fhir:resource/fhir:Medication/fhir:form">
+                                        <div class="col-3">
+                                            <div class="input-container">
+                                                <label>Darreichungsform</label> <!-- Darreichungsform Text (ID 104) => 30 Zeichen-->
+                                                <div class="text-input">
+                                                    <xsl:value-of select="fhir:entry/fhir:resource/fhir:Medication/fhir:form/fhir:text/@value"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </xsl:if>
+                                </div>
+                                <xsl:for-each select="fhir:entry/fhir:resource/fhir:Medication/fhir:ingredient">
+                                    <div class="row g-1">
+                                        <div class="col-1">
+                                            <div class="input-container">
+                                                <label>Position</label>
+                                                <div class="text-input">
+                                                    <xsl:number format="1 " /><xsl:value-of select="." />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="input-container">
+                                                <label>Name</label> <!-- ID 130 -->
+                                                <div class="text-input">
+                                                    <xsl:value-of select="fhir:itemCodeableConcept/fhir:text/@value"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <xsl:if test="fhir:itemCodeableConcept/fhir:coding/fhir:code/@value">
+                                            <div class="col-2">
+                                                <div class="input-container">
+                                                    <label>PZN</label> <!-- ID 131 -->
+                                                    <div class="text-input">
+                                                        <xsl:value-of select="fhir:itemCodeableConcept/fhir:coding/fhir:code/@value"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </xsl:if>
+                                        <xsl:choose>
+                                            <xsl:when test="//fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Packaging']/fhir:valueString/@value">
+                                                <div class="col-3">
+                                                    <div class="input-container">
+                                                        <label>Darreichungsform</label> <!-- ID 132  => 30 Zeichen-->
+                                                        <div class="text-input">
+                                                            <xsl:value-of select="fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Ingredient_Form']/fhir:valueString/@value"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </xsl:when>
+                                        </xsl:choose>
+                                    </div>
+                                    <div class="row g-1"> <!-- TODO activate function "justify-content-end" -->
+                                        <div class="col-1">
+                                            <div class="input-container">
+                                                <label>.</label>
+                                                <div class="text-input">
+                                                    <xsl:text disable-output-escaping='yes'>.</xsl:text>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <xsl:choose>
+                                            <xsl:when test="fhir:strength/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Ingredient_Amount']">
+                                                <div class="col-10">
+                                                    <div class="input-container">
+                                                        <label>Menge und Einheit (Freitext)</label> <!-- ID 135 -->
+                                                        <div class="text-input">
+                                                            <xsl:value-of select="fhir:strength/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Ingredient_Amount']/fhir:valueString/@value"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <div class="col-10">
+                                                    <div class="input-container">
+                                                        <label>Menge und Einheit</label> <!-- ID 133 / 134 -->
+                                                        <div class="text-input">
+                                                            <xsl:value-of select="fhir:strength/fhir:numerator/fhir:value/@value"/>
+                                                            <xsl:text disable-output-escaping='yes'> </xsl:text>
+                                                            <xsl:value-of select="fhir:strength/fhir:numerator/fhir:unit/@value"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                    </div>
+                                </xsl:for-each>
+                                <xsl:choose>
+                                    <xsl:when test="//fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_CompoundingInstruction']/fhir:valueString/@value">
+                                        <div class="col-12">
+                                            <div class="input-container">
+                                                <label>Herstellungsanweisung</label> <!-- ID 126 -->
+                                                <xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input height-15mm&#34; readonly/&gt;</xsl:text>
+                                                <xsl:value-of select="//fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_CompoundingInstruction']/fhir:valueString/@value"/>
+                                                <xsl:text disable-output-escaping='yes'>&lt;/textarea&gt;</xsl:text>
+                                            </div>
+                                        </div>
+                                    </xsl:when>
+                                </xsl:choose>
+                                <xsl:choose>
+                                    <xsl:when test="//fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Packaging']/fhir:valueString/@value">
+                                        <div class="col-12">
+                                            <div class="input-container">
+                                                <label>Verpackung</label> <!-- ID 127 -->
+                                                <xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input height-15mm&#34; readonly/&gt;</xsl:text>
+                                                <xsl:value-of select="//fhir:Medication/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Packaging']/fhir:valueString/@value"/>
+                                                <xsl:text disable-output-escaping='yes'>&lt;/textarea&gt;</xsl:text>
+                                            </div>
+                                        </div>
+                                    </xsl:when>
+                                </xsl:choose>
+                            </xsl:when>
+                        </xsl:choose>
+                        <!-- Ende Medications -->
+                        <div class="row g-1">
+                            <div class="col">
+                                <div class="input-container">
+                                    <xsl:choose>
+                                        <xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dosageInstruction">
+                                            <xsl:if test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dosageInstruction/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_DosageFlag']/fhir:valueBoolean/@value">
+                                                <xsl:choose>
+                                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dosageInstruction/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_DosageFlag']/fhir:valueBoolean[@value='true']">
+                                                        <xsl:if test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dosageInstruction/fhir:text/@value">
+                                                            <label>Dosierung</label>
+                                                            <!-- TODO: dynamische JS Feldgrößenanpassung -->
+                                                            <xsl:text disable-output-escaping='yes'>&lt;textarea id=&#34;txt-area&#34; type=&#34;text&#34; class=&#34;text-input&#34; style=&#34;height:20mm&#34; readonly/&gt;</xsl:text>
+                                                            <xsl:value-of select="fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dosageInstruction/fhir:text/@value"/>
+                                                            <xsl:text disable-output-escaping='yes'>&lt;/textarea&gt;</xsl:text>
+                                                        </xsl:if>
+                                                    </xsl:when>
+                                                    <xsl:when test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dosageInstruction/fhir:extension[@url='https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_DosageFlag']/fhir:valueBoolean[@value='false']">
+                                                        <label>Dosierung</label>
+                                                        <div class="text-input">
+                                                            <xsl:text disable-output-escaping='yes'>Dosierung laut schriftlicher Dosierungsanweisung oder laut Medikationsplan</xsl:text>
+                                                        </div>
+                                                    </xsl:when>
+                                                </xsl:choose>
+                                            </xsl:if>
+                                            <xsl:if test="//fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dosageInstruction/fhir:patientInstruction/@value">
+                                                <label>Dosierung (Anwendungshinweise)</label> <!-- TODO  Textausgabe?-->
+                                                <div class="text-input">
+                                                    <xsl:value-of select="fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:dosageInstruction/fhir:patientInstruction/@value"/>
+                                                </div>
+                                            </xsl:if>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <label>Dosierung</label>
+                                            <div class="text-input">
+                                                <xsl:text disable-output-escaping='yes'>keine Dosierung angegeben</xsl:text>
+                                            </div>
+                                            <br/>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </div>
+                            </div>
+                        </div>
+                        <xsl:if test="//fhir:MedicationRequest/fhir:note/fhir:text/@value">
+                            <div class="row g-1">
+                                <div class="col">
+                                    <div class="input-container">
+                                        <label>Abgabehinweise</label> <!-- (ID 105) -->
+                                        <div class="text-input">
+                                            <xsl:value-of select="fhir:entry/fhir:resource/fhir:MedicationRequest/fhir:note/fhir:text/@value"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </xsl:if>
+                    </div>
+                </div>
+            </div>
+            <p align="right">Instanzversion:
+                <b> <xsl:call-template name="getVersion">
+                    <xsl:with-param name="url" select="//fhir:meta/fhir:profile/@value"/>
+                </xsl:call-template></b> PRF.NR.:<b> <xsl:value-of select="//fhir:Composition/fhir:author[fhir:type/@value='Device']/fhir:identifier/fhir:value/@value"/></b>
+                Stylesheet: <b>v1.0</b>
+            </p>
         </div>
         <!-- Bootstrap JS und jQuery -->
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/jquery-3.5.1.slim.min.js"></script>
-	</xsl:template>
+    </xsl:template>
 
-	<!-- weitere Hilfs-Templates -->	
-	<xsl:template name="getVersion">
-		<xsl:param name="url"/>
-		<xsl:variable name="version" select="substring-after($url,'|')"/>
-		<xsl:value-of select="$version"/>
-	</xsl:template>
-	
-	<xsl:template name="formatDate">
-		<xsl:param name="date"/>
-		<xsl:variable name="yearNum" select="substring ($date, 1, 4)"/>
-		<xsl:variable name="monthNum" select="substring ($date, 6, 2)"/>
-		<xsl:variable name="dayNum" select="substring ($date, 9, 2)"/>
+    <!-- weitere Hilfs-Templates -->
+    <xsl:template name="getVersion">
+        <xsl:param name="url"/>
+        <xsl:variable name="version" select="substring-after($url,'|')"/>
+        <xsl:value-of select="$version"/>
+    </xsl:template>
+
+    <xsl:template name="formatDate">
+        <xsl:param name="date"/>
+        <xsl:variable name="yearNum" select="substring ($date, 1, 4)"/>
+        <xsl:variable name="monthNum" select="substring ($date, 6, 2)"/>
+        <xsl:variable name="dayNum" select="substring ($date, 9, 2)"/>
         <xsl:choose>
-			<xsl:when test="$dayNum">
-				<xsl:value-of select="$dayNum"/>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:value-of select="'00'"/>
-			</xsl:otherwise>
-		</xsl:choose>
+            <xsl:when test="$dayNum">
+                <xsl:value-of select="$dayNum"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="'00'"/>
+            </xsl:otherwise>
+        </xsl:choose>
         <xsl:text>.</xsl:text>
         <xsl:choose>
-			<xsl:when test="$monthNum">
-				<xsl:value-of select="$monthNum"/>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:value-of select="'00'"/>
-			</xsl:otherwise>
-		</xsl:choose>
+            <xsl:when test="$monthNum">
+                <xsl:value-of select="$monthNum"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="'00'"/>
+            </xsl:otherwise>
+        </xsl:choose>
         <xsl:text>.</xsl:text>
         <xsl:choose>
-			<xsl:when test="$yearNum">
-				<xsl:value-of select="$yearNum"/>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:value-of select="'0000'"/>
-			</xsl:otherwise>
-		</xsl:choose>
-	</xsl:template>
-		
-	<xsl:template name="substring-after-last">
-		<xsl:param name="input"/>
-		<xsl:param name="substr"/>
-		<xsl:variable name="lastChar" select="substring($input, string-length($input) - string-length($substr) +1)"/>
-		<xsl:choose>
-			<xsl:when test="$lastChar=$substr">
-				<xsl:call-template name="substring-after-last">
-					<xsl:with-param name="input" select="substring($input,1, string-length($input)-1)"/>
-					<xsl:with-param name="substr" select="$substr"/>
-				</xsl:call-template>
-			</xsl:when>
-			<xsl:otherwise>
-				<!-- Extract the string which comes after the first occurence -->
-				<xsl:variable name="temp" select="substring-after($input,$substr)"/>
-				<xsl:choose>
-					<!-- If it still contains the search string the recursively process -->
-					<xsl:when test="$substr and  contains($temp,$substr)">
-						<xsl:call-template name="substring-after-last">
-							<xsl:with-param name="input" select="$temp"/>
-							<xsl:with-param name="substr" select="$substr"/>
-						</xsl:call-template>
-					</xsl:when>
-					<xsl:otherwise>
-						<xsl:if test="contains($temp,'/')">
-							<xsl:call-template name="substring-after-last">
-								<xsl:with-param name="input" select="$temp"/>
-								<xsl:with-param name="substr" select="$substr"/>
-							</xsl:call-template>
-						</xsl:if>
-						<xsl:value-of select="$temp"/>
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:otherwise>
-		</xsl:choose>
-	</xsl:template>	
-	
-	<xsl:template name="getIdFromReference">
-		<xsl:param name="ref"/>
-		<xsl:choose>
-			<xsl:when test="contains($ref,'/')">
-				<xsl:call-template name="substring-after-last">
-					<xsl:with-param name="input" select="$ref"/>
-					<xsl:with-param name="substr" select="'/'"/>
-				</xsl:call-template>
-			</xsl:when>
-			<xsl:when test="contains($ref,':')">
-				<xsl:call-template name="substring-after-last">
-					<xsl:with-param name="input" select="$ref"/>
-					<xsl:with-param name="substr" select="':'"/>
-				</xsl:call-template>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:value-of select="$ref"/>
-			</xsl:otherwise>
-		</xsl:choose>
-	</xsl:template>		
+            <xsl:when test="$yearNum">
+                <xsl:value-of select="$yearNum"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="'0000'"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <xsl:template name="substring-after-last">
+        <xsl:param name="input"/>
+        <xsl:param name="substr"/>
+        <xsl:variable name="lastChar" select="substring($input, string-length($input) - string-length($substr) +1)"/>
+        <xsl:choose>
+            <xsl:when test="$lastChar=$substr">
+                <xsl:call-template name="substring-after-last">
+                    <xsl:with-param name="input" select="substring($input,1, string-length($input)-1)"/>
+                    <xsl:with-param name="substr" select="$substr"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+                <!-- Extract the string which comes after the first occurence -->
+                <xsl:variable name="temp" select="substring-after($input,$substr)"/>
+                <xsl:choose>
+                    <!-- If it still contains the search string the recursively process -->
+                    <xsl:when test="$substr and  contains($temp,$substr)">
+                        <xsl:call-template name="substring-after-last">
+                            <xsl:with-param name="input" select="$temp"/>
+                            <xsl:with-param name="substr" select="$substr"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:if test="contains($temp,'/')">
+                            <xsl:call-template name="substring-after-last">
+                                <xsl:with-param name="input" select="$temp"/>
+                                <xsl:with-param name="substr" select="$substr"/>
+                            </xsl:call-template>
+                        </xsl:if>
+                        <xsl:value-of select="$temp"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <xsl:template name="getIdFromReference">
+        <xsl:param name="ref"/>
+        <xsl:choose>
+            <xsl:when test="contains($ref,'/')">
+                <xsl:call-template name="substring-after-last">
+                    <xsl:with-param name="input" select="$ref"/>
+                    <xsl:with-param name="substr" select="'/'"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:when test="contains($ref,':')">
+                <xsl:call-template name="substring-after-last">
+                    <xsl:with-param name="input" select="$ref"/>
+                    <xsl:with-param name="substr" select="':'"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$ref"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
 </xsl:stylesheet>
