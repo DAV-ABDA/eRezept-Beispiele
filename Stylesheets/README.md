@@ -1,5 +1,5 @@
 <h2 align="center">Stylesheets</h2>
-Zur Darstellung der signierten Inhalte eines elektronischen Datensätzes (FHIR-Instanz) 
+Zur Darstellung der Inhalte eines elektronischen Datensätzes (FHIR-Instanz) 
 sollen Stylesheets zur vollständigen Visualisierung, in einer einheitlichen Art und Weise,
 genutzt werden.
 
