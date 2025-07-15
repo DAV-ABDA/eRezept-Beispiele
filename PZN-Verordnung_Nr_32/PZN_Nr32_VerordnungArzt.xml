@@ -221,7 +221,7 @@
 				<birthDate value="2020-02-29"/>
 				<address>
 					<type value="both"/>
-					<line value="Roritzerstraße  1">
+					<line value="Roritzerstraße 1">
 						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
 							<valueString value="Roritzerstraße"/>
 						</extension>
