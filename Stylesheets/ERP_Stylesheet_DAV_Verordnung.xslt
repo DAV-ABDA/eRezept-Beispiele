@@ -1314,7 +1314,9 @@
                                         <label>Name u. Vorname</label> <!-- Titel (ID 22/55), Name (ID 141/142), Vorname (ID 44/53) -->
                                         <div class="text-input">
                                             <xsl:value-of select="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:name/fhir:prefix/@value"/>
+                                            <xsl:text disable-output-escaping='yes'> </xsl:text>
                                             <xsl:value-of select="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:name/fhir:given/@value"/>
+                                            <xsl:text disable-output-escaping='yes'> </xsl:text>
                                             <xsl:value-of select="//fhir:entry/fhir:resource/fhir:Practitioner[fhir:id/@value=$attester_id]/fhir:name/fhir:family/@value"/>
                                         </div>
                                     </div>
