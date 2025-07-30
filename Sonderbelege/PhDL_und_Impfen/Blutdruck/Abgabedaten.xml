@@ -180,7 +180,7 @@
                             <currency value="EUR"/>
                         </valueMoney>
                     </extension>
-                    <value value="11.20"/>
+                    <value value="0.00"/>
                     <currency value="EUR"/>
                 </totalGross>
             </Invoice>
