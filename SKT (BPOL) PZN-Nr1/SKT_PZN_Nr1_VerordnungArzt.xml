@@ -389,9 +389,9 @@
         <payor>
           <identifier>
             <system value="http://fhir.de/sid/arge-ik/iknr"/>
-            <value value="104212059"/>
+            <value value="951287019"/>
           </identifier>
-          <display value="BPOL"/>
+          <display value="Bundespolizei"/>
         </payor>
       </Coverage>
     </resource>
