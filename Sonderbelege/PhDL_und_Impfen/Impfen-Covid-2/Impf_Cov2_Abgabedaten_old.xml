@@ -168,7 +168,7 @@
                         <type value="informational"/>
                         <factor value="1"/>
                         <amount>
-                            <value value="14.08"/>
+                            <value value="10.00"/>
                             <currency value="EUR"/>
                         </amount>
                     </priceComponent>
@@ -178,7 +178,7 @@
                     <chargeItemCodeableConcept>
                         <coding>
                             <system value="http://TA1.abda.de"/>
-                            <code value="18774908"/>
+                            <code value="17717417"/>
                         </coding>
                     </chargeItemCodeableConcept>
                     <priceComponent>
@@ -204,7 +204,43 @@
                         <type value="informational"/>
                         <factor value="1"/>
                         <amount>
-                            <value value="0.15"/>
+                            <value value="2.50"/>
+                            <currency value="EUR"/>
+                        </amount>
+                    </priceComponent>
+                </lineItem>
+                <lineItem>
+                    <sequence value="3"/>
+                    <chargeItemCodeableConcept>
+                        <coding>
+                            <system value="http://TA1.abda.de"/>
+                            <code value="17717423"/>
+                        </coding>
+                    </chargeItemCodeableConcept>
+                    <priceComponent>
+                        <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-MwStSatz">
+                            <valueDecimal value="0.00"/>
+                        </extension>
+                        <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-KostenVersicherter">
+                            <extension url="Kategorie">
+                                <valueCodeableConcept>
+                                    <coding>
+                                        <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-KostenVersicherterKategorie"/>
+                                        <code value="0"/>
+                                    </coding>
+                                </valueCodeableConcept>
+                            </extension>
+                            <extension url="Kostenbetrag">
+                                <valueMoney>
+                                    <value value="0.00"/>
+                                    <currency value="EUR"/>
+                                </valueMoney>
+                            </extension>
+                        </extension>
+                        <type value="informational"/>
+                        <factor value="1"/>
+                        <amount>
+                            <value value="2.50"/>
                             <currency value="EUR"/>
                         </amount>
                     </priceComponent>
@@ -213,7 +249,7 @@
                     <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-Chargenbezeichnung">
                         <valueString value="A123456789-1"/>
                     </extension>
-                    <sequence value="3"/>
+                    <sequence value="4"/>
                     <chargeItemCodeableConcept>
                         <coding>
                             <system value="http://fhir.de/CodeSystem/ifa/pzn"/>
@@ -255,7 +291,7 @@
                             <currency value="EUR"/>
                         </valueMoney>
                     </extension>
-                    <value value="14.23"/>
+                    <value value="15.00"/>
                     <currency value="EUR"/>
                 </totalGross>
             </Invoice>
