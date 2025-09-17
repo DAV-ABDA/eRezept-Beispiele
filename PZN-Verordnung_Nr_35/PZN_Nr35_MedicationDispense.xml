@@ -116,8 +116,8 @@
                             <form>
                                 <coding>
                                     <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
-                                    <code value="TAB"/>
-                                    <display value="Tabletten"/>
+                                    <code value="FTA"/>
+                                    <display value="Filmtabletten"/>
                                 </coding>
                             </form>
                             <ingredient>
