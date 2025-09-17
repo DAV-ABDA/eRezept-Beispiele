@@ -77,35 +77,31 @@
                             </form>
                             <ingredient>
                                 <itemCodeableConcept>
-                                    <text value="Abirateron acetat"/>
+                                    <text value="Chlormadinon acetat"/>
                                 </itemCodeableConcept>
                                 <strength>
                                     <numerator>
-                                        <value value="500"/>
+                                        <value value="2"/>
                                         <unit value="mg"/>
-                                        <system>
-                                            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                                <valueCode value="unknown"/>
-                                            </extension>
-                                        </system>
-                                        <code>
-                                            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                                <valueCode value="unknown"/>
-                                            </extension>
-                                        </code>
                                     </numerator>
                                     <denominator>
                                         <value value="1"/>
-                                        <system>
-                                            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                                <valueCode value="unknown"/>
-                                            </extension>
-                                        </system>
-                                        <code>
-                                            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                                <valueCode value="unknown"/>
-                                            </extension>
-                                        </code>
+                                        <unit value="Filmtbl."/>
+                                    </denominator>
+                                </strength>
+                            </ingredient>
+                            <ingredient>
+                                <itemCodeableConcept>
+                                    <text value="Ethinylestradiol"/>
+                                </itemCodeableConcept>
+                                <strength>
+                                    <numerator>
+                                        <value value="0.03"/>
+                                        <unit value="mg"/>
+                                    </numerator>
+                                    <denominator>
+                                        <value value="1"/>
+                                        <unit value="Filmtbl."/>
                                     </denominator>
                                 </strength>
                             </ingredient>
@@ -126,35 +122,16 @@
                             </form>
                             <ingredient>
                                 <itemCodeableConcept>
-                                    <text value="Prednisolon"/>
+                                    <text value="keine Angabe"/>
                                 </itemCodeableConcept>
                                 <strength>
                                     <numerator>
-                                        <value value="5"/>
-                                        <unit value="mg"/>
-                                        <system>
-                                            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                                <valueCode value="unknown"/>
-                                            </extension>
-                                        </system>
-                                        <code>
-                                            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                                <valueCode value="unknown"/>
-                                            </extension>
-                                        </code>
+                                        <value value="0"/>
+                                        <unit value="k.A."/>
                                     </numerator>
                                     <denominator>
-                                        <value value="1"/>
-                                        <system>
-                                            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                                <valueCode value="unknown"/>
-                                            </extension>
-                                        </system>
-                                        <code>
-                                            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                                <valueCode value="unknown"/>
-                                            </extension>
-                                        </code>
+                                        <value value="0"/>
+                                        <unit value="k.A."/>
                                     </denominator>
                                 </strength>
                             </ingredient>
