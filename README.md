@@ -222,7 +222,7 @@ DAV Beispiel
 - PZN-Verordnung_Nr_33
   - Merkmal MedicationDispense: Abgabe Kombipackung
 
-**34) PZN-Verordnung (ohne Wirkstoff) ** (P DRAGEES blau)
+**34) PZN-Verordnung (ohne Wirkstoff)** (P DRAGEES blau)
 
 DAV Beispiel
 - PZN-Verordnung_Nr_34
