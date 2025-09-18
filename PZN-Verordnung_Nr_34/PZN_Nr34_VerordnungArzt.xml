@@ -97,7 +97,7 @@
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_StatusCoPayment">
                     <valueCoding>
                         <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_StatusCoPayment"/>
-                        <code value="0"/>
+                        <code value="1"/>
                     </valueCoding>
                 </extension>
                 <status value="active"/>
@@ -220,30 +220,41 @@
                         </coding>
                     </type>
                     <system value="http://fhir.de/sid/gkv/kvid-10"/>
-                    <value value="K220645120"/>
+                    <value value="M310119802"/>
                 </identifier>
                 <name>
                     <use value="official"/>
-                    <family value="Schuhmann">
+                    <family value="Erbprinzessin von und zu der Schimmelpfennig-Hammerschmidt Federmannssohn">
                         <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
-                            <valueString value="Schuhmann"/>
+                            <valueString value="Schimmelpfennig-Hammerschmidt Federmannssohn"/>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">
+                            <valueString value="von und zu der"/>
+                        </extension>
+                        <extension url="http://fhir.de/StructureDefinition/humanname-namenszusatz">
+                            <valueString value="Erbprinzessin"/>
                         </extension>
                     </family>
-                    <given value="Sarah"/>
+                    <given value="Ingrid"/>
                 </name>
-                <birthDate value="1970-12-24"/>
+                <birthDate value="2010-01-31"/>
                 <address>
                     <type value="both"/>
-                    <line value="Berliner Straße 1">
+                    <line value="Anneliese- und Georg-von-Groscurth-Plaetzchen 149-C">
                         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
-                            <valueString value="Berliner Straße"/>
+                            <valueString value="Anneliese- und Georg-von-Groscurth-Plaetzchen"/>
                         </extension>
                         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
-                            <valueString value="1"/>
+                            <valueString value="149-C"/>
                         </extension>
                     </line>
-                    <city value="Husum"/>
-                    <postalCode value="25813"/>
+                    <line value="5. OG - Hinterhof">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+                            <valueString value="5. OG - Hinterhof"/>
+                        </extension>
+                    </line>
+                    <city value="Bad Homburg"/>
+                    <postalCode value="60437"/>
                     <country value="D"/>
                 </address>
             </Patient>
@@ -265,7 +276,7 @@
                         </coding>
                     </type>
                     <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"/>
-                    <value value="123412821"/>
+                    <value value="456456534"/>
                 </identifier>
                 <identifier>
                     <type>
@@ -279,12 +290,12 @@
                 </identifier>
                 <name>
                     <use value="official"/>
-                    <family value="Schmidt">
+                    <family value="Weber">
                         <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
-                            <valueString value="Schmidt"/>
+                            <valueString value="Weber"/>
                         </extension>
                     </family>
-                    <given value="Hanna"/>
+                    <given value="Maximilian"/>
                     <prefix value="Dr.">
                         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
                             <valueCode value="AC"/>
@@ -305,7 +316,7 @@
                             <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_Berufsbezeichnung"/>
                             <code value="Berufsbezeichnung"/>
                         </coding>
-                        <text value="Fachärztin für Haut- und Geschlechtskrankheiten"/>
+                        <text value="Facharzt für Kinder- und Jugendmedizin"/>
                     </code>
                 </qualification>
             </Practitioner>
@@ -327,33 +338,30 @@
                         </coding>
                     </type>
                     <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR"/>
-                    <value value="721111100"/>
+                    <value value="687777700"/>
                 </identifier>
-                <name value="MVZ"/>
+                <name value="Kinderarztpraxis"/>
                 <telecom>
                     <system value="phone"/>
-                    <value value="0301234567"/>
-                </telecom>
-                <telecom>
-                    <system value="fax"/>
-                    <value value="030123456789"/>
-                </telecom>
-                <telecom>
-                    <system value="email"/>
-                    <value value="mvz@e-mail.de"/>
+                    <value value="09411234567"/>
                 </telecom>
                 <address>
                     <type value="both"/>
-                    <line value="Herbert-Lewin-Platz 2">
+                    <line value="Yorckstraße 15">
                         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
-                            <valueString value="Herbert-Lewin-Platz"/>
+                            <valueString value="Yorckstraße"/>
                         </extension>
                         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
-                            <valueString value="2"/>
+                            <valueString value="15"/>
                         </extension>
                     </line>
-                    <city value="Berlin"/>
-                    <postalCode value="10623"/>
+                    <line value="Hinterhaus">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+                            <valueString value="Hinterhaus"/>
+                        </extension>
+                    </line>
+                    <city value="Regensburg"/>
+                    <postalCode value="93049"/>
                     <country value="D"/>
                 </address>
             </Organization>
@@ -382,13 +390,13 @@
                 <extension url="http://fhir.de/StructureDefinition/gkv/wop">
                     <valueCoding>
                         <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ITA_WOP"/>
-                        <code value="01"/>
+                        <code value="72"/>
                     </valueCoding>
                 </extension>
                 <extension url="http://fhir.de/StructureDefinition/gkv/versichertenart">
                     <valueCoding>
                         <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_VERSICHERTENSTATUS"/>
-                        <code value="1"/>
+                        <code value="3"/>
                     </valueCoding>
                 </extension>
                 <status value="active"/>
@@ -404,9 +412,9 @@
                 <payor>
                     <identifier>
                         <system value="http://fhir.de/sid/arge-ik/iknr"/>
-                        <value value="108018347"/>
+                        <value value="108416214"/>
                     </identifier>
-                    <display value="AOK Baden-Württemberg"/>
+                    <display value="AOK Bayern"/>
                 </payor>
             </Coverage>
         </resource>
