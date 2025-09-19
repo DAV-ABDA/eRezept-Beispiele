@@ -232,7 +232,7 @@ DAV Beispiel
 
 DAV Beispiel
 - PZN-Verordnung_Nr_35
-    - Merkmal Verordnung: keine Wirkstoffangabe 
+    - Merkmal Verordnung: keine Wirkstoffangabe, aut idem ausgeschlossen 
     - Merkmal MedicationDispense: Abgabe Kombipackung
 
 **19) Freitextverordnung** (Metformin 850mg Tabletten N3)

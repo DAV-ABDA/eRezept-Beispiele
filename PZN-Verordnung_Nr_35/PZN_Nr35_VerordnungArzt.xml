@@ -127,7 +127,7 @@
                     </quantity>
                 </dispenseRequest>
                 <substitution>
-                    <allowedBoolean value="true"/>
+                    <allowedBoolean value="false"/>
                 </substitution>
             </MedicationRequest>
         </resource>
