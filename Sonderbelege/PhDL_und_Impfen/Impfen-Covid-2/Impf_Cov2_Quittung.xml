@@ -1,20 +1,20 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="4fb104e4-fd9f-430c-a7bb-17db9f292fa3"/>
     <meta>
-        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle|1.4"/>
+        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle|1.5"/>
     </meta>
     <identifier>
         <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
         <value value="920.033.487.939.569.12"/>
     </identifier>
     <type value="document"/>
-    <timestamp value="2025-04-01T09:00:00.000+01:00"/>
+    <timestamp value="2026-01-01T09:00:00.000+01:00"/>
     <entry>
         <fullUrl value="urn:uuid:11ef5662-c396-4eee-88af-a1160ac6bb77"/>
         <resource>
-            <Composition xmlns="http://hl7.org/fhir">
+            <Composition>
                 <meta>
-                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Composition|1.4"/>
+                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Composition|1.5"/>
                 </meta>
                 <extension url="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_EX_Beneficiary">
                     <valueIdentifier>
@@ -30,15 +30,15 @@
                         <display value="Receipt"/>
                     </coding>
                 </type>
-                <date value="2025-04-01T09:00:00.000+01:00"/>
+                <date value="2026-01-01T09:00:00.000+01:00"/>
                 <author>
                     <reference value="urn:uuid:6df91be0-9755-4347-8d47-3724383e93c1"/>
                 </author>
                 <title value="Quittung"/>
                 <event>
                     <period>
-                        <start value="2025-04-01T09:00:00.000+01:00"/> <!-- Zeit der Quittungserstellung -->
-                        <end value="2025-04-01T09:00:00.000+01:00"/> <!-- Zeit der Quittungserstellung -->
+                        <start value="2026-01-01T09:00:00.000+01:00"/> <!-- Zeit der Quittungserstellung -->
+                        <end value="2026-01-01T09:00:00.000+01:00"/> <!-- Zeit der Quittungserstellung -->
                     </period>
                 </event>
                 <section>
@@ -52,10 +52,10 @@
     <entry>
         <fullUrl value="urn:uuid:6df91be0-9755-4347-8d47-3724383e93c1"/>
         <resource>
-            <Device xmlns="http://hl7.org/fhir">
+            <Device>
                 <id value="6df91be0-9755-4347-8d47-3724383e93c1"/>
                 <meta>
-                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Device|1.4"/>
+                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Device|1.5"/>
                 </meta>
                 <status value="active"/>
                 <serialNumber value="N/A"/> <!-- default -->
@@ -72,10 +72,10 @@
     <entry>
         <fullUrl value="urn:uuid:3fe0af7d-b12e-4a07-b3a0-6d63be21f8d2"/>
         <resource>
-            <Binary xmlns="http://hl7.org/fhir">
+            <Binary>
                 <id value="3fe0af7d-b12e-4a07-b3a0-6d63be21f8d2"/>
                 <meta>
-                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Digest|1.4"/>
+                    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Digest|1.5"/>
                 </meta>
                 <contentType value="application/octet-stream"/>
                 <data value="SGFzaCBkZXIgVmVyb3JudW5n"/>  <!-- Hash der Verordnung (ohne Signatur) -->
@@ -87,7 +87,7 @@
             <system value="urn:iso-astm:E1762-95:2013"/>
             <code value="1.2.840.10065.1.12.1.1"/>
         </type>
-        <when value="2025-04-01T09:00:00.000+01:00"/>
+        <when value="2026-01-01T09:00:00.000+01:00"/>
         <who>
             <reference value="urn:uuid:6df91be0-9755-4347-8d47-3724383e93c1"/>
         </who>

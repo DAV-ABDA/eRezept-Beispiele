@@ -2,21 +2,21 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="0884baec-9d79-47b7-91ba-1fc1abaebae8"/>
   <meta>
-    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.1.0"/>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.3"/>
   </meta>
   <identifier>
     <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
     <value value="160.065.873.704.859.46"/>
   </identifier>
   <type value="document"/>
-  <timestamp value="2025-02-03T08:30:00Z"/>
+  <timestamp value="2025-11-03T08:30:00Z"/>
   <entry>
     <fullUrl value="http://pvs.praxis.local/fhir/Composition/15e1e8fe-e009-4d86-a6af-8d9e12f785c3"/>
     <resource>
        <Composition xmlns="http://hl7.org/fhir">
         <id value="15e1e8fe-e009-4d86-a6af-8d9e12f785c3"/>
         <meta>
-          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Composition|1.1.0"/>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Composition|1.3"/>
         </meta>
         <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Legal_basis">
           <valueCoding>
@@ -34,7 +34,7 @@
         <subject>
           <reference value="Patient/80141047-1ace-46b4-a840-3573961ab23c"/>
         </subject>
-        <date value="2025-02-03T08:00:00Z"/>
+        <date value="2025-11-03T08:00:00Z"/>
         <author>
           <reference value="Practitioner/9da12651-d042-444b-8ac1-ce5101ce65e0"/>
           <type value="Practitioner"/>
@@ -81,18 +81,18 @@
       <MedicationRequest xmlns="http://hl7.org/fhir">
         <id value="13dfb1c6-1094-43f4-bba5-e5b6068096f3"/>
         <meta>
-          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Prescription|1.1.0"/>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Prescription|1.3"/>
         </meta>
         <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_StatusCoPayment">
           <valueCoding>
-            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_StatusCoPayment" />
-            <code value="0" />
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_FOR_StatusCoPayment"/>
+            <code value="0"/>
           </valueCoding>
         </extension>
         <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_EmergencyServicesFee">
           <valueBoolean value="false"/>
         </extension>
-        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_BVG">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_SER">
           <valueBoolean value="false"/>
         </extension>
         <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Multiple_Prescription">
@@ -108,7 +108,7 @@
         <subject>
           <reference value="Patient/80141047-1ace-46b4-a840-3573961ab23c"/>
         </subject>
-        <authoredOn value="2025-02-03"/>
+        <authoredOn value="2025-11-03"/>
         <requester>
           <reference value="Practitioner/9da12651-d042-444b-8ac1-ce5101ce65e0"/>
         </requester>
@@ -117,15 +117,14 @@
         </insurance>
         <dosageInstruction>
           <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_DosageFlag">
-            <valueBoolean value="true" />
+            <valueBoolean value="true"/>
           </extension>
-          <text value="1–3mal/Tag auf die erkrankten Hautstellen auftragen" />
+          <text value="1–3mal/Tag auf die erkrankten Hautstellen auftragen"/>
         </dosageInstruction>
         <dispenseRequest>
           <quantity>
             <value value="1"/>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="{Package}"/>
+            <unit value="Packung"/>
           </quantity>
         </dispenseRequest>
         <substitution>
@@ -140,7 +139,7 @@
        <Medication xmlns="http://hl7.org/fhir">
         <id value="278f92ad-c9f7-4cf2-ba7b-f35bd1db880a"/>
         <meta>
-          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_FreeText|1.1.0"/>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_FreeText|1.3"/>
         </meta>
         <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category">
           <valueCoding>
@@ -170,13 +169,13 @@
       <Patient xmlns="http://hl7.org/fhir">
         <id value="80141047-1ace-46b4-a840-3573961ab23c"/>
         <meta>
-          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Patient|1.1.0"/>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Patient|1.2"/>
         </meta>
         <identifier>
           <type>
             <coding>
               <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
-              <code value="GKV"/>
+              <code value="KVZ10"/>
             </coding>
           </type>
           <system value="http://fhir.de/sid/gkv/kvid-10"/>
@@ -215,7 +214,7 @@
       <Practitioner xmlns="http://hl7.org/fhir">
         <id value="9da12651-d042-444b-8ac1-ce5101ce65e0"/>
         <meta>
-          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Practitioner|1.1.0"/>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Practitioner|1.2"/>
         </meta>
         <identifier>
           <type>
@@ -262,7 +261,7 @@
        <Organization xmlns="http://hl7.org/fhir">
         <id value="88ee1a92-1284-413f-a2c6-ad8ec7658c2e"/>
         <meta>
-          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Organization|1.1.0"/>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Organization|1.2"/>
         </meta>
         <identifier>
           <type>
@@ -302,7 +301,7 @@
       <Coverage xmlns="http://hl7.org/fhir">
         <id value="07a8c8eb-4396-4b2a-b933-32f1e403b2b8"/>
         <meta>
-          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Coverage|1.1.0"/>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Coverage|1.2"/>
         </meta>
         <extension url="http://fhir.de/StructureDefinition/gkv/besondere-personengruppe">
           <valueCoding>

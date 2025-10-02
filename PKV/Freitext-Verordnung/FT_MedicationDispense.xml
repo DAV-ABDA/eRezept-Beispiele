@@ -2,7 +2,7 @@
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="be663d7e-eb45-4d32-814c-10383c043d72"/>
   <meta>
-    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.4"/>
+    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.5"/>
     <!--tag>
       <display value="Beispiel MedicationDispense PKV Freitext"/>
     </tag>
@@ -18,7 +18,7 @@
         <MedicationDispense xmlns="http://hl7.org/fhir">
           <id value="a6370174-6209-4203-921f-7adcd3dbe5ba"/>
           <meta>
-            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.4"/>
+            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.5"/>
           </meta>
           <identifier>
             <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
@@ -43,11 +43,10 @@
             </actor>
           </performer>
           <quantity> <!-- Angabe der abgegebenen Packungsanzahl -->
-            <value value="1" />
-            <system value="http://unitsofmeasure.org" />
-            <code value="{Package}" />
+            <value value="1"/>
+            <unit value="Packung"/>
           </quantity>
-          <whenHandedOver value="2025-02-07"/>
+          <whenHandedOver value="2025-11-07"/>
           <!--dosageInstruction>  ====> nur angeben wenn geändert/korrigiert durch Apotheke
             <text value="1-0-0-0"/>
           </dosageInstruction-->
@@ -63,7 +62,7 @@
         <Medication xmlns="http://hl7.org/fhir">
           <id value="2816d83e-e2aa-4e5b-ad4c-5f402a36643a"/>
           <meta>
-            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.4"/>
+            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.5"/>
           </meta>
           <code>
             <text value="Yellox 0,9 mg/ml 5ml Augentrpf. Croma/Bausch&amp;Lomb"/>

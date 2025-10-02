@@ -2,13 +2,13 @@
 <Parameters xmlns="http://hl7.org/fhir">
     <id value="52f41fc7-17b0-456a-bbd3-cbf87ad3f74d"/>
     <meta>
-        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.4"/>
-        <tag>
+        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.5"/>
+        <!--tag>
             <display value="Beispiel MedicationDispense PKV PZN Bsp 16"/>
         </tag>
         <tag>
             <display value="ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanz kann nicht gewährleistet werden. Wir sind jederzeit dankbar für Hinweise auf Fehler oder für Verbesserungsvorschläge."/>
-        </tag>
+        </tag-->
     </meta>
     <parameter>
         <name value="rxDispensation"/>
@@ -18,7 +18,7 @@
                  <MedicationDispense xmlns="http://hl7.org/fhir">
                     <id value="6228a444-700d-4f27-99d5-dc412c59a9a6"/>
                     <meta>
-                        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.4"/>
+                        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.5"/>
                     </meta>
                     <identifier>
                         <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
@@ -44,11 +44,10 @@
                     </performer>
                     <quantity> <!-- Angabe der abgegebenen Packungsanzahl -->
                         <value value="2"/>
-                        <system value="http://unitsofmeasure.org"/>
-                        <code value="{Package}"/>
+                        <unit value="Packung"/>
                     </quantity>
-                    <whenHandedOver value="2025-02-03"/>
-                    <substitution>
+                    <whenHandedOver value="2025-11-03"/>
+                    <substitution> <!-- "Austausch/ersetzen des Arzneimittels bei Abgabe" z.B.: Wenn bei einer PZN Verordnung die abgegebene PZN nicht der verordneten entspricht. -->
                         <wasSubstituted value="true"/>
                     </substitution>
                 </MedicationDispense>
@@ -60,7 +59,7 @@
                  <Medication xmlns="http://hl7.org/fhir">
                     <id value="b6ce296e-31cd-42f6-92a1-4ae607408a0c"/>
                     <meta>
-                        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.4"/>
+                        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.5"/>
                     </meta>
                     <code>
                         <coding>
@@ -95,29 +94,10 @@
                             <numerator>
                                 <value value="20"/>
                                 <unit value="mg"/>
-                                <system>
-                                    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                        <valueCode value="unknown"/>
-                                    </extension>
-                                </system>
-                                <code>
-                                    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                        <valueCode value="unknown"/>
-                                    </extension>
-                                </code>
                             </numerator>
                             <denominator>
                                 <value value="1"/>
-                                <system>
-                                    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                        <valueCode value="unknown"/>
-                                    </extension>
-                                </system>
-                                <code>
-                                    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                        <valueCode value="unknown"/>
-                                    </extension>
-                                </code>
+                                <unit value="Tbl."/>
                             </denominator>
                         </strength>
                     </ingredient>

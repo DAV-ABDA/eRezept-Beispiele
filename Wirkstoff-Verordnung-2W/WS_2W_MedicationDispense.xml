@@ -2,7 +2,7 @@
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="0915ea9b-d187-4770-8932-123d3accbf04"/>
   <meta>
-    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.4"/>
+    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.5"/>
     <!--tag>
       <display value="Beispiel MedicationDispense Wirkstoff 2W"/>
     </tag>
@@ -18,7 +18,7 @@
          <MedicationDispense xmlns="http://hl7.org/fhir">
           <id value="c0f19cf5-f223-4bdc-8a5d-efd85315aa30"/>
           <meta>
-            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.4"/>
+            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.5"/>
           </meta>
           <identifier>
             <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
@@ -43,11 +43,10 @@
             </actor>
           </performer>
           <quantity> <!-- Angabe der abgegebenen Packungsanzahl -->
-            <value value="1" />
-            <system value="http://unitsofmeasure.org" />
-            <code value="{Package}" />
+            <value value="1"/>
+            <unit value="Packung"/>
           </quantity>
-          <whenHandedOver value="2025-01-27"/>
+          <whenHandedOver value="2025-10-27"/>
           <!--dosageInstruction> ====> nur angeben wenn geändert/korrigiert durch Apotheke
             <text value="1-0-0-0"/>
           </dosageInstruction-->
@@ -63,7 +62,7 @@
          <Medication xmlns="http://hl7.org/fhir">
           <id value="201f5d1d-1521-4ff4-918b-69c86b9c0654"/>
           <meta>
-            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.4"/>
+            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.5"/>
           </meta>
           <code>
             <coding>
@@ -98,29 +97,10 @@
               <numerator>
                 <value value="875"/>
                 <unit value="mg"/>
-                <system>
-                  <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                    <valueCode value="unknown"/>
-                  </extension>
-                </system>
-                <code>
-                  <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                    <valueCode value="unknown"/>
-                  </extension>
-                </code>
               </numerator>
               <denominator>
                 <value value="1"/>
-                <system>
-                  <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                    <valueCode value="unknown"/>
-                  </extension>
-                </system>
-                <code>
-                  <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                    <valueCode value="unknown"/>
-                  </extension>
-                </code>
+                <unit value="Filmtbl."/>
               </denominator>
             </strength>
           </ingredient>
@@ -132,29 +112,10 @@
               <numerator>
                 <value value="125"/>
                 <unit value="mg"/>
-                <system>
-                  <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                    <valueCode value="unknown"/>
-                  </extension>
-                </system>
-                <code>
-                  <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                    <valueCode value="unknown"/>
-                  </extension>
-                </code>
               </numerator>
               <denominator>
                 <value value="1"/>
-                <system>
-                  <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                    <valueCode value="unknown"/>
-                  </extension>
-                </system>
-                <code>
-                  <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                    <valueCode value="unknown"/>
-                  </extension>
-                </code>
+                <unit value="Filmtbl."/>
               </denominator>
             </strength>
           </ingredient>

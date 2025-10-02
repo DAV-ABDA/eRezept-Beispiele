@@ -2,13 +2,13 @@
 <Parameters xmlns="http://hl7.org/fhir">
     <id value="19f36770-89d8-4a3d-844c-a2180c1d7ca0"/>
     <meta>
-        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.4"/>
-        <tag>
+        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.5"/>
+        <!--tag>
             <display value="Beispiel MedicationDispense PZN Bsp 32"/>
         </tag>
         <tag>
             <display value="ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanz kann nicht gewährleistet werden. Wir sind jederzeit dankbar für Hinweise auf Fehler oder für Verbesserungsvorschläge."/>
-        </tag>
+        </tag-->
     </meta>
     <parameter>
         <name value="rxDispensation"/>
@@ -18,7 +18,7 @@
                  <MedicationDispense xmlns="http://hl7.org/fhir">
                     <id value="bf2ad9d0-91a7-4da1-8c3e-a856880b67da"/>
                     <meta>
-                        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.4"/>
+                        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.5"/>
                     </meta>
                     <identifier>
                         <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
@@ -43,11 +43,10 @@
                         </actor>
                     </performer>
                     <quantity> <!-- Angabe der abgegebenen Packungsanzahl -->
-                        <value value="1" />
-                        <system value="http://unitsofmeasure.org" />
-                        <code value="{Package}" />
+                        <value value="1"/>
+                        <unit value="Packung"/>
                     </quantity>
-                    <whenHandedOver value="2025-01-19"/>
+                    <whenHandedOver value="2025-10-19"/>
                     <dosageInstruction>
                         <text value="morgens und abends 1/2 Tablette"/>
                     </dosageInstruction>
@@ -63,7 +62,7 @@
                  <Medication xmlns="http://hl7.org/fhir">
                     <id value="24338d2c-2bbb-4840-b438-a2bafaf5cff9"/>
                     <meta>
-                        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.4"/>
+                        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.5"/>
                     </meta>
                     <code>
                         <coding>
@@ -98,29 +97,10 @@
                             <numerator>
                                 <value value="400"/>
                                 <unit value="mg"/>
-                                <system>
-                                    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                        <valueCode value="unknown"/>
-                                    </extension>
-                                </system>
-                                <code>
-                                    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                        <valueCode value="unknown"/>
-                                    </extension>
-                                </code>
                             </numerator>
                             <denominator>
                                 <value value="1"/>
-                                <system>
-                                    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                        <valueCode value="unknown"/>
-                                    </extension>
-                                </system>
-                                <code>
-                                    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                        <valueCode value="unknown"/>
-                                    </extension>
-                                </code>
+                                <unit value="Tbl."/>
                             </denominator>
                         </strength>
                     </ingredient>

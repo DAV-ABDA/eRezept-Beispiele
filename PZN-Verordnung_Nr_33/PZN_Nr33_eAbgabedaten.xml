@@ -2,7 +2,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="2afd0f7c-2dee-47b4-b028-b62482e63211"/>
     <meta>
-        <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenBundle|1.4"/>
+        <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenBundle|1.5"/>
         <tag>
             <display value="Beispiel für Abgabedaten für eine PZN-Verordnung"/>
         </tag>
@@ -15,14 +15,14 @@
         <value value="160.065.873.704.859.46"/>
     </identifier>
     <type value="document"/>
-    <timestamp value="2025-01-19T10:00:00Z"/>
+    <timestamp value="2025-10-19T10:00:00Z"/>
     <entry>
         <fullUrl value="urn:uuid:4d500400-a7e2-47e8-bebd-06a705044452"/>
         <resource>
              <Composition xmlns="http://hl7.org/fhir">
                 <id value="4d500400-a7e2-47e8-bebd-06a705044452"/>
                 <meta>
-                    <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenComposition|1.4"/>
+                    <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenComposition|1.5"/>
                 </meta>
                 <status value="final"/>
                 <type>
@@ -31,7 +31,7 @@
                         <code value="ERezeptAbgabedaten"/>
                     </coding>
                 </type>
-                <date value="2025-01-19T10:00:00Z"/>
+                <date value="2025-10-19T10:00:00Z"/>
                 <author>
                     <reference value="urn:uuid:e45655e2-8919-4f52-832c-a3e8e4f742b8"/>
                 </author>
@@ -57,7 +57,7 @@
              <Organization xmlns="http://hl7.org/fhir">
                 <id value="e45655e2-8919-4f52-832c-a3e8e4f742b8"/>
                 <meta>
-                    <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Apotheke|1.4"/>
+                    <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Apotheke|1.5"/>
                 </meta>
                 <identifier>
                     <system value="http://fhir.de/sid/arge-ik/iknr"/>
@@ -87,7 +87,7 @@
              <MedicationDispense xmlns="http://hl7.org/fhir">
                 <id value="dcd9c0ab-7606-48b1-9b46-db83e519bfcd"/>
                 <meta>
-                    <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abgabeinformationen|1.4"/>
+                    <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abgabeinformationen|1.5"/>
                 </meta>
                 <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-Abrechnungszeilen">
                     <valueReference>
@@ -118,7 +118,7 @@
                         <code value="Abgabeinformationen"/>
                     </coding>
                 </type>
-                <whenHandedOver value="2025-01-19"/>
+                <whenHandedOver value="2025-10-19"/>
             </MedicationDispense>
         </resource>
     </entry>
@@ -128,7 +128,7 @@
              <Invoice xmlns="http://hl7.org/fhir">
                 <id value="8296f288-f508-44d0-854b-c40944e02d46"/>
                 <meta>
-                    <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abrechnungszeilen|1.4"/>
+                    <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abrechnungszeilen|1.5"/>
                 </meta>
                 <status value="issued"/>
                 <type>

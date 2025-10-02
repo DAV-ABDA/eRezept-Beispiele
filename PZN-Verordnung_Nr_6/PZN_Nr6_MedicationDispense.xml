@@ -2,7 +2,7 @@
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="5b2ae851-502f-497e-99e1-507af6f4bd43"/>
   <meta>
-    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.4"/>
+    <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.5"/>
     <!--tag>
       <display value="Beispiel MedicationDispense PZN Bsp 6"/>
     </tag>
@@ -18,7 +18,7 @@
          <MedicationDispense xmlns="http://hl7.org/fhir">
           <id value="f2a598ff-7847-4f23-95ac-3c4338e88055"/>
           <meta>
-            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.4"/>
+            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.5"/>
           </meta>
           <identifier>
             <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
@@ -43,11 +43,10 @@
             </actor>
           </performer>
           <quantity> <!-- Angabe der abgegebenen Packungsanzahl -->
-            <value value="1" />
-            <system value="http://unitsofmeasure.org" />
-            <code value="{Package}" />
+            <value value="1"/>
+            <unit value="Packung"/>
           </quantity>
-          <whenHandedOver value="2025-01-27"/>
+          <whenHandedOver value="2025-10-27"/>
           <!--dosageInstruction> ====> nur angeben wenn geändert/korrigiert durch Apotheke
             <text value="1-0-0-0"/>
           </dosageInstruction-->
@@ -60,7 +59,7 @@
          <Medication xmlns="http://hl7.org/fhir">
           <id value="c6d021de-9939-4631-a79b-fb0093ce1361"/>
           <meta>
-            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.4"/>
+            <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.5"/>
           </meta>
           <code>
             <coding>
@@ -95,29 +94,10 @@
               <numerator>
                 <value value="230.83"/>
                 <unit value="mg"/>
-                <system>
-                  <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                    <valueCode value="unknown"/>
-                  </extension>
-                </system>
-                <code>
-                  <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                    <valueCode value="unknown"/>
-                  </extension>
-                </code>
               </numerator>
               <denominator>
                 <value value="1"/>
-                <system>
-                  <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                    <valueCode value="unknown"/>
-                  </extension>
-                </system>
-                <code>
-                  <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                    <valueCode value="unknown"/>
-                  </extension>
-                </code>
+                <unit value="Tbl."/>
               </denominator>
             </strength>
           </ingredient>
