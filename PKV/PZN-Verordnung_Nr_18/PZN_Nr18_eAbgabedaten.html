@@ -422,9 +422,11 @@
                     width: 210mm;
                     max-width: 210mm;
                     min-width: 210mm;
-                    height: 297mm;
-                    max-height: 297mm;
-                    min-height: 297mm;
+                    /*
+                        height: 297mm;
+                        max-height: 297mm;
+                        min-height: 297mm;
+                    */
                     left:0;
                     top: 0;
                     margin: 0px;
@@ -531,7 +533,7 @@
                     }
                     #txt-area{
                     overflow: hidden;
-                    resize: none;
+                    resize: vertical;
                     line-height: 0.8;
                     padding-top: 15px;
                     }
@@ -618,9 +620,11 @@
                     width: 210mm;
                     max-width: 210mm;
                     min-width: 210mm;
-                    height: 297mm;
-                    max-height: 297mm;
-                    min-height: 297mm;
+                    /*
+                        height: 297mm;
+                        max-height: 297mm;
+                        min-height: 297mm;
+                    */
                     padding:5mm;
                     }
 
@@ -704,11 +708,12 @@
 							}).replace(',', ' -');
 						}
 
-						function formatWhenReady() {
-							const fields = ['herstellungszeitpunkt'];
-							let allSet = true;
-							fields.forEach(id => {
-								const el = document.getElementById(id);
+                        function formatWhenReady() {
+						    const mySelektor = ".hzp";
+                            const elementWithClass = document.querySelectorAll(mySelektor);
+
+                            let allSet = true;
+                            elementWithClass.forEach(el => {
 								if (el) {
 									const raw = el.textContent?.trim();
 									if (raw && raw.includes('T')) { // && !raw.includes('.')
@@ -717,16 +722,34 @@
 										allSet = false;
 									}
 								}
-							});
+                            });
 							if (!allSet) {
 								setTimeout(formatWhenReady, 50); // Retry in 50ms
 							}
 						}
 						document.addEventListener('DOMContentLoaded', formatWhenReady);
+
+						function calcHeight(value) {
+                            let numberOfLineBreaks = (value.match(/\n/g) || []).length;
+                            // min-height + lines x line-height + padding + border
+                            let newHeight = 30 + (numberOfLineBreaks * 12) + 15 + 2;
+                            return newHeight;
+                        }
+
+						function formatHeightOfTextarea() {
+							const fields = ['resize_ta1','resize_ta2','resize_ta3','resize_ta4'];
+							fields.forEach(id => {
+								const el = document.getElementById(id);
+								if (el) {
+                                    el.style.height = calcHeight(el.value) + "px";
+							    };
+                            });
+						}
+						document.addEventListener('DOMContentLoaded', formatHeightOfTextarea);
 					
-                </script></head><body><h1>Abgabedatensatz</h1><div class="background-container-ges outter-div"><div class="row g-1 intern-container"><div class="col-md-1 border-1"><div class="row g-1"><div class="col-3"><div class="input-container"><label>Rezept ID</label><input type="text" class="text-input" value="200.357.872.211.630.88" readonly=""></div></div><div class="col-3"><div class="input-container"><label>Abgabedatum</label><input type="text" class="text-input" value="03.11.2025" readonly=""></div></div><div class="col-3"><div class="input-container"><label>Gesamtbetrag</label><input type="text" class="text-input" value="12,60 EUR" readonly=""></div></div><div class="col-3"><div class="input-container"><label>Gesamtzuzahlung</label><input type="text" class="text-input" value="0,00 EUR" readonly=""></div></div></div><div class="row g-1"><div class="col-4"><div class="input-container"><label>Abgebende Apotheke</label><input type="text" class="text-input" value="Adler-Apotheke" readonly=""></div></div><div class="col-2"><div class="input-container"><label>IKNR</label><input type="text" class="text-input" value="308412345" readonly=""></div></div></div><div class="row g-1"><div class="col-6"><div class="input-container"><label>Adresse</label><input type="text" class="text-input" value="Taunusstraße 89" readonly=""></div></div><div class="col-6"><div class="input-container"><label>AbrechnungsTyp</label><input type="text" class="text-input" value="Standard (1)" readonly=""></div></div></div><div class="row g-1"><div class="col-1"><div class="input-container"><label>PLZ</label><input type="text" class="text-input" value="63225" readonly=""></div></div><div class="col-4"><div class="input-container"><label>Ort</label><input type="text" class="text-input" value="Langen" readonly=""></div></div><div class="col-1"><div class="input-container"><label>Land</label><input type="text" class="text-input" value="D" readonly=""></div></div></div></div></div><div class="intern-container background-container-ges margin-left-min-2 margin-right-min-2 margin-top-min-5"><div class="row g-1 width-100"><div class="col-12"><h4>Abrechnungszeilen</h4><div class="row g-0" style="margin-bottom: 0px; padding-bottom: 0px;"><div class="col-1"><div class="input-container"><label>Pos</label><input type="text" class="text-input height-18mm border-right-left" value="1" readonly=""></div></div><div class="col-2"><div class="input-container"><label>PZN</label><input type="text" class="text-input height-18mm border-right-left" value="17550650" readonly=""></div></div><div class="col-1"><div class="input-container"><label>Faktor</label><input type="text" class="text-input height-18mm border-right-left" value="1" readonly=""></div></div><div class="col-1"><div class="input-container"><label>MwSt</label><input type="text" class="text-input height-18mm border-right-left" value="19,00" readonly=""></div></div><div class="col-2 no-bottom-border"><div class="input-container"><label>Ges.Brutto</label><input type="text" class="text-input height-18mm border-right-left" value="12,60 EUR" readonly=""></div></div><div class="col-5 margin-top-5"><div class="input-container"><label>Kosten Versicherter</label><textarea type="text" class="text-input height-18mm border-dotted-t-l" readonly="">Zuzahlung (0):  0,00 EUR
-</textarea></div></div></div><h4>Rezeptänderung</h4><div class="row g-1"><div class="col-1"><div class="input-container"><label>RezÄndArt</label><input type="text" class="text-input" value="14"></div></div><div class="col-4"><div class="input-container"><label>Rücksprache Arzt</label><textarea type="text" class="text-input" rows="auto" readonly="">Keine Rücksprache mit dem Arzt erforderlich. (2)
-                                                </textarea></div></div><div class="col-2"><div class="input-container"><label>Datum</label><input type="text" class="text-input" value="03.11.2025" readonly=""></div></div></div><div class="row g-1"><div class="col-12"><div class="input-container"><label>Arten der Rezeptaenderung</label><textarea type="text" class="text-input" readonly="">1	Abweichung von der Verordnung bzgl. der Darreichungsform bei Fertigarzneimitteln
+                </script></head><body><h1>Abgabedatensatz</h1><div class="background-container-ges outter-div"><div class="row g-1 intern-container"><div class="col-md-1 border-1"><div class="row g-1"><div class="col-3"><div class="input-container"><label>Rezept ID</label><input type="text" class="text-input" value="200.357.872.211.630.88" readonly=""></div></div><div class="col-3"><div class="input-container"><label>Abgabedatum</label><input type="text" class="text-input" value="03.11.2025" readonly=""></div></div><div class="col-3"><div class="input-container"><label>Gesamtbetrag</label><input type="text" class="text-input" value="12,60 EUR" readonly=""></div></div><div class="col-3"><div class="input-container"><label>Gesamtzuzahlung</label><input type="text" class="text-input" value="0,00 EUR" readonly=""></div></div></div><div class="row g-1"><div class="col-4"><div class="input-container"><label>Abgebende Apotheke</label><input type="text" class="text-input" value="Adler-Apotheke" readonly=""></div></div><div class="col-2"><div class="input-container"><label>IKNR</label><input type="text" class="text-input" value="308412345" readonly=""></div></div></div><div class="row g-1"><div class="col-6"><div class="input-container"><label>Adresse</label><input type="text" class="text-input" value="Taunusstraße 89" readonly=""></div></div><div class="col-6"><div class="input-container"><label>AbrechnungsTyp</label><input type="text" class="text-input" value="Standard (1)" readonly=""></div></div></div><div class="row g-1"><div class="col-1"><div class="input-container"><label>PLZ</label><input type="text" class="text-input" value="63225" readonly=""></div></div><div class="col-4"><div class="input-container"><label>Ort</label><input type="text" class="text-input" value="Langen" readonly=""></div></div><div class="col-1"><div class="input-container"><label>Land</label><input type="text" class="text-input" value="D" readonly=""></div></div></div></div></div><div class="intern-container background-container-ges margin-left-min-2 margin-right-min-2 margin-top-min-5"><div class="row g-1 width-100"><div class="col-12"><h4>Abrechnungszeilen</h4><div class="row g-0" style="margin-bottom: 0px; padding-bottom: 0px;"><div class="col-1"><div class="input-container"><label>Pos</label><input type="text" class="text-input height-18mm border-right-left" value="1" readonly=""></div></div><div class="col-2"><div class="input-container"><label>PZN</label><input type="text" class="text-input height-18mm border-right-left" value="17550650" readonly=""></div></div><div class="col-1"><div class="input-container"><label>Faktor</label><input type="text" class="text-input height-18mm border-right-left" value="1" readonly=""></div></div><div class="col-1"><div class="input-container"><label>MwSt</label><input type="text" class="text-input height-18mm border-right-left" value="19,00" readonly=""></div></div><div class="col-2 no-bottom-border"><div class="input-container"><label>Ges.Brutto</label><input type="text" class="text-input height-18mm border-right-left" value="12,60 EUR" readonly=""></div></div><div class="col-5 margin-top-5"><div class="input-container"><label>Kosten Versicherter</label><textarea id="resize_ta1" class="text-input height-18mm border-dotted-t-l" readonly="">Zuzahlung (0):  0,00 EUR
+</textarea></div></div></div><h4>Rezeptänderung</h4><div class="row g-1"><div class="col-1"><div class="input-container"><label>RezÄndArt</label><input type="text" class="text-input" value="14"></div></div><div class="col-4"><div class="input-container"><label>Rücksprache Arzt</label><textarea id="resize_ta3" class="text-input" rows="auto" readonly="">Keine Rücksprache mit dem Arzt erforderlich. (2)
+                                                </textarea></div></div><div class="col-2"><div class="input-container"><label>Datum</label><input type="text" class="text-input" value="03.11.2025" readonly=""></div></div></div><div class="row g-1"><div class="col-12"><div class="input-container"><label>Arten der Rezeptaenderung</label><textarea class="text-input height-25mm" readonly="">1	Abweichung von der Verordnung bzgl. der Darreichungsform bei Fertigarzneimitteln
 	Begründung: § 2 Abs. 6 AMVV / § 17 Abs. 5 ApBetrO
 2	Korrektur / Ergänzung der Darreichungsform bei Rezepturen
 	Begründung: § 2 Abs. 6 AMVV / § 17 Abs. 5 ApBetrO
@@ -754,4 +777,4 @@
 21	Abweichung von der Packungsgröße bzw. Packungsanzahl aufgrund von Nichtverfügbarkeit und dringendem Fall bei der Dienstbereitschaft
 	Begründung: § 17 Abs. 5a ApBetrO
                                         </textarea></div></div></div></div></div></div><p align="right">FHIR-Instanzversion:
-                <b>1.4</b> Stylesheet: <b>v1.0</b></p></div><script src="js/bootstrap.bundle.min.js"></script><script src="js/popper.min.js"></script><script src="js/jquery-3.5.1.slim.min.js"></script></body>
+                <b>1.4</b> Stylesheet: <b>v1.1</b></p></div></body>

@@ -419,15 +419,10 @@
                     --border-background-color-int: var(--border-background-color-ges);
                     }
 
-
-
                     body {
                     width: 210mm;
                     max-width: 210mm;
                     min-width: 210mm;
-                    height: 297mm;
-                    max-height: 297mm;
-                    min-height: 297mm;
                     left:0;
                     top: 0;
                     margin: 0px;
@@ -488,7 +483,8 @@
                     padding: 0 5px;
                     font-size: 10px;
                     }
-                    .text-input{
+
+                    .text-input, .text-input-ta{
                     font-family: Consolas, sans-serif;
                     height: 10mm;
                     width: 100%;
@@ -519,7 +515,7 @@
                     }
                     #txt-area{
                     overflow: hidden;
-                    resize: none;
+                    resize: vertical;
                     line-height: 0.8;
                     padding-top: 15px;
                     }
@@ -606,9 +602,6 @@
                     width: 210mm;
                     max-width: 210mm;
                     min-width: 210mm;
-                    height: 297mm;
-                    max-height: 297mm;
-                    min-height: 297mm;
                     padding:5mm;
                     }
 
@@ -672,8 +665,28 @@
                     .border-right-left{
                     border: 1px solid var(--border-color-dark);
                     border-right: none;
-                    }                    /* Internes Stylesheet Ende */
-                </style><title>DAV Stylesheet Abrechnung</title></head><body><h1>Abrechnungsdatensatz</h1><div class="background-container-ges outter-div"><div class="row g-1 intern-container"><div class="col-md-1 border-1"><div class="row g-1"><div class="col-4"><div class="input-container"><label>Rezept ID</label><input type="text" class="text-input" value="160.100.000.000.013.03" readonly=""></div></div><div class="col-4"><div class="input-container"><label>Belegnummer</label><input type="text" class="text-input" value="2105523450000000001" readonly=""></div></div><div class="col-4"><div class="input-container"><label>Kennzeichen für Irrläuferrezept</label><input type="text" class="text-input" value="false" readonly=""></div></div></div><div class="row g-1"><div class="col-4"><div class="input-container"><label>Apotheken-IK</label><input type="text" class="text-input" value="308412345" readonly=""></div></div><div class="col-4"><div class="input-container"><label>Leistungserbringertyp</label><input type="text" class="text-input" value="Oeffentliche Apotheken (A)" readonly=""></div></div><div class="col-4"><div class="input-container"><label>LeistungserbringerSitz</label><input type="text" class="text-input" value="LE mit Sitz im Inland (1)" readonly=""></div></div></div></div></div><div class="row g-1 width-100"><div class="col-12"><h4>Abrechnungszeilen</h4><div class="row g-0" style="margin-bottom: 0px; padding-bottom: 0px;"><div class="col-1"><div class="input-container"><label>Pos</label><input type="text" class="text-input" value="1" readonly=""></div></div><div class="col-2"><div class="input-container"><label>USt Betrag</label><input type="text" class="text-input" value="7,83 EUR" readonly=""></div></div><div class="col-3"><div class="input-container"><label>Positionstyp</label><input type="text" class="text-input" value="uebrige Position (1)" readonly=""></div></div><div class="col-4"><div class="input-container"><label>Import</label><input type="text" class="text-input" value="kein Import (0)" readonly=""></div></div></div><div class="row g-0" style="margin-bottom: 0px; padding-bottom: 0px;"><div class="col-1"><div class="input-container"><label>Pos</label><input type="text" class="text-input" value="" readonly=""></div></div><div class="col-2"><div class="input-container"><label>ZuAbschlagKey</label><input type="text" class="text-input" value="R001" readonly=""></div></div><div class="col-3"><div class="input-container"><label>Betrag Zu-/Abschlag</label><input type="text" class="text-input" value="-1,77 EUR" readonly=""></div></div><div class="col-4"><div class="input-container"><label>Typ</label><input type="text" class="text-input" value="deduction" readonly=""></div></div></div><div class="row g-0" style="margin-bottom: 0px; padding-bottom: 0px;"><div class="col-1"><div class="input-container"><label>Pos</label><input type="text" class="text-input" value="" readonly=""></div></div><div class="col-2"><div class="input-container"><label>ZuAbschlagKey</label><input type="text" class="text-input" value="R004" readonly=""></div></div><div class="col-3"><div class="input-container"><label>Betrag Zu-/Abschlag</label><input type="text" class="text-input" value="-5,02 EUR" readonly=""></div></div><div class="col-4"><div class="input-container"><label>Typ</label><input type="text" class="text-input" value="deduction" readonly=""></div></div></div></div></div><div class="row g-1 width-100"><div class="col-12"><div class="input-container"><label>ZuAbschlagKey</label><textarea type="text" class="text-input" readonly="">R001	- Apothekenabschlag nach § 130 SGB V	
+                    }
+                    /* Internes Stylesheet Ende */
+                </style><title>DAV Stylesheet Abrechnung</title><script>
+                    
+						function calcHeight(value) {
+                            let numberOfLineBreaks = (value.match(/\n/g) || []).length;
+                            // min-height + lines x line-height + padding + border
+                            let newHeight = 12 + (numberOfLineBreaks * 12) + 15 + 2;
+                            return newHeight;
+                        }
+
+						function formatHeightOfTextarea() {
+						    const mySelektor = ".text-input-ta";
+                            const elementWithClass = document.querySelectorAll(mySelektor);
+
+                            elementWithClass.forEach(el => {
+                                el.style.height = calcHeight(el.value) + "px";
+                            });
+						}
+						document.addEventListener('DOMContentLoaded', formatHeightOfTextarea);
+					
+                </script></head><body><h1>Abrechnungsdatensatz</h1><div class="background-container-ges outter-div"><div class="row g-1 intern-container"><div class="col-md-1 border-1"><div class="row g-1"><div class="col-4"><div class="input-container"><label>Rezept ID</label><input type="text" class="text-input" value="160.100.000.000.013.03" readonly=""></div></div><div class="col-4"><div class="input-container"><label>Belegnummer</label><input type="text" class="text-input" value="2105523450000000001" readonly=""></div></div><div class="col-4"><div class="input-container"><label>Kennzeichen für Irrläuferrezept</label><input type="text" class="text-input" value="false" readonly=""></div></div></div><div class="row g-1"><div class="col-4"><div class="input-container"><label>Apotheken-IK</label><input type="text" class="text-input" value="308412345" readonly=""></div></div><div class="col-4"><div class="input-container"><label>Leistungserbringertyp</label><input type="text" class="text-input" value="Oeffentliche Apotheken (A)" readonly=""></div></div><div class="col-4"><div class="input-container"><label>LeistungserbringerSitz</label><input type="text" class="text-input" value="LE mit Sitz im Inland (1)" readonly=""></div></div></div></div></div><div class="row g-1 width-100"><div class="col-12"><h4>Abrechnungszeilen</h4><div class="row g-0" style="margin-bottom: 0px; padding-bottom: 0px;"><div class="col-1"><div class="input-container"><label>Pos</label><input type="text" class="text-input" value="1" readonly=""></div></div><div class="col-2"><div class="input-container"><label>USt Betrag</label><input type="text" class="text-input" value="7,83 EUR" readonly=""></div></div><div class="col-3"><div class="input-container"><label>Positionstyp</label><input type="text" class="text-input" value="uebrige Position (1)" readonly=""></div></div><div class="col-4"><div class="input-container"><label>Import</label><textarea class="text-input-ta" rows="auto" readonly="">kein Import (0)</textarea></div></div></div><div class="row g-0" style="margin-bottom: 0px; padding-bottom: 0px;"><div class="col-1"><div class="input-container"><label>Pos</label><input type="text" class="text-input" value="" readonly=""></div></div><div class="col-2"><div class="input-container"><label>ZuAbschlagKey</label><input type="text" class="text-input" value="R001" readonly=""></div></div><div class="col-3"><div class="input-container"><label>Betrag Zu-/Abschlag</label><input type="text" class="text-input" value="-1,77 EUR" readonly=""></div></div><div class="col-4"><div class="input-container"><label>Typ</label><input type="text" class="text-input" value="deduction" readonly=""></div></div></div><div class="row g-0" style="margin-bottom: 0px; padding-bottom: 0px;"><div class="col-1"><div class="input-container"><label>Pos</label><input type="text" class="text-input" value="" readonly=""></div></div><div class="col-2"><div class="input-container"><label>ZuAbschlagKey</label><input type="text" class="text-input" value="R004" readonly=""></div></div><div class="col-3"><div class="input-container"><label>Betrag Zu-/Abschlag</label><input type="text" class="text-input" value="-5,02 EUR" readonly=""></div></div><div class="col-4"><div class="input-container"><label>Typ</label><input type="text" class="text-input" value="deduction" readonly=""></div></div></div></div></div><div class="row g-1 width-100"><div class="col-12"><div class="input-container"><label>ZuAbschlagKey</label><textarea class="text-input height-15mm" readonly="">R001	- Apothekenabschlag nach § 130 SGB V	
 R003	- Sonstiger Abschlag/Rabatt	
 R004	- Gesetzlicher Herstellerabschlag nach § 130a Absatz 1 und Absatz 1a SGB V	
 R005	- Gesetzlicher Herstellerabschlag nach § 130a Absatz 3a SGB V	
@@ -682,4 +695,4 @@ R007	- Rabattangabe der vom Kostenträger aufgrund von Verträgen nach § 130a A
 R008	- Rabattangabe aufgrund von Verträgen nach § 130a Abs. 8 SGB V ohne Berücksichtigung der Rabattangaben nach Schlüssel R007	
 R009	- Gesetzlicher Herstellerabschlag nach § 130a Abs. 2 SGB V
 						</textarea></div></div></div><p align="right">FHIR-Instanzversion:
-				<b>1.5</b> Stylesheet: <b>v1.0</b></p></div><script src="js/bootstrap.bundle.min.js"></script><script src="js/popper.min.js"></script><script src="js/jquery-3.5.1.slim.min.js"></script></body>
+				<b>1.5</b> Stylesheet: <b>v1.1</b></p></div></body>
