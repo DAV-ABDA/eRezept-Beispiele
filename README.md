@@ -75,7 +75,7 @@ Merkmal Abgabedaten: Erfüllung Rabattvertrag
 
 KBV basiertes Beispiel (aea2f4c5-675a-4d76-ab9b-7994c80b64ec) 
 - PZN-Verordnung_Nr_2
-  - Merkmal Verordnung: Kennzeichen BVG gesetzt
+  - Merkmal Verordnung: Kennzeichen SER (ehemals BVG) gesetzt
   - Merkmal Abgabedaten: Erfüllung Rabattvertrag
 
 **3) PZN-Verordnung Nr. 3** (Januvia® 50 mg 28 Filmtabletten N1)

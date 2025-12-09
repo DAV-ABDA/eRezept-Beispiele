@@ -2,7 +2,8 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="5adc3ab0-aa3a-45c6-982f-1588eb4210a1"/>
     <meta>
-        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.3"/>
+        <versionId value="1"/>
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.4"/>
     </meta>
     <identifier>
         <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
@@ -16,7 +17,8 @@
             <Composition>
                 <id value="290a3836-f6f6-47fe-9631-ff7afbf444a5"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Composition|1.3"/>
+                    <versionId value="1"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Composition|1.4"/>
                 </meta>
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Legal_basis">
                     <valueCoding>
@@ -81,7 +83,8 @@
             <MedicationRequest>
                 <id value="3f3c4c2e-e2a1-4853-958d-d7506e498a11"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Prescription|1.3"/>
+                    <versionId value="1"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Prescription|1.4"/>
                 </meta>
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_EmergencyServicesFee">
                     <valueBoolean value="false"/>
@@ -133,7 +136,8 @@
             <Medication>
                 <id value="0dcfec53-102b-40af-a1d9-60078af4fb57"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.3"/>
+                    <versionId value="1"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.4"/>
                 </meta>
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type">
                     <valueCodeableConcept>
@@ -202,7 +206,8 @@
             <Patient>
                 <id value="c564e135-9216-4fe6-aa2a-2e6774f61878"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Patient|1.2"/>
+                    <versionId value="1"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Patient|1.3"/>
                 </meta>
                 <identifier>
                     <type>
@@ -247,7 +252,8 @@
             <Practitioner>
                 <id value="d0c3b071-70ab-4892-8261-2bb7a47bfa08"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Practitioner|1.2"/>
+                    <versionId value="1"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Practitioner|1.3"/>
                 </meta>
                 <identifier>
                     <type>
@@ -294,7 +300,8 @@
             <Organization>
                 <id value="25bf5dce-5268-4692-91d6-a2cf5aefee45"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Organization|1.2"/>
+                    <versionId value="1"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Organization|1.3"/>
                 </meta>
                 <identifier>
                     <type>
@@ -331,7 +338,8 @@
             <Coverage>
                 <id value="d1c2bbf2-6601-40b2-99ee-5507b80600b2"/>
                 <meta>
-                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Coverage|1.2"/>
+                    <versionId value="1"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Coverage|1.3"/>
                 </meta>
                 <extension url="http://fhir.de/StructureDefinition/gkv/besondere-personengruppe">
                     <valueCoding>
