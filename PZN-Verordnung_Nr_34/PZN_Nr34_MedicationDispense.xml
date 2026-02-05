@@ -2,7 +2,7 @@
 <Parameters xmlns="http://hl7.org/fhir">
     <id value="0c1f9234-30fc-49f4-bd47-13d105129aa8"/>
     <meta>
-        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.5"/>
+        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PAR_CloseOperation_Input|1.6"/>
         <tag>
             <display value="Beispiel MedicationDispense PZN Bsp 34"/>
         </tag>
@@ -18,7 +18,7 @@
                 <MedicationDispense>
                     <id value="de992007-6349-4bba-b68e-3c257ca1fa57"/>
                     <meta>
-                        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.5"/>
+                        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense|1.6"/>
                     </meta>
                     <identifier>
                         <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
@@ -47,7 +47,7 @@
                         <system value="http://unitsofmeasure.org"/>
                         <code value="{Package}"/>
                     </quantity>
-                    <whenHandedOver value="2025-10-19"/>
+                    <whenHandedOver value="2026-07-19"/>
                     <substitution>
                         <wasSubstituted value="false"/>
                     </substitution>
@@ -60,7 +60,7 @@
                 <Medication>
                     <id value="51a91baa-7769-48c1-a6f5-21f6ed8ebcb1"/>
                     <meta>
-                        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.5"/>
+                        <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Medication|1.6"/>
                     </meta>
                     <code>
                         <coding>
@@ -89,6 +89,18 @@
                     </amount>
                     <ingredient>
                         <itemCodeableConcept>
+                            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                                <valueCode value="unknown" />
+                            </extension>
+                        </itemCodeableConcept>
+                        <strength>
+                            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                                <valueCode value="unknown" />
+                            </extension>
+                        </strength>
+                    </ingredient>
+                    <!--ingredient>
+                        <itemCodeableConcept>
                             <text value="keine Angabe"/>
                         </itemCodeableConcept>
                         <strength>
@@ -101,7 +113,7 @@
                                 <unit value="k.A."/>
                             </denominator>
                         </strength>
-                    </ingredient>
+                    </ingredient-->
                     <batch>
                         <lotNumber value="A9876543210123-45678"/>
                     </batch>

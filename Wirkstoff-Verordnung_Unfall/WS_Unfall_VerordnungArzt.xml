@@ -2,7 +2,7 @@
   <id value="cf0d4980-af01-44f4-a38c-d6bf14b82e07"/>
   <meta>
     <versionId value="1"/>
-    <lastUpdated value="2025-10-27T08:30:00Z"/>
+    <lastUpdated value="2026-07-27T08:30:00Z"/>
     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.4"/>
   </meta>
   <identifier>
@@ -10,7 +10,7 @@
     <value value="160.100.000.000.021.76"/>
   </identifier>
   <type value="document"/>
-  <timestamp value="2025-10-27T08:30:00Z"/>
+  <timestamp value="2026-07-27T08:30:00Z"/>
   <entry>
     <fullUrl value="http://pvs.praxis.local/fhir/Composition/7a0b2d5e-8660-47b2-b26a-0e3dbba4399d"/>
     <resource>
@@ -36,7 +36,7 @@
         <subject>
           <reference value="Patient/ce4104af-b86b-4664-afee-1b5fc3ac8acf"/>
         </subject>
-        <date value="2025-10-27T08:00:00Z"/>
+        <date value="2026-07-27T08:00:00Z"/>
         <author>
           <reference value="Practitioner/d6f3b55d-3095-4655-96dc-da3bec21271c"/>
           <type value="Practitioner"/>
@@ -108,7 +108,7 @@
             </valueCoding>
           </extension>
           <extension url="Unfalltag">
-            <valueDate value="2025-10-27"/>
+            <valueDate value="2026-07-27"/>
           </extension>
         </extension>
         <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Multiple_Prescription">
@@ -119,6 +119,17 @@
         <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_DosageFlag">
             <valueBoolean value="true"/>
         </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.renderedDosageInstruction">
+          <valueMarkdown value="1-0-1-0 Stück"/>
+        </extension>
+        <extension url="http://ig.fhir.de/igs/medication/StructureDefinition/GeneratedDosageInstructionsMeta">
+          <extension url="algorithmVersion">
+            <valueString value="1.0.0"/>
+          </extension>
+          <extension url="language">
+            <valueCode value="de-DE"/>
+          </extension>
+        </extension>
         <status value="active"/>
         <intent value="order"/>
         <medicationReference>
@@ -127,15 +138,34 @@
         <subject>
           <reference value="Patient/ce4104af-b86b-4664-afee-1b5fc3ac8acf"/>
         </subject>
-        <authoredOn value="2025-10-27"/>
+        <authoredOn value="2026-07-27"/>
         <requester>
           <reference value="Practitioner/d6f3b55d-3095-4655-96dc-da3bec21271c"/>
         </requester>
         <insurance>
           <reference value="Coverage/da80211e-61ee-458e-a651-87370b6ec30c"/>
         </insurance>
-        <dosageInstruction>
+        <!--dosageInstruction>
           <text value="1-0-1-0"/>
+        </dosageInstruction-->
+        <dosageInstruction>
+          <timing>
+            <repeat>
+              <frequency value="2"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+              <when value="MORN"/>
+              <when value="EVE"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="1"/>
+              <unit value="Stück"/>
+              <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+              <code value="1"/>
+            </doseQuantity>
+          </doseAndRate>
         </dosageInstruction>
         <dispenseRequest>
           <quantity>

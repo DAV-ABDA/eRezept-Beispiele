@@ -2,7 +2,7 @@
   <id value="9c85a2a5-92ee-4a57-83cb-ba90a0df2a21"/>
   <meta>
     <versionId value="1"/>
-    <lastUpdated value="2025-10-27T08:30:00Z"/>
+    <lastUpdated value="2026-07-27T08:30:00Z"/>
     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.4"/>
   </meta>
   <identifier>
@@ -10,7 +10,7 @@
     <value value="160.100.000.000.019.82"/>
   </identifier>
   <type value="document"/>
-  <timestamp value="2025-10-27T08:30:00Z"/>
+  <timestamp value="2026-07-27T08:30:00Z"/>
   <entry>
     <fullUrl value="http://pvs.praxis.local/fhir/Composition/4ca03203-b01b-4b4c-aeac-c36adb30ea34"/>
     <resource>
@@ -36,7 +36,7 @@
         <subject>
           <reference value="Patient/ce4104af-b86b-4664-afee-1b5fc3ac8acf"/>
         </subject>
-        <date value="2025-10-27T08:00:00Z"/>
+        <date value="2026-07-27T08:00:00Z"/>
         <author>
           <reference value="Practitioner/bc329f24-3d65-4286-bf06-b54dd6cad655"/>
           <type value="Practitioner"/>
@@ -108,6 +108,17 @@
         <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_DosageFlag">
             <valueBoolean value="true"/>
         </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.renderedDosageInstruction">
+          <valueMarkdown value="1-0-0-0 Stück"/>
+        </extension>
+        <extension url="http://ig.fhir.de/igs/medication/StructureDefinition/GeneratedDosageInstructionsMeta">
+          <extension url="algorithmVersion">
+            <valueString value="1.0.0"/>
+          </extension>
+          <extension url="language">
+            <valueCode value="de-DE"/>
+          </extension>
+        </extension>
         <status value="active"/>
         <intent value="order"/>
         <medicationReference>
@@ -116,7 +127,7 @@
         <subject>
           <reference value="Patient/ce4104af-b86b-4664-afee-1b5fc3ac8acf"/>
         </subject>
-        <authoredOn value="2025-10-27"/>
+        <authoredOn value="2026-07-27"/>
         <requester>
           <reference value="Practitioner/bc329f24-3d65-4286-bf06-b54dd6cad655"/>
         </requester>
@@ -126,8 +137,26 @@
         <note>
           <text value="Bitte längliche Tabletten, da Patient Probleme mit dem Schlucken von runden hat."/>
         </note>
-        <dosageInstruction>
+        <!--dosageInstruction>
           <text value="1-0-0-0"/>
+        </dosageInstruction-->
+        <dosageInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+              <when value="MORN"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="1"/>
+              <unit value="Stück"/>
+              <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+              <code value="1"/>
+            </doseQuantity>
+          </doseAndRate>
         </dosageInstruction>
         <dispenseRequest>
           <quantity>

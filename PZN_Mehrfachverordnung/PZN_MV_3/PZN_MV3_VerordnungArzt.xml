@@ -2,7 +2,7 @@
   <id value="f70585e0-82f9-4d3d-b248-94504ccf6a66"/>
   <meta>
     <versionId value="1"/>
-    <lastUpdated value="2025-10-27T08:30:00Z"/>
+    <lastUpdated value="2026-07-27T08:30:00Z"/>
     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.4"/>
   </meta>
   <identifier>
@@ -10,7 +10,7 @@
     <value value="160.100.000.000.016.91"/>
   </identifier>
   <type value="document"/>
-  <timestamp value="2025-10-27T08:30:00Z"/>
+  <timestamp value="2026-07-27T08:30:00Z"/>
   <entry>
     <fullUrl value="http://pvs.praxis.local/fhir/Composition/1868bb7c-c1a6-48a6-a327-05ff8d24c64a"/>
     <resource>
@@ -36,7 +36,7 @@
         <subject>
           <reference value="Patient/ce4104af-b86b-4664-afee-1b5fc3ac8acf"/>
         </subject>
-        <date value="2025-10-27T08:00:00Z"/>
+        <date value="2026-07-27T08:00:00Z"/>
         <author>
           <reference value="Practitioner/667ffd79-42a3-4002-b7ca-6b9098f20ccb"/>
           <type value="Practitioner"/>
@@ -117,8 +117,8 @@
           </extension>
           <extension url="Zeitraum">
             <valuePeriod>
-              <start value="2026-02-15"/>
-              <end value="2026-04-30"/>
+              <start value="2026-12-15"/>
+              <end value="2027-02-28"/>
             </valuePeriod>
           </extension>
           <extension url="ID">
@@ -139,7 +139,7 @@
         <subject>
           <reference value="Patient/ce4104af-b86b-4664-afee-1b5fc3ac8acf"/>
         </subject>
-        <authoredOn value="2025-10-27"/>
+        <authoredOn value="2026-07-27"/>
         <requester>
           <reference value="Practitioner/667ffd79-42a3-4002-b7ca-6b9098f20ccb"/>
         </requester>

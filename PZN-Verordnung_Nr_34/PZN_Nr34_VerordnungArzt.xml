@@ -10,7 +10,7 @@
         <value value="160.040.473.209.886.22"/>
     </identifier>
     <type value="document"/>
-    <timestamp value="2025-10-19T08:30:00Z"/>
+    <timestamp value="2026-07-19T08:30:00Z"/>
     <entry>
         <fullUrl value="http://pvs.praxis.local/fhir/Composition/77d6ef3c-60b6-4a51-b25b-db121b5dbac4"/>
         <resource>
@@ -36,7 +36,7 @@
                 <subject>
                     <reference value="Patient/50ff0f0a-c840-4eca-8877-c79d15c5a45b"/>
                 </subject>
-                <date value="2025-10-19T08:00:00Z"/>
+                <date value="2026-07-19T08:00:00Z"/>
                 <author>
                     <reference value="Practitioner/7e406d74-8f84-4159-b15c-79ce8da155bb"/>
                     <type value="Practitioner"/>
@@ -114,7 +114,7 @@
                 <subject>
                     <reference value="Patient/50ff0f0a-c840-4eca-8877-c79d15c5a45b"/>
                 </subject>
-                <authoredOn value="2025-10-19"/>
+                <authoredOn value="2026-07-19"/>
                 <requester>
                     <reference value="Practitioner/7e406d74-8f84-4159-b15c-79ce8da155bb"/>
                 </requester>
@@ -190,6 +190,18 @@
                 </amount>
                 <ingredient>
                     <itemCodeableConcept>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                            <valueCode value="unknown" />
+                        </extension>
+                    </itemCodeableConcept>
+                    <strength>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                            <valueCode value="unknown" />
+                        </extension>
+                    </strength>
+                </ingredient>
+                <!--ingredient>
+                    <itemCodeableConcept>
                         <text value="keine Angabe"/>
                     </itemCodeableConcept>
                     <strength>
@@ -202,7 +214,7 @@
                             <unit value="k.A."/>
                         </denominator>
                     </strength>
-                </ingredient>
+                </ingredient-->
             </Medication>
         </resource>
     </entry>

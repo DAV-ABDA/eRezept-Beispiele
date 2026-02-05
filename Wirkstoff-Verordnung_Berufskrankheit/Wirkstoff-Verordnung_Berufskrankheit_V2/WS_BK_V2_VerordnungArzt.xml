@@ -2,7 +2,7 @@
   <id value="218b581d-ccbe-480e-b8d7-f5f9b925e8c4"/>
   <meta>
     <versionId value="1"/>
-    <lastUpdated value="2025-10-27T08:30:00Z"/>
+    <lastUpdated value="2026-07-27T08:30:00Z"/>
     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.4"/>
   </meta>
   <identifier>
@@ -10,7 +10,7 @@
     <value value="160.100.000.000.020.79"/>
   </identifier>
   <type value="document"/>
-  <timestamp value="2025-10-27T08:30:00Z"/>
+  <timestamp value="2026-07-27T08:30:00Z"/>
   <entry>
     <fullUrl value="http://pvs.praxis.local/fhir/Composition/5c43d99a-64ba-436d-9b8c-6ee5156d7607"/>
     <resource>
@@ -36,7 +36,7 @@
         <subject>
           <reference value="Patient/1d36152b-40c6-4aeb-a552-86a4d3277edc"/>
         </subject>
-        <date value="2025-10-27T08:00:00Z"/>
+        <date value="2026-07-27T08:00:00Z"/>
         <author>
           <reference value="Practitioner/d6f3b55d-3095-4655-96dc-da3bec21271c"/>
           <type value="Practitioner"/>
@@ -124,7 +124,7 @@
         <subject>
           <reference value="Patient/1d36152b-40c6-4aeb-a552-86a4d3277edc"/>
         </subject>
-        <authoredOn value="2025-10-27"/>
+        <authoredOn value="2026-07-27"/>
         <requester>
           <reference value="Practitioner/d6f3b55d-3095-4655-96dc-da3bec21271c"/>
         </requester>

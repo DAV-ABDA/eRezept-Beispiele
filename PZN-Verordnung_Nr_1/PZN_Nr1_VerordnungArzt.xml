@@ -2,7 +2,7 @@
   <id value="281a985c-f25b-4aae-91a6-41ad744080b0"/>
   <meta>
     <versionId value="1"/>
-    <lastUpdated value="2025-10-30T09:30:00Z"/>
+    <lastUpdated value="2026-07-31T09:30:00Z"/>
     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.4"/>
   </meta>
   <identifier>
@@ -10,7 +10,7 @@
     <value value="160.000.764.737.300.50"/>
   </identifier>
   <type value="document"/>
-  <timestamp value="2025-10-30T09:30:00Z"/>
+  <timestamp value="2026-07-31T09:30:00Z"/>
   <entry>
     <fullUrl value="http://pvs.praxis-topp-gluecklich.local/fhir/Composition/ed52c1e3-b700-4497-ae19-b23744e29876"/>
     <resource>
@@ -36,7 +36,7 @@
         <subject>
           <reference value="Patient/9774f67f-a238-4daf-b4e6-679deeef3811"/>
         </subject>
-        <date value="2025-10-30T09:30:00Z"/>
+        <date value="2026-07-31T09:30:00Z"/>
         <author>
           <reference value="Practitioner/20597e0e-cb2a-45b3-95f0-dc3dbdb617c3"/>
           <type value="Practitioner"/>
@@ -104,7 +104,18 @@
           </extension>
         </extension>
         <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_DosageFlag">
-            <valueBoolean value="true"/>
+          <valueBoolean value="true"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.renderedDosageInstruction">
+          <valueMarkdown value="1-0-1-0 Stück"/>
+        </extension>
+        <extension url="http://ig.fhir.de/igs/medication/StructureDefinition/GeneratedDosageInstructionsMeta">
+          <extension url="algorithmVersion">
+            <valueString value="1.0.0"/>
+          </extension>
+          <extension url="language">
+            <valueCode value="de-DE"/>
+          </extension>
         </extension>
         <status value="active"/>
         <intent value="order"/>
@@ -114,15 +125,34 @@
         <subject>
           <reference value="Patient/9774f67f-a238-4daf-b4e6-679deeef3811"/>
         </subject>
-        <authoredOn value="2025-10-30"/>
+        <authoredOn value="2026-07-31"/>
         <requester>
           <reference value="Practitioner/20597e0e-cb2a-45b3-95f0-dc3dbdb617c3"/>
         </requester>
         <insurance>
           <reference value="Coverage/1b1ffb6e-eb05-43d7-87eb-e7818fe9661a"/>
         </insurance>
+        <!--dosageInstruction>
+            <text value="1-0-1-0"/>
+        </dosageInstruction-->
         <dosageInstruction>
-          <text value="1-0-1-0"/>
+          <timing>
+            <repeat>
+              <frequency value="2"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+              <when value="MORN"/>
+              <when value="EVE"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="1"/>
+              <unit value="Stück"/>
+              <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+              <code value="1"/>
+            </doseQuantity>
+          </doseAndRate>
         </dosageInstruction>
         <dispenseRequest>
           <quantity>
@@ -153,12 +183,12 @@
         </extension>
         <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type">
           <valueCodeableConcept>
-           <coding>
-            <system value="http://snomed.info/sct"/>
-            <version value="http://snomed.info/sct/11000274103/version/20240515"/>
-            <code value="763158003"/>
-            <display value="Medicinal product (product)"/>
-           </coding>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <version value="http://snomed.info/sct/11000274103/version/20240515"/>
+              <code value="763158003"/>
+              <display value="Medicinal product (product)"/>
+            </coding>
           </valueCodeableConcept>
         </extension>
         <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Vaccine">

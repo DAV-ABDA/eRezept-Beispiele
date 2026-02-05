@@ -15,7 +15,7 @@
         <value value="980.096.837.001.428.48"/>
     </identifier>
     <type value="document"/>
-    <timestamp value="2025-10-10T08:30:00Z"/>
+    <timestamp value="2026-07-10T08:30:00Z"/>
     <entry>
         <fullUrl value="urn:uuid:778a3f48-ee59-48f8-a764-8b5eee6bb193"/>
         <resource>
@@ -31,7 +31,7 @@
                         <code value="ERezeptAbgabedaten"/>
                     </coding>
                 </type>
-                <date value="2025-10-10T08:30:00Z"/>
+                <date value="2026-07-10T08:30:00Z"/>
                 <author>
                     <reference value="urn:uuid:a228dfd4-47a6-48f4-bfec-0e7219aaed00"/>
                 </author>
@@ -118,7 +118,7 @@
                         <code value="Abgabeinformationen"/>
                     </coding>
                 </type>
-                <whenHandedOver value="2025-10-10"/>
+                <whenHandedOver value="2026-07-10"/>
             </MedicationDispense>
         </resource>
     </entry>
@@ -171,7 +171,7 @@
                                 <valueString value="G12345678987456321"/>
                             </extension>
                             <extension url="Datum">
-                                <valueDate value="2025-10-10"/>
+                                <valueDate value="2026-07-10"/>
                             </extension>
                         </extension>
                     </extension>

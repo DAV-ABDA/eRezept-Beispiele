@@ -3,14 +3,14 @@
 	<id value="6c255c3c-4f5f-4eed-acb6-780ffd7cdfff"/>
 	<meta>
 		<versionId value="1"/>
-        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.4"/>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle|1.4"/>
 	</meta>
 	<identifier>
 		<system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
 		<value value="160.112.925.848.156.74"/>
 	</identifier>
 	<type value="document"/>
-	<timestamp value="2025-10-19T08:30:00Z"/>
+	<timestamp value="2026-07-19T08:30:00Z"/>
 	<entry>
 		<fullUrl value="http://pvs.praxis.local/fhir/Composition/87172d0d-f8fa-418c-b298-669700e9ed1e"/>
 		<resource>
@@ -36,7 +36,7 @@
 				<subject>
 					<reference value="Patient/be4464d1-b87a-4b50-8152-8579d59aadcc"/>
 				</subject>
-				<date value="2025-10-19T08:00:00Z"/>
+				<date value="2026-07-19T08:00:00Z"/>
 				<author>
 					<reference value="Practitioner/4aaff5e4-5999-4e0c-b155-940e095e0ce8"/>
 					<type value="Practitioner"/>
@@ -103,9 +103,20 @@
 						<code value="1"/>
 					</valueCoding>
 				</extension>
-                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_DosageFlag">
-                    <valueBoolean value="true"/>
-                </extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_DosageFlag">
+					<valueBoolean value="true"/>
+				</extension>
+				<extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.renderedDosageInstruction">
+					<valueMarkdown value="1-0-1-0 Messlöffel"/>
+				</extension>
+				<extension url="http://ig.fhir.de/igs/medication/StructureDefinition/GeneratedDosageInstructionsMeta">
+					<extension url="algorithmVersion">
+						<valueString value="1.0.0"/>
+					</extension>
+					<extension url="language">
+						<valueCode value="de-DE"/>
+					</extension>
+				</extension>
 				<status value="active"/>
 				<intent value="order"/>
 				<medicationReference>
@@ -114,15 +125,34 @@
 				<subject>
 					<reference value="Patient/be4464d1-b87a-4b50-8152-8579d59aadcc"/>
 				</subject>
-				<authoredOn value="2025-10-19"/>
+				<authoredOn value="2026-07-19"/>
 				<requester>
 					<reference value="Practitioner/4aaff5e4-5999-4e0c-b155-940e095e0ce8"/>
 				</requester>
 				<insurance>
 					<reference value="Coverage/ad9ad0b9-bc55-4430-95b8-17b074fd7a62"/>
 				</insurance>
+				<!--dosageInstruction>
+                    <text value="morgens und abends 1 Messlöffel"/>
+                </dosageInstruction-->
 				<dosageInstruction>
-					<text value="morgens und abends 1 Messlöffel"/>
+					<timing>
+						<repeat>
+							<frequency value="2"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+							<when value="MORN"/>
+							<when value="EVE"/>
+						</repeat>
+					</timing>
+					<doseAndRate>
+						<doseQuantity>
+							<value value="1"/>
+							<unit value="Messlöffel"/>
+							<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+							<code value="#"/>
+						</doseQuantity>
+					</doseAndRate>
 				</dosageInstruction>
 				<dispenseRequest>
 					<quantity>

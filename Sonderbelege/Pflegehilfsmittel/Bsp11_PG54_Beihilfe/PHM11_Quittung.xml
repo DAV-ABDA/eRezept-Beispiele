@@ -8,7 +8,7 @@
         <value value="980.096.837.001.428.48"/>
     </identifier>
     <type value="document"/>
-    <timestamp value="2025-10-10T07:30:00.000+01:00"/>
+    <timestamp value="2026-07-10T07:30:00.000+01:00"/>
     <entry>
         <fullUrl value="urn:uuid:940b7c78-1c0c-4505-ba93-ab3f20dca496"/>
         <resource>
@@ -30,15 +30,15 @@
                         <display value="Receipt"/>
                     </coding>
                 </type>
-                <date value="2025-10-10T07:30:00.000+01:00"/>
+                <date value="2026-07-10T07:30:00.000+01:00"/>
                 <author>
                     <reference value="urn:uuid:ab00c388-a494-4e7b-bbde-1361ad75c193"/>
                 </author>
                 <title value="Quittung"/>
                 <event>
                     <period>
-                        <start value="2025-10-10T07:30:00.000+01:00"/> <!-- Zeit der Quittungserstellung -->
-                        <end value="2025-10-10T07:30:00.000+01:00"/> <!-- Zeit der Quittungserstellung -->
+                        <start value="2026-07-10T07:30:00.000+01:00"/> <!-- Zeit der Quittungserstellung -->
+                        <end value="2026-07-10T07:30:00.000+01:00"/> <!-- Zeit der Quittungserstellung -->
                     </period>
                 </event>
                 <section>
@@ -87,7 +87,7 @@
             <system value="urn:iso-astm:E1762-95:2013"/>
             <code value="1.2.840.10065.1.12.1.1"/>
         </type>
-        <when value="2025-10-10T07:30:00.000+01:00"/>
+        <when value="2026-07-10T07:30:00.000+01:00"/>
         <who>
             <reference value="urn:uuid:ab00c388-a494-4e7b-bbde-1361ad75c193"/>
         </who>
