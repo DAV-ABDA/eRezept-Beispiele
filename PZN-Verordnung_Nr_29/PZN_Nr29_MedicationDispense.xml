@@ -58,6 +58,9 @@
                         <unit value="Packung"/>
                     </quantity>
                     <whenHandedOver value="2026-07-19"/>
+                    <!--dosageInstruction>  ==> v1.5 oder als Freitext -> Achtung übernahme in renderedDosageInstruction
+                        <text value="2-0-0-0"/>
+                    </dosageInstruction-->
                     <dosageInstruction> <!-- nur angeben, wenn geändert/korrigiert durch Apotheke -->
                         <timing>
                             <repeat>
