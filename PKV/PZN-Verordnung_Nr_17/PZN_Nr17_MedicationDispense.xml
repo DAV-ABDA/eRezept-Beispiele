@@ -48,7 +48,7 @@
                     </quantity>
                     <whenHandedOver value="2025-11-03"/>
                     <substitution>
-                        <wasSubstituted value="false"/>
+                        <wasSubstituted value="true"/>
                     </substitution>
                 </MedicationDispense>
             </resource>
