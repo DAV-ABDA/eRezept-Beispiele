@@ -248,7 +248,6 @@
 
                     .input-container {
                         position: relative;
-                        display: inline-block;
                         width: 100%;
                     }
 
@@ -259,16 +258,7 @@
                         padding: 0 5px;
                         font-size: 10px;
                         color: var(--text-color-ges);
-                    }
-
-                    .fieldset {
-                        border: 1px solid var(--text-color-ges);
-                        padding-top: 8px;
-                        padding-left: 10px;
-                        height: 10mm;
-                        width: 100%;
-                        text-align: left;
-                        background-color: var(--background-color-int);
+                        z-index: 1;
                     }
 
                     .text-input, .hzp{
@@ -333,12 +323,30 @@
                         margin-left: 2px;
                     }
 
-                    .placeholder{
-                        width: 100%;
-                        height: 10mm;
-                        padding-top: 8px;
-                        border: 1px solid rgba(0, 0, 0, 0);
-                        background-color: var(--border-background-color-ges);
+                    [data-tooltip] {
+                      position: relative;
+                      cursor: pointer;
+                    }
+
+                    [data-tooltip]::after {
+                      content: attr(data-tooltip);
+                      position: absolute;
+                      /* Tooltip Styling */
+                      background-color: var(--background-color-ges);
+                      color: var(--text-color-ges);
+                      padding: 5px;
+                      border-radius: 4px;
+                      z-index: 500;
+
+                      /* Verstecken */
+                      opacity: 0;
+                      visibility: hidden;
+                      transition: opacity 0.3s;
+                    }
+
+                    [data-tooltip]:hover::after {
+                      opacity: 1;
+                      visibility: visible;
                     }
 
                     .intern-container{
@@ -351,26 +359,10 @@
                         padding-bottom: 3px;
                     }
 
-                    #txt-area{
-                        overflow: auto;
-                        resize: vertical;
-                        line-height: var(--bs-body-line-height);
-                        padding-top: 15px;
-                    }
-                    .container{
-                        width: 297mm;
-                        max-width: 297mm;
-                        min-width: 297mm;
-                    }
-
                     hr{
                         margin-top: 1mm;
                         margin-bottom: 1mm;
                         background-color: var(--text-color-ges);
-                    }
-                    .container, .container-fluid {
-                        width: 100% !important;
-                        max-width: none !important;
                     }
 
                     .col, .col-*, .row {
@@ -470,9 +462,7 @@
                         background-color: var(--background-color-ges);
                     }
                     /* Internes Stylesheet Ende */
-                    </style><title>DAV Stylesheet Abgabedaten</title></head><body><div class="background-container-ges outter-div"><h1>Abgabedatensatz</h1><div class="row g-1 intern-container"><div class="col-md-1 border-1"><div class="row g-1"><div class="col-3"><div class="input-container"><label>Rezept ID</label><div class="text-input">160.112.925.848.156.74</div></div></div><div class="col-3"><div class="input-container"><label>Abgabedatum</label><div class="text-input">19.07.2026</div></div></div><div class="col-3"><div class="input-container"><label>Gesamtbetrag</label><div class="text-input">12,60 EUR</div></div></div><div class="col-3"><div class="input-container"><label>Gesamtzuzahlung</label><div class="text-input">0,00 EUR</div></div></div></div><div class="row g-1"><div class="col-4"><div class="input-container"><label>abgebende Apotheke</label><textarea class="text-input" readonly="">Adler-Apotheke</textarea></div></div><div class="col-2"><div class="input-container"><label>IKNR</label><div class="text-input">308412345</div></div></div></div><div class="row g-1"><div class="col-6"><div class="input-container"><label>Adresse</label><textarea class="text-input" readonly="">Taunusstraße 89</textarea></div></div></div><div class="row g-1"><div class="col-1"><div class="input-container"><label>PLZ</label><div class="text-input">63225</div></div></div><div class="col-4"><div class="input-container"><label>Ort</label><textarea class="text-input" readonly="">Langen</textarea></div></div><div class="col-1"><div class="input-container"><label>Land</label><div class="text-input">D</div></div></div></div></div></div><div class="intern-container background-container-ges margin-left-min-2 margin-right-min-2 margin-top-min-5"><div class="row g-1 width-100"><div class="col-12"><h4>Abrechnungszeilen</h4><div class="row g-0"><div class="col-1"><div class="input-container"><label>Pos</label><div class="text-input height-12mm">1</div></div></div><div class="col-2"><div class="input-container"><label>PZN</label><div class="text-input height-12mm">17550650</div></div></div><div class="col-1"><div class="input-container"><label>Faktor</label><div class="text-input height-12mm">1</div></div></div><div class="col-1"><div class="input-container"><label>MwSt</label><div class="text-input height-12mm">19,00</div></div></div><div class="col-2"><div class="input-container"><label>Ges.Brutto</label><div class="text-input height-12mm">12,60 EUR</div></div></div><div class="col-5"><div class="input-container"><label>Kosten Versicherter</label><textarea class="text-input height-12mm" readonly="">Zuzahlung (0):  0,00 EUR
-</textarea></div></div></div><div class="row g-0" style="padding-top: 0px !important; margin-top: -8px !important;"><div class="col-4" style="margin-top:4px;"><div class="input-container"><label>Chargennummer(n)</label><textarea class="text-input height-15mm">A9876543210123-45678
-</textarea></div></div><div class="col-8"><table class="zusatz-attributes-table"><thead><tr><th>Zusatzattribut-<br>Gruppe</th><th><br>Wert (Schlüssel)</th></tr></thead><tbody><tr><td>Markt (Grp1)</td><td>Generika (1)</td></tr><tr><td>Rabattvertragserfüllung (Grp2)</td><td>nicht relevant (0)</td></tr><tr><td>Preisgünstiges FAM (Grp3)</td><td>nein, nicht verfügbar (2)</td></tr><tr><td>Import-FAM (Grp4)</td><td>nicht relevant (0)</td></tr></tbody></table></div></div><h4>Rezeptänderung</h4><div class="row g-0" style="margin-bottom: 0px; padding-bottom: 0px;"><div class="col-1"><div class="input-container"><label>RezÄndArt</label><div class="text-input height-15mm">14</div></div></div><div class="col-4"><div class="input-container"><label>Rücksprache Arzt</label><textarea class="text-input height-15mm" readonly="">Keine Rücksprache mit dem Arzt erforderlich. (2)</textarea></div></div><div class="col-1-5"><div class="input-container"><label>Datum</label><div class="text-input height-15mm">19.07.2026</div></div></div></div><div class="row g-1"><div class="col-12"><div class="input-container"><label>Legende: Arten der Rezeptänderung</label><textarea class="text-input-fix height-15mm" readonly="">1	Abweichung von der Verordnung bzgl. der Darreichungsform bei Fertigarzneimitteln
+                    </style><title>DAV Stylesheet Abgabedaten</title></head><body><div class="background-container-ges outter-div"><h1>Abgabedatensatz</h1><div class="row g-1 intern-container"><div class="col-md-1 border-1"><div class="row g-1"><div class="col-3"><div class="input-container"><label>Rezept ID</label><div class="text-input">160.112.925.848.156.74</div></div></div><div class="col-3"><div class="input-container"><label>Abgabedatum</label><div class="text-input">19.07.2026</div></div></div><div class="col-3"><div class="input-container"><label>Gesamtbetrag</label><div class="text-input">12,60 EUR</div></div></div><div class="col-3"><div class="input-container"><label>Gesamtzuzahlung</label><div class="text-input">0,00 EUR</div></div></div></div><div class="row g-1"><div class="col-4"><div class="input-container"><label>abgebende Apotheke</label><textarea class="text-input" readonly="">Adler-Apotheke</textarea></div></div><div class="col-2"><div class="input-container"><label>IKNR</label><div class="text-input">308412345</div></div></div></div><div class="row g-1"><div class="col-6"><div class="input-container"><label>Adresse</label><textarea class="text-input" readonly="">Taunusstraße 89</textarea></div></div></div><div class="row g-1"><div class="col-1"><div class="input-container"><label>PLZ</label><div class="text-input">63225</div></div></div><div class="col-4"><div class="input-container"><label>Ort</label><textarea class="text-input" readonly="">Langen</textarea></div></div><div class="col-1"><div class="input-container"><label>Land</label><div class="text-input">D</div></div></div></div></div></div><div class="intern-container background-container-ges margin-left-min-2 margin-right-min-2 margin-top-min-5"><div class="row g-1 width-100"><div class="col-12"><h4>Abrechnungszeilen</h4><div class="row g-0"><div class="col-1"><div class="input-container"><label>Pos</label><div class="text-input">1</div></div></div><div class="col-2"><div class="input-container"><label>PZN</label><div class="text-input" data-tooltip="#PZN;17550650">17550650</div></div></div><div class="col-1"><div class="input-container"><label>Faktor</label><div class="text-input">1</div></div></div><div class="col-1"><div class="input-container"><label>MwSt</label><div class="text-input">19,00</div></div></div><div class="col-2"><div class="input-container"><label>Ges.Brutto</label><div class="text-input">12,60 EUR</div></div></div><div class="col-5"><div class="input-container"><label>Kosten Versicherter</label><textarea class="text-input" readonly="">Zuzahlung           (0):  0,00 EUR</textarea></div></div></div><div class="row g-0" style="padding-top: 0px !important; margin-top: -8px !important;"><div class="col-4" style="margin-top:4px;"><div class="input-container"><label>Chargennummer(n)</label><textarea class="text-input height-15mm">A9876543210123-45678</textarea></div></div><div class="col-8"><table class="zusatz-attributes-table"><thead><tr><th>Zusatzattribut-<br>Gruppe</th><th><br>Wert (Schlüssel)</th></tr></thead><tbody><tr><td>Markt (Grp1)</td><td>Generika (1)</td></tr><tr><td>Rabattvertragserfüllung (Grp2)</td><td>nicht relevant (0)</td></tr><tr><td>Preisgünstiges FAM (Grp3)</td><td>nein, nicht verfügbar (2)</td></tr><tr><td>Import-FAM (Grp4)</td><td>nicht relevant (0)</td></tr></tbody></table></div></div><h4>Rezeptänderung</h4><div class="row g-0" style="margin-bottom: 0px; padding-bottom: 0px;"><div class="col-1"><div class="input-container"><label>RezÄndArt</label><div class="text-input height-15mm">14</div></div></div><div class="col-4"><div class="input-container"><label>Rücksprache Arzt</label><textarea class="text-input height-15mm" readonly="">Keine Rücksprache mit dem Arzt erforderlich. (2)</textarea></div></div><div class="col-1-5"><div class="input-container"><label>Datum</label><div class="text-input height-15mm">19.07.2026</div></div></div></div><div class="row g-1"><div class="col-12"><div class="input-container"><label>Legende: Arten der Rezeptänderung</label><textarea class="text-input-fix height-15mm" readonly="">1	Abweichung von der Verordnung bzgl. der Darreichungsform bei Fertigarzneimitteln
 	Begründung: § 2 Abs. 6 AMVV / § 6 Abs. 2 Buchst. c Satz 2 Rahmenvertrag §129
 2	Korrektur / Ergänzung der Darreichungsform bei Rezepturen
 	Begründung: § 2 Abs. 6 AMVV / § 6 Abs. 2 Buchst. c Satz 2 Rahmenvertrag §129
@@ -504,7 +494,7 @@
 14	Austausch aufgrund der Dringlichkeitsliste ggfls. mit Dosierungsänderungen
 	Begründung: § 129 Abs. 2b SGB V
                                         </textarea></div></div></div></div></div></div><p align="right">FHIR-Instanzversion:
-                <b>1.5</b> Stylesheet: <b>v1.7</b></p></div><script>
+                <b>1.5</b> Stylesheet: <b>v1.8</b></p></div><script>
                 
 				    function formatGermanDateTime(isoString) {
 					    if (!isoString) return '';

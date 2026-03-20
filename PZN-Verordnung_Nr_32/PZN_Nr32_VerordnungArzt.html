@@ -261,7 +261,7 @@
                     h5{
                         margin-top: 2mm;
                         color:var(--text-color-ges);
-                        font-size: x-small;
+                        font-size: small;
                         font-weight: bold;
                         padding-bottom: 0px;
                         margin-bottom: 0px;
@@ -274,7 +274,6 @@
 
                     .input-container {
                         position: relative;
-                        display: inline-block;
                         width: 100%;
                     }
 
@@ -285,16 +284,7 @@
                         padding: 0 5px;
                         font-size: 10px;
                         color: var(--text-color-ges);
-                    }
-
-                    .fieldset {
-                        border: 1px solid var(--text-color-ges);
-                        padding-top: 8px;
-                        padding-left: 10px;
-                        height: 10mm;
-                        width: 100%;
-                        text-align: left;
-                        background-color: var(--background-color-int);
+                        z-index: 1;
                     }
 
                     .text-input {
@@ -343,49 +333,27 @@
                         margin-left: 10px;
                     }
 
-                    .placeholder{
-                        width: 100%;
-                        height: 10mm;
-                        padding-top: 8px;
-                        border: 1px solid rgba(0, 0, 0, 0);
-                        background-color: var(--border-background-color-ges);
-                    }
-
                     .intern-container{
                         background-color: var(--background-color-int);
                         padding:2mm;
                     }
+
                     .intern-container2{
                         background-color: var(--background-color-ges);
                         padding:1mm;
                         margin-top: 1mm;
                         margin-bottom: 1mm;
                     }
+
                     .row{
                         padding-top: 0px;
                         padding-bottom: 3px;
-                    }
-
-                    #txt-area{
-                        overflow: auto;
-                        resize: vertical;
-                        line-height: var(--bs-body-line-height);
-                        padding-top: 15px;
-                    }
-                    .container{
-                        width: 297mm;
-                        max-width: 297mm;
-                        min-width: 297mm;
                     }
 
                     hr{
                         margin-top: 1mm;
                         margin-bottom: 1mm;
                         background-color: var(--text-color-ges);
-                    }
-                    .container, .container-fluid {
-                        width: 100% !important;
-                        max-width: none !important;
                     }
 
                     .col, .col-*, .row {
@@ -512,8 +480,7 @@
                     .no-bottom-border{ border-bottom: none; }
                     /* Internes Stylesheet Ende */
                     </style><title>DAV Stylesheet Verordnung</title></head><body><div class="background-container-ges outter-div"><h1>Verordnung</h1><div class="row g-1 intern-container"><div class="col-md-6 border-1"><h4>Patient</h4><div class="row g-1 g-1"><div class="col-6"><div class="input-container"><label>Kostenträger Typ / Vers. Art.</label><div class="text-input">GKV Mitglieder (1)</div></div></div><div class="col-3"><div class="input-container"><label>Kostenträger IK</label><div class="text-input">108416214</div></div></div><div class="col-3"><div class="input-container"><label>Vers.-Nr.(GKV)</label><div class="text-input">M310119819</div></div></div></div><div class="row g-1"><div class="col-10"><div class="input-container"><label>Kostenträger</label><div class="text-input">AOK Bayern Die Gesundh.</div></div></div></div><div class="row g-1"><div class="col-12"><div class="input-container"><label>Rechtsgrundlage</label><div class="text-input">ohne Ersatzverordnungskennzeichen (00)</div></div></div></div><div class="row g-1"><div class="col-12"><div class="input-container"><label>DMP-Kennzeichen</label><div class="text-input"> nicht gesetzt (00)</div></div></div></div><div class="row g-1"><div class="col-8"><div class="input-container"><label>Name u. Vorname d. Versicherten</label><textarea class="text-input" readonly="">Teddy Klein</textarea></div></div><div class="col-4"><div class="input-container"><label>Geburtsdatum</label><div class="text-input">29.02.2020</div></div></div></div><div class="row g-1"><div class="col-10"><div class="input-container"><label>Straßenadresse</label><textarea class="text-input" readonly="">Roritzerstraße 1</textarea></div></div><div class="col-2"><div class="input-container"><label>Land</label><div class="text-input">D</div></div></div></div><div class="row g-1"><div class="col-3"><div class="input-container"><label>PLZ</label><div class="text-input">93047</div></div></div><div class="col-9"><div class="input-container"><label>Ort</label><textarea class="text-input" readonly="">Regensburg</textarea></div></div></div><h4>Rezeptdaten</h4><div class="row g-1"><div class="col-4"><div class="input-container"><label>Ausstellungsdatum</label><div class="text-input">19.07.2026</div></div></div><div class="col-8"><div class="input-container"><label>Rezept ID</label><div class="text-input">160.112.925.848.156.74</div></div></div></div><div class="row g-1 intern-container2"><div class="row g-2"><div class="col-3"><div class="checkbox-container"><label>Gebühr frei</label><input type="checkbox" class="chckbox" disabled="disabled" name="terms" value="coding" checked=""></div></div><div class="col-2"><div class="checkbox-container"><label>SER</label><input type="checkbox" class="chckbox" disabled="disabled" name="terms"></div></div><div class="col-3"><div class="checkbox-container"><label>Noctu</label><input type="checkbox" class="chckbox" disabled="disabled" name="terms"></div></div><div class="col-4"><div class="checkbox-container"><label>Impfstoff</label><input type="checkbox" class="chckbox" disabled="disabled" name="terms" y=""></div></div></div><div class="row g-2"><div class="col-3"><div class="checkbox-container"><label>Gebühr pfl.</label><input type="checkbox" class="chckbox" disabled="disabled" name="terms"></div></div><div class="col-2"><div class="checkbox-container"><label>Unfall</label><input type="checkbox" class="chckbox" disabled="disabled" name="terms"></div></div><div class="col-3"><div class="checkbox-container"><label>Arbeitsunfall</label><input type="checkbox" class="chckbox" disabled="disabled" name="terms"></div></div><div class="col-4"><div class="checkbox-container"><label>Berufskrankheit</label><input type="checkbox" class="chckbox" disabled="disabled" name="terms"></div></div></div></div></div><div class="col-md-6"><h4>Verordner</h4><div class="row g-1"><div class="col-12"><div class="input-container"><label>Name u. Vorname</label><textarea class="text-input" readonly="">Dr. Maximilian Weber</textarea></div></div></div><div class="row g-1"><div class="col-12"><div class="input-container"><label>Berufsbezeichnung</label><textarea class="text-input" readonly="">Facharzt für Kinder- und Jugendmedizin</textarea></div></div></div><div class="row g-1"><div class="col-12"><div class="input-container"><label>Qualifikation</label><div class="text-input">Arzt (00)</div></div></div></div><div class="row g-1"><div class="col-6"><div class="input-container"><label>LANR</label><div class="text-input">456456534</div></div></div><div class="col-6"><div class="input-container"><label>Betriebsstättennummer</label><div class="text-input">687777700</div></div></div></div><div class="row g-1"><div class="col-12"><div class="input-container"><label>Einrichtung</label><textarea class="text-input" readonly="">Kinderarztpraxis</textarea></div></div></div><div class="row g-1"><div class="col-10"><div class="input-container"><label>Straßenadresse</label><textarea class="text-input" readonly="">Yorckstraße 15
-Hinterhaus
-</textarea></div></div><div class="col-2"><div class="input-container"><label>Land</label><div class="text-input">D</div></div></div></div><div class="row g-1"><div class="col-3"><div class="input-container"><label>PLZ</label><div class="text-input">93049</div></div></div><div class="col-9"><div class="input-container"><label>Ort</label><textarea class="text-input" readonly="">Regensburg</textarea></div></div></div><div class="row g-1"><div class="col-6"><div class="input-container"><label>Telefon</label><textarea class="text-input" readonly="">09411234567</textarea></div></div></div><div class="row g-1"><div class="col-12"><div class="input-container"><label>E-Mail</label><textarea class="text-input" readonly="">kinderarztpraxis@e-mail.de</textarea></div></div></div></div></div><div class="intern-container background-container-ges margin-left-min-2 margin-right-min-2 margin-top-min-5"><div class="row g-1 width-100"><div class="col-12"><div class="row g-1"><div class="col-1 intern-container2"><div class="checkbox-container"><label>Aut Idem</label><input type="checkbox" class="chckbox" disabled="disabled" name="terms"></div></div><div class="col-3"><div class="input-container"><label>Anzahl der verordneten Packungen</label><div class="text-input">1</div></div></div><div class="col-8"><div class="input-container"><label>Kategorie</label><textarea class="text-input" readonly="">AM oder in die AM-Versorgung nach § 31 SGB V einbezogenes Produkt (00)</textarea></div></div></div><div class="row g-1"><div class="col-2"><div class="input-container"><label>PZN</label><div class="text-input" style="font-weight: bold;">17550609</div></div></div><div class="col-10"><div class="input-container"><label>Handelsname</label><textarea class="text-input" style="font-weight: bold;" readonly="">COTRIM K-ratiopharm 200mg/5ml + 40mg/5ml Susp.z.E.</textarea></div></div></div><div class="row g-1"><div class="col-4"><div class="input-container"><label>Darreichungsform</label><textarea class="text-input" readonly="">Suspension zum Einnehmen (SUE)</textarea></div></div><div class="col-4"><div class="input-container"><label>Packungsgroesse nach N-Bezeichnung</label><div class="text-input">Normgrösse 1 (N1)</div></div></div><div class="col-4"><div class="input-container"><label>Packungsgroesse nach abgeteilter Menge</label><div class="text-input">100 ml</div></div></div></div><div class="row g-1"><div class="col-1"><div class="input-container"><label>Position</label><div class="text-input">1 
+Hinterhaus</textarea></div></div><div class="col-2"><div class="input-container"><label>Land</label><div class="text-input">D</div></div></div></div><div class="row g-1"><div class="col-3"><div class="input-container"><label>PLZ</label><div class="text-input">93049</div></div></div><div class="col-9"><div class="input-container"><label>Ort</label><textarea class="text-input" readonly="">Regensburg</textarea></div></div></div><div class="row g-1"><div class="col-6"><div class="input-container"><label>Telefon</label><textarea class="text-input" readonly="">09411234567</textarea></div></div></div><div class="row g-1"><div class="col-12"><div class="input-container"><label>E-Mail</label><textarea class="text-input" readonly="">kinderarztpraxis@e-mail.de</textarea></div></div></div></div></div><div class="intern-container background-container-ges margin-left-min-2 margin-right-min-2 margin-top-min-5"><div class="row g-1 width-100"><div class="col-12"><div class="row g-1"><div class="col-1 intern-container2"><div class="checkbox-container"><label>Aut Idem</label><input type="checkbox" class="chckbox" disabled="disabled" name="terms"></div></div><div class="col-3"><div class="input-container"><label>Anzahl der verordneten Packungen</label><div class="text-input">1</div></div></div><div class="col-8"><div class="input-container"><label>Kategorie</label><textarea class="text-input" readonly="">AM oder in die AM-Versorgung nach § 31 SGB V einbezogenes Produkt (00)</textarea></div></div></div><div class="row g-1"><div class="col-2"><div class="input-container"><label>PZN</label><div class="text-input" style="font-weight: bold;">17550609</div></div></div><div class="col-10"><div class="input-container"><label>Handelsname</label><textarea class="text-input" style="font-weight: bold;" readonly="">COTRIM K-ratiopharm 200mg/5ml + 40mg/5ml Susp.z.E.</textarea></div></div></div><div class="row g-1"><div class="col-4"><div class="input-container"><label>Darreichungsform</label><textarea class="text-input" readonly="">Suspension zum Einnehmen (SUE)</textarea></div></div><div class="col-4"><div class="input-container"><label>Packungsgroesse nach N-Bezeichnung</label><div class="text-input">Normgrösse 1 (N1)</div></div></div><div class="col-4"><div class="input-container"><label>Packungsgroesse nach abgeteilter Menge</label><div class="text-input">100 ml</div></div></div></div><div class="row g-1"><div class="col-1"><div class="input-container"><label>Position</label><div class="text-input">1 
 					
 						
 							
@@ -533,7 +500,7 @@ Hinterhaus
 					
 				</div></div></div><div class="col-1"><div class="input-container"><label>ASK-Nr</label><div class="text-input" style="font-weight: bold;">02895</div></div></div><div class="col-6"><div class="input-container"><label>Wirkstoffname</label><textarea class="text-input" style="font-weight: bold;" readonly="">Sulfamethoxazol</textarea></div></div><div class="col-4"><div class="input-container"><label>Wirkstärke</label><div class="text-input">200 mg / 5 ml</div></div></div></div><div class="row g-1"><div class="col"><div class="input-container"><label>Dosierung</label><textarea class="text-input" readonly="">1-0-1-0 Messlöffel</textarea></div></div></div></div></div></div><p align="right">Instanzversion:
                 <b>1.4</b> PRF.NR.:<b>Y/400/2107/36/999</b>
-                Stylesheet: <b>v1.14</b></p></div><script>
+                Stylesheet: <b>v1.15</b></p></div><script>
                 
 					function autoResizeTextarea() {
                         const textareas = document.querySelectorAll('textarea.text-input');
@@ -541,7 +508,7 @@ Hinterhaus
                             // Fallback für Browser ohne field-sizing Support
                             function adjustHeight() {
                                 textarea.style.height = 'auto';
-                                textarea.style.height = Math.max(textarea.scrollHeight, 40) + 'px';
+                                textarea.style.height = Math.max((textarea.scrollHeight -16), 40) + 'px';
                             }
                             // Initial resize
                             adjustHeight();

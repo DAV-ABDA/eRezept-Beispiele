@@ -261,7 +261,7 @@
                     h5{
                         margin-top: 2mm;
                         color:var(--text-color-ges);
-                        font-size: x-small;
+                        font-size: small;
                         font-weight: bold;
                         padding-bottom: 0px;
                         margin-bottom: 0px;
@@ -274,7 +274,6 @@
 
                     .input-container {
                         position: relative;
-                        display: inline-block;
                         width: 100%;
                     }
 
@@ -285,16 +284,7 @@
                         padding: 0 5px;
                         font-size: 10px;
                         color: var(--text-color-ges);
-                    }
-
-                    .fieldset {
-                        border: 1px solid var(--text-color-ges);
-                        padding-top: 8px;
-                        padding-left: 10px;
-                        height: 10mm;
-                        width: 100%;
-                        text-align: left;
-                        background-color: var(--background-color-int);
+                        z-index: 1;
                     }
 
                     .text-input {
@@ -343,49 +333,27 @@
                         margin-left: 10px;
                     }
 
-                    .placeholder{
-                        width: 100%;
-                        height: 10mm;
-                        padding-top: 8px;
-                        border: 1px solid rgba(0, 0, 0, 0);
-                        background-color: var(--border-background-color-ges);
-                    }
-
                     .intern-container{
                         background-color: var(--background-color-int);
                         padding:2mm;
                     }
+
                     .intern-container2{
                         background-color: var(--background-color-ges);
                         padding:1mm;
                         margin-top: 1mm;
                         margin-bottom: 1mm;
                     }
+
                     .row{
                         padding-top: 0px;
                         padding-bottom: 3px;
-                    }
-
-                    #txt-area{
-                        overflow: auto;
-                        resize: vertical;
-                        line-height: var(--bs-body-line-height);
-                        padding-top: 15px;
-                    }
-                    .container{
-                        width: 297mm;
-                        max-width: 297mm;
-                        min-width: 297mm;
                     }
 
                     hr{
                         margin-top: 1mm;
                         margin-bottom: 1mm;
                         background-color: var(--text-color-ges);
-                    }
-                    .container, .container-fluid {
-                        width: 100% !important;
-                        max-width: none !important;
                     }
 
                     .col, .col-*, .row {
@@ -527,7 +495,7 @@
                     
                 </div></div></div><div class="col-6"><div class="input-container"><label>Wirkstoffname</label><textarea class="text-input" style="font-weight: bold;" readonly="">---</textarea></div></div><div class="col-4"><div class="input-container"><label>Wirkstärke</label><div class="text-input">1 St / 1 St</div></div></div></div><div class="row g-1"><div class="col"><div class="input-container"><label>Dosierung</label><div class="text-input">keine Dosierung angegeben</div></div></div></div><div class="row g-1"><div class="col"><div class="input-container"><label>Abgabehinweise</label><textarea id="resize_ta22" class="text-input" rows="auto" readonly="">KVK: 1234567890</textarea></div></div></div></div></div></div><p align="right">Instanzversion:
                 <b>1.4</b> PRF.NR.:<b>000000</b>
-                Stylesheet: <b>v1.14</b></p></div><script>
+                Stylesheet: <b>v1.15</b></p></div><script>
                 
 					function autoResizeTextarea() {
                         const textareas = document.querySelectorAll('textarea.text-input');
@@ -535,7 +503,7 @@
                             // Fallback für Browser ohne field-sizing Support
                             function adjustHeight() {
                                 textarea.style.height = 'auto';
-                                textarea.style.height = Math.max(textarea.scrollHeight, 40) + 'px';
+                                textarea.style.height = Math.max((textarea.scrollHeight -16), 40) + 'px';
                             }
                             // Initial resize
                             adjustHeight();
