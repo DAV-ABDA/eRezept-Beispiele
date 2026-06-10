@@ -1,0 +1,97 @@
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="711ce2ab-ce1d-4fd4-99f5-5bbeaf53fc31"/>
+   <meta>
+       <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle|1.6"/>
+   </meta>
+   <identifier>
+       <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
+       <value value="911.065.554.991.981.48"/>
+   </identifier>
+   <type value="document"/>
+   <timestamp value="2026-07-02T10:30:00.000+02:00"/>
+   <entry>
+       <fullUrl value="urn:uuid:2bdb17f4-bda0-4521-bc59-963275bd5602"/>
+       <resource>
+           <Composition>
+               <meta>
+                   <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Composition|1.6"/>
+               </meta>
+               <extension url="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_EX_Beneficiary">
+                   <valueIdentifier>
+                       <system value="https://gematik.de/fhir/sid/telematik-id"/>
+                       <value value="3-SMC-B-Testkarte-883110000116873"/> <!-- Apotheken Telematik-ID -->
+                   </valueIdentifier>
+               </extension>
+               <status value="final"/>
+               <type>
+                   <coding>
+                       <system value="https://gematik.de/fhir/erp/CodeSystem/GEM_ERP_CS_DocumentType"/>
+                       <code value="3"/>
+                       <display value="Receipt"/>
+                   </coding>
+               </type>
+               <date value="2026-07-02T10:30:00.000+02:00"/>
+               <author>
+                   <reference value="urn:uuid:50fe45a4-7fb0-4212-bbfe-69639b8043bf"/>
+               </author>
+               <title value="Quittung"/>
+               <event>
+                   <period>
+                       <start value="2026-07-02T10:30:00.000+02:00"/> <!-- Zeit der Quittungserstellung -->
+                       <end value="2026-07-02T10:30:00.000+02:00"/> <!-- Zeit der Quittungserstellung -->
+                   </period>
+               </event>
+               <section>
+                   <entry>
+                       <reference value="urn:uuid:3d4294cd-577f-499b-b2f8-4e4ec42ec159"/>
+                   </entry>
+               </section>
+           </Composition>
+       </resource>
+   </entry>
+   <entry>
+       <fullUrl value="urn:uuid:50fe45a4-7fb0-4212-bbfe-69639b8043bf"/>
+       <resource>
+           <Device>
+               <id value="50fe45a4-7fb0-4212-bbfe-69639b8043bf"/>
+               <meta>
+                   <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Device|1.6"/>
+               </meta>
+               <status value="active"/>
+               <serialNumber value="N/A"/> <!-- default -->
+               <deviceName>
+                   <name value="PS"/> <!-- default -->
+                   <type value="other"/> <!-- default -->
+               </deviceName>
+               <version>
+                   <value value="N/A"/> <!-- default -->
+               </version>
+           </Device>
+       </resource>
+   </entry>
+   <entry>
+       <fullUrl value="urn:uuid:3d4294cd-577f-499b-b2f8-4e4ec42ec159"/>
+       <resource>
+           <Binary>
+               <id value="3d4294cd-577f-499b-b2f8-4e4ec42ec159"/>
+               <meta>
+                   <profile value="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Digest|1.6"/>
+               </meta>
+               <contentType value="application/octet-stream"/>
+               <data value="SGFzaCBkZXIgVmVyb3JudW5n"/>  <!-- Hash der Verordnung (ohne Signatur) -->
+           </Binary>
+       </resource>
+   </entry>
+   <signature>
+       <type>
+           <system value="urn:iso-astm:E1762-95:2013"/>
+           <code value="1.2.840.10065.1.12.1.1"/>
+       </type>
+       <when value="2026-07-02T10:30:00.000+02:00"/>
+       <who>
+           <reference value="urn:uuid:50fe45a4-7fb0-4212-bbfe-69639b8043bf"/>
+       </who>
+       <sigFormat value="application/pkcs7-mime"/>
+       <data value="U2lnbmF0dXIgZGVyIFF1aXR0dW5nIChvaG5lIHNpZ25hdHVyIEJsb2NrKQ=="/> <!-- Signatur über das QuittungBundle (ohne <signature> Block) -->
+   </signature>
+</Bundle>
