@@ -5,7 +5,7 @@
    </meta>
    <identifier>
        <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
-       <value value="911.065.554.991.981.48"/>
+       <value value="911.065.554.991.981.44"/>
    </identifier>
    <type value="document"/>
    <timestamp value="2026-07-02T10:30:00.000+02:00"/>
