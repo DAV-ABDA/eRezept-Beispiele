@@ -14,7 +14,7 @@
       <valueString value="00002"/>
     </extension>
     <system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname"/>
-    <value value="B00FHR25002"/>
+    <value value="B00FHR26002"/>
   </identifier>
   <type value="document"/>
   <timestamp value="2025-12-02T10:00:00Z"/>
@@ -112,7 +112,7 @@
           <item>
             <identifier>
               <system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname"/>
-              <value value="B00FHR25002"/>
+              <value value="B00FHR26002"/>
             </identifier>
           </item>
         </entry>
@@ -120,7 +120,7 @@
           <item>
             <identifier>
               <system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname"/>
-              <value value="B00FHR25001"/>
+              <value value="B00FHR26001"/>
             </identifier>
           </item>
         </entry>

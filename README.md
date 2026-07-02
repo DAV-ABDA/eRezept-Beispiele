@@ -1,4 +1,4 @@
-<h2 align="center">FHIR-Beispiele zum E-Rezept (Profile zum 01.10.2025)</h2>
+<h2 align="center">FHIR-Beispiele zum E-Rezept (Profile zum 01.07.2026)</h2>
 In diesem Projekt stellt der DAV Beispiele für die bei der Verarbeitung von E-Rezepten auftretenden Dateien in der Apotheke und dem Apothekenrechenzentrum zur Verfügung. Es wurde darauf geachtet, dass die zu einem Beispiel gehörenden Dateien fachlich und technisch zusammenpassen und soweit wie möglich realistische Informationen enthalten.<p>
 
 ### Inhaltsverzeichnis
@@ -61,7 +61,7 @@ Das Zertifikat für die Signierung ist selbst erzeugt und mathematisch gültig, 
 
 **<span style="color:yellow">Visualisierung der eVorordnungs- und eAbgabedaten</span>**
 - Für die Darstellung der E-Rezeptinstanzen, wurden die Stylesheets ([Ordner\Stylesheets](https://github.com/DAV-ABDA/eRezept-Stylesheets)) genutzt. Für die korrekte und fachlich vollständige Darstellung wird keine Gewährleistung übernommen.
-- Das für die Verordnungsprüfung (P4-02) bereitgestellte Stylesheet der KBV ist unter https://update.kbv.de/ita-update/DigitaleMuster/ERP/ [eRP_Stylesheet_[Version].zip]) abrufbar. 
+- Das für die Verordnungsprüfung (P4-02) bereitgestellte Stylesheet der KBV ist unter https://update.kbv.de/ita-update/DigitaleMuster/ERP/ [eRP_Stylesheet_[Version].zip]) abrufbar.
 
 ### ErgänzendeInformationen zu den einzelnen Beispielen
 
@@ -75,7 +75,7 @@ Merkmal Abgabedaten: Erfüllung Rabattvertrag
 
 KBV basiertes Beispiel (aea2f4c5-675a-4d76-ab9b-7994c80b64ec) 
 - PZN-Verordnung_Nr_2
-  - Merkmal Verordnung: Kennzeichen BVG gesetzt
+  - Merkmal Verordnung: Kennzeichen SER (ehemals BVG) gesetzt
   - Merkmal Abgabedaten: Erfüllung Rabattvertrag
 
 **3) PZN-Verordnung Nr. 3** (Januvia® 50 mg 28 Filmtabletten N1)
