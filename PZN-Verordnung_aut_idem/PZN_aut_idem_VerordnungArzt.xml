@@ -197,7 +197,7 @@
           <itemCodeableConcept>
             <coding>
               <system value="http://fhir.de/CodeSystem/ask"/>
-              <code value="00386"/>
+              <code value="26581"/>
             </coding>
             <text value="Olanzapin"/>
           </itemCodeableConcept>
